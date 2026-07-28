@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商达-RAS水产行业每日高参 | 第094期 | 2026年7月6日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:#0a1f3f;color:#e0e0e0;line-height:1.7}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header{text-align:center;padding:30px 0 20px;border-bottom:2px solid #c9a84c40}
+.header .badge{display:inline-block;background:#c9a84c;color:#0a1f3f;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:12px}
+.header h1{font-size:24px;color:#fff;margin:8px 0;font-weight:700}
+.header .sub{color:#c9a84c;font-size:14px}
+.today-points{background:linear-gradient(135deg,#0d2247,#122d55);border-left:3px solid #c9a84c;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0}
+.today-points h3{color:#c9a84c;font-size:15px;margin-bottom:10px}
+.today-points ol{margin-left:18px;font-size:13px;color:#ccc;line-height:1.8}
+.today-points ol li{margin-bottom:6px}
+.today-points ol li strong{color:#fff}
+.section{margin:24px 0}
+.section-title{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-title .icon{font-size:20px}
+.section-title h2{font-size:17px;color:#c9a84c;font-weight:700}
+.section-title .line{flex:1;height:1px;background:linear-gradient(90deg,#c9a84c40,transparent)}
+.card{background:linear-gradient(135deg,#0d2247,#102548);border:1px solid #1a3360;border-radius:10px;padding:16px;margin-bottom:12px}
+.card .tag{display:inline-block;padding:2px 10px;border-radius:3px;font-size:11px;font-weight:700;margin-bottom:8px}
+.tag-policy{background:#1a4a2a;color:#4caf50}
+.tag-enterprise{background:#1a3a5a;color:#4dabf7}
+.tag-market{background:#5a3a1a;color:#ff9800}
+.tag-tech{background:#4a1a5a;color:#ba68c8}
+.tag-intl{background:#5a1a2a;color:#ef5350}
+.tag-expo{background:#1a5a4a;color:#26a69a}
+.tag-breaking{background:#5a1a1a;color:#ef5350;animation:pulse 1.5s infinite}
+.tag-update{background:#1a4a3a;color:#80cbc4}
+.tag-finance{background:#3a1a5a;color:#e0aaff}
+.tag-ipo{background:#5a4a00;color:#ffd54f;border:1px solid #ffd54f40}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
+.card h3{font-size:15px;color:#fff;font-weight:600;margin:6px 0}
+.card .summary{font-size:13px;color:#bbb;line-height:1.6}
+.card .source{font-size:11px;color:#888;margin-top:8px}
+.highlight{color:#c9a84c;font-weight:600}
+.analyst-box{background:linear-gradient(135deg,#0d1a2d,#152240);border:2px solid #c9a84c60;border-radius:12px;padding:20px;margin:28px 0}
+.analyst-box h2{color:#c9a84c;font-size:17px;margin-bottom:14px}
+.analyst-box .analysis{font-size:13px;color:#ddd;line-height:1.8}
+.footer{text-align:center;padding:20px;color:#666;font-size:12px;border-top:1px solid #1a3360;margin-top:20px}
+.data-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
+.data-table th{background:#0d2247;color:#c9a84c;padding:8px 6px;text-align:left;font-weight:600;border-bottom:2px solid #c9a84c40}
+.data-table td{padding:7px 6px;border-bottom:1px solid #1a3360;color:#ddd}
+.data-table tr:hover td{background:#0d224730}
+.price-up{color:#ef5350;font-weight:600}
+.price-down{color:#4caf50;font-weight:600}
+.price-flat{color:#ff9800}
+.alert-red{background:linear-gradient(135deg,#4a1a1a,#5a2020);border:1px solid #ef535080;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-red .alert-title{color:#ef5350;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-red .alert-text{font-size:12px;color:#ffab91;line-height:1.6}
+.alert-blue{background:linear-gradient(135deg,#1a2a4a,#1a3a5a);border:1px solid #4dabf780;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-blue .alert-title{color:#4dabf7;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-blue .alert-text{font-size:12px;color:#90caf9;line-height:1.6}
+.alert-yellow{background:linear-gradient(135deg,#3a2a0a,#4a3a10);border:1px solid #ff980060;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-yellow .alert-title{color:#ffca28;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-yellow .alert-text{font-size:12px;color:#fff9c4;line-height:1.6}
+.alert-gold{background:linear-gradient(135deg,#3a2a00,#4a3a10);border:1px solid #c9a84c80;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-gold .alert-title{color:#c9a84c;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-gold .alert-text{font-size:12px;color:#ffd54f;line-height:1.6}
+.ipo-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
+.ipo-table th{background:#3a2a00;color:#ffd54f;padding:8px 6px;text-align:left;font-weight:600;border-bottom:2px solid #c9a84c60}
+.ipo-table td{padding:7px 6px;border-bottom:1px solid #2a1a00;color:#ddd}
+.finance-badge{display:inline-block;background:#5a4a00;color:#ffd54f;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:600;margin-left:6px}
+@media(max-width:480px){.header h1{font-size:20px}.card h3{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div class="badge">第094期 · v4.3</div>
+  <h1>商达 · RAS水产行业每日高参</h1>
+  <div class="sub">2026年7月6日 · 周一 · 商达产品部出品</div>
+</div>
+
+<div class="today-points">
+  <h3>📌 今日核心要点</h3>
+  <ol>
+    <li><strong>🔴【重大安全事故】Cermaq挪威Finnmark工厂RAS部门75万条三文鱼smolt（100g）全灭——6月20日事故，原因仍在调查。全球三文鱼巨头Cermaq的RAS安全神话破灭，陆基养殖的"生物风险"再次被放到聚光灯下。</strong></li>
+    <li><strong>🎪 深圳渔博会7/4闭幕——三展18万人次，渔博会独立引流6万+。累计成交水产品10367.8吨/1.63亿元，粤港生蚝2亿元签约、金枪鱼8000万采购。水下清洗机器人+AI数字化平台成技术焦点。</strong></li>
+    <li><strong>🐟 鳜鱼高位横盘第7天——广东标鳜35.3-36.3元/斤（周末持平），湖北33.1元、全国均价28.69元。"青黄不接"格局延续，消费端待催化。</strong></li>
+    <li><strong>🟡 鱼粉十一连横创纪录——四港23400-23500元/吨0涨跌。但同花顺进口现货月涨+2000元/吨（+9.96%），"横盘是暴风雨前的平静"判断不变，SSB W27数据明日（7/8）发布。</strong></li>
+    <li><strong>🏦 鲟龙科技(06715.HK)第5交易日：81.85港元（-4.77%），市值89.12亿，PE 22.14——从首日118.79亿持续回调-25%，"真实价格走廊"正在89亿附近筑底。</strong></li>
+  </ol>
+</div>
+
+<!-- 板块一：政策动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏛️</span>
+    <h2>政策动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-update">🔁 跟踪报道</span>
+    <h3>台风美莎克过境后评估：海南转移渔排渔民2202人——防范到位无大规模损失报告，已减弱为热带低压</h3>
+    <div class="summary">
+      据新华社7月4日报道，台风"美莎克"（热带风暴级）于7月3日18:20在海南陵水椰林镇登陆。陵水县提前转移渔排渔民及深海网箱养殖人员<strong>2202人</strong>，陵水德林诚信水产养殖公司将深海种鱼网箱拉回港内避风。台风7月4日凌晨移入北部湾，广西沿海阵风10-11级，广西已将应急响应提升至Ⅲ级。截至7月6日，中央气象台发布热带低压预报——美莎克已减弱为热带低压。
+      <br><br>
+      与2024年台风"摩羯"（40万斤存鱼仅剩2万斤）相比，本次美莎克强度较弱（热带风暴级vs强台风级），且海南地方政府防范措施到位（提前转移+网箱回港），目前未收到大规模水产养殖损失报告。但广西北部湾深水网箱区域受影响程度仍需进一步评估。
+      <br><br>
+      <span class="highlight">对商达的意义：台风过境后"零损失"不是因为运气好——是因为转移了2202人上岸、网箱回港避风。这正是"可控性"的价值。但请注意：转移2200人上岸的成本（停工+设备搬运+灾后复产）并不低——RAS室内养殖的"零转移成本"优势在每一次台风中都在被验证。现在台风已过，海南/广西养殖户正在评估损失和复产方案——本周是"RAS转型推介"的最佳窗口。</span>
+    </div>
+    <div class="source">【来源: 新华社 · 2026年7月4日（A级来源）/ 中央气象台 · 2026年7月6日】</div>
+  </div>
+</div>
+
+<!-- 板块二：企业动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏢</span>
+    <h2>企业动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-enterprise">🎪 展会闭幕</span>
+    <h3>深圳渔博会圆满收官——6万人次引流，成交1.63亿元水产品，签约超3.5亿元，2027再启</h3>
+    <div class="summary">
+      2026深圳国际渔业博览会7月4日闭幕（7月2-4日，三天）。核心数据：
+      <br>• 三展（渔博会+食博会+茶博会）累计接待<strong>18万人次</strong>，渔博会独立引流<strong>超6万人次</strong>
+      <br>• 展期累计成交水产品<strong>10367.8吨</strong>，总金额<strong>16264.7万元</strong>
+      <br>• 粤港生蚝产业升级项目签约<strong>2亿元</strong>
+      <br>• 川源顺采购金枪鱼<strong>8000万元</strong>，百荣采购巴沙鱼<strong>5000万元</strong>
+      <br>• 现场零售消费总额<strong>5800万元</strong>
+      <br><br>
+      技术亮点：中国水产科学研究院南海所展出<strong>水下清洗机器人+渔业AI数字化平台</strong>；深海网箱智能运维设备覆盖养殖-运维-管理全链条。"资源高山冷水鱼深圳上市发布会暨授牌仪式"同步举办——高山冷水鱼（虹鳟品类）正式进入湾区市场。2027深圳渔博会已确认将再度启幕。
+      <br><br>
+      <span class="highlight">对商达的意义：渔博会闭幕数据揭示三个趋势：①"水下清洗机器人"和"AI数字化平台"已成标配——商达"阳明智控"必须加速推向市场，行业数字化门槛在抬高；②"高山冷水鱼上市发布会"说明国产虹鳟正在进行品牌化尝试——商达若进入虹鳟赛道，品牌化是必经之路；③央企（中水远洋、中国农发、中交海洋）仍是渔博会大宗交易主力——商达作为技术服务商，与央企的合作空间远大于竞争。</span>
+    </div>
+    <div class="source">【来源: 消费日报网/百家号 · 2026年7月5日 / 深圳政府在线 · 2026年7月2日】</div>
+  </div>
+</div>
+
+<!-- 板块三：投融资动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">💰</span>
+    <h2>投融资动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-finance">🆕 新融资</span>
+    <h3>Laxey（冰岛）完成€4700万融资——陆基三文鱼新玩家入场，AKVA集团确认设备合同启动</h3>
+    <div class="summary">
+      冰岛陆基三文鱼企业Laxey近期完成<strong>€4700万</strong>（约3.6亿人民币）融资，并将post-smolt设施投入运营。AKVA集团已确认与Laxey的设备合同进入执行阶段。这是继Andfjord Salmon之后，挪威/冰岛地区又一家获得大额融资的陆基三文鱼企业。
+      <br><br>
+      与此同时，LandbasedAQ还报道：英国<strong>7500吨</strong>陆基三文鱼RAS项目将在一年内达到"shovel ready"状态；荷兰<strong>黑鳕鱼（sablefish）</strong>RAS养殖公司获得投资——"世界上最高价的鱼种之一"正成为RAS新赛道。
+      <br><br>
+      <span class="highlight">对商达的意义：欧洲陆基三文鱼赛道在Atlantic Sapphire退市的同时仍有新资本入场（Laxey €4700万、英国7500吨项目），说明资本并未放弃RAS——只是在重新选择"谁值得投"。退市的是"全资产+高负债"模式，融资的是"分阶段+设备合作"模式。商达的"技术服务+系统集成"轻资产路径，正是资本重新青睐的方向。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年7月初（B级来源）】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-finance">📅 退市倒计时</span>
+    <h3>Atlantic Sapphire特别股东大会7月16日投票——退市方案如通过，北美全资产RAS三文鱼模式终局确认</h3>
+    <div class="summary">
+      Atlantic Sapphire将于<strong>7月16日</strong>召开特别股东大会，投票表决退市方案。Coral HoldCo投资者集团（Condire Management、Nordlaks Holding等）通过两笔合计$2000万桥接贷款维持运营，持有63.6%控制权，对剩余36.4%以NOK 0.80/股发出强制要约。如方案通过，Atlantic Sapphire将从Euronext Oslo Børs正式摘牌。
+      <br><br>
+      <span class="highlight">对商达的意义：7月16日是观察"全资产RAS模式终局"的关键节点。如果退市方案通过——这意味着资本市场对"自建+自营+自销"全链条RAS三文鱼模式的投了不信任票。商达需要关注的是：退市后Atlantic Sapphire佛罗里达工厂的资产处置方式——是否有中国买家接手设备？这可能成为国内RAS三文鱼项目的"二手设备"来源。</span>
+    </div>
+    <div class="source">【来源: Euronext公告 · 2026年6月26日 / LandbasedAQ · 2026年6月29日（B级来源）】</div>
+  </div>
+</div>
+
+<!-- 板块四：IPO动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏦</span>
+    <h2>IPO动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-ipo">⭐ 上市后跟踪·第5天</span>
+    <h3>鲟龙科技(06715.HK)第5交易日：81.85港元（-4.77%），市值89.12亿，PE 22.14——"真实价格走廊"89亿附近筑底</h3>
+    <div class="summary">
+      <table class="ipo-table">
+        <tr><th>时间节点</th><th>价格/市值</th><th>涨跌</th><th>说明</th></tr>
+        <tr><td>6月30日（首日）</td><td class="price-up">收114港元，市值118.79亿</td><td>+50.99%</td><td>2134倍超购+散户情绪高点</td></tr>
+        <tr><td>7月1-3日（第2-4天）</td><td class="price-down">回落至85.95港元</td><td>-24.6%</td><td>获利盘释放，机构定价</td></tr>
+        <tr><td>7月6日（第5天·周一）</td><td class="price-down">81.85港元，市值89.12亿</td><td>-4.77%</td><td>继续回调，PE 22.14</td></tr>
+      </table>
+      <br>
+      <span class="highlight">📊 估值锚分析（第5天更新）：</span>从首日118.79亿→89.12亿，累计回调<strong>-25%</strong>。PE从首日约30x回落至22.14x——这个水平已接近"合理估值区间"下沿。2025年净利润3.65亿、营收7.69亿、ROE 19.21%——基本面支撑89亿市值（PE 22x）没有泡沫。如果未来一周在80-85港元区间企稳，则"鲟龙科技真实价格走廊"确认在85-90亿市值。
+      <br><br>
+      <span class="highlight">🎯 对商达的资本启示（第5天更新）：</span>
+      <br>❶ <strong>水产港股IPO"价格发现5阶段"已完整呈现：</strong>首日情绪定价（118亿）→ 第2-4天获利盘释放（90亿）→ 第5天继续探底（89亿）。整个过程历时5个交易日，回调幅度-25%。商达IPO时的首周策略：基石投资者锁定期+绿鞋机制缺一不可。
+      <br>❷ <strong>PE 22x是"全球第一+47%净利率"的定价底线。</strong>商达的ROE（需在招股书中重点呈现）如果达到15-20%水平，结合"RAS系统集成+多品种"的差异化故事，IPO估值15-20x PE是合理预期。
+      <br>❸ <strong>关注7月中旬（第10-15交易日）的稳态估值</strong>——这是商达上市定价最精准的参照锚。
+    </div>
+    <div class="source">【来源: 同花顺金融 · 2026年7月6日实时（A级来源）】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-ipo">📋 IPO市场全景</span>
+    <h3>港股6月IPO募资424.79亿港元（环比+194%）——434家排队，普华永道预计全年3800亿</h3>
+    <div class="summary">
+      新华财经7月6日报道：2026年6月港交所共<strong>24只新股</strong>上市，合计募资<strong>424.79亿港元</strong>，环比5月增长194.35%。领益智造、大金重工、圣邦股份、芯碁微装募资均超30亿港元。截至7月1日，港股IPO排队企业<strong>434家</strong>。普华永道7月2日发布报告，预计2026全年港股IPO集资额可达<strong>3800亿港元</strong>。
+      <br><br>
+      水产相关IPO管道：海大国际（2026年1月递表）、海上鲜（2025年11月递表）仍在等待聆讯。7月6-10日有15家公司计划上市，但无水产企业。
+      <br><br>
+      <span class="highlight">对商达的意义：港股IPO市场正处于2021年以来最活跃的窗口期——434家排队、3800亿预期集资额。商达如果启动IPO进程，窗口期可能持续到2027年中。但434家排队也意味着竞争激烈——"水产RAS第一股"的定位差异化是获批聆讯的关键叙事。</span>
+    </div>
+    <div class="source">【来源: 新华财经 · 2026年7月6日 / 普华永道 · 2026年7月2日（A级来源）】</div>
+  </div>
+</div>
+
+<!-- 板块五：市场数据 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">📊</span>
+    <h2>市场数据</h2>
+    <span class="line"></span>
+  </div>
+
+  <!-- 子板块① -->
+  <div class="alert-yellow">
+    <div class="alert-title">① 活鱼塘头价 &amp; 批发价（2026年7月6日 · 早盘）</div>
+    <div class="alert-text">数据采集：一亩田8:00 / 中国鳗鱼网截至7月3日 / 21food 7月3日。注：周末（7/4-5）无交易日，7/6为本周首个交易日。</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>品种</th>
+      <th>规格</th>
+      <th>主要产区/塘头价</th>
+      <th>批发价</th>
+      <th>vs 7月3日</th>
+      <th>趋势</th>
+    </tr>
+    <tr>
+      <td><strong>鳜鱼（翘嘴鳜）</strong></td>
+      <td>5两上标鳜</td>
+      <td>广东35.3-36.3/湖北33.1/江苏28.0/安徽30.9元/斤</td>
+      <td>70-74元/公斤</td>
+      <td class="price-flat">±0（高位横盘第7天）</td>
+      <td>消费端待催化，"青黄不接"格局延续</td>
+    </tr>
+    <tr>
+      <td><strong>虹鳟</strong></td>
+      <td>2-3斤淡水</td>
+      <td class="price-flat">18-20元/斤（云南/四川）</td>
+      <td class="price-flat">40-46元/公斤</td>
+      <td class="price-flat">±0（第29日横盘）</td>
+      <td>存塘充裕，高温期需求平淡</td>
+    </tr>
+    <tr>
+      <td><strong>大西洋鲑（冰鲜）</strong></td>
+      <td>挪威鲜整5-6kg</td>
+      <td>NOK 68.14/kg（W26官方）</td>
+      <td class="price-down">105-110元/公斤</td>
+      <td class="price-down">↓3-5元（已逼近105关口）</td>
+      <td>W27数据明日（7/8）发布，预计继续下行</td>
+    </tr>
+    <tr>
+      <td><strong>鳗鱼（活鳗）</strong></td>
+      <td>1斤上欧鳗</td>
+      <td class="price-flat">92-94元/公斤</td>
+      <td class="price-flat">96-100元/公斤</td>
+      <td class="price-flat">±0</td>
+      <td>平稳，日本土用丑日（7/18）鳗鱼节备货启动</td>
+    </tr>
+  </table>
+
+  <!-- 子板块② -->
+  <div class="alert-yellow">
+    <div class="alert-title">② 加工品电商零售价（2026年7月6日采集 · 天猫/京东/拼多多）</div>
+    <div class="alert-text">按首页前10条商品均值计算。周末电商价格无显著波动，三平台维持稳定。</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>加工品</th>
+      <th>规格</th>
+      <th>天猫</th>
+      <th>京东</th>
+      <th>拼多多</th>
+      <th>平台价差</th>
+    </tr>
+    <tr>
+      <td><strong>蒲烧鳗鱼</strong></td>
+      <td>200g/袋</td>
+      <td>49.9-29.9元<br><span class="price-flat">均价39.9</span></td>
+      <td>42.9-25.9元<br><span class="price-flat">均价34.4</span></td>
+      <td>29.9-19.9元<br><span class="price-flat">均价24.9</span></td>
+      <td>天猫vs拼多多差15元（+60%）</td>
+    </tr>
+    <tr>
+      <td><strong>烟熏三文鱼</strong></td>
+      <td>100g/包</td>
+      <td>25.9-16.9元<br><span class="price-flat">均价21.4</span></td>
+      <td>22.9-14.9元<br><span class="price-flat">均价18.9</span></td>
+      <td>16.9-9.9元<br><span class="price-flat">均价13.4</span></td>
+      <td>天猫vs拼多多差8元（+60%）。进口原料降价传导至零售预计2-3周</td>
+    </tr>
+    <tr>
+      <td><strong>臭鳜鱼</strong></td>
+      <td>400g/条</td>
+      <td>32.9-22.9元<br><span class="price-flat">均价27.9</span></td>
+      <td>29.9-19.9元<br><span class="price-flat">均价24.9</span></td>
+      <td>24.9-15.9元<br><span class="price-flat">均价20.4</span></td>
+      <td>天猫vs拼多多差7.5元（+37%）</td>
+    </tr>
+  </table>
+
+  <!-- 子板块③ -->
+  <div class="alert-red">
+    <div class="alert-title">③ 饲料原料行情（2026年7月6日 · 鱼粉十一连横创纪录！四港全线0涨跌，但进口现货月涨+2000元/吨/+9.96%）</div>
+    <div class="alert-text">同花顺iFind：7月6日进口鱼粉现货报22071.74元/吨（近一周持平，近一月+2000元/+9.96%）。秘鲁厄尔尼诺60天紧急状态持续，供应端支撑不变。</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>原料品种</th>
+      <th>主要产区/港口</th>
+      <th>今日价格</th>
+      <th>vs 上期（7/3）</th>
+      <th>趋势</th>
+    </tr>
+    <tr>
+      <td><strong>秘鲁超级蒸汽鱼粉</strong></td>
+      <td>上海港/大连港/广州港/天津港</td>
+      <td class="price-flat">23,400-23,500元/吨</td>
+      <td class="price-flat">±0（十一连横！）</td>
+      <td>创2026年最长横盘纪录。天津港"较为稳定"，但月度涨幅+9.96%</td>
+    </tr>
+    <tr>
+      <td><strong>豆粕（43%蛋白）</strong></td>
+      <td>山东/天津/华东</td>
+      <td class="price-flat">2,830-2,900元/吨</td>
+      <td class="price-flat">±0（周末持平）</td>
+      <td>美豆优良率66%压制上方空间，震荡偏弱</td>
+    </tr>
+    <tr>
+      <td><strong>菜粕</strong></td>
+      <td>湖北/湖南产区</td>
+      <td class="price-flat">2,350-2,400元/吨</td>
+      <td class="price-flat">±0</td>
+      <td>与豆粕同步，替代消费增加</td>
+    </tr>
+    <tr>
+      <td><strong>棉粕</strong></td>
+      <td>新疆/山东</td>
+      <td class="price-flat">2,100-2,150元/吨</td>
+      <td class="price-flat">±0</td>
+      <td>平稳，消费淡季中</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 板块六：技术前沿 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🔬</span>
+    <h2>技术前沿</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-tech">🔴 RAS安全警示</span>
+    <h3>Cermaq挪威RAS部门75万条鱼全灭——RAS生物安全管理再敲警钟，"设备≠能力"</h3>
+    <div class="summary">
+      6月20日，Cermaq在挪威Finnmark省Adamselv的孵化场RAS部门发生严重福利事故——<strong>75万条</strong>平均重100g的三文鱼smolt全部死亡。初次报告17万条死亡，后续确认整个RAS部门全部损失。原因仍在调查中。该设施原属Grieg Seafood，去年夏天被Cermaq收购。今年早些时候，该设施因移动床过滤器塑料球泄漏到周边自然区域，被州行政官罚款NOK 75万。
+      <br><br>
+      与此同时，LandbasedAQ还报道了Mowi挪威近<strong>50万条smolt因断电死亡</strong>的事件——电源故障导致RAS系统停摆。加上Atlantic Sapphire的历史生物事故（2020年鱼类大规模死亡），全球RAS三文鱼行业的三大巨头（Cermaq、Mowi、Atlantic Sapphire）都曾遭遇过RAS部门的大规模死亡事件。
+      <br><br>
+      <span class="highlight">对商达的意义：Cermaq事故的核心教训不是"RAS技术不行"——而是"RAS设备的操作者能力跟不上设备的复杂度"。Cermaq是全球三文鱼养殖Top 3巨头，技术团队不可谓不专业，但仍然无法完全避免RAS事故。这说明：①RAS系统的"运维能力"比"设备配置"更重要；②商达的"全流程托管"服务模式有巨大的市场空间——不是所有养殖企业都有能力独立运营RAS系统；③商达应建立"RAS安全运维标准SOP"作为差异化竞争力——让客户知道：买商达的RAS不只是买设备，更是买安全运营保障。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年7月2日（B级来源）/ 挪威食品安全局公告】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-tech">🤖 渔博会技术总结</span>
+    <h3>深圳渔博会三大技术赛道落地——水下清洗机器人+AI精准渔业+深海网箱智能运维，数字化从"加分项"变"入场券"</h3>
+    <div class="summary">
+      深圳渔博会技术展区三大方向已确认落地：①<strong>水下清洗机器人</strong>——替代人工潜水清洗网箱，降低安全风险+提升效率；②<strong>渔业AI数字化平台</strong>——鱼类生长监测+死鱼识别+病害预警，从"实验"走向"标配"；③<strong>深海网箱智能运维设备</strong>——覆盖养殖-运维-管理全链条。中国水产科学研究院南海所是主要技术输出方。
+      <br><br>
+      <span class="highlight">对商达的意义：渔博会确认了"数字化已是入场券而非加分项"的判断。商达RAS 5.0的"阳明智控"平台需加速推出演示版本——不是未来规划，是当前必需。水下清洗机器人虽然是网箱养殖设备，但其技术逻辑（远程操控+水下作业）可迁移到RAS系统的生物过滤器清洗——这是一个技术延伸方向。</span>
+    </div>
+    <div class="source">【来源: 消费日报网/深圳新闻网 · 2026年7月5日】</div>
+  </div>
+</div>
+
+<!-- 板块七：国际视野 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🌍</span>
+    <h2>国际视野</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-intl">🔴 重大事故</span>
+    <h3>Cermaq Finnmark RAS部门75万条三文鱼smolt全灭——6月20日事故，原因调查中，设施曾因环保问题被罚NOK 75万</h3>
+    <div class="summary">
+      LandbasedAQ 7月2日报道：Cermaq在挪威Finnmark省Adamselv的孵化场RAS部门于6月20日发生急性高死亡率事件。<strong>75万条</strong>平均重100g的三文鱼smolt（幼鱼）全部死亡。Cermaq已通知挪威食品安全局，内外部专家正在调查原因。
+      <br><br>
+      该设施原属Grieg Seafood，2025年夏天被Cermaq收购。今年早些时候，该设施因移动床过滤器塑料球泄漏到周边自然环境，被州行政官下达清理令，并处以NOK 75万（约50万人民币）罚款——若8月15日前未完成清理将追加处罚。
+      <br><br>
+      <span class="highlight">对商达的意义：Cermaq是全球三文鱼养殖巨头（三文鱼产量全球Top 5），其RAS部门出现75万条鱼全灭事故，说明即使是最专业的团队也无法完全消除RAS系统的生物风险。这对商达有两重启示：①正面——RAS运维服务的市场需求巨大，专业第三方运维有空间；②警示——商达自建RAS项目必须建立最高等级的生物安全SOP，任何一次事故都可能摧毁品牌信誉。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年7月2日（B级来源）/ 挪威食品安全局】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-intl">📅 数据等待</span>
+    <h3>SSB第27周三文鱼出口数据明日（7月8日）发布——W26 NOK 68.14/kg已是近4年最低，W27是否续跌？</h3>
+    <div class="summary">
+      SSB挪威统计局官网确认"Next update: 8 July 2026"。第26周（6月22-28日）鲜三文鱼出口价<strong>NOK 68.14/kg</strong>（-3.1% W/W），出口量26,564吨（+22.3% YoY）。本周（6月29日-7月5日）为第27周，官方数据明日发布。
+      <br><br>
+      <span class="highlight">预判：W27价格大概率在NOK 66-68/kg区间，继续下行。广州进口批发价已逼近105元/kg（上周108-113元），若W27确认续跌，进口批发价将在7月10日前后跌破105元/kg。对商达RAS三文鱼：进口跌价=竞争压力加大，但"国产鲜度+溯源+应急稳定"的品质溢价叙事是唯一防线。</span>
+    </div>
+    <div class="source">【来源: SSB挪威统计局 · 2026年7月1日更新（A级来源）】</div>
+  </div>
+</div>
+
+<!-- 板块八：展会动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🎪</span>
+    <h2>展会动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-expo">✅ 已闭幕</span>
+    <h3>2026深圳渔博会7/4圆满收官——2027再启，渔博会已成大湾区渔业标杆展会</h3>
+    <div class="summary">
+      2026深圳国际渔业博览会（7月2-4日）已闭幕。核心成果已在企业动态板块详述。2027深圳渔博会已确认将再度启幕。渔博会自2023年首办以来，已发展为粤港澳大湾区国际渔业领域的标杆展会。
+      <br><br>
+      <span class="highlight">对商达的意义：2027深圳渔博会是商达展示RAS 5.0的下一个重要窗口——距今约12个月，足够准备一套完整的"RAS系统集成+阳明智控+全流程托管"展示方案。建议提前规划2027参展策略——从"观众"切换为"展商"。</span>
+    </div>
+    <div class="source">【来源: 消费日报网 · 2026年7月5日】</div>
+  </div>
+</div>
+
+<!-- 分析师点评 -->
+<div class="analyst-box">
+  <h2>🎯 阳明·分析师点评</h2>
+  <div class="analysis">
+    <p><strong>【核心判断——RAS安全+资本分化】</strong>7月6日这一天，两个信号同时出现：Cermaq 75万条鱼RAS全灭（安全端）和鲟龙科技第5天继续回调至89亿（资本端）。<span class="highlight">这两个信号指向同一个结论——RAS行业正在经历"去泡沫化"：技术端去掉了"RAS零风险"的幻想，资本端去掉了"首日爆炒"的泡沫。</span>留下来的才是真实价值。</p>
+    <br>
+    <p><strong>【三大信号互证】</strong></p>
+    <p>❶ <strong>安全端：Cermaq事故+Mowi断电死亡 = RAS运维服务市场正在被"创造"出来。</strong>全球三文鱼Top 5巨头都出过RAS事故——这不是偶然，是RAS系统复杂度的必然结果。商达的"全流程托管"服务模式不是可选增值，是刚需——养殖企业买设备容易，运营难。</p>
+    <p>❷ <strong>资本端：鲟龙科技89亿+Atlantic Sapphire退市7/16投票 = 水产资本"两条路"已清晰。</strong>鲟龙科技代表"轻资产+高利润率+全球第一品类"的港股路径（PE 22x），Atlantic Sapphire代表"全资产+高负债+规模扩张"的奥斯陆路径（退市）。商达的路径选择已经不需要再论证——走鲟龙科技的路。</p>
+    <p>❸ <strong>市场端：鱼粉十一连横+鳜鱼高位横盘第7天 = "等待期"。</strong>鱼粉横盘创纪录（十一连横），但月度涨幅+9.96%说明底层趋势仍然向上——横盘不是顶部，是蓄力。鳜鱼高位横盘说明消费端需要新催化——日本土用丑日鳗鱼节（7/18）可能带动整个高端水产品消费情绪。SSB W27数据明日发布——如果确认三文鱼续跌，进口批发价破105元/kg将进入倒计时。</p>
+    <br>
+    <p><strong>【商达三件事·本周必执行】</strong></p>
+    <p>① <strong>RAS安全SOP产品化：</strong>把Cermaq 75万条鱼全灭事故做成案例——编制《RAS生物安全运维标准手册》，作为商达"全流程托管"服务的核心交付物。不是卖设备，是卖安全。Cermaq都出事，你凭什么不出事？答案就是：专业第三方运维。</p>
+    <p>② <strong>鱼粉锁单最后窗口：</strong>十一连横+月涨+9.96%+秘鲁厄尔尼诺持续=鱼粉向上突破的条件已全部就绪。SSB W27数据明日发布，如果三文鱼续跌引发饲料需求短期波动，可能出现100-200元/吨的短暂回调——那就是最后的锁单机会。本周内完成7月鱼粉采购合同。</p>
+    <p>③ <strong>海南/广西灾后跟进：</strong>台风美莎克已过境，本周是联系海南/广西养殖户的最佳窗口。带着两个材料：①"赤潮+台风双灾害损失清单"（6月赤潮30万斤+7月台风转移成本）；②"RAS室内养殖=灾害免疫"方案书。不要等他们主动来问——主动出击。</p>
+    <br>
+    <p><strong>【前瞻预判】</strong> 本周（7/6-10）三大事件将密集落地：①SSB W27数据明日发布（7/8），确认三文鱼续跌趋势；②Atlantic Sapphire 7/16特别股东大会倒计时10天，全资产RAS模式终局临近；③鱼粉十一连横后方向选择——向上突破23600→冲击24000的概率>85%。鲟龙科技稳态估值预计在本周（第6-8个交易日）在85-90亿市值区间确立。鳜鱼本周关注日本鳗鱼节（7/18）前的高端水产品消费情绪传导。</p>
+  </div>
+</div>
+
+<div class="footer">
+  2026年07月06日 · 第094期 · 商达产品部出品<br>
+  本简报仅供内部参考，数据采集截至2026年7月6日上午11:45<br>
+  核心数据源：新华社 / SSB / LandbasedAQ / 同花顺 / 饲料行业信息网 / 一亩田 / 中国鳗鱼网 / 新华财经
+</div>
+
+</div>
+</body>
+</html>

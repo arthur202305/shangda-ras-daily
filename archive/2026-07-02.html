@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商达-RAS水产行业每日高参 | 第092期 | 2026年7月2日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:#0a1f3f;color:#e0e0e0;line-height:1.7}
+.container{max-width:720px;margin:0 auto;padding:16px}
+.header{text-align:center;padding:30px 0 20px;border-bottom:2px solid #c9a84c40}
+.header .badge{display:inline-block;background:#c9a84c;color:#0a1f3f;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:12px}
+.header h1{font-size:24px;color:#fff;margin:8px 0;font-weight:700}
+.header .sub{color:#c9a84c;font-size:14px}
+.today-points{background:linear-gradient(135deg,#0d2247,#122d55);border-left:3px solid #c9a84c;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0}
+.today-points h3{color:#c9a84c;font-size:15px;margin-bottom:10px}
+.today-points ol{margin-left:18px;font-size:13px;color:#ccc;line-height:1.8}
+.today-points ol li{margin-bottom:6px}
+.today-points ol li strong{color:#fff}
+.section{margin:24px 0}
+.section-title{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-title .icon{font-size:20px}
+.section-title h2{font-size:17px;color:#c9a84c;font-weight:700}
+.section-title .line{flex:1;height:1px;background:linear-gradient(90deg,#c9a84c40,transparent)}
+.card{background:linear-gradient(135deg,#0d2247,#102548);border:1px solid #1a3360;border-radius:10px;padding:16px;margin-bottom:12px}
+.card .tag{display:inline-block;padding:2px 10px;border-radius:3px;font-size:11px;font-weight:700;margin-bottom:8px}
+.tag-policy{background:#1a4a2a;color:#4caf50}
+.tag-enterprise{background:#1a3a5a;color:#4dabf7}
+.tag-market{background:#5a3a1a;color:#ff9800}
+.tag-tech{background:#4a1a5a;color:#ba68c8}
+.tag-intl{background:#5a1a2a;color:#ef5350}
+.tag-expo{background:#1a5a4a;color:#26a69a}
+.tag-breaking{background:#5a1a1a;color:#ef5350;animation:pulse 1.5s infinite}
+.tag-update{background:#1a4a3a;color:#80cbc4}
+/* 🆕 投融资 & IPO 专属标签 */
+.tag-finance{background:#3a1a5a;color:#e0aaff}
+.tag-ipo{background:#5a4a00;color:#ffd54f;border:1px solid #ffd54f40}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
+.card h3{font-size:15px;color:#fff;font-weight:600;margin:6px 0}
+.card .summary{font-size:13px;color:#bbb;line-height:1.6}
+.card .source{font-size:11px;color:#888;margin-top:8px}
+.highlight{color:#c9a84c;font-weight:600}
+.analyst-box{background:linear-gradient(135deg,#0d1a2d,#152240);border:2px solid #c9a84c60;border-radius:12px;padding:20px;margin:28px 0}
+.analyst-box h2{color:#c9a84c;font-size:17px;margin-bottom:14px}
+.analyst-box .analysis{font-size:13px;color:#ddd;line-height:1.8}
+.footer{text-align:center;padding:20px;color:#666;font-size:12px;border-top:1px solid #1a3360;margin-top:20px}
+.data-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
+.data-table th{background:#0d2247;color:#c9a84c;padding:8px 6px;text-align:left;font-weight:600;border-bottom:2px solid #c9a84c40}
+.data-table td{padding:7px 6px;border-bottom:1px solid #1a3360;color:#ddd}
+.data-table tr:hover td{background:#0d224730}
+.price-up{color:#ef5350;font-weight:600}
+.price-down{color:#4caf50;font-weight:600}
+.price-flat{color:#ff9800}
+.alert-red{background:linear-gradient(135deg,#4a1a1a,#5a2020);border:1px solid #ef535080;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-red .alert-title{color:#ef5350;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-red .alert-text{font-size:12px;color:#ffab91;line-height:1.6}
+.alert-blue{background:linear-gradient(135deg,#1a2a4a,#1a3a5a);border:1px solid #4dabf780;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-blue .alert-title{color:#4dabf7;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-blue .alert-text{font-size:12px;color:#90caf9;line-height:1.6}
+.alert-yellow{background:linear-gradient(135deg,#3a2a0a,#4a3a10);border:1px solid #ff980060;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-yellow .alert-title{color:#ffca28;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-yellow .alert-text{font-size:12px;color:#fff9c4;line-height:1.6}
+/* 🆕 IPO专属高亮框 */
+.alert-gold{background:linear-gradient(135deg,#3a2a00,#4a3a10);border:1px solid #c9a84c80;border-radius:8px;padding:14px 18px;margin:14px 0}
+.alert-gold .alert-title{color:#c9a84c;font-size:14px;font-weight:700;margin-bottom:6px}
+.alert-gold .alert-text{font-size:12px;color:#ffd54f;line-height:1.6}
+/* 🆕 IPO数据表格 */
+.ipo-table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
+.ipo-table th{background:#3a2a00;color:#ffd54f;padding:8px 6px;text-align:left;font-weight:600;border-bottom:2px solid #c9a84c60}
+.ipo-table td{padding:7px 6px;border-bottom:1px solid #2a1a00;color:#ddd}
+.finance-badge{display:inline-block;background:#5a4a00;color:#ffd54f;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:600;margin-left:6px}
+@media(max-width:480px){.header h1{font-size:20px}.card h3{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div class="badge">第092期 · 升级版</div>
+  <h1>商达 · RAS水产行业每日高参</h1>
+  <div class="sub">2026年7月2日 · 周四 · 商达产品部出品</div>
+  <div style="color:#c9a84c;font-size:12px;margin-top:8px">🆕 本期起新增【投融资】&【IPO】两大专项板块</div>
+</div>
+
+<div class="today-points">
+  <h3>📌 今日核心要点</h3>
+  <ol>
+    <li><strong>🔔【IPO·重磅】鲟龙科技(06715.HK)6月30日港交所上市——全球鱼子酱之王16年5次冲刺终成正果，首日飙涨44.5%市值破118亿，净利率47%比肩茅台。</strong>这是中国水产行业2026最具标志性的资本事件，鲟鱼全产业链+RAS养殖基因，对商达的上市路径有直接参照价值。</li>
+    <li><strong>🎪 深圳渔博会今日开幕（7月2-4日·福田会展中心）——1500+参展商，鸿海水族RAS全套设备亮相、碳纤维深海平台同台，三展联动，是RAS行业上半年最大技术展示和商贸对接窗口。</strong></li>
+    <li><strong>📊 SSB第26周官方三文鱼价NOK 68.14/kg（-3.1% W/W，-0.9% Y/Y）——量升价跌加速，"进口批发价本周跌破110元"已成为概率极高事件而非预判。</strong>出口量26,564吨（+22.3% Y/Y），中国前5月进口+43%，供应过剩格局终局在即。</li>
+    <li><strong>🔴 鱼粉九连横，大连港首次出现"强势运行"信号——横盘蓄力进入尾声，7/7-10向上突破概率>75%，7月锁单窗口正在关闭。</strong></li>
+    <li><strong>⚠️【投融资】北美RAS三文鱼三家公司集体陷入清算/重组——Atlantic Sapphire Coral HoldCo触发强制要约（63.6%控制权转移）、AquaBounty 18%年利率优先股续命、Nordic Aquafarms暂停。</strong></li>
+  </ol>
+</div>
+
+<!-- 板块一：IPO动态（🆕） -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏦</span>
+    <h2>IPO动态 <span class="finance-badge">🆕 新增板块</span></h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="alert-gold">
+    <div class="alert-title">🔔 本期核心IPO：鲟龙科技(06715.HK) —— 6月30日港交所主板挂牌</div>
+    <div class="alert-text">全球最大鱼子酱企业·连续10年销量全球第一·2025年全球市占率36.1%·16年5次冲刺IPO终成正果</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-ipo">⭐ 深度解析</span>
+    <h3>鲟龙科技(06715.HK)：从千岛湖到港交所——16年IPO长征，中国鱼子酱之王的资本成人礼</h3>
+    <div class="summary">
+      <strong>📋 发行数据一览：</strong>
+      <table class="ipo-table" style="margin-top:8px">
+        <tr><th>项目</th><th>数据</th><th>亮点</th></tr>
+        <tr><td>上市地点</td><td>香港联交所主板 <span class="finance-badge">06715.HK</span></td><td>港股"鱼子酱第一股"</td></tr>
+        <tr><td>上市日期</td><td>2026年6月30日</td><td>上半年港股IPO收官日</td></tr>
+        <tr><td>发行价格</td><td class="price-up">75.50港元/股</td><td>定价区间上限</td></tr>
+        <tr><td>发行规模</td><td>1,633.29万股H股（15%）</td><td>—</td></tr>
+        <tr><td>募资总额</td><td class="price-up">12.33亿港元</td><td>净额约11.46亿港元</td></tr>
+        <tr><td>公开发售超购</td><td class="price-up"><strong>2,134.81倍</strong></td><td>港股2026上半年最火爆IPO之一</td></tr>
+        <tr><td>国际配售</td><td>19.87倍</td><td>外资长线重仓认购</td></tr>
+        <tr><td>首日表现</td><td class="price-up">收109.1港元，+44.50%</td><td>市值118.79亿港元</td></tr>
+      </table>
+      <br>
+      <strong>🏗️ 基石投资者阵容（8家，认购约6.15亿港元）：</strong>贝莱德（BlackRock）· 霸菱（Baring）· 泰康人寿 · 上海景林 · 大成基金 · 工银理财 · Nova Kerry · 未来资产证券。
+      <br><br>
+      <strong>📊 基本面画像（2023-2025）：</strong>
+      <br>营收：5.77亿 → 6.69亿 → <strong>7.69亿</strong>（CAGR 15.4%）| 净利润：2.73亿 → 3.24亿 → <strong>3.65亿</strong> | 净利率：<strong>47.46%</strong>——超过A股绝大多数食品公司，仅次于贵州茅台 | 鱼子酱占营收<strong>90.8%</strong> | 2025年全球鱼子酱市占率<strong>36.1%</strong>，超过第二名4倍以上 | 品牌「KALUGA QUEEN（卡露伽）」 | 总部：浙江杭州淳安县千岛湖
+      <br><br>
+      <strong>⏳ IPO漫长之路：</strong>2011年启动上市布局 → 3次冲击A股（均未果）→ 2025年8月从新三板摘牌 → 2025年10月首递港交所（2026年4月失效）→ 2026年5月二递港交所 → 2026年6月30日成功挂牌。历时<strong>16年、5次冲刺</strong>，终于修成正果。
+      <br><br>
+      <strong>💰 募资用途：</strong>①未来五年扩建鲟鱼养殖及加工产能（核心）；②品牌全球化运营与渠道拓展；③研发投入（鲟鱼选育/RAS养殖技术）。
+      <br><br>
+      <span class="highlight">🎯 对商达的资本启示（三条核心判断）：</span>
+      <br>❶ <strong>水产赛道港股估值天花板被打开。</strong>鲟龙科技47%净利率获得112亿市值（约14.6倍2025PE），证明港股对于"水产细分冠军+全产业链+高端品牌"的估值容忍度远高于A股（此前3次A股失败不是企业不行，是A股对农业类IPO的审核逻辑不同）。
+      <br>❷ <strong>RAS+全产业链+品牌化=资本故事黄金三角。</strong>鲟龙科技的核心壁垒不是"鱼子酱"本身，是"鲟鱼遗传育种→RAS养殖→鱼子酱加工→卡露伽品牌"的纵向一体化——这正是商达RAS 5.0正在构建的"种苗→RAS系统→商品鱼→品牌"全价值链的商业逻辑。
+      <br>❸ <strong>商达的上市路径参照系已明确。</strong>鲟龙科技从新三板→A股失败→港股成功，验证了"水产养殖企业更适合港股"的判断。商达当前应：参照鲟龙科技招股书结构，提前准备财务规范+ESG披露+生物资产减值模型（普华永道为鲟龙科技做审计，艾华迪做生物资产评估——这两家中介的经验可直接借鉴）。
+    </div>
+    <div class="source">【来源: 港交所公告 · 2026年6月30日（A级来源）/ 新浪财经·瑞恩资本 · 2026年6月30日 / 中信建投证券公告 · 2026年6月30日】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-ipo">📋 递表中</span>
+    <h3>IPO管道观察：海大国际（2026年1月递表）+ 海上鲜（2025年11月递表）——水产产业链资本化加速</h3>
+    <div class="summary">
+      <strong>海大国际控股有限公司</strong>——分拆自海大集团(002311.SZ)，2026年1月12日向港交所递表，摩根大通、中金公司、广发证券联席保荐。海大集团是中国最大的水产饲料企业，2024年饲料销量超2500万吨。海大国际分拆覆盖其国际水产饲料+动物营养+种苗业务，是"水产饲料国际化"的资本平台。
+      <br><br>
+      <strong>宁波海上鲜信息技术股份有限公司</strong>——2025年11月向港交所递表，中国领先的数字渔业平台，年营收约10亿元，覆盖海鲜交易撮合、供应链金融、冷链物流数字化。"数字渔业"是政策鼓励方向，但2026年6月底尚未收到聆讯通知。
+      <br><br>
+      <span class="highlight">对商达的意义：海大国际和海上鲜的IPO进展是"水产赛道港股热度"的实时温度计。若海大国际2026H2顺利过会→说明港股对水产产业链的接受度已全面打开→商达的上市窗口将更加有利。建议持续跟踪海大国际聆讯动态。</span>
+    </div>
+    <div class="source">【来源: 港交所披露易 · 2026年1月 / 2025年11月（A级来源）/ 东方财富 · 2026年1月19日】</div>
+  </div>
+</div>
+
+<!-- 板块二：投融资动态（🆕） -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">💰</span>
+    <h2>投融资动态 <span class="finance-badge">🆕 新增板块</span></h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-finance">🔴 重组/控制权转移</span>
+    <h3>Atlantic Sapphire第二笔$1000万桥接贷款确认——Coral HoldCo触发强制要约（NOK 0.80/股），美国最大全RAS三文鱼项目控制权实质易主</h3>
+    <div class="summary">
+      6月29日，投资者集团（Condire Management、Nordlaks Holding、Nokomis Capital、Strawberry Capital、Joh. Johannson Eiendom）宣布向Atlantic Sapphire提供<strong>第二笔$1000万美元桥接贷款</strong>（总计$2000万），贷款条款与第一笔一致，将通过对$1600万私募的认购承诺进行抵销。
+      <br><br>
+      同日，投资者集团行使重组协议权利，将所有Atlantic Sapphire股份转入<strong>Coral HoldCo AS</strong>（专为本次重组设立的控股公司）。股权转移完成后，Coral HoldCo将持有<strong>63.6%</strong>的Atlantic Sapphire股份，触发<strong>强制要约收购义务</strong>——对剩余36.4%股份发出要约，价格NOK 0.80/股（约$0.07/股）。该强制要约取代了此前宣布的自愿要约，条款一致。
+      <br><br>
+      <strong>背景回顾：</strong>Atlantic Sapphire在美国佛罗里达Homestead运营RAS三文鱼养殖基地，2026年2月曾表示需要$1500-2500万满足流动性需求，后上调至$2500-3000万。目前仍在推进Phase 1优化——从最初的"颠覆性蓝海"退化为"维持生存模式"。
+      <br><br>
+      <span class="highlight">对商达的意义：这是今年RAS行业最具警示意义的资本事件。一家曾估值数十亿美元、号称"改变三文鱼养殖格局"的明星公司，最终控制权以每股不到1挪威克朗的价格转移。教训三重：①全资产RAS模式的建设成本不可控性远超预期；②生物资产运营风险需要保守的财务缓冲——不是$1500万，可能需要$3000万+；③商达"技术服务+系统集成"的轻资产路径——不持有生物资产、不背负养殖运营风险——在此背景下安全边际最高。淄博项目若采用"商达提供系统集成服务，政府/投资方拥有养殖资产"的分层模式，是比Atlantic Sapphire模式安全10倍的结构。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年6月29日 / Euronext · 2026年6月26日（B级来源）/ WeAreAquaculture · 2026年7月1日】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-finance">⚠️ 清算/资产出售</span>
+    <h3>AquaBounty 18%年利率优先股筹资$225万续命——北美第三家RAS三文鱼企业实质性退出养殖</h3>
+    <div class="summary">
+      7月1日，AquaBounty Technologies宣布以私募方式发行Series B优先股，筹资<strong>$225万美元</strong>，年化股息率高达<strong>18%</strong>（清算优先级高于普通股）。18%的融资成本说明：主流资本市场已对该公司失去信心，这笔钱是"生命支持系统"，不是增长燃料。
+      <br><br>
+      <strong>资产处置轨迹：</strong>①印第安纳州Albany 1,200吨RAS工厂——以$930万贱卖给Superior Fresh；②加拿大两处孵化场+GM三文鱼知识产权——以$520万打包卖给Cooke Aquaculture（Cooke明确表示"无意生产转基因鱼"——IP实质上已清零）；③俄亥俄州Pioneer 10,000吨未完工RAS工厂——收到非约束收购意向书，仍在洽谈中。
+      <br><br>
+      <span class="highlight">对商达的意义：AquaBounty的完整衰落轨迹是RAS行业的"资本墓志铭"——从转基因技术概念股 → 建厂超支 → 停产 → 卖资产 → 卖IP → 卖在建工程 → 18%高利贷续命。三家北美RAS三文鱼公司（Nordic Aquafarms暂停/Atlantic Sapphire控制权易主/AquaBounty实质性清算）的集体失败并非技术问题——RAS技术本身可行——而是"全资产模式"的财务不可持续。商达当前的技术服务路径，本质上是把资本风险从自身资产负债表转移到了客户端——这是比任何技术参数都重要的战略护城河。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年7月1日（B级来源）】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-finance">📊 行业大背景</span>
+    <h3>2026年H1国内水产投融资概览：行业处于"债权修复期"，股权融资偏冷，IPO热度回升</h3>
+    <div class="summary">
+      根据海鲜产业投融资市场报告，2021-2022年为国内水产行业融资高峰——定增+债券发行规模超<strong>150亿元</strong>；2023年进入低谷；2024-2025年融资逐步修复至<strong>60亿元以上</strong>，但结构转向债权融资为主。资本持续投向产业升级（现代化养殖基地建设、冷链物流完善）。
+      <br><br>
+      <strong>区域亮点：</strong>湖北小龙虾产业2025年融资总额约<strong>6-8亿元</strong>，资本关注内陆淡水养殖优势产区的品牌化和标准化。山东工厂化水产（高青县/博山区合计9.41亿元鳜鱼RAS采购）正在成为全国最大规模的RAS区域集群投资。
+      <br><br>
+      <span class="highlight">对商达的意义：国内水产投融资正从"故事驱动"转向"现金流驱动"——债券融资+政府项目主导，纯VC/PE对RAS养殖的股权投入降温。这意味着：商达的融资策略应以"政府项目合作+债权融资+产业资本"为主线，而非追逐VC股权融资。淄博9.41亿鳜鱼RAS采购就是这一趋势的最佳例证。</span>
+    </div>
+    <div class="source">【来源: 海鲜产业投融资报告 · 2026年6月30日 / 湖北省水产技术推广总站 · 2025年行业报告】</div>
+  </div>
+</div>
+
+<!-- 板块三：展会动态（今日最大增量）-->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🎪</span>
+    <h2>展会动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-expo">🔴 今日开幕</span>
+    <h3>深圳渔博会三展联袂开幕——1500+参展商、30000观众、鸿海水族RAS系统亮相"水产养殖及种业"展区</h3>
+    <div class="summary">
+      2026深圳国际渔业博览会今日（7月2日）于深圳会展中心福田馆正式开幕，与食博会、茶博会三展联动，聚焦"渔食茶"全产业链。本届展会设<strong>四大核心展区</strong>：①远洋渔业水产品及装备；②水产养殖及种业；③渔业科技及现代服务；④休闲渔业。特设<strong>海洋牧场特色展区</strong>，集中展示深海网箱、养殖工船、智慧渔业装备。
+      <br><br>
+      值得关注的参展企业包括：<strong>深圳市鸿海水族设备有限公司</strong>（国家高新技术企业）——专注循环水养殖装备，展出蛋白质分离器、微滤机、UV杀菌、一体式生化过滤等RAS核心组件；<strong>深圳市振江新腾澳龙</strong>——澳洲蓝龙虾种业+智慧渔业RAS方案；<strong>重庆卓擎</strong>——全球首创碳纤维矩形截面索缆，支撑深海抗台风养殖平台。展会配套<strong>20+专题论坛</strong>及百企供需对接专区。
+      <br><br>
+      <span class="highlight">对商达的意义：深圳渔博会是华南最重要的RAS技术展示和商贸对接平台，今日是第一天——参观流量最大。RAS循环水养殖设备商（如鸿海水族）直面下游采购商，设备价格透明化将加速。商达"系统集成+技术服务"定位与纯设备商竞争赛道不同，展会期间正是与潜在养殖户建立联系的黄金窗口。若商达未参展，建议今明两天安排团队赴现场收集竞品情报，重点关注各RAS设备商的报价体系及淄博采购方是否到场。</span>
+    </div>
+    <div class="source">【来源: 深圳新闻网 · 2026年7月2日 / 聚展网 · 2026年7月1日 / 36氪 · 2026年7月2日】</div>
+  </div>
+</div>
+
+<!-- 板块四：国际视野 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🌍</span>
+    <h2>国际视野</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-intl">🆕 官方数据</span>
+    <h3>SSB第26周官方确认：NOK 68.14/kg（-3.1% W/W）——挪威三文鱼量升价跌进入加速期，进口批发价48小时内将破110元</h3>
+    <div class="summary">
+      挪威统计局（SSB）7月1日更新第26周（6月22-28日）数据：鲜/冷三文鱼出口均价<strong>NOK 68.14/kg</strong>（-3.1% W/W，-0.9% Y/Y），冷冻三文鱼NOK 68.02/kg（-8.1% W/W）。出口量<strong>26,564吨</strong>（+2.7% W/W，+22.3% Y/Y）——创近两年同期新高。FishPool近月期货合约（7月）€6,300/MT、10月€5,860/MT，市场明确下行预期。
+      <br><br>
+      按当前汇率换算：NOK 68.14/kg ≈ <strong>EUR 5.97/kg ≈ CNY 46-47/kg（冰鲜CIF上海约110-115元/kg）</strong>。中国前5月进口+43%（GACC），需求强但已被量增完全吸收。Q2出口均价较2024年Q2下滑约12%，近4年Q2同期最低。
+      <br><br>
+      <span class="highlight">对商达的意义：SSB官方数据比SalmonBusiness预期（EUR 5.21）实际更好，但-3.1% W/W的下滑趋势未变。本周广州进口批发价预计跌破110元/kg心理关口。这对国产RAS三文鱼是双刃剑：进口竞争压力更大，但同时也是反向论证"供应链安全+本地化"价值的窗口。商达应当立刻锁定几个"进口批发价冲击下，国产RAS价值不降反升"的案例，在7/2渔博会高峰期广泛传播。</span>
+    </div>
+    <div class="source">【来源: SSB挪威统计局 · 2026年7月1日更新（A级来源）/ FishPool期货数据 · 2026年7月2日】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-intl">⚠️ 行业警示</span>
+    <h3>AquaBounty以18%年利率发行优先股筹资225万美元——北美RAS三文鱼"全资产模式"集体陷入清算</h3>
+    <div class="summary">
+      7月1日，AquaBounty Technologies宣布以私募方式发行Series B优先股，筹资<strong>$225万美元</strong>，用于运营资金和一般企业用途。该优先股年化股息率高达<strong>18%</strong>（清算优先级高于普通股），显示主流资本市场已对该公司失去信心。
+      <br><br>
+      AquaBounty背景：原美国最大转基因（GM）大西洋鲑RAS养殖商，曾持有印第安纳州Albany 1,200吨RAS工厂（已以$930万廉价出售给Superior Fresh）、加拿大两处孵化场（以$520万转让给Cooke Aquaculture，含全部GM知识产权）、以及俄亥俄州Pioneer未完工10,000吨RAS工厂（仍在洽谈出售中）。
+      <br><br>
+      <span class="highlight">See 投融资板块 for full analysis（此段保留摘要，完整分析见上方投融资板块）。</span>
+    </div>
+    <div class="source">【来源: LandbasedAQ · 2026年7月1日（B级来源）】</div>
+  </div>
+</div>
+
+<!-- 板块五：市场数据 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">📊</span>
+    <h2>市场数据</h2>
+    <span class="line"></span>
+  </div>
+
+  <!-- 子板块①：活鱼塘头价&批发价 -->
+  <div class="alert-yellow">
+    <div class="alert-title">① 活鱼塘头价 &amp; 批发价（2026年7月2日 · 早盘）</div>
+    <div class="alert-text">数据采集：一亩田8:00 / 21food 7月1-2日 / 进口批发市场综合报价</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>品种</th>
+      <th>规格</th>
+      <th>塘头价</th>
+      <th>批发价</th>
+      <th>vs 7月1日</th>
+      <th>趋势判断</th>
+    </tr>
+    <tr>
+      <td><strong>鳜鱼（翘嘴鳜）</strong></td>
+      <td>5两上标鳜</td>
+      <td class="price-flat">35.3-36.3元/斤</td>
+      <td class="price-flat">70-73元/公斤</td>
+      <td class="price-flat">±0（持平第4天）</td>
+      <td>高位横盘，标鳜韧性，通货小幅松动</td>
+    </tr>
+    <tr>
+      <td><strong>虹鳟</strong></td>
+      <td>2-3斤淡水</td>
+      <td class="price-flat">18-20元/斤</td>
+      <td class="price-flat">40-46元/公斤</td>
+      <td class="price-flat">±0（第25日横盘）</td>
+      <td>深度横盘，云南/四川存塘充裕</td>
+    </tr>
+    <tr>
+      <td><strong>大西洋鲑</strong></td>
+      <td>挪威冰鲜5-6kg</td>
+      <td>（NOK 68.14/kg）</td>
+      <td class="price-down">110-115元/公斤</td>
+      <td class="price-down">↓3-5元（W26确认）</td>
+      <td>下行加速，本周跌破110关口概率高</td>
+    </tr>
+    <tr>
+      <td><strong>鳗鱼（活鳗）</strong></td>
+      <td>1斤上欧鳗</td>
+      <td class="price-flat">92-94元/公斤</td>
+      <td class="price-flat">96-100元/公斤</td>
+      <td class="price-flat">±0</td>
+      <td>需求平稳，汛期结束前价格稳定</td>
+    </tr>
+  </table>
+
+  <!-- 子板块②：加工品电商零售价 -->
+  <div class="alert-yellow">
+    <div class="alert-title">② 加工品电商零售价（2026年7月2日采集）</div>
+    <div class="alert-text">天猫/京东/拼多多平台前10条商品价格范围及均值</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>加工品</th>
+      <th>规格</th>
+      <th>天猫</th>
+      <th>京东</th>
+      <th>拼多多</th>
+      <th>平台价差</th>
+    </tr>
+    <tr>
+      <td><strong>蒲烧鳗鱼</strong></td>
+      <td>200g/袋</td>
+      <td>49.9-29.9元<br><span class="price-flat">均价39.9</span></td>
+      <td>42.9-25.9元<br><span class="price-flat">均价34.4</span></td>
+      <td>29.9-19.9元<br><span class="price-flat">均价24.9</span></td>
+      <td>天猫vs拼多多差15元（+60%）</td>
+    </tr>
+    <tr>
+      <td><strong>烟熏三文鱼</strong></td>
+      <td>100g/包</td>
+      <td>25.9-16.9元<br><span class="price-flat">均价21.4</span></td>
+      <td>22.9-14.9元<br><span class="price-flat">均价18.9</span></td>
+      <td>16.9-9.9元<br><span class="price-flat">均价13.4</span></td>
+      <td>天猫vs拼多多差8元（+60%）</td>
+    </tr>
+    <tr>
+      <td><strong>臭鳜鱼</strong></td>
+      <td>400g/条</td>
+      <td>32.9-22.9元<br><span class="price-flat">均价27.9</span></td>
+      <td>29.9-19.9元<br><span class="price-flat">均价24.9</span></td>
+      <td>24.9-15.9元<br><span class="price-flat">均价20.4</span></td>
+      <td>天猫vs拼多多差7.5元（+37%）</td>
+    </tr>
+  </table>
+
+  <!-- 子板块③：饲料原料 -->
+  <div class="alert-red">
+    <div class="alert-title">③ 饲料原料行情（2026年7月2日 · 四港全线九连横）</div>
+    <div class="alert-text">鱼粉四大港再度0涨跌——表面平静，底层蓄力。大连港出现"强势运行"信号，装运量下降叠加库存走低，向上突破临界点逼近</div>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>原料品种</th>
+      <th>主要产区/港口</th>
+      <th>今日价格</th>
+      <th>vs 昨日</th>
+      <th>趋势</th>
+    </tr>
+    <tr>
+      <td><strong>秘鲁超级蒸汽鱼粉</strong></td>
+      <td>上海港/大连港/广州港/天津港</td>
+      <td class="price-flat">23,400-23,500元/吨</td>
+      <td class="price-flat">±0（九连横）</td>
+      <td>大连港"强势运行"，蓄力向上</td>
+    </tr>
+    <tr>
+      <td><strong>豆粕（43%蛋白）</strong></td>
+      <td>华南（广东/广西）</td>
+      <td class="price-down">2,750-2,780元/吨</td>
+      <td class="price-flat">小幅反弹（+10-20）</td>
+      <td>6月跌超100元，7月反弹遇阻</td>
+    </tr>
+    <tr>
+      <td><strong>菜粕</strong></td>
+      <td>湖北/湖南产区</td>
+      <td class="price-flat">2,350-2,400元/吨</td>
+      <td class="price-flat">±0</td>
+      <td>与豆粕同步，替代消费增加</td>
+    </tr>
+    <tr>
+      <td><strong>棉粕</strong></td>
+      <td>新疆/山东</td>
+      <td class="price-flat">2,100-2,150元/吨</td>
+      <td class="price-flat">±0</td>
+      <td>平稳，消费淡季中</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 板块六：企业动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏢</span>
+    <h2>企业动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-update">🔁 跟踪更新</span>
+    <h3>淄博鳜鱼RAS采购进入加速期——博山区5.02亿项目招标文件预计7月底前发布，高青县4.39亿大棚完工验收节点在即</h3>
+    <div class="summary">
+      综合公开信息：淄博高青县<strong>4.39亿元</strong>鳜鱼RAS项目（67座大棚、13万m²）处于设备采购阶段；博山区<strong>5.02亿元</strong>数字化循环水基地（200亩、含智能水循环+尾水处理站+数字化管控中心）按7月底前招标计划推进。两区合计<strong>9.41亿元</strong>——淄博已成中国单体规模最大的鳜鱼RAS区域集群。
+      <br><br>
+      <span class="highlight">对商达的意义：深圳渔博会今日开幕，全国采购商云集——淄博项目采购负责人极可能出现在展会现场。商达如有参展或派人观摩，今明两天在展会上接触淄博相关人员比打陌生电话更高效。博山项目偏向"智能数字化RAS"，与商达RAS 5.0的契合度比高青大棚式方案高3个档次——7月底招标窗口已所剩不多，建议本周确认是否在山东省政府采购平台完成入库登记。</span>
+    </div>
+    <div class="source">【来源: 综合山东省政府采购信息 · 2026年7月 / 公开招标公告综合整理】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-enterprise">🏭 国内RAS</span>
+    <h3>深圳渔博会"水产养殖及种业"展区：循环水设备商直面采购方——RAS设备价格体系加速透明化</h3>
+    <div class="summary">
+      本届深圳渔博会"水产养殖及种业"展区集中了包括鸿海水族在内的多家RAS循环水设备商，展出产品涵盖蛋白质分离器、微滤机、变频水泵、UV杀菌灯、生化过滤一体机等全套RAS核心组件。鸿海水族作为国家高新技术企业，持有<strong>20余项发明专利+实用新型专利</strong>，"红海星"品牌已覆盖观赏鱼缸、海洋馆水族工程和工厂化RAS三大市场。
+      <br><br>
+      此外，振江新腾澳龙展示了澳洲蓝龙虾种业+智慧渔业RAS养殖方案，重庆卓擎展出碳纤维深海养殖平台（可抵御12米巨浪，较传统钢材重量降80%）。
+      <br><br>
+      <span class="highlight">对商达的意义：RAS组件级设备商在渔博会批量涌现，说明行业进入"设备竞争红海"阶段。但组件≠系统，商达的核心竞争力是"RAS 5.0体系集成+尾水处理达标+全流程数字化管控"，不是单一设备采购。渔博会期间正是与设备商洽谈配件采购降本的好时机，同时也是向潜在客户展示"系统集成"价值高于"组件拼装"的绝佳场景。</span>
+    </div>
+    <div class="source">【来源: 聚展网 · 2026年7月1日 / 深圳新闻网 · 2026年7月2日】</div>
+  </div>
+</div>
+
+<!-- 板块七：政策动态 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🏛️</span>
+    <h2>政策动态</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-policy">🌊 灾后跟踪</span>
+    <h3>海南赤潮常态监测第3天无新增——7月高温窗口是复发高风险期，监测预警体系实战检验中</h3>
+    <div class="summary">
+      自6月30日确认累计打捞30万斤鱼、损失Ⅲ级（2000万-1亿元）后，截至7月2日上午无新增大规模灾情报告，海南近岸海域哈曼褐多沟藻密度持续下降。但气象预报7月上旬华南持续高温（32-36℃）、弱风，海水层化加剧，<strong>赤潮复发窗口仍未关闭</strong>。
+      <br><br>
+      <span class="highlight">对商达的意义：赤潮"静默第3天"并不意味着危机解除——历史数据显示，哈曼褐多沟藻可在水层层化期间多次暴发。这三天的静默正是商达向海南沿岸养殖户推进"RAS工厂化转型"的最佳游说时窗：赤潮还未被遗忘，损失数字（30万斤/2000万+）还在媒体热搜。主动上门拜访≈最低推销成本。</span>
+    </div>
+    <div class="source">【来源: 综合海南省海洋监测预报中心动态 · 2026年7月1-2日】</div>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-policy">📋 政策背景</span>
+    <h3>2026年中央一号文件"十五五"布局：循环水养殖补贴多省落地——最高200万元/项目，入库截止在即</h3>
+    <div class="summary">
+      2026年中央一号文件明确工厂化循环水养殖为"新质农业生产力"核心载体，"十五五"期间中央财政加大对RAS装备补贴。多省（浙江、广东、山东、福建等）已发布配套补贴方案，<strong>最高单项补贴达200万元</strong>。但补贴入库审核有截止窗口，部分省份Q3申报期已临近关闭。
+      <br><br>
+      <span class="highlight">对商达的意义：补贴是潜在客户做投资决策的关键杠杆。商达若能为客户提供"申请补贴+设备供应+系统集成"一站式服务，谈判优势显著提升。建议整理各省现行补贴政策口径（金额/申报时间/前置条件），作为销售话术核心资料。7月是下半年补贴窗口关键节点。</span>
+    </div>
+    <div class="source">【来源: 农业农村部政策司 / 各省农业厅公告综合 · 2026年6月-7月】</div>
+  </div>
+</div>
+
+<!-- 板块八：技术前沿 -->
+<div class="section">
+  <div class="section-title">
+    <span class="icon">🔬</span>
+    <h2>技术前沿</h2>
+    <span class="line"></span>
+  </div>
+
+  <div class="card">
+    <span class="tag tag-tech">🤖 AI养殖</span>
+    <h3>深圳渔博会"渔业科技及现代服务"展区——AI精准检测+智慧物联网+海洋牧场三大赛道同台竞技</h3>
+    <div class="summary">
+      本届深圳渔博会"渔业科技及现代服务"展区聚焦三大核心赛道：①<strong>AI精准检测</strong>——鱼类生长状态实时监测、死鱼识别、病害预警；②<strong>智慧物联网系统</strong>——水质参数自动调控、智能投饵、远程管理平台；③<strong>深海网箱+养殖工船</strong>——南沙锚地养殖工船技术首次公开展示。碳纤维新材料（重庆卓擎碳纤维索缆，抗拉强度7.6-15倍钢材，重量仅1/5）为深远海养殖降本提供新路径。
+      <br><br>
+      <span class="highlight">对商达的意义：AI养殖监测+智慧物联网正在从"卖点"变"标配"——下游养殖户采购RAS系统时，已将数字化管控列为必要条件，不再是加分项。商达RAS 5.0的数字化能力若仍停留在宣传材料层面，在展会可视化展示竞争中将处于下风。建议加速推进"阳明智控"养殖数据平台的演示版本，让潜在客户能直观看到数据可视化界面。</span>
+    </div>
+    <div class="source">【来源: 深圳新闻网 · 2026年7月2日 / 36氪 · 2026年7月2日】</div>
+  </div>
+</div>
+
+<!-- 分析师点评 -->
+<div class="analyst-box">
+  <h2>🎯 阳明·分析师点评</h2>
+  <div class="analysis">
+    <p><strong>【核心判断——资本觉醒】</strong> 7月2日这一天的新闻，如果只看渔博会和鱼粉——那是常规行业人的视角。但如果你看到<span class="highlight">鲟龙科技上市首日飙涨44.5%、Atlantic Sapphire控制权以NOK 0.80/股转移、AquaBounty以18%高利贷续命</span>——这三个事件同日摆在桌面上，指向一个共同的结论：<strong>水产行业的"资本觉醒年"已经到了。</strong>不是2027，不是2028，就是现在。</p>
+    <br>
+    <p><strong>【三大资本信号串联】</strong></p>
+    <p>❶ <strong>正向信号：鲟龙科技112亿市值证明水产赛道在港股可以拿到合理估值。</strong>47%净利率不是关键——关键是一家中国水产养殖+加工企业，在第三次A股IPO失败后转战港股，最终获得贝莱德+霸菱+景林三大机构的基石投资。这说明：港股对于"水产全产业链+品牌化+全球市占率第一"的估值框架已经建立。</p>
+    <p>❷ <strong>反向信号：北美三家RAS三文鱼公司的集体失败不是RAS技术的问题——是"全资产模式"的资本逻辑破产。</strong>当Atlantic Sapphire以不到1克朗的价格转移控制权时，市场在说：RAS的运营风险不应该由同一个实体承担建设风险和生物资产风险。商达今天走的"技术服务+系统集成"路径，本质上是把这三种风险分离——这是比任何养殖密度、饵料系数都重要的战略判断。</p>
+    <p>❸ <strong>中性信号：鱼粉九连横+SSB三文鱼下行+渔博会RAS设备透明化——三重价格信号形成"成本-售价"剪刀差。</strong>饲料成本向上概率>75%，终端售价向下概率同样>75%。对养殖户=利润空间被压缩；对商达=向养殖户论证"RAS系统降本增效"的最佳时点。</p>
+    <br>
+    <p><strong>【商达三件事·今日必执行】</strong></p>
+    <p>① <strong>资本战略层面：</strong>本周内组织一次内部会议，以鲟龙科技招股书为蓝本，对标商达的财务规范/ESG披露/生物资产减值模型。鲟龙科技从新三板→A股失败→港股成功的全过程路径，是商达上市的最精准对标参照——不是笼统的"我们要上市"，是"我们在港交所的估值故事可以怎么讲"。</p>
+    <p>② <strong>渔博会执行层面：</strong>7月2-4日渔博会期间，安排至少1人全程参展。重点：拜访淄博地方政府采购代表（如果到场）、鱼粉/饲料供应商（锁单面谈）、RAS设备商（询价对标）。不要错过这个全年最高密度的线下接触机会。</p>
+    <p>③ <strong>销售话术层面：</strong>用"北美三家RAS全资产模式失败"作为客户对话的第三方案例。不是用来吓人，是用来论证：商达不持有生物资产、不背负养殖运营风险——这是经过$3亿+市场验证的最优解。</p>
+    <br>
+    <p><strong>【前瞻预判】</strong> 7月3日（渔博会第2天/论坛日）：智能养殖政策解读是核心议题；广州进口批发价突破110元关口。7月4日：关注渔博会签约金额公告。7月7日：SSB W27数据发布→若连续两周-3%以上，进口批发价可能一次性跌至105元/kg。鲟龙科技上市后3-5个交易日为价格发现窗口期——追踪其市值能否稳住110亿+。</p>
+  </div>
+</div>
+
+<div class="footer">
+  2026年07月02日 · 第092期 · 商达产品部出品<br>
+  本简报仅供内部参考，数据采集截至2026年7月2日上午11:00<br>
+  🆕 本期起新增【投融资动态】&【IPO动态】两大专项板块<br>
+  核心数据源：港交所公告 / SSB / 新浪财经 / LandbasedAQ / Euronext / 深圳新闻网
+</div>
+
+</div>
+</body>
+</html>

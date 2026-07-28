@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商达-RAS水产行业每日高参 | 第100期 | 2026年7月14日</title>
+<style>
+:root {
+  --navy: #0a1f3f;
+  --navy-light: #15294f;
+  --gold: #c9a84c;
+  --gold-light: #e0c97a;
+  --white: #ffffff;
+  --gray: #b0b8c4;
+  --gray-dark: #8a92a0;
+  --red: #e74c3c;
+  --green: #27ae60;
+  --orange: #f39c12;
+  --bg: #f5f6f8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--navy);
+  line-height: 1.6;
+  font-size: 15px;
+}
+.container { max-width: 860px; margin: 0 auto; padding: 0 15px; }
+.header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: var(--white);
+  padding: 40px 25px 30px;
+  text-align: center;
+  border-bottom: 3px solid var(--gold);
+}
+.header h1 { font-size: 24px; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; }
+.header .subtitle { color: var(--gold-light); font-size: 14px; margin-bottom: 5px; }
+.header .meta { color: var(--gray); font-size: 12px; }
+.header .issue { display: inline-block; background: var(--gold); color: var(--navy); padding: 2px 12px; border-radius: 3px; font-weight: 700; font-size: 13px; margin-top: 8px; }
+.header .century { display: inline-block; background: var(--red); color: var(--white); padding: 2px 10px; border-radius: 3px; font-weight: 700; font-size: 12px; margin-top: 4px; margin-left: 4px; }
+.summary-box {
+  background: var(--navy);
+  color: var(--white);
+  padding: 20px 25px;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 25px;
+}
+.summary-box h2 { color: var(--gold); font-size: 16px; margin-bottom: 12px; border-bottom: 1px solid var(--navy-light); padding-bottom: 8px; }
+.summary-box ul { list-style: none; }
+.summary-box li { padding: 6px 0; font-size: 14px; color: var(--gray); }
+.summary-box li strong { color: var(--gold-light); }
+.section {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 10px;
+}
+.section-icon { font-size: 22px; margin-right: 10px; }
+.section-title { font-size: 18px; font-weight: 700; color: var(--navy); }
+.news-item { margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px dashed #e0e0e0; }
+.news-item:last-child { border-bottom: none; padding-bottom: 0; }
+.news-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.news-meta { font-size: 12px; color: var(--gray-dark); margin-bottom: 8px; }
+.news-meta .source-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 5px; }
+.source-a { background: #e8f5e9; color: #2e7d32; }
+.source-b { background: #fff3e0; color: #e65100; }
+.source-c { background: #fce4ec; color: #c62828; }
+.news-content { font-size: 14px; color: #333; line-height: 1.7; }
+.analysis-box {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+  border-left: 4px solid var(--gold);
+  padding: 12px 15px;
+  margin-top: 10px;
+  border-radius: 0 6px 6px 0;
+}
+.analysis-box .label { font-size: 12px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+.analysis-box .content { font-size: 13px; color: var(--navy); line-height: 1.6; }
+.data-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+.data-table th { background: var(--navy); color: var(--gold); padding: 8px 10px; text-align: center; font-size: 12px; }
+.data-table td { padding: 7px 10px; text-align: center; border-bottom: 1px solid #eee; }
+.data-table tr:nth-child(even) { background: #f9fafb; }
+.data-table .up { color: var(--red); font-weight: 700; }
+.data-table .down { color: var(--green); font-weight: 700; }
+.data-table .flat { color: var(--gray-dark); }
+.price-up { color: var(--red); }
+.price-down { color: var(--green); }
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.tag-hot { background: #fee; color: var(--red); }
+.tag-new { background: #e8f5e9; color: var(--green); }
+.tag-alert { background: #fff3e0; color: var(--orange); }
+.tag-milestone { background: #e3f2fd; color: #1565c0; }
+.footer {
+  text-align: center;
+  padding: 25px 15px;
+  color: var(--gray-dark);
+  font-size: 12px;
+  border-top: 2px solid var(--navy);
+  margin-top: 20px;
+}
+.footer .brand { color: var(--gold); font-weight: 700; font-size: 14px; margin-bottom: 5px; }
+.highlight-card {
+  background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 12px 0;
+}
+.highlight-card .title { font-weight: 700; color: var(--navy); font-size: 14px; margin-bottom: 6px; }
+.highlight-card .value { font-size: 22px; font-weight: 800; color: var(--red); }
+.highlight-card .desc { font-size: 12px; color: var(--gray-dark); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>商达 · RAS水产行业每日高参</h1>
+  <div class="subtitle">Shangda RAS Industry Daily Intelligence Report</div>
+  <div class="meta">2026年7月14日 · 周二 · 第100期 · 百期里程碑</div>
+  <div class="issue">第100期</div>
+  <div class="century">💯 百期</div>
+</div>
+<div class="container">
+
+<div class="summary-box">
+  <h2>⚡ 今日核心信号</h2>
+  <ul>
+    <li>📊 <strong>SSB W27终于发布</strong>：NOK 67.31/kg（环比-1.2%），三文鱼价格下行趋势确认——但SalmonBusiness 7/13报"现货价反弹"</li>
+    <li>🇯🇵 <strong>Nichimo日本首个全国产RAS</strong>：岩手县久慈市陆基虹鳟养殖场，全日本国产设备，"模块化RAS"概念——减少进口依赖</li>
+    <li>🇦🇷 <strong>阿根廷火地岛新法鼓励RAS</strong>：解除三文鱼养殖禁令，明确鼓励RAS技术，预计年产80,000吨</li>
+    <li>📉 <strong>鲟龙科技7/14反弹+2.15%</strong>：收盘76.00港元，但盘中新低70.50港元（振幅8.06%），放量（量比5.71）</li>
+    <li>📈 <strong>普源精电7/14反弹+3.57%</strong>：收盘25.54港元，盘中新低24.16，上市6天累计-44.5%</li>
+    <li>🔴 <strong>鱼粉7/14回调200元</strong>：广州/上海23,500元/吨（-200），7/12暴涨后首次回调</li>
+    <li>📈 <strong>鳜鱼湖北39元/斤创新高</strong>：顺德农业7/14更新，湖北标鳜39元/斤，距离40元关口仅1元</li>
+    <li>⏰ <strong>Atlantic Sapphire退市倒计时2天</strong>：7/16投票，$191M净亏损，联合国全球契约已除名</li>
+  </ul>
+</div>
+
+<!-- 板块一：政策与行业动态 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📋</span>
+    <span class="section-title">一、政策与行业动态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-milestone">新法</span> 阿根廷火地岛新水产养殖法生效——解除三文鱼禁令，明确鼓励RAS技术，预计年产80,000吨</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> WeAreAquaculture / Aquafeed · 2026-07-13</div>
+    <div class="news-content">
+      阿根廷火地岛省（Tierra del Fuego）新水产养殖法（Law No. 1601）正式生效，解除了2021年实施的三文鱼养殖全面禁令。新法以8:7微弱多数通过，明确鼓励使用<strong>循环水养殖系统（RAS）</strong>等低环境影响技术，并创建渔业与水产养殖发展中心（C.D.P. y A.）。法律禁止在比格尔海峡、Laguna Esmeralda和Lake Fagnano等高生态价值区域设场，允许在火地岛北部和大西洋沿岸开展养殖。预计年产可达80,000吨。Greenpeace表示反对。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        阿根廷新法明确将RAS写入法规——这是全球范围内RAS获得立法认可的重要案例。对商达意味着什么：（1）火地岛与智利Magallanes接壤，水温条件可比挪威/冰岛——如果RAS项目落地，将成为南半球三文鱼养殖新极；（2）8:7微弱多数说明环保争议极大——RAS的"低环境影响"优势是获得通过的关键论据，这验证了商达"3T融合+尾水处理"技术路线的政策契合度；（3）80,000吨的规划产能相当于当前全球RAS三文鱼总产量的27倍——说明各国政府正在将RAS纳入"蓝色粮仓"战略规划。商达可关注阿根廷RAS项目的技术输出机会。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">天马科技半年报预告：预计盈利1,050-1,550万元——鳗鱼价格低位但出口订单随鳗鱼节临近增加</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> 格隆汇 / 腾讯财经 · 2026-07-14</div>
+    <div class="news-content">
+      天马科技(603668.SH)7/14披露2026年半年度业绩预告：预计归母净利润1,050-1,550万元，扣非净利润680-1,180万元。公司表示受宏观经济波动、行业周期性调整及日本鳗苗丰产等叠加影响，鳗鱼价格持续低位运行，但活鳗出口订单随鳗鱼节临近持续增加。1-6月鳗鱼累计出池约7,638.07吨，其中6月出池1,544.67吨（外销196.48吨/自用1,348.19吨），销售价格3.67-9.77万元/吨。中国渔业协会鳗业工作委员会已提出提高鳗鱼最低收购价等稳市措施。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        天马科技作为A股鳗鱼养殖+特水饲料龙头，其半年报是观察鳗鱼产业链的窗口。对商达意味着什么：（1）1-6月出池7,638吨、6月单月1,544吨——鳗鱼供给量充足，解释了活鳗出池价持续低位的原因；（2）"日本鳗苗丰产"是今年鳗鱼价格低位的核心供给端因素——如果明年鳗苗捕获量回落，活鳗价格可能反转；（3）天马科技"饲料+养殖+食品"双轨布局与商达"3T融合"产业链思路一致——但天马的特水饲料业务为商达提供了潜在合作空间（鳜鱼/虹鳟专用饲料）；（4）中国渔业协会提出"提高最低收购价"——如果落地，将直接改善鳗鱼养殖利润，间接利好鳗鱼RAS经济性。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块二：企业动态 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">🏢</span>
+    <span class="section-title">二、企业动态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-new">全新</span> Nichimo日本首个全国产RAS——岩手县久慈市陆基虹鳟养殖场，"模块化RAS"概念首次亮相</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> SalmonBusiness · 2026-07-14</div>
+    <div class="news-content">
+      日本水产食品巨头Nichimo（东京总部）在岩手县久慈市完成陆基虹鳟三文鱼养殖场建设，使用<strong>全日本国产设备</strong>的RAS系统——号称日本首个。该项目属于"Nichimo式模块化RAS"概念，将模块化陆基养殖技术与咨询服务结合。Nichimo表示，在地缘政治不确定性和供应链中断背景下，使用日本国产设备减少对进口技术的依赖。公司已有经验：福冈县丰前市的陆基虹鳟养殖场生产"Mirai Salmon"品牌。新设施位于久慈渔港附近。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        <strong>这是今天最有技术参考价值的一条新闻。</strong>Nichimo的"全国产设备RAS"策略反映了全球RAS产业的一个重要趋势：设备本土化。对商达意味着什么：（1）Nichimo选择"虹鳟"而非"大西洋鲑"作为陆基RAS品种——与商达的虹鳟定位一致，说明虹鳟在RAS中的技术可行性已被多国验证；（2）"模块化RAS+咨询服务"的商业模式值得商达借鉴——不仅卖鱼，还输出技术和运营经验，这与商达"3T融合+技术输出"战略高度吻合；（3）"减少进口依赖"的叙事在日本和中国的语境下同样有效——商达的RAS 5.0系统如果实现核心设备国产化，将在政府补贴和自主可控叙事上获得额外加分；（4）Nichimo已有"Mirai Salmon"品牌运营经验——商达的RAS鳜鱼/虹鳟也需要建立消费者品牌认知。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-alert">信号反转</span> SalmonBusiness 7/13报"三文鱼现货价上涨"——SSB W27确认下行，但W28可能反弹</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> SalmonBusiness · 2026-07-13</div>
+    <div class="news-content">
+      SalmonBusiness 7/13报道"Salmon Spot Price: Up"——三文鱼现货价格上涨。这与SSB W27数据（NOK 67.31/kg，环比-1.2%）形成对比。可能的原因：（1）SSB W27数据覆盖6/29-7/5，而SalmonBusiness 7/13报道反映的是W28（7/8-7/14）的实时现货市场；（2）Mowi ISA爆发+Salmones Camanchaca罢工的供给端冲击开始显现；（3）夏季消费旺季需求回升。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        三文鱼现货价"先跌后涨"的V型走势对商达的启示：（1）SSB W27的NOK 67.31确认了6月底-7月初的下行趋势，但SalmonBusiness的实时报道显示7月中旬可能已触底反弹——这意味着进口三文鱼批发价可能在78-85元/kg附近筑底；（2）Mowi ISA（Flatanger/Trøndelag）+Salmones Camanchaca罢工=供给端对冲因素正在累积，如果下半年供给收缩，三文鱼价格可能在Q3末反弹；（3）对虹鳟的影响：如果三文鱼价格筑底反弹，虹鳟的价格挤压将缓解——商达有1-2周的窗口期在虹鳟价格低位时锁定采购/销售策略；（4）进口三文鱼批发价78-85元/kg的"地板"正在被测试，如果W28反弹确认，旧货60+元清货可能结束。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">WellFish Tech赢得Salmon Group合同——AI鱼健康数据技术进入商业化落地</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> SalmonBusiness · 2026-07-13</div>
+    <div class="news-content">
+      WellFish Tech赢得挪威Salmon Group（三文鱼集团）的鱼健康数据监测合同。WellFish Tech利用AI技术分析鱼类健康数据，为养殖企业提供实时预警和决策支持。Salmon Group是挪威主要三文鱼生产商之一。这标志着AI鱼健康监测技术从"概念验证"进入"商业化采购"阶段。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        WellFish Tech的合同标志着AI鱼健康监测技术的商业化里程碑。对商达意味着什么：（1）商达RAS 5.0的"信息技术（IT）"维度——AI鱼健康监测是"3T融合"中IT的核心应用场景，WellFish Tech的商业化验证了这一技术路线的市场需求；（2）Salmon Group作为挪威主要生产商采购AI鱼健康系统，说明传统三文鱼养殖也正在数字化转型——RAS的"数字化"优势不再是差异化卖点，而是行业标配；（3）商达应评估是否引入或自研类似的AI鱼健康监测系统——在鳜鱼RAS中，鱼病预警对降低死亡率至关重要（鳜鱼对水质变化敏感）。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块三：投融资动态 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">💰</span>
+    <span class="section-title">三、投融资动态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">东南亚RAS市场：2025年16亿美元→2035年26亿美元，印尼最大市场，CAGR 5%</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> Global Market Insights · 2026年发布</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>指标</th><th>数据</th></tr>
+        <tr><td>2025年市场规模</td><td>USD 16亿</td></tr>
+        <tr><td>2026年预测</td><td>USD 17亿</td></tr>
+        <tr><td>2035年预测</td><td><strong>USD 26亿</strong></td></tr>
+        <tr><td>CAGR (2026-2035)</td><td>5%</td></tr>
+        <tr><td>最大市场</td><td>印度尼西亚</td></tr>
+        <tr><td>增长最快区域</td><td>印度尼西亚</td></tr>
+        <tr><td>核心驱动</td><td>可持续养殖需求/海鲜安全意识/水处理技术进步</td></tr>
+        <tr><td>核心挑战</td><td>初始投资高/运营复杂/技术人才缺口</td></tr>
+      </table>
+      <p>报告指出，东南亚RAS市场的增长动力来自城市近郊养殖扩张、数字化智能养殖工具整合、以及消费者对海鲜安全和品质的意识提升。印尼作为最大市场，得益于其广阔的海岸线和政府对水产养殖的政策支持。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        东南亚RAS市场10年增长62.5%——虽然CAGR仅5%，但基数已不小（16亿美元）。对商达意味着什么：（1）印尼作为最大市场，与商达的"东南亚输出"战略方向一致——商达可评估印尼RAS技术输出的可行性；（2）"初始投资高/运营复杂/技术人才缺口"是三大挑战——商达RAS 5.0的"易用性"定位可以精准切入这一痛点；（3）东南亚RAS市场以对虾/罗非鱼为主，三文鱼/鳜鱼RAS不是主流——商达的技术输出需要品种适配；（4）26亿美元的2035年市场规模意味着东南亚RAS设备+服务市场的蛋糕足够大——商达的"技术输出+设备供应+咨询服务"三重收入模型在此市场有空间。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">Atlantic Sapphire退市倒计时2天——$191M净亏损，7/16投票决定最终命运，联合国全球契约已除名</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> LandbasedAQ / WeAreAquaculture / UN Global Compact · 2026-07-14</div>
+    <div class="news-content">
+      Atlantic Sapphire退市进程进入最后48小时。7/16股东大会将投票表决退市方案。投资者集团（Nordlaks Holding、Condire Management、Nokomis Capital、Strawberry Capital、Joh. Johannsson Eiendom）合计持股63%、持有93%可转债。Coral HoldCo以NOK 0.80/股（约$0.086）发起自愿要约。过桥贷款到期日延至8/31。此外，Atlantic Sapphire已从联合国全球契约（UN Global Compact）参与者名单中被除名——原因为"未能提交进展报告"。公司2025年净亏损$191.2M，营收$43.3M（+90% YoY），运营亏损$180.4M。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        48小时后Atlantic Sapphire将正式退市——RAS行业第一轮洗牌的终章。对商达意味着什么：（1）联合国全球契约除名说明Atlantic Sapphire在公司治理层面也已失控——不仅是财务问题，更是管理体系的全面崩溃。商达在ESG治理上必须引以为戒；（2）NOK 0.80/股的收购价意味着上市5年后投资者几乎血本无归——商达未来如走资本之路，估值必须合理，不透支预期；（3）对比Nordic Aqua（3亿RMB融资+IPO评估）和Atlantic Sapphire（$191M亏损退市），"执行纪律"是分水岭——分阶段建设vs一步到位、本地资本vs跨国资本、生物优先vs规模优先。商达的"知行合一"在资本层面同样适用。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块四：IPO动态 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <span class="section-title">四、IPO动态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-alert">盘中新低</span> 鲟龙科技(06715) 7/14收盘76.00港元（+2.15%）——盘中创上市新低70.50港元，放量反弹</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> 东方财富 / 长桥证券 · 2026-07-14收盘</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>日期</th><th>收盘价(港元)</th><th>涨跌幅</th><th>盘中最低</th><th>量比</th><th>PE(TTM)</th></tr>
+        <tr><td>7/10（周五）</td><td>77.75</td><td class="down">-4.78%</td><td>76.50</td><td>—</td><td>—</td></tr>
+        <tr><td>7/13（周一）</td><td>74.40</td><td class="down">-4.31%</td><td>74.30</td><td>—</td><td>—</td></tr>
+        <tr><td>7/14（周二）</td><td class="up"><strong>76.00</strong></td><td class="up">+2.15%</td><td class="down"><strong>70.50（上市新低！）</strong></td><td><strong>5.71</strong></td><td>20.57</td></tr>
+      </table>
+      <p>7/14盘中一度下探至70.50港元——创6/30上市以来新低，较发行价75.50港元折价6.6%。随后反弹至76.00港元收盘（+2.15%），振幅8.06%。成交量94.29万股（量比5.71），成交额7,085万港元——放量明显。分析师目标价105.97港元（+36.3%），评级"强烈买入"。当前总市值约83亿港元。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        鲟龙科技7/14呈现"新低后放量反弹"——盘中70.50港元是上市以来最低点，但量比5.71说明有资金在低位介入。对商达意味着什么：（1）70港元可能是短期底部——量比5.71的放量反弹说明有抄底资金入场，但能否站稳需观察后续成交量是否维持；（2）分析师目标价105.97港元（当前76.00）意味着还有39%上行空间——但市场情绪仍然脆弱，如果反弹失败，70港元可能再次被测试；（3）鲟龙科技IPO对商达的资本启示：上市后15个交易日，股价从114港元（首日最高）跌至70.50港元（最低），蒸发38%——"上市即巅峰"的教训说明IPO定价不能透支预期；（4）对比Nordic Aqua（评估中国/香港IPO），鲟龙的走势可能影响后续RAS/渔业企业在港股的IPO定价和投资者情绪。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-alert">盘中新低</span> 普源精电(0537.HK) 7/14收盘25.54港元（+3.57%）——上市6天累计-44.5%，盘中新低24.16</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> 经济通 / 理信数据 · 2026-07-14收盘</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>日期</th><th>H股收盘(港元)</th><th>涨跌幅</th><th>盘中最低</th><th>上市累计</th></tr>
+        <tr><td>7/9（首日）</td><td>28.80</td><td class="down">-37.36%</td><td>28.74</td><td>-37.4%</td></tr>
+        <tr><td>7/10（次日）</td><td>27.30</td><td class="down">-5.21%</td><td>—</td><td>-40.6%</td></tr>
+        <tr><td>7/13（第三日）</td><td>24.66</td><td class="down">-9.67%</td><td>24.50</td><td>-46.4%</td></tr>
+        <tr><td>7/14（第四日）</td><td class="up"><strong>25.54</strong></td><td class="up">+3.57%</td><td class="down"><strong>24.16</strong></td><td>-44.5%</td></tr>
+      </table>
+      <p>普源精电7/14盘中创上市新低24.16港元后反弹至25.54港元收盘（+3.57%）。发行价45.98港元→当前25.54港元，上市6天累计-44.5%。PE 58.31，市值55.85亿港元。A股对H股溢价122%（A股55.57元≈61港元）。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        普源精电和鲟龙科技同日反弹——港股新股市场情绪有所企稳。对商达意味着什么：（1）两只新股同日反弹说明市场可能正在寻找底部——但普源精电上市6天-44.5%的极端表现对后续新股IPO仍有压制效应；（2）A股对H股溢价122%——说明A股投资者对同一家公司的估值远高于港股，商达如考虑"A+H"双平台上市，需注意两地估值差异；（3）普源精电PE 58.31远高于鲟龙科技PE 20.57——工业仪器赛道估值远高于水产养殖赛道，说明资本市场对RAS/渔业的估值锚仍然保守。商达IPO需做好"估值折让"的心理准备。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块五：市场数据 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📊</span>
+    <span class="section-title">五、市场数据</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">5.1 SSB W27终于发布——三文鱼出口价NOK 67.31/kg（-1.2%），下行趋势确认</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> SSB挪威统计局 · 2026-07-14发布</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>数据源</th><th>周期</th><th>价格</th><th>变化</th></tr>
+        <tr><td>SSB W26</td><td>6/22-6/28</td><td>NOK 68.14/kg</td><td class="down">-3.1%</td></tr>
+        <tr><td><strong>SSB W27</strong></td><td><strong>6/29-7/5</strong></td><td><strong>NOK 67.31/kg</strong></td><td class="down"><strong>-1.2%</strong></td></tr>
+        <tr><td>SSB W27冷冻鲑鱼</td><td>6/29-7/5</td><td>NOK 68.02/kg</td><td class="down">-8.1%</td></tr>
+        <tr><td>SSB W27出口量（鲜冷）</td><td>6/29-7/5</td><td>—</td><td>—</td></tr>
+        <tr><td>SalmonBusiness现货</td><td>7/13报道</td><td>"Up"（上涨）</td><td class="up">↑</td></tr>
+      </table>
+      <p>SSB W27数据于7/14正式发布（此前因"Operational issues"从7/13推迟至7/14）。W27鲜冷鲑鱼出口价NOK 67.31/kg，较W26的NOK 68.14下跌0.83 NOK（-1.2%）。冷冻鲑鱼NOK 68.02/kg（-8.1%）。但SalmonBusiness 7/13报道三文鱼现货价"Up"——可能反映W28（7/8-7/14）的实时市场反弹。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        SSB W27的NOK 67.31确认了三文鱼价格从W25的NOK 69+持续下行至NOK 67区间——但跌幅在收窄（W26 -3.1%→W27 -1.2%），说明下行趋势可能在减速。对商达意味着什么：（1）SalmonBusiness 7/13"现货价上涨"与SSB W27"-1.2%"的时间差说明：SSB数据有1-2周滞后，实时市场可能已反弹——进口三文鱼批发价78-85元/kg可能是阶段性底部；（2）如果W28确认反弹，进口三文鱼批发价可能从78-85回升至90-100元/kg区间——虹鳟的价格挤压将缓解；（3）W27冷冻鲑鱼-8.1%说明冷冻三文鱼跌幅远大于冰鲜——加工品端（烟熏三文鱼）的成本下降幅度更大，解释了电商价持续下跌的原因。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">5.2 鱼粉7/14回调200元——广州/上海23,500元/吨（-200），7/12暴涨后首次回调</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> Mysteel / 博亚水产 · 2026-07-14</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>港口</th><th>品种</th><th>7/12</th><th>7/13</th><th>7/14</th><th>涨跌</th></tr>
+        <tr><td>广州港</td><td>超级蒸汽CP≥68%</td><td>23,900-24,000</td><td>23,950</td><td><strong>23,500</strong></td><td class="down">-200~-450</td></tr>
+        <tr><td>上海港</td><td>超级蒸汽CP≥68%</td><td>23,900-24,000</td><td>23,950</td><td><strong>23,500</strong></td><td class="down">-200~-450</td></tr>
+        <tr><td>大连港</td><td>超级蒸汽CP≥68%</td><td>23,400-23,500</td><td>23,450</td><td>23,200-24,000</td><td class="flat">盘整</td></tr>
+        <tr><td>天津港</td><td>超级蒸汽CP≥68%</td><td>23,400-23,500</td><td>23,450</td><td>23,450</td><td class="flat">→</td></tr>
+        <tr><td>广州港</td><td>日本级CP≥67%</td><td>—</td><td>23,450</td><td>22,800-23,500</td><td class="flat">盘整</td></tr>
+        <tr><td>广州港</td><td>普通级CP≥65%</td><td>—</td><td>22,450</td><td>21,700-22,000</td><td class="flat">→</td></tr>
+      </table>
+      <p>Mysteel 7/14评价："广州港鱼粉市场价格盘整运行"。上海港7/13："当前鱼粉现货紧缺，具体成交取决于持货商心态及货源日期，实行一单一议"。大连港7/13："货源紧缺，价格震荡运行"。港口库存约14.17万吨（持续下降）。秘鲁中北部捕鱼仍暂停，配额完成率仅24.36%。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        鱼粉7/14回调200元——7/12暴涨500后首次回调。对商达意味着什么：（1）回调不等于反转——港口库存14.17万吨仍在警戒线下，秘鲁配额仅完成24.36%且恢复捕捞前景不佳，鱼粉基本面仍然偏紧；（2）"一单一议"模式说明持货商议价能力强——现货紧缺下，实际成交价可能高于报价；（3）广州/上海23,500 vs 大连/天津23,200-23,450——港口价差收窄至300元/吨以内，说明前期"信息差红利窗口"正在关闭；（4）鱼粉两周内+1,000→回调-200的走势说明24000关口存在阻力——但如果不季度秘鲁恢复捕捞，Q3可能再次冲击25,000。商达策略：在回调时锁定部分采购，但不宜大规模囤货。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">5.3 豆粕7/14持平3,000-3,004元/吨——菜籽粕2,396元/吨微跌</div>
+    <div class="news-meta"><span class="source-tag source-a">A级</span> 生意社 / 饲料行业信息网 · 2026-07-14</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>原料</th><th>7/13</th><th>7/14</th><th>涨跌</th><th>月度</th></tr>
+        <tr><td>豆粕（基准价）</td><td>3,004</td><td>3,000-3,004</td><td class="down">-0.13%</td><td class="up">+3.51%</td></tr>
+        <tr><td>菜籽粕</td><td>2,400</td><td>2,396</td><td class="down">-0.17%</td><td class="down">-6.65%</td></tr>
+        <tr><td>大豆</td><td>4,504</td><td>4,504</td><td class="flat">0</td><td class="up">+4.65%</td></tr>
+        <tr><td>菜粕现货-东莞</td><td>—</td><td>2,350</td><td>—</td><td>—</td></tr>
+        <tr><td>菜粕现货-武汉</td><td>—</td><td>2,430</td><td>—</td><td>—</td></tr>
+      </table>
+      <p>豆粕7/14基准价3,004元/吨，涨跌榜显示3,000元/吨（-0.13%）。豆粕7月以来累计+3.51%（从2,902→3,004）。菜籽粕2,396元/吨（-0.17%），同比-6.65%。饲料行业信息网7/14：华南地区强降雨影响菜籽粕流通，部分压榨厂停机。</p>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        豆粕在3,000关口企稳，菜籽粕持续走弱——蛋白原料成本端分化。对商达意味着什么：（1）鱼粉回调-200+豆粕持平+菜粕走弱——饲料成本端压力暂时缓解，RAS鳜鱼毛利率有望在本周保持43-53%区间；（2）华南强降雨影响菜籽粕流通——如果压榨厂持续停机，菜粕可能短期反弹，但同比-6.65%说明全年趋势仍然偏弱；（3）豆粕3,000元/吨处于一年中低位（中位值3,161），仍有上涨空间——商达可考虑在当前价位锁定部分豆粕采购。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块六：技术前沿 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">🔬</span>
+    <span class="section-title">六、技术前沿</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title"><span class="tag tag-new">技术趋势</span> Nichimo"模块化RAS"概念——日本国产设备+模块化设计+咨询服务三位一体</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> SalmonBusiness · 2026-07-14</div>
+    <div class="news-content">
+      Nichimo的"模块化RAS"概念包含三个维度：（1）<strong>模块化硬件</strong>：全日本国产设备制造的RAS系统，可标准化生产、快速部署；（2）<strong>运营咨询服务</strong>：基于丰前市"Mirai Salmon"养殖场的实际运营经验，为其他企业提供技术咨询服务；（3）<strong>品牌输出</strong>："Mirai Salmon"品牌已建立市场认知。Nichimo表示，模块化设计旨在降低RAS的建设门槛和运营复杂度，使更多企业能够进入陆基养殖领域。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        Nichimo的"模块化RAS"概念与商达RAS 5.0的"3T融合"理念有异曲同工之妙——都在追求"可复制+可输出+可商业化"。对商达意味着什么：（1）模块化设计是RAS产业化的关键——标准化模块可以降低建设成本（规模效应）、缩短建设周期（预制组装）、提高可靠性（成熟模块反复验证）；（2）"硬件+咨询+品牌"三位一体的商业模式值得商达借鉴——商达不应只做"技术供应商"，而应构建"RAS 5.0系统+运营咨询服务+商达品牌水产品"的完整生态；（3）日本国产设备策略的核心逻辑是"供应链安全"——商达在RAS 5.0系统中也应推动核心设备国产化，降低进口依赖和汇率风险。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块七：国际视野 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">🌍</span>
+    <span class="section-title">七、国际视野</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">加拿大新水产养殖加速器启动——加速水产养殖创新者商业化</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> SalmonBusiness · 2026-07-13</div>
+    <div class="news-content">
+      加拿大启动新的水产养殖加速器项目，旨在加速水产养殖创新者的商业化进程。加速器将聚焦可持续养殖技术、数字化工具和替代蛋白等方向，为初创企业提供资金支持、导师资源和市场对接服务。
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        加拿大加速器的启动说明北美市场对水产养殖创新的资本支持在加强。对商达意味着什么：（1）全球水产养殖加速器网络正在形成——Hatch Blue（参与Kuehnle AgroSystems投资）+加拿大新加速器+各地政府基金，构成了RAS初创企业的融资生态。商达可关注这一网络，寻找技术合作伙伴或投资者；（2）"可持续养殖技术+数字化工具"是加速器的核心方向——商达RAS 5.0的"3T融合"完全符合这一方向。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">全球RAS三文鱼格局更新：退场者终章 vs 新进入者——行业进入"出清后重建"阶段</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> 综合多个国际信源 · 2026-07-14</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>企业</th><th>状态</th><th>最新进展（7/14更新）</th></tr>
+        <tr><td>Atlantic Sapphire (美国佛州)</td><td class="down">退市倒计时2天</td><td>7/16投票，联合国全球契约已除名</td></tr>
+        <tr><td>Nordic Aqua (中国宁波)</td><td class="up">融资+IPO评估</td><td>3亿RMB融资，Phase 1+2满产</td></tr>
+        <tr><td>Nichimo (日本岩手)</td><td class="up">全国产RAS</td><td>🆕 7/14：日本首个全国产设备RAS</td></tr>
+        <tr><td>Salmon Evolution (挪威)</td><td class="up">Phase 2爬坡中</td><td>目标14,600吨/年</td></tr>
+        <tr><td>Pure Salmon (法国+日本)</td><td class="up">双线推进</td><td>法国过环评+日本开始生物运营</td></tr>
+        <tr><td>Argentina (火地岛)</td><td class="up">🆕 新法鼓励RAS</td><td>预计年产80,000吨</td></tr>
+      </table>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        全球RAS格局7/14更新：Nichimo（日本全国产RAS）和阿根廷（新法鼓励RAS）是两个新进入者。对商达意味着什么：（1）RAS全球化正在加速——从挪威/美国/中国扩展到日本/阿根廷/东南亚，商达面临的不仅是国内竞争，更是全球技术路线的竞争；（2）存活者和新进入者的共同特征：分阶段建设、本地资本支持、设备本土化、品种适配（虹鳟>大西洋鲑）；（3）Argentina 80,000吨的规划产能如果实现，将对全球三文鱼供给格局产生冲击——但目前仍处于立法阶段，实际落地可能需要5-10年。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 板块八：展会动态 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📅</span>
+    <span class="section-title">八、展会动态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">近期展会预告——日本鳗鱼节7/18（倒计时4天）</div>
+    <div class="news-meta"><span class="source-tag source-b">B级</span> 综合信源 · 2026-07-14</div>
+    <div class="news-content">
+      <table class="data-table">
+        <tr><th>展会/事件</th><th>日期</th><th>地点</th><th>与商达关联</th></tr>
+        <tr><td>日本鳗鱼节（土用丑日）</td><td>7/18</td><td>日本全国</td><td>蒲烧鳗鱼消费旺季，活鳗出口价已涨至21万元/吨</td></tr>
+        <tr><td>Atlantic Sapphire退市投票</td><td>7/16</td><td>线上AGM</td><td>RAS行业标志性事件</td></tr>
+        <tr><td>SSB W28数据发布</td><td>~7/21</td><td>SSB官网</td><td>确认三文鱼现货是否反弹</td></tr>
+      </table>
+    </div>
+    <div class="analysis-box">
+      <div class="label">📊 分析师点评</div>
+      <div class="content">
+        未来一周三大关键节点：7/16 Atlantic Sapphire退市投票（RAS终章）、7/18日本鳗鱼节（消费旺季催化剂）、~7/21 SSB W28数据（三文鱼价格反弹确认）。对商达意味着什么：（1）7/16退市投票是RAS行业"第一轮洗牌"的终点——同时也是"第二轮建设期"的起点，商达应准备一份"Atlantic Sapphire教训总结"内部文件；（2）鳗鱼节前活鳗出口价已涨至21万元/吨（+10.5%月度），如果商达涉及鳗鱼加工品，7/15是备货最后窗口。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 分析师总结点评 -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">🎯</span>
+    <span class="section-title">九、分析师总结点评</span>
+  </div>
+
+  <div class="analysis-box" style="padding: 18px 20px;">
+    <div class="label" style="font-size: 14px; margin-bottom: 8px;">📊 第100期综合研判</div>
+    <div class="content" style="font-size: 14px;">
+      <p><strong>核心判断：三文鱼价格可能正在筑底，RAS全球化进入"多极化"阶段。</strong></p>
+      <p><strong>关键信号串联：</strong>SSB W27 NOK 67.31（-1.2%）确认下行趋势，但跌幅收窄（W26 -3.1%→W27 -1.2%）；SalmonBusiness 7/13报"现货价Up"——实时市场可能已反弹。Mowi ISA+Salmones Camanchaca罢工的供给端冲击正在累积。如果W28确认反弹，进口三文鱼批发价78-85元/kg将是阶段性底部。与此同时，Nichimo（日本全国产RAS）+阿根廷（新法鼓励RAS）+Nordic Aqua（中国IPO评估）三线并进，RAS全球化进入"多极化"阶段。</p>
+      <p><strong>商达启示：</strong>第100期的最大启示是——RAS行业正在从"概念验证"进入"全球竞赛"。Nichimo的"模块化RAS+咨询服务"模式与商达"3T融合+技术输出"战略高度契合；阿根廷新法明确鼓励RAS说明政策窗口正在全球打开。商达需要在"技术本土化"和"品牌差异化"两个维度同时构建壁垒。</p>
+      <p><strong>前瞻预判：</strong>（1）7/16 Atlantic Sapphire退市投票后，RAS行业"第一轮洗牌"结束，资本市场将重新评估RAS赛道估值；（2）三文鱼价格如果W28反弹，进口批发价可能从78-85回升至90-100元/kg，虹鳟价格挤压缓解；（3）鳗鱼节7/18后活鳗出口需求可能回落，价格面临回调风险；（4）鲟龙科技70.50港元的盘中新低如果被再次测试，可能引发 IPO 估值锚的进一步下移。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="brand">商达 · RAS水产行业每日高参</div>
+  <div>第100期 | 2026年7月14日 | 时效窗口：7/13 00:00 - 7/14 21:00</div>
+  <div>信息源分级：A级(政府/上市公告/官方交易所) · B级(行业媒体) · C级(自媒体线索)</div>
+  <div>分析师：阳明 | 为商达公用集团信哥定制 | 💯 百期里程碑</div>
+</div>
+
+</div>
+</body>
+</html>
