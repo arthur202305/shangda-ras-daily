@@ -107,8 +107,26 @@
     padding: 8px 16px;
     overflow-x: auto;
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
     scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .date-nav-bar .month-label {
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 700;
+    vertical-align: middle;
+    margin: 0 2px;
+  }
+  .date-nav-bar .month-sep {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: var(--border);
+    margin: 0 6px;
+    vertical-align: middle;
   }
   .date-nav-bar a {
     display: inline-block;
@@ -427,15 +445,38 @@
   <span class="active">💹销售</span>
 </div>
 
-<!-- DATE NAV BAR -->
+<!-- DATE NAV BAR — 近30天历史简报（共40期归档），点击日期切换至对应期数 -->
 <div class="date-nav-bar">
-  <a href="#">7/21</a>
-  <a href="#">7/22</a>
-  <a href="#">7/23</a>
-  <a href="#">7/24</a>
-  <a href="#">7/25</a>
-  <a href="#">7/28</a>
-  <a href="#" class="current">7/29</a>
+  <span class="month-label">6月</span>
+  <a href="archive/2026-06-23.html" title="6/23">23</a>
+  <a href="archive/2026-06-24.html" title="6/24">24</a>
+  <a href="archive/2026-06-25.html" title="6/25">25</a>
+  <a href="archive/2026-06-26.html" title="6/26">26</a>
+  <a href="archive/2026-06-29.html" title="6/29">29</a>
+  <a href="archive/2026-06-30.html" title="6/30">30</a>
+  <span class="month-sep"></span>
+  <span class="month-label">7月</span>
+  <a href="archive/2026-07-01.html" title="7/1">1</a>
+  <a href="archive/2026-07-02.html" title="7/2">2</a>
+  <a href="archive/2026-07-03.html" title="7/3">3</a>
+  <a href="archive/2026-07-06.html" title="7/6">6</a>
+  <a href="archive/2026-07-07.html" title="7/7">7</a>
+  <a href="archive/2026-07-08.html" title="7/8">8</a>
+  <a href="archive/2026-07-09.html" title="7/9">9</a>
+  <a href="archive/2026-07-10.html" title="7/10">10</a>
+  <a href="archive/2026-07-13.html" title="7/13">13</a>
+  <a href="archive/2026-07-14.html" title="7/14">14</a>
+  <a href="archive/2026-07-15.html" title="7/15">15</a>
+  <a href="archive/2026-07-16.html" title="7/16">16</a>
+  <a href="archive/2026-07-17.html" title="7/17">17</a>
+  <a href="archive/2026-07-20.html" title="7/20">20</a>
+  <a href="archive/2026-07-21.html" title="7/21">21</a>
+  <a href="archive/2026-07-22.html" title="7/22">22</a>
+  <a href="archive/2026-07-23.html" title="7/23">23</a>
+  <a href="archive/2026-07-24.html" title="7/24">24</a>
+  <a href="archive/2026-07-27.html" title="7/27">27</a>
+  <a href="archive/2026-07-28.html" title="7/28">28</a>
+  <a href="archive/2026-07-29.html" class="current" title="第111期·本期">29</a>
 </div>
 
 <div class="container">
