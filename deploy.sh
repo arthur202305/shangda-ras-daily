@@ -30,9 +30,15 @@ cp "$HTML_FILE" "$REPO_DIR/archive/${DATE}.html"
 
 # index.html在根目录，导航链接需指向 archive/ 子目录
 cp "$HTML_FILE" "$REPO_DIR/index.html"
-# 用绝对路径确保从任何位置都能正确跳转
+# 🔴 绝对路径修复：确保从任何位置（首页/archive子目录）点击都能正确跳转
+# 修复1: 裸露文件名 → 绝对路径（如 href="2026-06-04.html" → href="/shangda-ras-daily/archive/2026-06-04.html"）
 sed -i 's|href="\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.html"|href="/shangda-ras-daily/archive/\1.html"|g' "$REPO_DIR/index.html"
-echo "  ✅ index.html (绝对路径) + archive/${DATE}.html (相对路径)"
+# 修复2: archive/ 前缀 → 绝对路径（如 href="archive/2026-06-04.html" → href="/shangda-ras-daily/archive/2026-06-04.html"）
+sed -i 's|href="archive/\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.html"|href="/shangda-ras-daily/archive/\1.html"|g' "$REPO_DIR/index.html"
+# 对archive副本执行同样的修复
+sed -i 's|href="\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.html"|href="/shangda-ras-daily/archive/\1.html"|g' "$REPO_DIR/archive/${DATE}.html"
+sed -i 's|href="archive/\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.html"|href="/shangda-ras-daily/archive/\1.html"|g' "$REPO_DIR/archive/${DATE}.html"
+echo "  ✅ index.html + archive/${DATE}.html（已自动修复为绝对路径）"
 
 # Step 2: Git提交
 echo "[2/5] Git提交..."
