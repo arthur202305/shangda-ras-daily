@@ -23,12 +23,16 @@ echo "  商达.RAS行业高参 第${ISSUE}期 部署"
 echo "  日期: ${DATE}"
 echo "============================================"
 
-# Step 1: 复制HTML到仓库
-echo "[1/5] 复制HTML文件..."
-cp "$HTML_FILE" "$REPO_DIR/index.html"
+# Step 1: 复制HTML到仓库 + 修复date-nav-bar路径
+echo "[1/5] 复制HTML文件并修复导航链接..."
 mkdir -p "$REPO_DIR/archive"
 cp "$HTML_FILE" "$REPO_DIR/archive/${DATE}.html"
-echo "  ✅ index.html + archive/${DATE}.html"
+
+# index.html在根目录，导航链接需指向 archive/ 子目录
+cp "$HTML_FILE" "$REPO_DIR/index.html"
+# 用绝对路径确保从任何位置都能正确跳转
+sed -i 's|href="\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.html"|href="/shangda-ras-daily/archive/\1.html"|g' "$REPO_DIR/index.html"
+echo "  ✅ index.html (绝对路径) + archive/${DATE}.html (相对路径)"
 
 # Step 2: Git提交
 echo "[2/5] Git提交..."
