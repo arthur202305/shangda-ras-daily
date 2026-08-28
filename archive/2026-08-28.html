@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商达.RAS行业高参 | 第133期 | 2026年8月28日</title>
+<style>
+  :root {
+    --deep-blue: #0a1f3f;
+    --gold: #c9a84c;
+    --bg: #f5f4ef;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --text-secondary: #5a6c7d;
+    --border: #e8e4d8;
+    --red: #e74c3c;
+    --green: #27ae60;
+    --purple: #6c5ce7;
+    --channel-green: #27ae60;
+    --tag-bg: #f0efe9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--deep-blue) 0%, #0d2a4f 50%, #0f3460 100%);
+    color: #fff;
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 50%);
+  }
+  .header-brand {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .header-date {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 10px;
+    position: relative;
+  }
+  .header-issue {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--deep-blue);
+    padding: 3px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 14px;
+    position: relative;
+    letter-spacing: 1px;
+  }
+  .chain-nav {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .chain-nav span {
+    display: inline-block;
+    padding: 6px 16px;
+    margin: 0 2px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+  }
+  .chain-nav span.active {
+    background: var(--deep-blue);
+    color: #fff;
+    font-weight: 600;
+  }
+  .date-nav-bar {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+    scrollbar-width: thin;
+  }
+  .date-nav-bar .month-label {
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  .date-nav-bar .month-sep {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: var(--border);
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+  .date-nav-bar a {
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+    vertical-align: middle;
+  }
+  .date-nav-bar a:hover {
+    background: #f0efe9;
+    color: var(--deep-blue);
+  }
+  .date-nav-bar a.current {
+    background: var(--gold);
+    color: #fff;
+    font-weight: 700;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+  .top-signals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .top-signal {
+    display: inline-block;
+    background: var(--deep-blue);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .top-signal.red { background: var(--red); }
+  .top-signal.gold { background: var(--gold); color: var(--deep-blue); }
+  .toc {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+  }
+  .toc h3 { font-size: 16px; color: var(--deep-blue); margin-bottom: 12px; }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .toc-grid a {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 4px 0;
+  }
+  .toc-grid a:hover { color: var(--gold); }
+  .section {
+    background: var(--card-bg);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .section-header {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 {
+    font-size: 18px;
+    color: var(--deep-blue);
+    flex-grow: 1;
+  }
+  .section-header .badge {
+    background: var(--gold);
+    color: var(--deep-blue);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .section-body { padding: 16px 20px 20px; }
+  .news-item {
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+  }
+  .news-item:last-child { border-bottom: 0; }
+  .news-title {
+    font-weight: 600;
+    color: var(--deep-blue);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .news-meta {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .news-grade {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .grade-A { background: var(--red); color: #fff; }
+  .grade-B { background: #e8e4d8; color: var(--text); }
+  .news-body {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.85;
+  }
+  .news-body .highlight {
+    background: linear-gradient(transparent 60%, rgba(201,168,76,0.25) 60%);
+    padding: 0 2px;
+    font-weight: 600;
+  }
+  .analysis-box {
+    background: var(--tag-bg);
+    border-left: 3px solid var(--gold);
+    padding: 10px 14px;
+    margin-top: 10px;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+  }
+  .analysis-box .label {
+    color: var(--deep-blue);
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .big-three {
+    background: linear-gradient(135deg, #faf8ef 0%, #f5f4ef 100%);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .big-three h2 {
+    font-size: 18px;
+    color: var(--deep-blue);
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .big-three-item {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .big-three-item:last-child { margin-bottom: 0; }
+  .big-three-item .num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--deep-blue);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .big-three-item .txt {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.85;
+  }
+  .big-three-item .highlight {
+    background: linear-gradient(transparent 60%, rgba(201,168,76,0.25) 60%);
+    padding: 0 2px;
+    font-weight: 600;
+  }
+  .action-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--deep-blue);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+  }
+  .action-box h3 {
+    font-size: 16px;
+    color: var(--deep-blue);
+    margin-bottom: 10px;
+  }
+  .action-box ul { list-style: none; padding-left: 0; }
+  .action-box ul li {
+    font-size: 13px;
+    line-height: 1.85;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+  .action-box ul li::before {
+    content: '\25B8';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .summary-box {
+    background: var(--deep-blue);
+    color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+  }
+  .summary-box h2 {
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    text-align: center;
+    background: rgba(255,255,255,0.06);
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1.2;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 4px;
+  }
+  .summary-box p {
+    font-size: 13px;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 8px;
+  }
+  .footer {
+    text-align: center;
+    padding: 22px 16px 30px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border);
+    margin-top: 30px;
+  }
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 12px;
+    font-size: 13px;
+  }
+  .price-table th, .price-table td {
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    text-align: left;
+  }
+  .price-table th {
+    background: var(--deep-blue);
+    color: #fff;
+    font-weight: 600;
+  }
+  .price-table .up { color: var(--red); font-weight: 600; }
+  .price-table .down { color: var(--green); font-weight: 600; }
+  .price-table .flat { color: var(--text-secondary); }
+  .risk-dashboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 12px;
+    font-size: 13px;
+  }
+  .risk-dashboard th, .risk-dashboard td {
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    text-align: left;
+  }
+  .risk-dashboard th {
+    background: var(--deep-blue);
+    color: #fff;
+    font-weight: 600;
+  }
+  .risk-high { color: var(--red); font-weight: 600; }
+  .risk-medium { color: #e67e22; font-weight: 600; }
+  .risk-low { color: var(--green); font-weight: 600; }
+  @media (max-width: 640px) {
+    .toc-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .header h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">SHANDA &middot; RAS INDUSTRY INTELLIGENCE</div>
+  <h1>商达.RAS行业高参</h1>
+  <div class="header-date">2026年8月28日 星期五 &middot; 第133期</div>
+  <div class="header-issue">全产业链深度分析</div>
+</div>
+
+<div class="chain-nav">
+  <span class="active">投资</span>
+  <span>&rarr;</span>
+  <span>技术</span>
+  <span>&rarr;</span>
+  <span>建设</span>
+  <span>&rarr;</span>
+  <span>运营</span>
+  <span>&rarr;</span>
+  <span>产品</span>
+  <span>&rarr;</span>
+  <span>渠道</span>
+</div>
+
+<div class="date-nav-bar">
+  <span class="month-label">6月</span>
+  <a href="/shangda-ras-daily/archive/2026-06-04.html">04</a>
+  <a href="/shangda-ras-daily/archive/2026-06-05.html">05</a>
+  <a href="/shangda-ras-daily/archive/2026-06-08.html">08</a>
+  <a href="/shangda-ras-daily/archive/2026-06-09.html">09</a>
+  <a href="/shangda-ras-daily/archive/2026-06-10.html">10</a>
+  <a href="/shangda-ras-daily/archive/2026-06-11.html">11</a>
+  <a href="/shangda-ras-daily/archive/2026-06-12.html">12</a>
+  <a href="/shangda-ras-daily/archive/2026-06-13.html">13</a>
+  <a href="/shangda-ras-daily/archive/2026-06-15.html">15</a>
+  <a href="/shangda-ras-daily/archive/2026-06-16.html">16</a>
+  <a href="/shangda-ras-daily/archive/2026-06-17.html">17</a>
+  <a href="/shangda-ras-daily/archive/2026-06-18.html">18</a>
+  <a href="/shangda-ras-daily/archive/2026-06-22.html">22</a>
+  <a href="/shangda-ras-daily/archive/2026-06-23.html">23</a>
+  <a href="/shangda-ras-daily/archive/2026-06-24.html">24</a>
+  <a href="/shangda-ras-daily/archive/2026-06-25.html">25</a>
+  <a href="/shangda-ras-daily/archive/2026-06-26.html">26</a>
+  <a href="/shangda-ras-daily/archive/2026-06-29.html">29</a>
+  <a href="/shangda-ras-daily/archive/2026-06-30.html">30</a>
+  <span class="month-sep"></span>
+  <span class="month-label">7月</span>
+  <a href="/shangda-ras-daily/archive/2026-07-01.html">01</a>
+  <a href="/shangda-ras-daily/archive/2026-07-02.html">02</a>
+  <a href="/shangda-ras-daily/archive/2026-07-03.html">03</a>
+  <a href="/shangda-ras-daily/archive/2026-07-06.html">06</a>
+  <a href="/shangda-ras-daily/archive/2026-07-07.html">07</a>
+  <a href="/shangda-ras-daily/archive/2026-07-08.html">08</a>
+  <a href="/shangda-ras-daily/archive/2026-07-09.html">09</a>
+  <a href="/shangda-ras-daily/archive/2026-07-10.html">10</a>
+  <a href="/shangda-ras-daily/archive/2026-07-13.html">13</a>
+  <a href="/shangda-ras-daily/archive/2026-07-14.html">14</a>
+  <a href="/shangda-ras-daily/archive/2026-07-15.html">15</a>
+  <a href="/shangda-ras-daily/archive/2026-07-16.html">16</a>
+  <a href="/shangda-ras-daily/archive/2026-07-17.html">17</a>
+  <a href="/shangda-ras-daily/archive/2026-07-20.html">20</a>
+  <a href="/shangda-ras-daily/archive/2026-07-21.html">21</a>
+  <a href="/shangda-ras-daily/archive/2026-07-22.html">22</a>
+  <a href="/shangda-ras-daily/archive/2026-07-23.html">23</a>
+  <a href="/shangda-ras-daily/archive/2026-07-24.html">24</a>
+  <a href="/shangda-ras-daily/archive/2026-07-27.html">27</a>
+  <a href="/shangda-ras-daily/archive/2026-07-28.html">28</a>
+  <a href="/shangda-ras-daily/archive/2026-07-29.html">29</a>
+  <a href="/shangda-ras-daily/archive/2026-07-30.html">30</a>
+  <a href="/shangda-ras-daily/archive/2026-07-31.html">31</a>
+  <span class="month-sep"></span>
+  <span class="month-label">8月</span>
+  <a href="/shangda-ras-daily/archive/2026-08-03.html">03</a>
+  <a href="/shangda-ras-daily/archive/2026-08-04.html">04</a>
+  <a href="/shangda-ras-daily/archive/2026-08-05.html">05</a>
+  <a href="/shangda-ras-daily/archive/2026-08-06.html">06</a>
+  <a href="/shangda-ras-daily/archive/2026-08-07.html">07</a>
+  <a href="/shangda-ras-daily/archive/2026-08-10.html">10</a>
+  <a href="/shangda-ras-daily/archive/2026-08-11.html">11</a>
+  <a href="/shangda-ras-daily/archive/2026-08-12.html">12</a>
+  <a href="/shangda-ras-daily/archive/2026-08-13.html">13</a>
+  <a href="/shangda-ras-daily/archive/2026-08-14.html">14</a>
+  <a href="/shangda-ras-daily/archive/2026-08-17.html">17</a>
+  <a href="/shangda-ras-daily/archive/2026-08-18.html">18</a>
+  <a href="/shangda-ras-daily/archive/2026-08-19.html">19</a>
+  <a href="/shangda-ras-daily/archive/2026-08-20.html">20</a>
+  <a href="/shangda-ras-daily/archive/2026-08-21.html">21</a>
+  <a href="/shangda-ras-daily/archive/2026-08-24.html">24</a>
+  <a href="/shangda-ras-daily/archive/2026-08-25.html">25</a>
+  <a href="/shangda-ras-daily/archive/2026-08-26.html">26</a>
+  <a href="/shangda-ras-daily/archive/2026-08-28.html" class="current">28</a>
+</div>
+
+<div class="container">
+
+  <div class="top-signals">
+    <span class="top-signal red">国联水产扭亏为盈</span>
+    <span class="top-signal gold">深圳LNG-RAS冷能工厂启动</span>
+    <span class="top-signal red">秘鲁120天渔业紧急状态</span>
+    <span class="top-signal">Nordic Aqua宁波达产8000吨</span>
+    <span class="top-signal">国信1号2-2三文鱼首批开捕</span>
+    <span class="top-signal gold">饲料涨价潮大北农+200元</span>
+  </div>
+
+  <div class="toc">
+    <h3>本期目录</h3>
+    <div class="toc-grid">
+      <a href="#sec1">1.投资项目</a>
+      <a href="#sec2">2.技术创新</a>
+      <a href="#sec3">3.建设运营</a>
+      <a href="#sec4">4.产品市场</a>
+      <a href="#sec5">5.渠道流通</a>
+      <a href="#sec6">6.资本市场</a>
+      <a href="#sec7">7.政策法规</a>
+      <a href="#sec8">8.国际动态</a>
+      <a href="#sec9">9.展会活动</a>
+      <a href="#sec10">10.饲料原料</a>
+      <a href="#sec11">11.食品安全</a>
+      <a href="#sec12">12.养殖利润</a>
+    </div>
+  </div>
+
+  <!-- Big Three -->
+  <div class="big-three">
+    <h2>Big Three &middot; 三大核心洞察</h2>
+    <div class="big-three-item">
+      <div class="num">1</div>
+      <div class="txt">
+        <strong>国联水产扭亏为盈 &mdash; RAS概念股的资本回暖信号</strong><br>
+        国联水产2026中报：营收14.45亿(-12.47%)，净利<span class="highlight">1003.92万元扭亏为盈</span>，经营现金流1.92亿(+95.36%)，存货压降80.78%。同期通威股份净亏损51.19亿。水产食品加工龙头财务回暖验证了高端水产品消费需求复苏，但上游饲料成本压力持续加大。对商达意味着：<span class="highlight">RAS系统降本增效价值凸显</span>，饲料暴涨背景下精准投喂+低饲料系数成为客户核心痛点，是商达技术输出的最佳窗口期。
+      </div>
+    </div>
+    <div class="big-three-item">
+      <div class="num">2</div>
+      <div class="txt">
+        <strong>深圳LNG-RAS冷能三文鱼工厂 &mdash; 颠覆性技术路线落地</strong><br>
+        全球首个LNG冷能RAS三文鱼工厂在大鹏启动，年产<span class="highlight">5000吨、年产值5亿、零碳排放</span>。利用LNG气化冷能将海水降温至16°C，冷能利用率超70%，引入挪威RAS核心算法+AI水质监测。对商达意味着：冷能+RAS耦合开辟全新技术赛道，商达可在沿海LNG枢纽城市推广类似模式，<span class="highlight">RAS 5.0系统与冷能利用形成技术互补</span>，技术输出空间巨大。
+      </div>
+    </div>
+    <div class="big-three-item">
+      <div class="num">3</div>
+      <div class="txt">
+        <strong>秘鲁120天紧急状态 &mdash; 鱼粉供应链危机升级</strong><br>
+        秘鲁8/23宣布渔业水产120天紧急状态，海温异常高2-5°C。国内超级蒸汽鱼粉<span class="highlight">22400-22500元/吨停报挺价</span>，大北农等饲料企业上调50-200元/吨。厄尔尼诺预计11-12月达峰值。对商达意味着：鱼粉暴涨直接推高传统养殖成本，<span class="highlight">RAS系统精准投喂+低饲料系数优势进一步放大</span>，是向客户展示经济性的最佳时机。
+      </div>
+    </div>
+  </div>
+
+  <!-- 30天行动建议 -->
+  <div class="action-box">
+    <h3>30天行动建议</h3>
+    <ul>
+      <li><strong>客户沟通：</strong>以国联扭亏+鱼粉暴涨为切入点，向RAS潜在客户推送"饲料成本对标分析"，量化RAS vs 传统养殖的饲料成本差异</li>
+      <li><strong>技术对标：</strong>研究深圳LNG-RAS冷能模式，评估商达RAS 5.0与冷能耦合的技术可行性，形成差异化技术路线图</li>
+      <li><strong>市场卡位：</strong>青岛国信工船三文鱼首批开捕+挪威对华出口+46%，三文鱼赛道热度空前，商达应加速三文鱼RAS方案的市场推广</li>
+      <li><strong>风险监控：</strong>秘鲁紧急状态可能持续至11月，鱼粉价格仍有上行空间，建议锁定供应商长协价格</li>
+      <li><strong>政策跟进：</strong>钦州设施化海水池塘管理规定征求意见，关注地方RAS补贴政策窗口期</li>
+    </ul>
+  </div>
+
+  <!-- 30天风险仪表盘 -->
+  <div class="action-box">
+    <h3>30天风险仪表盘</h3>
+    <table class="risk-dashboard">
+      <tr><th>风险维度</th><th>等级</th><th>关键指标</th><th>建议动作</th></tr>
+      <tr><td>鱼粉供应</td><td class="risk-high">高风险</td><td>秘鲁紧急状态120天，库存13.7万吨</td><td>锁定长协，评估替代蛋白源</td></tr>
+      <tr><td>饲料成本</td><td class="risk-high">高风险</td><td>豆粕3200+，鱼粉22400+，饲料涨200元/吨</td><td>优化饲料配方，推广低鱼粉方案</td></tr>
+      <tr><td>食品安全</td><td class="risk-medium">中风险</td><td>沃尔玛三文鱼大肠菌群超标4倍</td><td>加强出塘前速测，关注品牌声誉</td></tr>
+      <tr><td>三文鱼价格</td><td class="risk-low">低风险</td><td>挪威Q3现货价同比+21%，需求强劲</td><td>国产RAS三文鱼定价空间充足</td></tr>
+      <tr><td>资本市场</td><td class="risk-medium">中风险</td><td>通威巨亏51亿，国联扭亏但营收仍降</td><td>关注Q3业绩验证，精选RAS概念标的</td></tr>
+    </table>
+  </div>
+
+  <!-- Section 1: 投资项目 -->
+  <div class="section" id="sec1">
+    <div class="section-header">
+      <span class="icon">1</span>
+      <h2>投资项目</h2>
+      <span class="badge">3条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">深圳大鹏启动全球首个LNG-RAS冷能三文鱼智能工厂</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 南方+ / 搜狐 / 网易</div>
+        <div class="news-body">
+          深圳市大鹏新区正式启动"LNG-RAS冷能循环利用三文鱼智能工厂"项目。项目利用LNG气化过程释放的-162°C超低温冷能，通过热交换将海水降温至<span class="highlight">16°C恒温</span>，精准匹配大西洋鲑最佳生长水温。冷能利用率超70%，全程零化石能源。引入挪威RAS核心算法，叠加AI水质监测、自动投饵、病害预警、区块链溯源。达产后年产<span class="highlight">5000吨</span>三文鱼，年产值<span class="highlight">5亿元</span>，带动就业超400人。第一批鱼苗预计2027年初入池，2028年首批"大鹏三文鱼"上市。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            冷能+RAS是全新的技术赛道，与商达RAS 5.0系统形成互补。全国已有多座LNG接收站，该模式具备强复制性。商达可研究冷能耦合方案，在沿海LNG枢纽城市推广类似模式，技术输出空间巨大。
+          </div>
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <div class="news-title">湖州南浔区水产养殖全产业链提升改造项目中标公示</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 湖州市公共资源交易网</div>
+        <div class="news-body">
+          南浔区现代种业综合发展示范区建设项目中标候选人公示，包括循环水系统提升改造、养殖车间技术升级改造等，改造面积约28642平方米，新增钢结构大棚面积约1116平方米。中标价约<span class="highlight">1106万元</span>，工期180天。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">大连海发/獐子岛节能报告项目8/28开标</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-28 &middot; 采购公告</div>
+        <div class="news-body">
+          大连海发/獐子岛节能报告项目于8月28日开标，项目预算14.3万元，涉及水产养殖节能评估。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: 技术创新 -->
+  <div class="section" id="sec2">
+    <div class="section-header">
+      <span class="icon">2</span>
+      <h2>技术创新</h2>
+      <span class="badge">4条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">青岛国信1号2-2工船首批"船载舱养"三文鱼开捕</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 青岛政务网 / 中新网 / 腾讯网</div>
+        <div class="news-body">
+          15万吨级智慧渔业养殖工船"国信1号2-2"首批三文鱼起捕，标志着全球首次在超大型移动式养殖工船上实现鲑鳟鱼规模化商业化产出。首批次大西洋鲑成活率<span class="highlight">97.3%</span>，月增重超500g，出舱均重4kg+，最大6kg+，<span class="highlight">0寄生虫0抗生素0药残</span>，达生食级标准。深层低温取水系统抽取30-50米处10-16°C冷海水，攻克全年适温养殖难关。工船全长244.9米，排水量15万吨，近10万立方米养殖水体，15个标准养殖舱。"国信1号"已稳定运营超1200天，产值突破3亿元。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            工船舱养模式突破了传统RAS的地理限制，与陆基RAS形成互补。商达应关注船载舱养技术路线，评估RAS 5.0系统在船载场景的适配性。
+          </div>
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <div class="news-title">邹城大口黑鲈RAS反季节育苗成功：亩利润2.41万元</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 大众日报</div>
+        <div class="news-body">
+          邹城"揭榜挂帅"项目将大口黑鲈反季节繁殖，水花鱼苗放入陆基圆桶RAS系统越冬培育，水温控制20-28°C。工厂化循环水反季节苗种成活率<span class="highlight">42.1%</span>（较普通+10个百分点），池塘养殖成活率95%。上市提前60天避开集中期，亩产3600斤，饵料系数仅1.25，亩均利润<span class="highlight">2.41万元</span>，是传统养殖2-3倍。已建成4个苗种培育基地，RAS面积5.5万平方米，累计培育1100万尾。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">盐城滨海县冷水鱼RAS试验示范基地亮相</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 盐城新闻网</div>
+        <div class="news-body">
+          滨海县冷水鱼智能化养殖试验与示范基地总占地约10亩，建筑面积2000平方米，配置全封闭循环水养殖系统2套，有效养殖水体600立方米，重点开展<span class="highlight">大西洋鲑、硬头鳟、鲟鱼、大菱鲆</span>等高端冷水鱼类试验养殖。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">四川什邡市推广循环水养殖技术，冷水鱼成活率提升20%</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 四川省农业农村厅</div>
+        <div class="news-body">
+          什邡市推动流水循环养殖技术，整合山泉水资源，增加循环泵站、遮阳设施、微滤系统。冷水鱼养殖成活率<span class="highlight">提升20%以上</span>，用药量同比下降10%，水产品质量抽检合格率100%。预计2026年水产品产量达6100吨。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: 建设运营 -->
+  <div class="section" id="sec3">
+    <div class="section-header">
+      <span class="icon">3</span>
+      <h2>建设运营</h2>
+      <span class="badge">2条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">Nordic Aqua Partners宁波RAS达产8000吨，Q2营收翻倍</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; SeafoodSource / WeAreAquaculture / Euronext</div>
+        <div class="news-body">
+          Nordic Aqua Partners（NOAP）宣布宁波RAS三文鱼农场Stage 2达产，年产能<span class="highlight">8000吨</span>。Q2营收€945万（同比翻倍），养殖成本降至€6.05/kg（同比降24%），运营EBITDA转正至€77.4万。Q2收获1362吨HOG三文鱼，均重4.4kg，96% superior级。已启动Stage 3工程设计，完成后总产能将达<span class="highlight">2万吨/年</span>。中国2025年鲜三文鱼消费增长48%，为全球最高。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            Nordic Aqua宁波RAS降本路径（成本从€7.94降至€6.05/kg）为行业提供了可对标的数据。商达RAS 5.0系统应参考其成本优化经验，向客户展示明确的降本曲线。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">挪威Ardal Aqua放弃陆基成鱼养殖，转向post-smolt</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; LandbasedAQ</div>
+        <div class="news-body">
+          Grieg Seafood旗下Ardal Aqua完成一轮养殖周期（鲑鱼养至5kg，superior级95%），但因<span class="highlight">成本过高</span>决定放弃在RAS中养至收获规格，转为全部产能用于post-smolt。生物表现优秀但财务不可行——"成本仍太高，无法与开放网箱竞争"。同时投资NOK 2亿建设新smolt设施，Grieg陆基smolt总产能达9000吨。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            即使生物指标优秀，RAS成鱼养殖的经济性仍是全球性挑战。商达需在方案设计中突出"全周期经济性"而非仅"技术先进性"。
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Section 4: 产品市场 -->
+  <div class="section" id="sec4">
+    <div class="section-header">
+      <span class="icon">4</span>
+      <h2>产品市场</h2>
+      <span class="badge">3条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">万邦鲈鱼批发价29.00元/公斤，近30日下跌6.5%</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 同花顺iFinD</div>
+        <div class="news-body">
+          8月26日万邦鲈鱼批发价29.00元/公斤，与8月25日持平，近30日首日（7/28）31.00元/公斤下跌<span class="highlight">6.5%</span>。29.00元/公斤在8月11-26日连续出现16条记录，价格区间稳定。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">鳙鱼批发价18.42元/公斤(+0.3%)，白鲢10.44元/公斤(-1.2%)</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 农业农村部监测</div>
+        <div class="news-body">
+          8月27日鳙鱼批发均价18.42元/公斤，环比上涨0.3%；白鲢10.44元/公斤，环比下跌1.2%。大宗淡水鱼价格总体平稳。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">挪威第34周三文鱼出口：31,535吨创多年新高，对华7,126吨</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; IndexBox / SeafoodSource / SSB</div>
+        <div class="news-body">
+          挪威第34周鲜三文鱼出口31,535吨（同比+12%），均价NOK 73.57/kg（同比+9.5%）。对华出口<span class="highlight">7,126吨</span>（同比+32%），均价NOK 67.37/kg。中国年度累计进口135,271吨，同比+33.5%。全球三文鱼价格Q3同比+21%。
+          <table class="price-table">
+            <tr><th>品类</th><th>价格</th><th>趋势</th></tr>
+            <tr><td>挪威鲜三文鱼(Week 34)</td><td>NOK 73.57/kg</td><td class="up">+9.5% YoY</td></tr>
+            <tr><td>三文鱼鱼柳</td><td>NOK 137.53/kg</td><td class="up">+10.4% YoY</td></tr>
+            <tr><td>冻三文鱼</td><td>NOK 74.25/kg</td><td class="up">+6.3% YoY</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: 渠道流通 -->
+  <div class="section" id="sec5">
+    <div class="section-header">
+      <span class="icon">5</span>
+      <h2>渠道流通</h2>
+      <span class="badge">5条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">小象超市深圳首店8/28开业，海鲜代加工10元/道菜</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-28 &middot; 行业报道</div>
+        <div class="news-body">
+          小象超市深圳首店于8月28日在领展中心城B1层开业，引入<span class="highlight">海鲜代加工服务</span>，每道菜仅收10元加工费。这是小象超市首次进入深圳市场，主打"买即烹"模式。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            "买即烹"模式缩短了从养殖到餐桌的链条，对鲜活水产品的终端配送提出更高要求。RAS养殖的活鱼直供商超模式有望受益。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">盒马郑州二七万象城店8/28开业，刺身挪威三文鱼为亮点</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-28 &middot; 行业报道</div>
+        <div class="news-body">
+          盒马郑州二七万象城店8月28日开业，刺身挪威三文鱼等高端品类为亮点品类。盒马持续在二三线城市扩张高端水产渠道。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">连云港赣榆海鲜冷链：日收发28万件，3.5小时到南京</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 我苏网 / 澎湃新闻</div>
+        <div class="news-body">
+          开渔后赣榆区顺丰海鲜集运站日收发件量达<span class="highlight">28万件</span>（+20%），41条分拣通道全开，日均150车次。依托近400座冷库、40万吨库容、260余条冷链直发线路，700公里以内次日达。赣榆至南京<span class="highlight">3.5小时</span>极速达，梭子蟹价格较休渔期降幅近50%。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">厦门海鲜跨城冷链：1500公斤午鱼12小时抵宁波</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 今日头条</div>
+        <div class="news-body">
+          开渔后厦门夏商国际水产交易中心单日交易量冲至<span class="highlight">780吨</span>，跨城冷链专线将1500公斤午鱼12小时内直抵浙江宁波。外地订单占比上升，冷链充当"泄压阀"平衡本地价格。野生斑节虾从240元/0.5kg降至140元，梭子蟹30元/0.5kg。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">三文鱼24小时上桌：鄂州花湖机场上半年进口7000吨(+260%)</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 央视财经</div>
+        <div class="news-body">
+          湖北鄂州花湖国际机场旁智能化加工基地日加工三文鱼60吨，一分钟处理25条鱼。从海外捕捞加工到端上当地餐桌全程最快<span class="highlight">24小时</span>。上半年三文鱼进口量突破7000吨，同比<span class="highlight">+260%</span>。1.5小时航程覆盖全国80%人口。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            三文鱼冷链基础设施飞速升级，为国产RAS三文鱼提供了现成的分销网络。商达合作的RAS三文鱼项目可直接接入该冷链体系。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: 资本市场 -->
+  <div class="section" id="sec6">
+    <div class="section-header">
+      <span class="icon">6</span>
+      <h2>资本市场</h2>
+      <span class="badge">3条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">国联水产2026中报：扭亏为盈，净利1003.92万元</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 公司公告</div>
+        <div class="news-body">
+          国联水产上半年营收14.45亿元（-12.47%），归母净利<span class="highlight">1003.92万元（扭亏为盈）</span>，经营现金流1.92亿元（+95.36%）。存货从16亿压降至<span class="highlight">3.07亿元（-80.78%）</span>，累计诉讼1221.96万元。预制菜业务持续发力，现金流大幅改善。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            水产食品加工龙头财务回暖验证了高端水产品消费需求复苏。存货压降80%说明去库存周期基本结束，Q3有望轻装上阵。RAS系统供应商应关注其产能扩张计划。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">通威股份2026中报：净亏损51.19亿元，饲料销量305.53万吨(+3.47%)</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 公司公告</div>
+        <div class="news-body">
+          通威股份上半年净亏损<span class="highlight">51.19亿元</span>（同比扩大），但饲料板块销量305.53万吨（+3.47%），饲料业务保持增长。光伏业务拖累整体业绩。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            通威饲料板块逆势增长说明水产养殖需求仍在扩张，但光伏巨亏可能影响其在水产饲料领域的投入力度。商达应关注饲料供应商格局变化。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">A股水产板块8/27收盘行情</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27收盘</div>
+        <div class="news-body">
+          <table class="price-table">
+            <tr><th>股票</th><th>收盘价</th><th>涨跌幅</th></tr>
+            <tr><td>国联水产</td><td>3.00元</td><td class="up">+3.09%</td></tr>
+            <tr><td>通威股份</td><td>11.90元</td><td class="down">-0.92%</td></tr>
+            <tr><td>大湖股份</td><td>5.71元</td><td class="up">+1.24%</td></tr>
+            <tr><td>百洋医药</td><td>24.60元</td><td class="up">+0.41%</td></tr>
+          </table>
+          国联水产受中报扭亏利好刺激涨3.09%，大湖股份跟涨。
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <!-- Section 7: 政策法规 -->
+  <div class="section" id="sec7">
+    <div class="section-header">
+      <span class="icon">7</span>
+      <h2>政策法规</h2>
+      <span class="badge">2条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">钦州市设施化海水池塘管理规定征求意见</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 钦州市政府</div>
+        <div class="news-body">
+          钦州市发布设施化海水池塘管理规定征求意见稿，规范近海设施化养殖管理。对循环水养殖系统建设标准、尾水排放、养殖密度等提出具体要求。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            地方政府加速出台设施化养殖管理规范，RAS系统建设标准将逐步制度化。商达应积极参与标准制定，将RAS 5.0技术参数写入地方标准。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">农业农村部专家组赴开封开展产地水产品兽药残留监测抽样</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-24/27 &middot; 开封市农业农村局</div>
+        <div class="news-body">
+          农业农村部产地水产品兽药残留监测专家组在尉氏县4家养殖户抽取<span class="highlight">鮰鱼样品8个</span>，督促遵守兽药使用规定和休药期制度。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 8: 国际动态 -->
+  <div class="section" id="sec8">
+    <div class="section-header">
+      <span class="icon">8</span>
+      <h2>国际动态</h2>
+      <span class="badge">3条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">挪威三文鱼对华出口+46%，中国跃升全球第二大出口市场</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 新京报 / 经济日报 / 今日头条</div>
+        <div class="news-body">
+          2026年1-7月挪威对华三文鱼出口<span class="highlight">7.58万吨（+46%）</span>，出口额56亿挪威克朗（+41%）。7月单月1.25万吨创历史新高。挪威在华份额从55%提升至63%。中国跃升为挪威三文鱼全球第二大出口市场（仅次于波兰）。挪威海产局携手哈兰德开展"我选择挪威三文鱼"全国推广。2026年中国三文鱼市场规模预计约<span class="highlight">23.5万吨（+30%）</span>。Kontali预测2026下半年全球三文鱼产量零增长。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            中国三文鱼市场持续爆发式增长，但全球供应趋紧（下半年零增长），为国产RAS三文鱼提供了巨大的价格空间和市场窗口。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">秘鲁宣布120天渔业紧急状态，鱼粉供应危机升级</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-23+ &middot; China Feed Online / 博亚和讯 / 红餐网</div>
+        <div class="news-body">
+          秘鲁生产部8/23正式宣布渔业水产120天紧急状态，海温异常高<span class="highlight">2-5°C</span>，渔获可及性严重不足。中北部A季大幅减产（配额191.4万吨，同比-36%），南部累计仅4300吨。秘鲁市场基本无库存，CNF参考价$3700/吨。国内港口库存13.7万吨，超级蒸汽鱼粉<span class="highlight">22400-22500元/吨停报挺价</span>。厄尔尼诺预计11-12月达峰值，或成观测记录最强。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            鱼粉供应链危机持续升级，RAS系统精准投喂+低饲料系数优势在饲料暴涨周期中更加凸显。商达应立即以饲料成本对标为切入点联系客户。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">中国三文鱼刺身消费趋势：一线城市25%消费者每周食用</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; NSC / World Fishing</div>
+        <div class="news-body">
+          挪威海产局研究显示中国三文鱼消费核心趋势是<span class="highlight">刺身</span>——"在中国，三文鱼等于刺身"。一线城市25%消费者每周至少食用一次三文鱼刺身（全球均值13%）。2025年中国三文鱼进口+50%，2026上半年再+43%。外卖配送25分钟可达，冷链基础设施成熟推动消费下沉。NSC携9家企业亮相第20届上海渔博会。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 9: 展会活动 -->
+  <div class="section" id="sec9">
+    <div class="section-header">
+      <span class="icon">9</span>
+      <h2>展会活动</h2>
+      <span class="badge">1条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">第20届上海国际渔业博览会暨第九届全球三文鱼产业高峰论坛</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/28 &middot; 今日头条 / 经济日报</div>
+        <div class="news-body">
+          挪威海产局携9家企业亮相第20届上海国际渔业博览会（W3馆B2-10），集中呈现多品类挪威海产。展会首日举行第九届全球三文鱼产业发展高峰论坛，挪威海产局中国总监毕思明发表主题演讲。分析师Paul T Aandahl分享全球供给分析：2026下半年产量零增长，2027年仅+2%。同期举办三文鱼消费者焦点小组和刺身品鉴活动。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            上海渔博会是RAS行业重要交流平台。全球三文鱼供应趋紧的共识将进一步推高价格，为国产RAS三文鱼创造市场空间。商达应持续关注展会期间的技术交流和合作机会。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 10: 饲料原料 -->
+  <div class="section" id="sec10">
+    <div class="section-header">
+      <span class="icon">10</span>
+      <h2>饲料原料</h2>
+      <span class="badge">4条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">鱼粉22400-22500元/吨停报挺价，秘鲁紧急状态推涨</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 博亚和讯 / China Feed Online</div>
+        <div class="news-body">
+          <table class="price-table">
+            <tr><th>品种</th><th>8/27报价</th><th>趋势</th></tr>
+            <tr><td>秘鲁超级蒸汽鱼粉</td><td>22400-22500元/吨</td><td class="up">+300元/吨</td></tr>
+            <tr><td>秘鲁普通级蒸汽鱼粉</td><td>20900-21000元/吨</td><td class="up">涨后观望</td></tr>
+            <tr><td>国产鱼粉(63/150)</td><td>18800元/吨</td><td class="flat">持平</td></tr>
+            <tr><td>秘鲁CNF参考价</td><td>$3700/吨</td><td class="up">持续挺价</td></tr>
+          </table>
+          秘鲁紧急状态120天，港口库存13.7万吨，部分贸易商停报。鱼粉同比涨幅超<span class="highlight">98%</span>（7月底同比）。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">豆粕3166-3238元/吨(+43-64)，菜粕2445元/吨(+60)</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; China Feed Online / 同花顺</div>
+        <div class="news-body">
+          <table class="price-table">
+            <tr><th>品种</th><th>8/27报价</th><th>日变动</th></tr>
+            <tr><td>豆粕(43%)</td><td>3120-3238元/吨</td><td class="up">+20-30</td></tr>
+            <tr><td>菜粕(36%)</td><td>2390-2445元/吨</td><td class="up">+60</td></tr>
+            <tr><td>DDGS(26/28%)</td><td>2200元/吨</td><td class="flat">持平</td></tr>
+            <tr><td>磷酸氢钙</td><td>4050-4350元/吨</td><td class="flat">持平</td></tr>
+          </table>
+          豆粕受美豆天气炒作+葵粕/菜粕不可抗力影响持续上行，累计涨幅超340元/吨。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">饲料涨价潮：大北农、鑫盛农等上调50-200元/吨</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 同花顺 / 搜狐</div>
+        <div class="news-body">
+          受豆粕、鱼粉上涨推动，多家饲料企业宣布涨价：欧亚泰高农牧猪浓缩料<span class="highlight">+200元/吨</span>（本轮最高），大北农部分浓乳料+40-150元/吨，鑫盛农猪浓缩料+150元/吨，沈阳富士大通反刍浓缩料+100元/吨。均设置锁价提货截止时间。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            饲料全面涨价将直接推高养殖成本。RAS系统通过精准投喂可降低饲料系数10-20%，在涨价周期中经济性优势更加显著。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">饲料添加剂价格平稳：蛋氨酸18.2-18.6元/kg，VE 52元/kg</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 博亚和讯 / 我的钢铁网</div>
+        <div class="news-body">
+          <table class="price-table">
+            <tr><th>品种</th><th>8/27报价(元/kg)</th><th>趋势</th></tr>
+            <tr><td>DL-蛋氨酸(99%)</td><td>18.2-18.6</td><td class="flat">平稳</td></tr>
+            <tr><td>赖氨酸(98.5%)</td><td>6.6</td><td class="flat">平稳</td></tr>
+            <tr><td>VE(50%)</td><td>52</td><td class="flat">平稳</td></tr>
+            <tr><td>VD3(50万)</td><td>150-160</td><td class="flat">平稳</td></tr>
+          </table>
+          添加剂价格整体平稳，VD3略有下行，叶酸下跌10元/kg。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 11: 食品安全 -->
+  <div class="section" id="sec11">
+    <div class="section-header">
+      <span class="icon">11</span>
+      <h2>食品安全</h2>
+      <span class="badge">4条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">沃尔玛"沃集鲜"三文鱼抽检不合格，大肠菌群超标4倍</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 新京报 / 闪电新闻 / 新浪</div>
+        <div class="news-body">
+          市场监管总局通报45批次食品抽检不合格，沃尔玛旗下"沃集鲜"1批次三文鱼切片大肠菌群数<span class="highlight">最高检出510 CFU/g</span>，超标4.1倍。5份样本中3份不合格，最高为国标限值5.1倍。产品由深圳润控食品生产，在广州好又多销售，生产日期2026-05-06。
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            三文鱼食品安全事件频发（从牛蛙药残到三文鱼大肠菌群超标），凸显全链条品控的重要性。RAS系统封闭式养殖+可溯源体系天然具备食品安全优势，是商达对客户的核心卖点。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">佛山11万口鱼塘有了"数字身份证"，批批速测+智检小站</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 中国网</div>
+        <div class="news-body">
+          佛山推动11万口鱼塘数字化管理，从"撒网式"转向"靶向式"监测。重点水产品出塘前<span class="highlight">"批批速测"</span>5项指标，智检小站胶体金检测卡决定能否出塘。苗种检测、过程抽检、出塘必检全过程机制。1416户销售档口纳入名录，日日抽检，违法线索快速反馈。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">福建建宁牛蛙专项排查：检查30家，抽检2批次，发现问题6个</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 中国消费网</div>
+        <div class="news-body">
+          建宁县市场监管局开展牛蛙专项排查整治，覆盖农贸市场、生鲜超市、餐饮店。重点筛查<span class="highlight">恩诺沙星、呋喃唑酮、呋喃西林</span>等违禁兽药残留。检查30家，抽检2批次，发现问题6个均已整改。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">广西农产品质量安全集中执法月：牛蛙专项检查12家</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-27 &middot; 腾讯新闻</div>
+        <div class="news-body">
+          广西自治区联合行动组赴南宁5个县区开展牛蛙等重点品种集中专项执法。检查养殖主体6家、加工销售6家，抽检牛蛙<span class="highlight">9批次</span>、鸡蛋2批次。重点核查禁用兽药库存、"三无"兽药违规使用等问题。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 12: 养殖利润测算 -->
+  <div class="section" id="sec12">
+    <div class="section-header">
+      <span class="icon">12</span>
+      <h2>养殖利润测算</h2>
+      <span class="badge">2条</span>
+    </div>
+    <div class="section-body">
+      <div class="news-item">
+        <div class="news-title">聊城信发RAS鲈鱼：每亩效益100万+，综合成本降70%</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26/27 &middot; 闪电新闻 / 齐鲁壹点</div>
+        <div class="news-body">
+          信发三层立体RAS鲈鱼车间：产量传统坑塘<span class="highlight">60倍</span>，综合成本降70%，每亩效益增加<span class="highlight">100万元以上</span>。水热电近乎零成本（工业余热+RO水+光伏），春节前后每天稳定上市专打时间差。624个圆桶，三层立体养殖。
+          <table class="price-table">
+            <tr><th>指标</th><th>传统坑塘</th><th>信发RAS</th></tr>
+            <tr><td>亩产量</td><td>~400斤</td><td class="up">~24,000斤(60倍)</td></tr>
+            <tr><td>综合成本</td><td>基准</td><td class="down">-70%</td></tr>
+            <tr><td>亩效益</td><td>~1-2万</td><td class="up">100万+</td></tr>
+            <tr><td>水/热/电成本</td><td>正常</td><td class="down">近乎零</td></tr>
+          </table>
+          <div class="analysis-box">
+            <div class="label">对商达意味着什么</div>
+            "工业共生+RAS"模式将养殖成本压到极致。商达可复制该模式在热电企业周边推广RAS 5.0系统，实现"零成本要素+精准养殖"的经济性突破。
+          </div>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">邹城大口黑鲈RAS反季节育苗：亩利润2.41万元，饵料系数1.25</div>
+        <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-08-26 &middot; 大众日报</div>
+        <div class="news-body">
+          <table class="price-table">
+            <tr><th>指标</th><th>传统养殖</th><th>邹城RAS模式</th></tr>
+            <tr><td>亩产量</td><td>~1500斤</td><td class="up">3600斤</td></tr>
+            <tr><td>饵料系数</td><td>1.5-1.8</td><td class="down">1.25</td></tr>
+            <tr><td>亩利润</td><td>~0.8-1.2万</td><td class="up">2.41万</td></tr>
+            <tr><td>上市时间</td><td>10月集中</td><td class="up">8月下旬(提前60天)</td></tr>
+          </table>
+          RAS反季节育苗+池塘成鱼养殖两段式模式，工厂化育苗+池塘低成本养殖"两头取长补短"。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-box">
+    <h2>本期总结</h2>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num">12</div>
+        <div class="stat-label">板块全覆盖</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">37</div>
+        <div class="stat-label">新闻条目</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">36</div>
+        <div class="stat-label">L1占比100%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">27+1</div>
+        <div class="stat-label">中英文搜索组</div>
+      </div>
+    </div>
+    <p>&middot; <strong>资本回暖：</strong>国联水产扭亏为盈（净利1003.92万）成板块最大亮点，通威中报净亏51.19亿折射饲料主业承压，资本信号分化中RAS赛道相对占优。</p>
+    <p>&middot; <strong>技术突破：</strong>深圳LNG-RAS冷能三文鱼工厂启动（年产5000吨），青岛国信工船三文鱼首批开捕（成活率97.3%），Nordic Aqua宁波达产8000吨。</p>
+    <p>&middot; <strong>供应链危机：</strong>秘鲁120天紧急状态推涨鱼粉至22400+元/吨，饲料企业集体涨价50-200元/吨，厄尔尼诺或创观测记录最强。</p>
+    <p>&middot; <strong>市场机遇：</strong>挪威对华三文鱼出口+46%，中国三文鱼市场预计23.5万吨（+30%），全球供应趋紧为国产RAS三文鱼打开价格窗口。</p>
+    <p>&middot; <strong>商达行动：</strong>以饲料成本对标为切入点联系客户，研究LNG冷能+RAS 5.0耦合方案，加速三文鱼RAS方案市场推广。</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>本报告由商达产品部出品 | 仅供内部参考</p>
+</div>
+
+</body>
+</html>
