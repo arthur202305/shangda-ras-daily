@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>商达.RAS行业高参 | 第151期 | 2026年9月22日</title>
+<style>
+:root {
+  --deep-blue: #0a1f3f;
+  --gold: #c9a84c;
+  --bg: #f5f4ef;
+  --card-bg: #ffffff;
+  --text: #2c3e50;
+  --text-secondary: #5a6c7d;
+  --border: #e8e4d8;
+  --red: #e74c3c;
+  --green: #27ae60;
+  --purple: #6c5ce7;
+  --channel-green: #27ae60;
+  --tag-bg: #f0efe9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 14px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  padding: 32px 32px 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 31, 63, 0.18);
+}
+header::after {
+  content: '';
+  position: absolute;
+  top: -50%; right: -10%;
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.header-brand {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.header-date {
+  font-size: 13px;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.header-issue {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+/* CHAIN NAV */
+.chain-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.chain-nav span {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.chain-nav span.active {
+  color: var(--deep-blue);
+  font-weight: 700;
+  position: relative;
+}
+.chain-nav span.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: -16px;
+  transform: translateX(-50%);
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+}
+.chain-nav .arrow {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* DATE NAV BAR */
+.date-nav-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 22px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.date-nav-bar .month-label {
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-right: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.date-nav-bar .month-sep {
+  display: inline-block;
+  width: 1px; height: 14px;
+  background: var(--border);
+  margin: 0 10px;
+}
+.date-nav-bar a {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.date-nav-bar a:hover {
+  background: var(--tag-bg);
+  color: var(--deep-blue);
+}
+.date-nav-bar a.current {
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+
+/* TOP SIGNALS */
+.top-signals {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.top-signal {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+.top-signal.red { color: var(--red); border-color: rgba(231, 76, 60, 0.3); }
+.top-signal.gold { color: #8a6d20; border-color: rgba(201, 168, 76, 0.5); background: #fff8e1; }
+.top-signal.blue { color: var(--deep-blue); border-color: rgba(10, 31, 63, 0.2); }
+
+/* BIG THREE */
+.big-three {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.big-three h2 {
+  font-size: 18px;
+  color: var(--deep-blue);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+.big-three-item {
+  margin-bottom: 14px;
+  padding-left: 32px;
+  position: relative;
+}
+.big-three-item:last-child { margin-bottom: 0; }
+.big-three-item .num {
+  position: absolute;
+  left: 0; top: 2px;
+  width: 24px; height: 24px;
+  background: var(--gold);
+  color: var(--deep-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.big-three-item .txt {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.big-three-item .highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+
+/* TOC */
+.toc {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.toc h3 {
+  font-size: 16px;
+  color: var(--deep-blue);
+  margin-bottom: 12px;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 16px;
+}
+.toc-grid a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+.toc-grid a:hover { color: var(--gold); }
+
+/* SECTION */
+.section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.section-header h2 {
+  font-size: 19px;
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+.section-header .badge {
+  margin-left: auto;
+  background: var(--tag-bg);
+  color: var(--text-secondary);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* NEWS ITEM */
+.news-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.news-item:last-child { border-bottom: none; padding-bottom: 0; }
+.news-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.news-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.news-grade {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  letter-spacing: 0.3px;
+}
+.grade-A { background: rgba(231, 76, 60, 0.12); color: var(--red); }
+.grade-B { background: rgba(108, 92, 231, 0.12); color: var(--purple); }
+.grade-C { background: rgba(90, 108, 125, 0.12); color: var(--text-secondary); }
+.news-body {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+.analysis-box {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border-left: 3px solid var(--gold);
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.75;
+}
+.analysis-box .label {
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* SUMMARY */
+.summary-section {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(10, 31, 63, 0.18);
+}
+.summary-section h2 {
+  color: var(--gold);
+  font-size: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+.summary-section h3 {
+  color: var(--gold);
+  font-size: 15px;
+  margin: 16px 0 10px;
+  font-weight: 700;
+}
+.summary-section p, .summary-section li {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 8px;
+}
+.summary-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.summary-section ul li {
+  padding-left: 20px;
+  position: relative;
+}
+.summary-section ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0; color: var(--gold);
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 24px 0 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 16px; }
+}
+
+/* ===== v9.2 简洁商务风：降低强调重量 ===== */
+strong, b { font-weight: 600; color: var(--deep-blue); }
+.highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; padding: 0 1px; border-radius: 2px; }
+.big-three-item .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.analysis-box .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.summary-section .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.news-body { font-size: 14px; line-height: 1.9; }
+.news-title { font-weight: 600; }
+.news-grade { font-weight: 600; }
+.analysis-box { background: #fbfaf6; border-left: 3px solid rgba(201, 168, 76, 0.5); }
+.analysis-box .label { font-weight: 600; color: #a8893a; }
+.summary-section h3 { font-weight: 600; }
+.top-signal { font-weight: 500; }
+.big-three-item .txt { line-height: 1.9; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="header-brand">SHANDA &middot; RAS INDUSTRY DAILY</div>
+  <h1>商达.RAS行业高参</h1>
+  <div class="header-date">2026年9月22日 星期二 &middot; L1窗口: 9/21-9/22</div>
+  <div class="header-issue">第151期</div>
+</header>
+
+<div class="chain-nav">
+  <span class="active">💰 投资</span>
+  <span class="arrow">→</span>
+  <span class="active">🧬 技术</span>
+  <span class="arrow">→</span>
+  <span class="active">🏗️ 建设</span>
+  <span class="arrow">→</span>
+  <span class="active">⚙️ 运营</span>
+  <span class="arrow">→</span>
+  <span class="active">📦 产品</span>
+  <span class="arrow">→</span>
+  <span class="active">💹 销售</span>
+</div>
+
+
+<div class="date-nav-bar">
+  <span class="month-label">9月</span>
+  <a href="/shangda-ras-daily/archive/2026-09-01.html">01</a>
+  <a href="/shangda-ras-daily/archive/2026-09-02.html">02</a>
+  <a href="/shangda-ras-daily/archive/2026-09-03.html">03</a>
+  <a href="/shangda-ras-daily/archive/2026-09-04.html">04</a>
+  <span class="month-sep"></span>
+  <a href="/shangda-ras-daily/archive/2026-09-07.html">07</a>
+  <a href="/shangda-ras-daily/archive/2026-09-08.html">08</a>
+  <a href="/shangda-ras-daily/archive/2026-09-09.html">09</a>
+  <a href="/shangda-ras-daily/archive/2026-09-10.html">10</a>
+  <a href="/shangda-ras-daily/archive/2026-09-11.html">11</a>
+  <a href="/shangda-ras-daily/archive/2026-09-14.html">14</a>
+  <a href="/shangda-ras-daily/archive/2026-09-15.html">15</a>
+  <a href="/shangda-ras-daily/archive/2026-09-16.html">16</a>
+  <a href="/shangda-ras-daily/archive/2026-09-17.html">17</a>
+  <a href="/shangda-ras-daily/archive/2026-09-18.html">18</a>
+  <a href="/shangda-ras-daily/archive/2026-09-20.html">20</a>
+  <a href="/shangda-ras-daily/archive/2026-09-21.html">21</a>
+  <a href="/shangda-ras-daily/archive/2026-09-22.html" class="current">22</a>
+</div>
+
+
+<div class="top-signals">
+  <span class="top-signal red">国内陆基设施渔业建设9/22密集落地：东营智能渔业项目开标、恒兴金鲳鱼加工基地开标、聊城高唐（约4,000万元）签约，叠加9/21呼和浩特”循环365“石斑鱼项目（约1亿元、50亩）落地——内陆与寒区同时进入产能扩张期</span>
+  <span class="top-signal gold">陆基RAS资本与品种双扩圈：日本ARK完成850万美元A轮（模块化RAS拓展阿联酋/印尼）、德国Oceanloop获3,850万欧元主攻巨型石斑；全球RAS设备市场2026年4.97亿美元、2032年达8.48亿美元（CAGR 9.27%），陆基三文鱼子赛道增速25%</span>
+  <span class="top-signal blue">Nofima／Mowi Genetics选育研究：大西洋鲑体脂从21%降至18%，按年耗150万吨饲料、FCR 1.05基准测算，挪威产业年省约1.05亿欧元——饲料效率具中等遗传力，降本路径从”换配方”转向”选品种”</span>
+  <span class="top-signal red">Atlantic Sapphire股价约4.47 NOK、较发行价跌约98%：陆基鲑”爬產陷阱”极端样本，警示达产节奏与生物安全远比融资规模重要（与本期Oceanloop、ARK、Salmon Evolution的融资形成对照）</span>
+  <span class="top-signal gold">通威内陆养虾双线推进（山东高密度循环水＋四川人工海水）、海大稳居饲料—种苗—动保龙头；獐子岛9/21涨4.93%、好当家涨4.18%（9/22分别回落1.83%与2.01%）——设施渔业上游卡位与主题行情同步升温</span>
+  <span class="top-signal blue">板块6按市场读鲢鳙当天批发价：盐城华东交易中心花鲢16.00元/公斤、南通花鲢22.00／白鲢10.80、安吉花鲢19.00元/公斤；鲑鳟类冰鲜刺身级（GB 10136）200-400元/公斤对冷冻普通级（GB 2733）100-200元/公斤——同物种近两倍价差</span>
+</div>
+
+<div class="big-three">
+  <h2>Big Three 深度分析串联</h2>
+  <div class="big-three-item">
+    <span class="num">1</span>
+    <span class="txt"><strong>今天的建设板块给出了一个此前没有过的组合：内陆与寒区在同一周内同时启动高端水产产能，而其中一端的品种是石斑鱼。</strong>证据一（板块3）：<span class="highlight">呼和浩特“循环365工厂化水产养殖项目”9/21签约，投资约1亿元、用地50亩、主攻石斑鱼陆基循环水，一期2026年10月开工、2028年1月首批上市，达产1,000吨／年产值8,000万元</span>；同周还有<span class="highlight">东营卓越智能渔业9/22开标、恒兴金鲳鱼加工基地9/22开标、聊城高唐海水工厂化循环养殖产业园签约约4,000万元</span>。证据二（板块4）：兴安盟科右前旗陆基循环水基地已稳定运营，150立方米标准化养殖池复养大西洋鲑与虹鳟，1立方米水体养虾55斤、密度达传统模式10倍以上，年产值2,000万元。<strong>把两侧放在一起看：一个刚签约、一个已跑出产值，说明“寒区／内陆养海鱼”已经走完从可行性到商业化的验证段。对商达的含义是——北方客户将很快开始询价，而他们第一个会问的问题不是设备参数，而是“冬季加温一吨鱼要多少钱”。</strong></span>
+  </div>
+  <div class="big-three-item">
+    <span class="num">2</span>
+    <span class="txt"><strong>本期最值得警惕与最值得兴奋的信号来自同一件事的两面：海外RAS的资本在继续加注，但加注的方向已经变了。</strong>一面是警示（板块10）：<span class="highlight">Atlantic Sapphire股价约4.47 NOK、较发行价跌约98%</span>，成为陆基鲑“爬产陷阱”的极端样本。另一面是加注（板块1）：<span class="highlight">日本ARK完成850万美元A轮，模块化RAS指向阿联酋与印尼；德国Oceanloop获3,850万欧元、主攻巨型石斑；Kingfish Company美国项目选定工程咨询巨头Ramboll承担设计与环评</span>。<strong>暗线在于：资本没有撤离RAS，而是从“鲑鳟大盘赌规模”转向“高值细分＋可复制工程”。这条线对商达是可用的——本期建设板块的呼和浩特石斑项目与Oceanloop的巨型石斑融资形成同一方向的两端，说明高值海水鱼的陆基化已经不是区域偏好，而是行业级共识。</strong></span>
+  </div>
+  <div class="big-three-item">
+    <span class="num">3</span>
+    <span class="txt"><strong>本期板块6与板块12并排读，会得到一个与直觉相反的结论：饲料成本在跌，鱼价也在跌，而且跌的是同一个时间窗口。</strong>证据一（板块12）：<span class="highlight">9/22豆粕3,441元/吨跌32、菜粕2,435跌20、玉米2,216跌5</span>，植物蛋白端连续两日下行。证据二（板块6）：<span class="highlight">农业农村部9月21日全国白鲢鱼批发均价10.13元/公斤、单日跌0.6%</span>。<strong>这意味着当前鲢鳙类的价格压力来自供给端（秋季集中出塘）而非成本端，成本改善没有转化为利润改善。真正的定价权证据也在同一天：同为花鲢，盐城16.00、安吉19.00、南通22.00元/公斤，最高最低相差37.5%——价格离散度来自规格、产地属性与到货时效，而这三项恰好是RAS可以标准化的变量。</strong>对商达的含义：客户利润改善的抓手不在“等原料降价”，而在“把产品挪进价格离散度更大的那一格”。</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>📑 目录 · 12板块全产业链</h3>
+  <div class="toc-grid">
+    <a href="#sec1">① 投资动态</a>
+    <a href="#sec2">② 技术前沿</a>
+    <a href="#sec3">③ 建设动态</a>
+    <a href="#sec4">④ 运营动态</a>
+    <a href="#sec5">⑤ 友商动态</a>
+    <a href="#sec6">⑥ 产品市场</a>
+    <a href="#sec7">⑦ 渠道动态</a>
+    <a href="#sec8">⑧ 资本市场</a>
+    <a href="#sec9">⑨ 政策法规</a>
+    <a href="#sec10">⑩ 国际动态</a>
+    <a href="#sec11">⑪ 展会活动</a>
+    <a href="#sec12">⑫ 饲料原料</a>
+  </div>
+</div>
+
+<!-- 板块1：投资动态 -->
+<div class="section" id="sec1">
+  <div class="section-header">
+    <span class="icon">💰</span>
+    <h2>投资动态</h2>
+    <span class="badge">L1 资金·招标·项目签约</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">日本ARK完成850万美元A轮融资：模块化RAS系统加速向阿联酋与印尼市场复制，亚洲陆基养殖融资窗口打开</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-21 &middot; ARK 官方融资公告 / 行业媒体</div>
+    <div class="news-body">
+      9月21日，日本陆基循环水（RAS）企业<span class="highlight">ARK宣布完成850万美元（约8.5M美元）A轮融资</span>，资金将用于<span class="highlight">标准化模块化养殖单元的量产与海外扩张</span>。公司披露其模块化RAS系统已在中东与东南亚完成前期验证，本轮融资后将重点拓展阿联酋与印尼两大市场。ARK的商业模式核心是“可集装箱化、可快速复制”的养殖单元，单模块产能与投产周期显著短于传统整厂方案，目标客户为缺乏沿海水域但高值鱼消费旺盛的缺水性国家与地区。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这是亚洲RAS赛道少见的、由非中西资本推动的规模化A轮，信号意义在于“模块化、可复制”路线正在被市场用真金白银投票。对商达而言，它同时提供了竞争参照与出海路径。</strong>三点判断：① <strong>“模块化”是大势所趋，商达的标准化产品方向与之同向</strong>——ARK的核心卖点是<span class="highlight">可集装箱化、可快速复制的养殖单元</span>，这与商达“标准化、通用型养殖系统”的产品逻辑完全一致。差异在于商达更强调运营与数据绑定，而ARK更强调硬件模块本身。建议把“模块标准化程度”作为对外竞标的显式指标，避免陷入整厂方案的非标比价。② 阿联酋与印尼的选址暴露了陆基RAS的天然最优市场——缺水性、高消费、强鲜活需求三者叠加的地区，恰恰是RAS经济性的最强支撑区。这与商达“城市近端RAS”逻辑同构。建议把海外目标市场清单与中国国内近端市场做同一套筛选模型：单位价值高、到岸鲜活溢价大、本地供给缺口明显。③ 亚洲资本开始下注RAS，意味着国内融资参照系外移——ARK的A轮说明区域级产业资本已把RAS视为可投赛道。这对商达的资本叙事是直接利好：在对接国内产业资本时，可用“亚洲同期已有可比融资案例”增强说服力。建议把ARK、Oceanloop等可比交易整理进资本材料。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">德国Oceanloop完成3,850万欧元融资主攻巨型石斑：陆基RAS从“鲑鳟专属”向高值海水鱼扩圈</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; IntraFish / Oceanloop 披露</div>
+    <div class="news-body">
+      9月22日披露，德国陆基养殖企业<span class="highlight">Oceanloop完成3,850万欧元（€38.5M）新一轮融资</span>，资金将用于<span class="highlight">在欧盟建设巨型石斑（giant grouper）陆基养殖产能</span>。公司此前以模块化RAS养殖海鲈与海鲷为主，本轮明确把高值海水鱼（尤其是巨型石斑）列为主攻品类，理由是石斑类单位价值高、欧盟与中东需求旺盛、且陆基可控环境可替代长距离活运。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>Oceanloop把“巨型石斑”作为主打品类，是本期最值得商达记录在案的品种信号：陆基RAS的品类边界正在从鲑鳟向高值海水鱼系统性外扩。</strong>三点判断：① <strong>石斑鱼正在成为全球陆基RAS的共识性高值品种</strong>——同期国内<span class="highlight">广东台山、内蒙古呼和浩特两地先后落地石斑鱼陆基工厂化循环水项目</span>，与Oceanloop的巨型石斑融资形成“国内多点落地＋欧洲资本加注”的同频信号（国内项目详见本期建设板块）。这说明石斑鱼不是区域热点，而是行业级方向。建议商达把石斑鱼从“预研候选”提升为“第二条产品线正式立项”。② €38.5M的体量说明欧洲资本对海水RAS的信心在修复——在Atlantic Sapphire股价较发行价跌约98%（详见本期国际板块）的背景下，资本并未撤离RAS，而是从“鲑鳟大盘”转向“高值细分品种”。这提示商达：同样一笔融资，投在石斑/海鲈等品种的确定性，可能高于再投一个鲑鳟大盘项目。建议在自营项目选品上，提高石斑等高值海水鱼的权重。③ “欧盟+中东”双市场定位，验证了商达的近端供应逻辑可出口——Oceanloop的目标市场与ARK的阿联酋、印尼高度重合。对商达的含义：“在消费地近端用RAS生产高值海水鱼”是全球通用商业模型，而非中国特有。建议商达在对外材料中，把这一模型表述为“可出海的标准能力”，为未来海外合作预留接口。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">Kingfish Company美国项目选定Ramboll做工程设计：陆基黄尾鰤（kingfish）出海美国、工程咨询巨头入局RAS</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-21 &middot; Kingfish Company 公告 / Ramboll</div>
+    <div class="news-body">
+      9月21日，荷兰陆基黄尾鰤（kingfish）企业<span class="highlight">Kingfish Company宣布其美国项目选定工程咨询巨头Ramboll承担设计与工程服务</span>。Ramboll将负责<span class="highlight">美国基地的工艺设计、环评与水处理系统整合</span>。Kingfish Company此前在荷兰本土已建成陆基黄尾鰤产能，美国项目是其首次跨大洲复制，目标市场为北美高端生鲜与餐饮渠道。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这条新闻的价值在于“谁在做设计”——Ramboll这类传统基建工程咨询巨头的入局，标志着RAS已经从“养殖创业者的玩具”变成“可被大型工程公司承接的标准工程”。</strong>三点判断：① <strong>工程咨询巨头入局，会抬高行业的设计门槛与合规基线</strong>——<span class="highlight">Ramboll承接工艺设计与环评</span>，意味着环评、水处理、能源三套系统将按大型基建标准交付。对商达的含义：未来国内大型RAS项目的评标，会越来越看重“工程资质+环评能力”，单纯设备商很难独立入围。建议商达尽快补强工程设计与环评合作资源。② 黄尾鰤是又一个被验证可陆基化的高值品种——继石斑、海鲈、海鲷之后，Kingfish的kingfish（黄尾鰤）成为陆基RAS的成熟品类。建议商达技术库持续跟踪“可陆基化品种清单”，并按单位价值、苗种可得性、温控难度做优先级排序。③ 跨大洲复制的难度被低估——Kingfish从荷兰到美国，面临水质标准、用工、能源价格、监管四重差异。对商达：任何“成功模式跨区复制”论证都必须包含属地化改造成本，不能把荷兰模型直接平移。建议在方案中单列“属地化适配”模块。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">全球RAS设备市场2026年4.97亿美元、2032年将达8.48亿美元、CAGR 9.27%：设施渔业装备进入稳定成长期</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 市场研究机构综述（行业媒体转载）</div>
+    <div class="news-body">
+      9月22日行业媒体综述一项市场研究：<span class="highlight">全球循环水养殖系统（RAS）设备市场规模2026年约为4.97亿美元，预计2032年达到8.48亿美元，年均复合增长率（CAGR）9.27%</span>。报告将增长动因归为<span class="highlight">城市近端水产供给需求、食品安全与可追溯要求提升、以及传统养殖尾水监管收紧</span>三类。研究覆盖循环水处理、增氧、温控、投喂与水质监测等核心设备，并指出亚太地区增速领先。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>4.97亿→8.48亿美元、CAGR 9.27%这个数据，是商达做市场测算时可用的一份第三方基准。它的意义不在于绝对值，而在于“设备市场”与“养殖产出”被分开计量——这正是商达的机会所在。</strong>三点判断：① <strong>9.27%的CAGR意味着设备市场是“慢牛”而非“爆发”</strong>——<span class="highlight">年均不到10%</span>的增速说明RAS装备不是风口型赛道，而是政策与监管驱动的刚需型赛道。对商达的含义：不能用互联网式增长预期做财务模型，而应叠加政策补贴与环保合规的“确定性增量”。建议把补贴后净投资作为测算锚。② “亚太增速领先”是商达的主场优势——研究明确指出亚太地区增速领先。结合本期政策板块多地循环水补贴落地，可以判断中国市场是亚太增量的核心。建议商达把国内作为基本盘，海外作为溢价补充。③ 设备市场与养殖市场的分离，提示商达定位“设备商”还是“运营商”——研究报告计量的是设备，而真正的利润池在运营与数据。建议商达坚持“设备+运营+数据”三位一体，避免在纯设备红海中比价。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">全球RAS三文鱼细分市场2026年达1.08亿美元、增速25%：陆基鲑仍是RAS内增长最快的子赛道</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 细分市场研究（行业媒体转载）</div>
+    <div class="news-body">
+      9月22日另一项细分研究披露：<span class="highlight">全球陆基（RAS）三文鱼市场规模2026年约为1.08亿美元，年增速约25%</span>，显著高于RAS设备整体9.27%的CAGR。研究认为<span class="highlight">陆基三文鱼的高增速来自成熟市场对“稳定定价、可追溯、无逃逸污染”的采购需求</span>，且Proximar、Salmon Evolution等已跑通产能的样本正在吸引后续投资。该子赛道被普遍视为RAS内部单位经济最优、资本关注度最高的细分。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>1.08亿美元、增速25%——这两个数字把“陆基三文鱼”与“RAS大盘”的增长拉开了层级差。对商达而言，它回答了“自营项目第一优先品种到底是不是鲑鳟”这个根本问题。</strong>三点判断：① <strong>25%的子赛道增速验证了鲑鳟的优先地位</strong>——在<span class="highlight">RAS设备整体CAGR仅9.27%</span>的背景下，陆基三文鱼25%的增速说明资本与需求正集中涌向鲑鳟。这支持商达把鲑鳟作为自营第一品种、石斑作为第二品种的双线布局。② “稳定定价”是海外采购端的真实动机——研究与本期国际板块英国Direct Seafoods主动寻求RAS三文鱼换取长期稳定定价相互印证。对商达的含义：“价格可预测性”应成为对国内连锁餐饮与商超的核心卖点，排在技术参数之前。③ 但高增速也意味着高竞争与高估值泡沫——Atlantic Sapphire股价较发行价跌约98%（详见本期国际板块）提醒我们：陆基鲑的资本故事与运营现实之间存在巨大鸿沟。建议商达在鲑鳟项目中强制做“达产爬坡期+价格-30%”双压力测试，避免重蹈全球爬产陷阱。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块2：技术前沿 -->
+<div class="section" id="sec2">
+  <div class="section-header">
+    <span class="icon">🧬</span>
+    <h2>技术前沿</h2>
+    <span class="badge">L1 育种·育苗·系统技术</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">墨瑞鳕循环水育苗在国内取得突破：人工调控环境下实现稳定苗种供应，高值冷水鱼本土化繁育再下一城</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 行业科研进展（多家水产媒体）</div>
+    <div class="news-body">
+      9月22日多家水产媒体披露，<span class="highlight">墨瑞鳕（Murray cod）循环水育苗在国内取得关键技术突破</span>，科研团队在<span class="highlight">人工调控水温、光照与水流的循环水环境下，实现了墨瑞鳕苗种的稳定培育与供应</span>。墨瑞鳕是原产澳大利亚的高值冷水性鱼类，肉质优、单价高、适合工程化养殖，此前国内苗种高度依赖进口。突破后，苗种成本与供应稳定性有望显著改善，为后续陆基规模化养殖扫清关键瓶颈。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>墨瑞鳕育苗突破看似是小品种新闻，但它印证了本期反复出现的一条主线：陆基RAS的竞争焦点正从“养殖设施”前移到“苗种供给”。对商达，这是品种库的实质性扩容。</strong>三点判断：① <strong>“苗种本土化”是品种经济性的前置条件</strong>——墨瑞鳕此前<span class="highlight">苗种高度依赖进口</span>，一旦突破本土循环水育苗，苗种成本与供应稳定性同时改善。这与本期国际板块“陆基鲑苗种瓶颈”、以及150期仙桃黄鳝3亿尾苗种逻辑完全一致：谁掌握苗种，谁掌握产能开关。② 墨瑞鳕适合做商达“高值冷水鱼”第二条产品线——它高值、适合工程化、消费端认知度在提升。建议把墨瑞鳕与鲑鳟、石斑并列为“高值品种库”候选，按苗种可得性排序推进预研。③ 科研突破到产业落地仍有距离，需运营方承接——实验室育苗稳定≠商业苗种稳定。对商达的含义：应主动与取得突破的科研团队建立中试合作，把“科研苗”转化为“商业苗”，这比单纯购买设备更能建立壁垒。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">中国台湾地区大西洋鲑孵化育苗成功：亚热带首次实现鲑鳟全人工育苗，温控技术突破改写品种地理边界</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 中国台湾地区水产研究披露</div>
+    <div class="news-body">
+      9月22日披露，<span class="highlight">台湾地区科研团队成功实现大西洋鲑的孵化与育苗</span>，这是<span class="highlight">亚热带地区首次在人工温控环境下完成鲑鳟类全周期育苗</span>。突破关键在于全程低温可控水体的稳定运行，使得原本仅适合寒带海域的大西洋鲑，可在高温高湿的亚热带地区实现本土化苗种生产。该成果被视为陆基鲑鳟向非传统产区扩散的技术前提。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>台湾大西洋鲑育苗成功，核心不是“又多了一个产区”，而是它证明了“温控能力可以重写品种的地理边界”——这对所有陆基RAS都是根本性利好。</strong>三点判断：① <strong>“温控即地理自由”是陆基RAS的底层逻辑</strong>——<span class="highlight">亚热带地区靠全程低温可控水体实现鲑鳟育苗</span>，说明环境不再是品种选择的硬约束，温控能力才是。对商达的含义：在方案沟通中，应把“可养殖品种”从“当地传统品种”扩展为“全球高值品种”，用温控能力打开选品空间。② 这为“消费地近端产鲑”提供技术佐证——若亚热带可育苗，则大湾区、长三角等高温高消费地区同样具备陆基鲑前提。这与商达“城市近端RAS”逻辑直接契合。建议把该案例写入鲑鳟项目的可行性论证。③ 育苗成功≠养殖成功，能耗账是关键——亚热带维持低温的能耗成本显著高于寒带。对商达：在南方鲑鳟项目中，必须把“低温能耗”单列并做敏感性测算，优先配置绿电与热回收，否则单位成本难以覆盖。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">MDPI刊发RAS可持续发展综述：系统梳理能耗、尾水、碳足迹三大约束，呼吁标准化评价体系</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-21 &middot; MDPI 学术期刊</div>
+    <div class="news-body">
+      9月21日MDPI期刊刊发一篇<span class="highlight">循环水养殖系统（RAS）可持续发展综述</span>，系统梳理了RAS面临的三大约束：<span class="highlight">高能耗（尤其增氧与温控）、尾水营养盐富集、以及全生命周期碳足迹核算缺失</span>。综述指出，当前缺乏统一的RAS可持续性评价标准，导致不同项目间的环境效益难以横向比较，并呼吁建立涵盖能耗强度、水回用率、单位蛋白碳排的指标体系。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这篇综述的价值在于它把行业心照不宣的痛点（能耗、尾水、碳足迹）学术化、指标化了。对商达，这是一份可引用的“问题清单”，也是标准布局的机会。</strong>三点判断：① <strong>“缺乏统一评价标准”恰恰是商达的占位机会</strong>——综述明确<span class="highlight">当前缺乏统一RAS可持续性评价标准</span>。结合本期政策板块“十五五”规划要求加快陆基设施养殖标准体系建设，可以判断可持续评价标准将是下一批标准起草的重点。建议商达主动介入相关标准讨论。② 能耗与碳足迹将成为未来项目评审的硬指标——综述把能耗强度、单位蛋白碳排列为关键指标。对商达：应在方案阶段即披露单位产量能耗与水回用率，提前适应未来监管。③ 综述印证“尾水在系统内循环”的叙事科学性——尾水约束本质指向营养盐富集。商达“让你没有尾水”的卖点，正好对齐学术共识，可作为对外材料的科学背书。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">Nofima选育研究：大西洋鲑体脂从21%降至18%，挪威产业年省约1.05亿欧元——饲料效率具中等遗传力，可被直接选育</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-21 &middot; Nofima / NMBU / Mowi Genetics 联合研究（Seafood Media 转载）</div>
+    <div class="news-body">
+      挪威水产研究机构Nofima联合挪威生命科学大学（NMBU）与Mowi Genetics完成一项选育研究：<span class="highlight">通过定向选育降低大西洋鲑体脂、提高饲料效率，可使挪威三文鱼产业每年节省约1.05亿欧元</span>。测算基准为全鱼平均<span class="highlight">体脂从21%降至18%、饲料价格1.38欧元/公斤、年饲料消耗150万吨、初始饲料转化率（FCR）1.05</span>。试验设计：70组鱼、代表35个家系，初始体重50克，逐尾标记并做基因分型，在Sunndalsøra研究设施监测7周，完整测定采食量、生长与能量/蛋白留存流失平衡。结论是饲料利用效率具有中等遗传力，生长速度、饲料转化与脂肪沉积均可通过选育靶向改良。机理上，每克保留在体内的蛋白可结合4克水且无需额外饲料成本，而脂肪只挤占水分。研究由欧盟Horizon 2020的NewTechAqua项目资助，作者强调仍需海水网箱全尺寸商业鱼进一步验证。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这项研究的真正冲击力不在“省1.05亿欧元”，而在它把“饲料成本”这个公认的刚性约束，从配方端挪到了品种端。</strong>三点判断：① <span class="highlight">FCR 1.05与体脂21%是当前商业养殖的现实基线</span>，研究证明这个基线可以靠遗传选育而不是换配方下移。<strong>对商达的含义：</strong>RAS的封闭环境恰好是选育成果变现效率最高的场景——水温、投喂、溶氧都可控，品种的遗传潜力不会被环境噪声掩盖。② 约50%的体能耗降低可直接体现为采食量下降。建议在SKU策略上做一件事：把“低体脂高FCR品系”与“高体脂高溢价品系”分成两条产品线——前者走成本竞争（餐饮与加工原料），后者走品质溢价（刺身与礼盒）。③ 注意时间边界：验证期仅7周且需海水网箱全尺寸验证才能工业部署，3-5年内不会改变市场供给结构，但足以改变商达的苗种采购谈判语言。建议在与苗种供应商的合同中开始要求提供家系FCR与体脂数据，哪怕现在只是记录。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块3：建设动态 -->
+<div class="section" id="sec3">
+  <div class="section-header">
+    <span class="icon">🏗️</span>
+    <h2>建设动态</h2>
+    <span class="badge">L1 投产·开工·产能</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">东营卓越生态农业智能渔业项目9/22开标：黄河三角洲再落一子陆基循环水，盐碱地渔业化提速</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 中国招标投标公共服务平台</div>
+    <div class="news-body">
+      9月22日，<span class="highlight">东营卓越生态农业智能渔业项目进入开标阶段</span>。项目位于<span class="highlight">黄河三角洲盐碱地集中区</span>，规划以智能渔业（陆基循环水/工厂化）方式利用盐碱地发展水产养殖，建设内容含养殖车间、循环水处理系统、智能监控与配套工程。东营地处山东沿海，常年推进“盐碱地渔农综合利用”，本项目是当地继多家工厂化对虾之后新增的智能化渔业投资。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>东营项目的关键词是“盐碱地+智能渔业”，它把本期两条主线（建设提速+政策鼓励陆基设施）落在了同一个地理单元上。对商达，这是山东沿海设施渔业密度继续加大的信号。</strong>三点判断：① <strong>盐碱地渔业化是政策与土地双重驱动的确定性市场</strong>——东营属<span class="highlight">黄河三角洲盐碱地集中区</span>，这类土地不宜粮作但可渔农综合利用。结合本期政策板块多地补贴，可判断盐碱地智能渔业将成北方设施渔业主战场。建议商达把山东盐碱地区域列为重点开发带。② “智能渔业”入表意味着数据能力成为标配——项目明确含智能监控。这与150期青岛国信“数字化管理平台+无人化养殖”同构。对商达：不提供数据能力的方案在山东将难以入围。③ 9/22开标是当期可跟进的硬节点——开标当日意味着设备与集成商名单即将确定。建议商达若未参与，立即以“运营顾问/工艺复核”切入二期或后续运维。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">恒兴金鲳鱼加工基地9/22开标：养殖—加工一体化向金鲳鱼延伸，华南高值品种产业链闭环加速</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 中国招标投标公共服务平台</div>
+    <div class="news-body">
+      9月22日，<span class="highlight">恒兴金鲳鱼加工基地项目进入开标</span>。项目以<span class="highlight">金鲳鱼（高值海水鱼）的精深加工与冷藏保鲜</span>为核心，配套清洗、低温暂养、尾水处理与副产品综合利用设施。恒兴作为华南水产龙头，其布局指向“养殖—加工—流通”一体化，把金鲳鱼从活鲜原料升级为标准化加工品与预制菜原料。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>恒兴金鲳鱼加工基地把本期“建设提速”与“产业链闭环”两条线串了起来：设施渔业的上游（养殖）正在向下游（加工）主动整合。</strong>三点判断：① <strong>“加工基地”是养殖产能释放的配套刚需</strong>——金鲳鱼养殖扩张后，<span class="highlight">必须有加工与冷藏配套承接非活鲜部分</span>。结合150期舟山冷链园区“中央厨房+精深加工”逻辑，可判断未来RAS项目的下游锚定客户正从“活鲜批发”转向“加工企业”。建议商达把加工企业列为超级渔仓的下游合作方。② 金鲳鱼是高值海水鱼里的“规模品种”——与石斑、鲑鳟不同，金鲳鱼单位价值适中但体量可观，适合规模化陆基养殖+加工。建议商达把金鲳鱼纳入“高值但不极致”的中间品种评估。③ 尾水处理被列入加工基地配套——项目含尾水处理设施。这与商达“让你没有尾水”的叙事互补：即使加工端也需合规尾水，RAS的闭环优势更具说服力。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">聊城高唐海水工厂化循环养殖产业园签约：投资约4,000万元，鲁西内陆再布陆基循环水产能</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 聊城本地媒体 / 项目签约</div>
+    <div class="news-body">
+      9月22日披露，<span class="highlight">聊城高唐海水工厂化循环养殖产业园项目签约</span>，<span class="highlight">总投资约4,000万元</span>，建设内容为海水工厂化循环水养殖车间及配套系统。高唐位于鲁西内陆，项目以“人工海水+陆基循环水”方式生产海水鱼，目标服务山东内陆及华北城市近端市场，是继东营、呼图壁之后又一个内陆海鱼陆养样本。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>高唐4,000万级项目的意义在于它给出了“内陆海鱼陆养”的中等规模造价基准，便于商达做同体量方案的对标报价。</strong>三点判断：① <strong>4,000万是一个清晰的“中等规模”参照</strong>——对比本期<span class="highlight">聊城东昌府3.77亿</span>与东营、呼图壁，4,000万属轻量标准化单元。对商达：应建立“4,000万级/1亿级/3亿级”三档报价模板，匹配不同县域预算。② 鲁西内陆市场被激活——高唐服务山东内陆及华北城市近端。这说明“近端供应”逻辑在华北同样成立。建议商达把山东按“沿海（东营）—内陆（高唐、聊城）”分层开发。③ 同省同日多项目，说明山东进入建设密集期——东营、高唐、东昌府同周出现。建议商达在山东设常驻对接，集中承接标准化单元订单。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">呼和浩特循环365工厂化水产养殖项目9/21签约：投资约1亿元、用地50亩、主攻石斑鱼陆基循环水，一期2026年10月开工</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-21 &middot; 呼和浩特经济技术开发区管理委员会（官网发布 9/22）</div>
+    <div class="news-body">
+      9月21日，呼和浩特经济技术开发区、上海交通大学内蒙古研究院与中发国信（上海）农业科技发展有限公司等三家企业签署三方合作协议。其中<span class="highlight">循环365工厂化水产养殖项目由中发国信投资建设，规划用地50亩、计划总投资约1亿元</span>，推行“海鱼陆养”模式，建设标准化养殖车间、循环水处理、智能化管控与冷链仓储等配套设施，<span class="highlight">开展石斑鱼规模化养殖及技术服务</span>。进度安排：一期计划2026年10月开工、2027年10月完成建设调试、预计2028年1月首批商品石斑鱼上市，达产后年产商品鱼超1,000吨、预计年产值8,000万元。项目方称将针对性攻克北方寒区低温、干燥、温差大等养殖难题，采用模块化人工海水配比与闭环无抗防控技术，实现尾水近零排放。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>把这条新闻读成“又一个石斑鱼项目”就浪费了——它的坐标在北纬40度，是内陆寒区第一次把高端海水鱼工厂化养殖做成完整的商业计划。</strong>三点判断：① <span class="highlight">50亩用地、1亿元投资、1,000吨产出、8,000万元产值</span>，折算下来单位产值达8,000元/平方米级，用地强度是传统池塘的数十倍。<strong>对商达的含义：</strong>北方寒区、内陆省份对“高值水产本地化供给”的支付意愿被验证了——内蒙古鲜活石斑鱼长期依赖外地调入，成本高、保鲜难，本地供给存在真实缺口。② 进度表给出清晰的可比时间轴：2026年10月开工→2027年10月建设调试→2028年1月首批上市，从开工到首渔约15个月。建议商达把它作为“寒区RAS标准工期”的对照基准——任何客户项目的工期承诺都应与这条时间轴对照，超出部分必须解释原因。③ 值得警惕的一点：寒区最大的成本变量是冬季加温能耗，而项目公开材料未披露能源方案。建议在接触此类北方项目时，把“能源方案与单位加温成本”作为第一个技术问题提出——这既是专业度的体现，也是切入点。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块4：运营动态 -->
+<div class="section" id="sec4">
+  <div class="section-header">
+    <span class="icon">⚙️</span>
+    <h2>运营动态</h2>
+    <span class="badge">L1 成本·效率·饲料</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">江苏新誉农业5亿元陆基三文鱼项目10月首批上市：国产鲑鳟规模化供给再添一员，年底产能释放在即</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 江苏本地媒体 / 企业披露</div>
+    <div class="news-body">
+      9月22日披露，<span class="highlight">江苏新誉农业陆基三文鱼项目总投资约5亿元</span>，采用<span class="highlight">陆基循环水工艺养殖大西洋鲑</span>，预计今年10月首批商品鱼上市。项目建成后将是华东地区重要的国产鲑鳟供给节点，直接服务长三角高值生鲜与餐饮渠道。新誉农业的入局使国内陆基三文鱼“在建/在产”名单进一步拉长。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>新誉农业10月首批上市，是本期最实在的“国产鲑鳟即将放量”信号——它把150期还在“设计/开工”的产能，推进到了“出鱼”阶段。对商达，这是竞合兼具的样本。</strong>三点判断：① <strong>10月出鱼是商达的“同台对标”机会</strong>——新誉上市后，<span class="highlight">市场将首次有了“国产陆基三文鱼”的公开品质与价格参照</span>。对商达：应把新誉的产品规格、价格、渠道作为竞品监测对象，反推自身工艺与成本目标。② 5亿级+10月上市，验证鲑鳟落地节奏在加快——对比150期青岛国信年底开工，新誉已到出鱼，说明不同项目处于不同爬产阶段。建议商达在客户沟通中明确“爬产节奏差异”，避免客户误以为行业已全面满产。③ 长三角是鲑鳟近端最优市场——新誉服务长三角。这与商达“城市近端RAS”完全契合。建议商达在长三角优先布局，与新誉形成“错位品种/错位渠道”的竞合。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">韩国首座陆基三文鱼场采用AKVA技术落地：东北亚邻国加速复制挪威RAS方案，技术依赖挪威体系</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-21 &middot; 韩国媒体 / AKVA 披露</div>
+    <div class="news-body">
+      9月21日披露，<span class="highlight">韩国首座陆基三文鱼养殖场合采用挪威设备商AKVA的技术与系统落地</span>。该项目是<span class="highlight">韩国首次以陆基RAS方式规模化养殖大西洋鲑</span>，核心工艺、循环水设备与生物管理系统均引自挪威成熟体系。韩国凭借高消费、强冷链与近端市场，被视为陆基鲑的天然适生地，但关键技术环节仍依赖进口。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>韩国首座陆基三文鱼场用AKVA，暴露了一个行业现实：东北亚的陆基鲑热潮，底层技术仍握在挪威设备商手里。对商达，这既是警示也是机会。</strong>三点判断：① <strong>“设备依赖挪威”是国产替代的窗口</strong>——韩国项目<span class="highlight">核心工艺与设备引自挪威</span>。这提示商达：东北亚（韩、日）对RAS设备有真实需求，但供给被挪威垄断。建议商达把“性价比+本地服务”作为出海韩日的差异化卖点。② 韩国市场的近端逻辑与中国同构——高消费、强冷链、近端市场。说明陆基鲑在东北亚是共识性机会。建议商达在评估出海时，把韩国列为优先试点。③ 技术依赖≠不可超越——挪威体系的优势在工程经验，而商达的优势在运营与数据。建议以“运营能力输出”而非“设备硬刚”切入东北亚合作。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">兴安盟科右前旗陆基循环水基地跑通寒区养海鲜：150立方米标准化养殖池复养大西洋鲑与虹鳟，自订10余项企业标准、年产值2,000万元</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 正镶白旗人民政府网（转载兴安盟报道）</div>
+    <div class="news-body">
+      内蒙古兴安盟科右前旗依托优质水源建设的陆基循环水海鲜养殖基地已进入稳定运营：养殖车间内<span class="highlight">十余个150立方米水体的标准化养殖池</span>整齐排列，池中同时养殖大西洋鲑与南美白对虾，水温、溶氧、pH等数据实时监控。基地2024年以来打造集技术研发、种苗培育、生态养殖、加工销售于一体的产业链，并<span class="highlight">联合国内水产科研院所制定《陆基循环水养殖操作规范》等10余项企业标准</span>，填补寒旱地区规模化陆基工厂化海鲜养殖的标准空白。运营数据：1立方米水体可养殖南美白对虾55斤，单位水体养殖密度是传统模式的10倍以上；基地分批投苗确保四季有鲜，并针对元旦、春节等节点错峰上市；目前已培育大西洋鲑、虹鳟鱼、南美白对虾等多个特色品种，产品销往北京、沈阳等城市，年产值达2,000万元。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这条与本期建设板块的呼和浩特项目构成一组“寒区陆基对照”：一个是刚签约的计划，一个是已经跑出年产值2,000万元的现实样本。</strong>三点判断：① <span class="highlight">1立方米水体50斤级对虾、密度达传统模式10倍以上</span>——这个数说明寒区RAS的产能天花板不由气候决定，而由温控与增氧的投资强度决定。② <strong>最值得抄走的不是设备清单，是那份“10余项企业标准”</strong>。《陆基循环水养殖操作规范》由企业自己制定、联合院所背书，意味着该基地已把自己的工艺参数变成当地的事实标准。对商达的含义：商达的技术参数若不以标准形式外化，就会在同区域项目竞争中被别人的标准覆盖。建议把商达已有工艺参数整理成可对外发布的《陆基循环水养殖操作规范》类文本，作为项目投标的资质附件。③ 产品销往北京、沈阳说明寒区基地的销售半径已跨出本省——近端供应的“近”是相对高消费市场而言，不是相对产区。建议在客户方案里把选址逻辑从“靠近产地”改为“靠近高价值销地”。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块5：友商动态 -->
+<div class="section" id="sec5">
+  <div class="section-header">
+    <span class="icon">🔍</span>
+    <h2>友商动态</h2>
+    <span class="badge">L1 七家头部全链追踪</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">通威内陆养虾双线推进：山东高密度循环水 + 四川人工海水，光伏渔业龙头加速设施化对虾复制</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 通威农牧 / 企业公开信息</div>
+    <div class="news-body">
+      9月22日披露，<span class="highlight">通威在设施化对虾上采用“双线”打法</span>：在<span class="highlight">山东以高密度循环水养殖对虾</span>，在四川以人工海水方式养殖对虾。两条线分别利用山东的沿海设施渔业基础与四川的人工海水技术，共同指向“在消费地近端用可控环境产虾”。通威作为“光伏+渔业”龙头，其边际优势来自土地复合利用与电价，与纯水产企业的扩张逻辑不同。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>通威把对虾同时放在山东（循环水）和四川（人工海水），是把本期“建设提速”与“内陆海鱼陆养”两条线在同一家企业身上合流。对商达，这是最强硬的竞品信号之一。</strong>三点判断：① <strong>通威的“能源—土地—养殖”三位一体，直接抬高对虾设施化的成本底</strong>——其优势来自<span class="highlight">光伏电价与土地复合利用</span>，而电力是RAS运营成本中占比最高的单项。对商达：与通威同台必须用“单位产出综合成本”竞争，而非单比设备效率，建议尽快出“光储直柔RAS”能耗测算。② 四川人工海水养虾，验证了商达内陆近端模型——通威在四川用人工海水，说明内陆高消费市场的虾类近端供应已被头部验证。建议商达把四川、重庆等西南市场列入对虾近端优先区。③ “双线”说明对虾是设施化最确定的品种——结合150期对虾全国塘口均价19.4元/斤同比+21%、大规格紧缺，可判断通威的布局是对“大规格虾供给缺口”的回应。建议商达把对虾列为Q4客户开发第一优先品种。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">海大集团稳居水产饲料与动保龙头：在设施渔业“饲料—种苗—动保”链条上的卡位值得商达关注</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 行业格局分析 / 上市公司披露</div>
+    <div class="news-body">
+      9月22日行业分析指出，<span class="highlight">海大集团在水产饲料、种苗与动保环节稳居龙头</span>，其<span class="highlight">“饲料—种苗—动保—服务”一体化能力</span>覆盖了设施渔业最上游的投入品环节。海大的渠道下沉与技术服务网络，使其在养殖户端具备强黏性，并在种苗与配方端拥有行业定价影响力。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>海大不是直接的RAS整厂竞争者，但它卡在“饲料—种苗—动保”这个所有RAS项目都绕不开的上游，是商达必须正视的隐性对手与潜在伙伴。</strong>三点判断：① <strong>上游卡位比整厂卡位更稳</strong>——海大掌握<span class="highlight">种苗与配方</span>，而种苗是本期反复验证的产能开关。对商达：若无法掌握苗种，就应与海大这类龙头建立供应合作，而非回避。② “技术服务网络”是商达可借鉴的获客范式——海大靠下沉渠道与技术服务建立黏性。建议商达把“代运营+技术服务”作为客户黏性手段，对标海大模式。③ 配方端影响力关系成本——海大在饲料配方有定价影响力，直接影响RAS项目饲料成本。结合本期饲料板块豆粕-1.45%、菜粕-1.21%，建议商达与头部饲料企业建立配方联合优化机制，把饲料成本作为可管理变量。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块6：产品市场 -->
+<div class="section" id="sec6">
+  <div class="section-header">
+    <span class="icon">📦</span>
+    <h2>产品市场</h2>
+    <span class="badge">L1 活鱼3品种 · 电商4形态</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">9/22鲢鳙类活鱼当日批发价·按市场读：盐城华东交易中心花鲢16.00元/公斤、南通花鲢22.00/白鲢10.80、安吉花鲢19.00/白鲢9.00元/公斤</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 盐城市发改委 / 南通市发改委 / 安吉农副产品综合批发市场（当日采价）</div>
+    <div class="news-body">
+      9月22日各主要批发市场与政府价格监测点当日鲢鳙类报价：<span class="highlight">盐城市发改委——华东（盐城）农产品交易中心主副食品批发成交价（采价时点9月22日5时）：鳙鱼（花鲢）活1500克左右16.00元/公斤</span>；<span class="highlight">南通市发改委——市区市场主副食品价格：鳙鱼（花鲢）活1500克左右均价22.00元/公斤（监测点区间20.00-26.00）、鲢鱼（白鲢）活1000克左右均价10.80元/公斤（区间10.00-12.00）</span>；安吉农副产品综合批发市场当日菜价：花鲢约1000克19.00元/公斤、白鲢约1000克9.00元/公斤。农业农村部信息中心监测对照：9月21日全国白鲢鱼批发均价10.13元/公斤、单日跌0.6%。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>同一天、同为花鲢，盐城16.00、安吉19.00、南通22.00元/公斤——最高与最低相差6.00元/公斤、相差37.5%。这个离散度本身就是本期板块6最重要的一条信息。</strong>三点判断：① <span class="highlight">盐城8元/500克与南通11元/500克的差异不是数据误差</span>，而是产地集散属性与销地消费属性的差异：盐城是华东产区集散地，南通是苏中消费城市，两地价差即流通环节的定价空间。<strong>按市场读的意义就在这里：</strong>用“全国均价”或“城市均价”做客户收入测算，会同时高估产区项目收入、低估销区项目空间。② 规格是第二个变量：盐城与南通均标注花鲢“活1500克左右”，安吉标注“约1000克”，后者规格小一档、单价却仍高于盐城，说明长三角零售腹地对大规格的溢价意愿尚未完全体现在产区报价里。③ 白鲢的价格分布高度收敛（安吉9.00、南通10.80、全国10.13元/公斤）——没有离散度就没有定价权。建议维持此前的品种判断：花鲢定位“规格可控的高值补充品种”、白鲢仅作“维持性品种”。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">鲑鳟类批发价分层对照（行业报价区间，非单一市场当日价）：冰鲜刺身级（GB 10136）200-400元/公斤、冷冻普通级（GB 2733）100-200元/公斤——同一物种近两倍价差</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09 &middot; 行业报价区间（当月口径，非单一市场当日价）&middot; 进口商与加工厂报价综合</div>
+    <div class="news-body">
+      鲑鳟类批发价的分层结构在本月更为清晰。按执行标准划分：<span class="highlight">冰鲜三文鱼（刺身级，执行GB 10136）参考价200-400元/公斤，冷链0-4℃空运、出水3天到门店</span>；<span class="highlight">冷冻三文鱼（普通级，执行GB 2733）参考价100-200元/公斤，-18℃海运、出厂1-3个月到货</span>。差异不止价格：刺身级面向刺身与寿司场景、解冻后油脂丰腴；普通级解冻后质地偏柴、水分流失，适用香煎、烤制与熟食。流通端，冰鲜刺身加工集中在上海纯尔、上海荷裕、烟台巴鲜岛等工厂，可做到北上广深当日加工当日配送。采购核验要求为“三件套”：报关单（学名须为Salmo salar）、含寄生虫检测结果的检验检疫证明、批次包装执行标准。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>同一物种、同一产地，仅因执行标准不同就产生近两倍价差——这已经不是“价格”问题，而是“资质定价”问题。</strong>三点判断：① <span class="highlight">GB 10136与GB 2733之间那道线，本质是“可生食”三个字的准入资格</span>。200-400元与100-200元之间的差额，买的是寄生虫灭活工艺、微生物限量控制与全程温控记录，而不是鱼肉本身。② <strong>对商达的含义：</strong>国产RAS鲑鳟最容易拿到、也最难被进口品替代的资产，恰恰是这张“可生食资质”——进口冰鲜的48-72小时空运链是成本劣势，国产RAS的塘头到餐桌近距离是结构优势。建议把客户产品定位从“卖鲜鱼”改写为“卖可生食资质+近端时效”，价格锚定在上层而非下层。③ 风险提示（本期必须说清）：市场上大量标注“刺身”字样的产品实际执行GB 2733，消费者认知与标签现实之间存在信息差。这不是可长期利用的空隙，而是随时可能被监管收紧的风险点。建议商达主动协助客户输出《生食级鲑鳟采购核验清单》——把三件套核验标准做成公开物料，先做标准的人拿溢价。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">鲑鳟类生鲜电商零售价实测：山姆/盒马GB 10136可生食装50-80元/200g，京东京造1kg标“中检溯源200+项检测”，国产虹鳟仍全在冷冻熟制段</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-21 &middot; 生鲜电商平台在售商品与品牌公开信息（当月口径）</div>
+    <div class="news-body">
+      主要生鲜电商与会员店的鲑鳟类零售价与规格分布：<span class="highlight">山姆、盒马等商超渠道的可生食装（执行GB 10136并标注“可生食”）零售价约50-80元/200g装</span>；<span class="highlight">京东自营以“京东京造”三文鱼块1kg装为代表，包装明确标注“中检溯源200+项检测”</span>。品牌端，美威冷冻智利轮切三文鱼排400g/包（2-3片、大西洋鲑）、美威严选三文鱼排鱼段480g、鲜京采智利大西洋鲑鱼段1000g构成“精切小份—经济段装—大包装储备”三档。国产虹鳟端，海赋为新疆虹鳟、500g×2袋真空装、鲜切即冻；东上御品为新疆原料大连加工、500g单块独立真空、-78℃低温锁鲜，属速冻调制水产生制品、需熟制。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>把这组规格与价格排开，规律很清楚：分量越小、标注越硬、单价越高；而“国产虹鳟”目前全部落在冷冻熟制段，没有一条进入可生食零售段。</strong>三点判断：① <span class="highlight">50-80元/200g可生食装折算为250-400元/公斤</span>，与本期上一条刺身级批发价200-400元/公斤基本同构——说明零售端并未在批发价上叠加过多溢价，价格带由资质决定而非渠道决定。② <strong>“中检溯源200+项检测”这类标注正在成为零售端的标准动作</strong>，意味着检测与溯源能力已从“加分项”变成“入场券”。对商达的含义：客户的采购方未来会主动索要检测项清单，商达要准备的是“能提供多少项、由谁出具、多久出一次”，而不是“我们的鱼很安全”。③ 国产虹鳟的定位缺口就是机会窗口：海赋、东上御品均以“新疆虹鳟、鲜切即冻、需熟制”出现，真正的可生食零售段仍由进口大西洋鲑占据。建议把“国产虹鳟进入可生食零售段”列为年度目标——路径是先把GB 10136出厂检测与寄生虫灭活工艺做扎实，再在一个会员店渠道跑通一个SKU。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块7：渠道动态 -->
+<div class="section" id="sec7">
+  <div class="section-header">
+    <span class="icon">🏪</span>
+    <h2>渠道动态</h2>
+    <span class="badge">L1 生鲜平台·线下零售</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">苏州发改委9/21期采集朴朴、盒马、叮咚、小象超市生鲜水产价：新渠道价格纳入政府监测，近端零售数据成公开资产</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-21 &middot; 苏州市发展和改革委员会</div>
+    <div class="news-body">
+      9月21日，<span class="highlight">苏州市发改委发布新一期民生商品价格采集</span>，采集范围覆盖<span class="highlight">朴朴、盒马、叮咚买菜、小象超市等前置仓/即时零售渠道的生鲜水产价格</span>。这是地方政府首次把“即时零售新渠道”系统纳入民生价格监测，意味着商超即时零售端的水产价格将成为公开、可比对的数据资产，为“近端供应溢价”提供官方口径参照。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>苏州发改委把朴朴、盒马、叮咚、小象纳入监测，是本期渠道板块最有分量的信号：新渠道价格正在“官方化”，而这对RAS的近端溢价论证是长期利好。</strong>三点判断：① <strong>“近端零售价”有了官方可比基准</strong>——此前RAS的近端溢价只能靠企业自说，现在<span class="highlight">政府监测提供公开数据</span>。建议商达把苏州发改委这类公开采集作为“3小时鲜活圈最高报价”的权威来源，写入收益模型。② 新渠道是RAS产品的最佳出口——朴朴/盒马/叮咚/小象主打即时、鲜活、可溯源，与RAS产品属性高度契合。建议商达把这些渠道列为优先级客，用“稳定规格+稳定交付”换长期协议。③ 监测扩围预示更多城市跟进——苏州先行，其他新一线城市可能复制。建议商达建立“重点城市新渠道价监测表”，把盒马/叮咚等同城竞品价作为动态定价参考。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">舟山“网上渔市”9/21启幕：联动抖音、淘天、京东三平台＋顺丰“开渔直通车”，活动持续至10月20日、当地海产品网上年交易规模已破30亿元</div>
+    <div class="news-meta"><span class="news-grade grade-B">L1</span> 2026-09-21 &middot; 浙江日报·潮新闻 / 舟山市商务局</div>
+    <div class="news-body">
+      9月21日，由浙江省商务厅指导、舟山市商务局主办的“2026线上东海开渔·舟山网上渔市”在沈家门鳌鱼广场启幕。<span class="highlight">活动首次联合舟山国际水产城与远洋渔业基地两大电商园，联动抖音、淘天、京东三大平台，并配合顺丰、京东的“开渔直通车”专项物流方案</span>；<span class="highlight">三大平台同步推出产地溯源功能</span>，完善冷链运输与售后理赔。活动首日推出首批“严选商家”名单共18家。规模数据：舟山现有300多个“舟山海鲜”电商企业、200多个“舟山海味”直播间，带动全市海产品网上年交易规模突破30亿元，占全市网上销售额近三分之一。活动将持续至10月20日。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这次网上渔市最值得记录的，不是“卖了多少货”，而是“产地溯源”被三大平台同时列为标配功能。</strong>三点判断：① <span class="highlight">抖音、淘天、京东在同一场活动中同步上线产地溯源</span>，说明平台侧已把“可验证来源”当作水产品类的基础设施，而不是品牌方的自选动作。<strong>对商达的含义：</strong>RAS的可追溯是系统内的原生数据，不需要额外建设——这是少数“系统性优势”可零成本转化为平台合规成本的场景。② 30亿元年交易规模、占全市网上销售额近三分之一说明水产线上集中度极高，平台流量正向“有故事、有产地、有溯源”的品类倾斜。③ 结构性机会在“严选商家”这类名单机制上——18家严选商家由经营数据综合评定产生，本质是平台把信任背书资产化。建议商达客户尽早争取进入各平台产地严选/溯源白名单，因为进入门槛是数据合规而非营销预算，这恰好对RAS客户有利。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">叮咚买菜9/21上海松江站上线火锅季：1500余款商品、“有机安心去刺鱼片”系列上架，平台用“免处理”水产押注即时零售</div>
+    <div class="news-meta"><span class="news-grade grade-B">L1</span> 2026-09-21 &middot; 上观新闻 / 叮咚买菜（站点实地报道）</div>
+    <div class="news-body">
+      9月21日，叮咚买菜上海松江广富林站点冷柜区与货架火锅商品明显增多。<span class="highlight">平台已全面启动以“鲜”为主题的火锅季，围绕“鲜锅底、鲜食材、鲜体验”提供1500余款商品</span>。除云南风味酸汤锅、跷脚牛肉锅、椰子鸡锅等地域锅底外，<span class="highlight">潮汕鲜切牛肉、盐池滩羊、鱼片、虾滑及蔬菜净菜被陈列在醒目位置</span>，并上线数十款分场景食材拼盘。“新奇特”食材方面，糯唧唧甲鱼裙边、瀑布大刀鱼片、巴掌大生蚝同步上架，以及有机安心去刺鱼片系列。站点介绍，火锅品类订单量逐步升温，9月底还将上线云南风味鲜舂火锅底料与泰式小青柠酸辣蘸拌汁。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>在整份上架清单里，“有机安心去刺鱼片系列”这七个字才是与商达直接相关的信号——它把水产加工的三个溢价词（有机、安心、去刺）同时写在了一个产品名上。</strong>三点判断：① <span class="highlight">“去刺”意味着加工深度前置</span>：消费者不再为整鱼付费，而为已完成的处理工序付费。<strong>对商达的含义：</strong>RAS鱼的优势之一是规格一致，而规格一致正是自动化去刺工序的前提——传统池塘的规格离散会让机器去刺的出成率大幅波动，这是RAS进入预制加工环节的天然门槛优势。② 1500余款商品与分场景拼盘说明平台在用SKU密度做即时零售的护城河，但决定复购的是少数高频硬通货——水产要成为硬通货，必须在“免处理”上做到位。③ 时间窗口：平台火锅季9月中启动、9月底上线新底料，而商达客户的水产加工品从立项到上架通常需8-12周，现在启动只能赶上冬季后半程。建议把“平台档期倒推排产”作为客户服务的标准动作——先拿到平台上架日历，再倒推加工排期，而不是先养出来再找渠道。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块8：资本市场 -->
+<div class="section" id="sec8">
+  <div class="section-header">
+    <span class="icon">📈</span>
+    <h2>资本市场</h2>
+    <span class="badge">L1 四家估值风向标</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">国联水产9/21涨5.14%收3.07元、9/24召开临时股东大会：渔业转型标的再获资金关注</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-21 &middot; 交易所行情 / 公司公告</div>
+    <div class="news-body">
+      9月21日，<span class="highlight">国联水产（300094.SZ）上涨5.14%、收于3.07元</span>，成交量放大。公司公告<span class="highlight">将于9月24日召开临时股东大会</span>，审议事项涉及经营与资本层面安排。国联水产作为水产加工与贸易龙头，其股价波动常被视作设施渔业/水产转型主题的市场情绪指标。需注意其此前披露资产负债率偏高、短债缺口较大，转型成效仍待验证。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>国联水产单日+5.14%且即将开临时股东大会，是本期资本市场最明确的“转型预期”信号，但与150期一样，领涨的仍是高估值/高负债标的，提示主题定价特征未变。</strong>三点判断：① <strong>股价涨≠资产改善，仍是主题定价</strong>——<span class="highlight">国联水产此前资产负债率偏高、短债缺口大</span>，本次上涨更多反映市场对“水产转型”标签的买入。对商达：资本市场已为设施渔业主题重新定价，但资产定价尚未开始，应把握窗口准备可披露资产清单。② 临时股东大会是潜在动作节点——9/24股东会可能释放经营或资本安排信号。建议商达关注会后公告，评估是否出现技术合作/资产注入机会。③ 高负债转型标的=商达的轻量合作客户——这类公司有强烈“讲转型故事”的需求。建议优先推进“技术合作/委托运营”等不影响股权的轻量模式，避免在情绪高点做股权决策。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">百洋股份9/21涨2.39%、9/22再涨1.91%：水产饲料—加工龙头连续两日获资金加仓</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 交易所行情</div>
+    <div class="news-body">
+      9月21日至22日，<span class="highlight">百洋股份连续两个交易日上涨，9/21涨2.39%、9/22再涨1.91%</span>。百洋作为<span class="highlight">水产饲料、加工与医药（鱼胶原等）一体化企业</span>，其连续走强反映资金对水产全产业链龙头的持续关注。与国联水产不同，百洋全产业链布局更均衡，被视为设施渔业上游更稳健的受益标的。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>百洋连续两日上涨且基本面更均衡，说明资金开始从“高负债转型故事”转向“有真实产业链的龙头”，这是资本市场细分设施渔业的早期迹象。</strong>三点判断：① <strong>“全产业链均衡”正获得估值溢价</strong>——百洋<span class="highlight">饲料—加工—医药一体化</span>，比单点转型标的更稳。这与商达“设备+运营+数据”三位一体逻辑同构：市场开始奖励“有真实产业协同”的玩家。② 连续上涨是板块情绪延续的信号——结合150期渔业板块9/21大涨3.44%，可判断设施渔业主题资金在持续流入。建议商达把握Q4资本窗口。③ 百洋是潜在的供应链合作伙伴——其饲料与加工能力可补商达上游。建议评估与百洋在饲料配方、加工渠道上的合作可能，而非仅视为竞品。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">獐子岛9/21涨4.93%至3.83元后9/22回落1.83%；好当家9/21涨4.18%、9/22跌2.01%，2026中报冷冻调理食品收入3.08亿元占38.41%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 交易所行情 / 上市公司2026年中报</div>
+    <div class="news-body">
+      两家海洋养殖标的近日连续异动后回落。<span class="highlight">獐子岛（002069）9月21日收3.83元、单日涨4.93%，9月22日收3.76元、跌1.83%</span>，区间振幅6.30%。<span class="highlight">好当家（600467）9月21日收2.49元、涨4.18%（换手率3.69%），9月22日收2.44元、跌2.01%</span>。基本面端，好当家2026年中报：营业总收入8.03亿元（同比+12.99%）、净利润2,997.88万元（同比+21.74%）、ROE 0.87%、资产负债率49.13%、市净率1.06，收入结构中海参产品4.11亿元（占51.17%）、冷冻调理食品3.08亿元（占38.41%）、捕捞海产品7,438.08万元（占9.26%）。獐子岛2026年中报收入结构为水产贸易3.02亿元（41.30%）、水产加工2.96亿元（40.48%）、水产养殖1.01亿元（13.86%）。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>两家公司的中报结构里藏着一条容易被行情噪音盖住的线：它们的“养殖”收入占比都已经让位于“加工与贸易”。</strong>三点判断：① <span class="highlight">好当家海参占51.17%、冷冻调理食品占38.41%</span>，獐子岛则是水产贸易41.30%＋水产加工40.48%、养殖仅13.86%——传统海水养殖龙头的收入重心已不在养殖本身。② <strong>对商达的含义一正一负。</strong>正面：“冷冻调理食品”是好当家实现两位数增长的品类，证明水产的价值兑现点在下游加工与标准化包装，这与本期渠道板块叮咚“有机安心去刺鱼片”的上架逻辑一致。负面：两家公司都没有在定期报告中把“设施渔业/循环水”单列为可辨识业务单元，说明资本市场目前还无法从传统养殖标的里“看见”RAS的估值。③ 这恰好解释了本期板块1的融资结构：全球RAS增量资金流向Oceanloop、ARK、Kingfish这类纯RAS标的，而不是转型中的传统养殖公司。建议：商达对接资本时的叙事重点，应放在“可被单独计量的设施渔业业务单元”上。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块9：政策法规 -->
+<div class="section" id="sec9">
+  <div class="section-header">
+    <span class="icon">📋</span>
+    <h2>政策法规</h2>
+    <span class="badge">L1 中央·地方政策 + 水产舆情</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">扬中、郑州、海兴等地出台陆基循环水养殖补贴细则：单户最高200万元、先建后补、3-5个月申报窗口开启</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 地方财政 / 农业农村主管部门</div>
+    <div class="news-body">
+      9月22日，多地披露<span class="highlight">陆基循环水养殖财政补贴细则</span>：扬中、郑州、海兴等地陆续明确，对<span class="highlight">新建或改造的循环水养殖设施给予最高200万元/单户补助</span>，采取“先建后补”方式，申报窗口集中在项目建成后的3-5个月内。补助范围覆盖循环水处理、智能增氧、温控、尾水达标等核心模块，与“十五五”规划专栏2第05项“陆基设施循环水养殖”工程直接对齐。部分地方还要求配套物联网监控与数据接入，作为补贴拨付的前置条件。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>200万元/单户、先建后补、3-5月窗口——这组数字把150期“陕西设备补助≤30%”的地方实践又向前推了一步：补贴正在从“比例上限”走向“封顶+流程”的可操作形态。对商达，这是最直接的可转化销售杠杆。</strong>三点判断：① <strong>“封顶200万”是清晰的报价锚</strong>——客户建<span class="highlight">循环水设施最高可获200万元补助</span>，商达应直接以“补贴后净投资额”报价，降低决策门槛。② “3-5月申报窗口”是硬性时间约束——先建后补、建成3-5月内申报意味着客户必须把“补贴申报”嵌入建设节奏。建议商达提供“补贴申报协助”前置服务，把拿到补贴作为拿下订单的手段。③ “物联网监控作前置条件”利好数据平台——数据接入成为补贴拨付条件，与商达数据中台产品直接对齐。建议把数据平台作为补贴合规的必配模块推销。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">海南出台18条用海要素保障举措：陆域海水养殖集中取排水与尾水配套纳入规范，渔民每户50亩内养殖用海免缴海域使用金</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-21 &middot; 中国新闻网 / 海南省农业农村厅</div>
+    <div class="news-body">
+      海南省自然资源和规划厅联合省财政厅、省农业农村厅、省旅游和文化广电体育厅印发《关于加强海洋渔业和旅游业用海要素保障和服务管理的意见》，推出18条举措，<span class="highlight">自2026年9月15日起施行、有效期五年</span>。养殖用海方面，<span class="highlight">明确规范陆域海水养殖集中取排水、尾水处理配套设施建设，细化海洋牧场海域使用金征收与减免细则</span>；同时明确渔民每户50亩以内养殖用海免缴海域使用金。管理端推行集中连片养殖区整体海域使用论证制度，区域内后续落地项目无需重复论证，并将用海项目海域使用金减免审批权限下放至市县办理。文件从强化用海规划管控、夯实用海要素保障、优化政务服务管理、健全海域监管体系四个维度发力。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这份文件真正值得记录的，不是“18条”这个数量，而是它把“陆域海水养殖的取排水与尾水配套”写进了省级用海要素保障文件。</strong>三点判断：① <span class="highlight">“集中取排水+尾水处理配套”被单列，等于承认陆域海水养殖是合法且被鼓励的用海形态</span>——此前这类项目常因取排水口设置卡在论证环节。② 渔民每户50亩内免缴海域使用金，对商达的“公司+村集体+养殖户”模式是直接利好：村集体作为用海主体的成本被抹平，谈判门槛下降。③ 审批权限下放市县，意味着项目周期将从“省级论证”压缩到“市县办理”。<strong>建议：把海南（海口、万宁、文昌、陵水）列为2026Q4重点走访区域，携带“陆域海水养殖取排水+尾水一体化方案”作为前置沟通材料，而不是直接谈设备。</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">【水产舆情】中国香港食安中心：美国进口即食生蚝大肠杆菌超标至790 MPN/100g，进口商已停售下架并启动回收</div>
+    <div class="news-meta"><span class="news-grade grade-B">L1</span> 2026-09-21 &middot; 中国香港食物环境卫生署食物安全中心</div>
+    <div class="news-body">
+      中国香港食物环境卫生署食物安全中心9月21日表示，一个由美国进口的即食生蚝样本检出大肠杆菌含量超标。产品品牌为<span class="highlight">American Pearl、来源地美国、进口商为姬富亚州有限公司，采集日期2026年9月14日</span>。检测结果显示，<span class="highlight">每100克样本的大肠杆菌最大可能数为790</span>。根据《食品微生物含量指引》，每100克拟供直接食用的活或生的双壳贝类软体动物，大肠杆菌最大可能数超过700即属“不满意”。中心已指令进口商立即停售、下架并展开回收，并呼吁业界停止使用或出售受影响产品。中心同时提示，生或未彻底煮熟的蚝属高风险食物，孕妇、幼童、长者、免疫力弱人士及肝病患者应避免进食。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这条舆情的价值不在“又一起进口水产不合格”，而在它暴露了开放水域滤食性养殖模式的固有风险结构：风险不在加工环节，而在水域本身。</strong>蚝以过滤大量海水进食，若养蚝或采蚝水域水质带有病原体，会在体内富集——<span class="highlight">这是养殖模式的先天属性，不是管理疏漏</span>。<strong>对商达的含义非常直接：</strong>RAS的封闭循环水体把“水域风险”从变量变成了参数——源水经处理后进入系统，不再受自然水体病原体波动影响，这是“无抗+可追溯”叙事最硬的技术底座。建议把这起事件与本期政策板块的合规趋势合并成一套客户沟通材料：不讲“我们的鱼更安全”，而讲“哪些风险在传统模式下无法消除、在RAS里可以被参数控制”。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块10：国际动态 -->
+<div class="section" id="sec10">
+  <div class="section-header">
+    <span class="icon">🌍</span>
+    <h2>国际动态</h2>
+    <span class="badge">L1 全球RAS·巨头动向</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">全球三文鱼巨头格局：Mowi、SalMar、Cermaq稳居第一梯队，陆基新势力与传统网箱同台竞争</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-22 &middot; 行业格局综述</div>
+    <div class="news-body">
+      9月22日行业综述，<span class="highlight">Mowi、SalMar、Cermaq三大传统巨头仍稳居全球三文鱼第一梯队</span>，以<span class="highlight">挪威与智利网箱养殖</span>为主，掌握种苗、饲料、加工与渠道全链条。与此同时，陆基RAS新势力（Proximar、Salmon Evolution、Atlantic Sapphire等）试图以“无逃逸、可追溯、近端供应”切入细分市场。综述指出，传统巨头的规模成本优势短期难以撼动，但RAS在可持续叙事与近端定价上具备差异化。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>三巨头格局提醒商达：陆基RAS在全球仍是非主流补充，但它的差异化切入口（可追溯、近端、稳定定价）恰恰是商达对国内客户的核心卖点。</strong>三点判断：① <strong>巨头掌控“种苗—饲料—渠道”全链</strong>——<span class="highlight">Mowi/SalMar/Cermaq掌握全链条</span>。对商达：必须补齐苗种与饲料短板，否则只能做巨头不愿做的细分（近端、小规格、定制）。② RAS的差异化已被行业共识——无逃逸、可追溯、近端是RAS标签。建议商达把这些词前置到对客话术。③ 国内可复制“巨头+新势力”分层——国内也将出现通威/海大（类巨头）与商达（类新势力）的分层。建议商达明确“新势力”定位，用运营与数据差异化竞争。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">Salmon Evolution“冰岛+挪威”混合战略推进HFS：陆基鲑多基地模式寻求规模经济</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; Salmon Evolution 披露 / 行业媒体</div>
+    <div class="news-body">
+      9月22日披露，<span class="highlight">Salmon Evolution继续推进其“冰岛+挪威”混合养殖战略（HFS，Hybrid Flow-Through System）</span>。公司利用<span class="highlight">冰岛外海优质冷水与挪威本地市场</span>的组合，试图在不依赖全封闭RAS高能耗的前提下实现陆基/近陆养殖。其逻辑是用半封闭流加系统折中能耗与可控性，目标在规模上逼近传统网箱的成本曲线。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>Salmon Evolution的HFS路线，给商达一个重要提醒：陆基鲑不等于“全封闭RAS”，能耗折中是行业正在探索的现实路径。</strong>三点判断：① <strong>“能耗折中”是全球陆基鲑的共同难题</strong>——HFS用<span class="highlight">半封闭流加折中能耗与可控</span>，说明全封闭RAS的高能耗是行业痛点。建议商达在鲑鳟方案中优先配置绿电与热回收。② 冰岛冷水+挪威市场的组合值得借鉴——优质冷水降低温控能耗。对商达：选址应把“自然冷源”作为能耗敏感品种的硬约束，南方鲑鳟须谨慎。③ 多基地模式追求规模经济——冰岛+挪威双基地指向规模摊薄固定成本。结合150期Proximar“成本靠规模而非技术”，建议商达在财务模型中显式建模达产爬坡。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">Atlantic Sapphire股价较发行价跌约98%（OSL: ASA 4.47 NOK）：陆基鲑“爬产陷阱”的极端样本警示</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 奥斯陆证交所 / 行业媒体</div>
+    <div class="news-body">
+      9月22日行情，<span class="highlight">Atlantic Sapphire（奥斯陆证交所代码ASA）股价约4.47挪威克朗，较发行价累计下跌约98%</span>。该公司曾是<span class="highlight">陆基三文鱼规模最大的明星项目之一</span>，但因迈阿密基地多次大规模死鱼、达产严重滞后、成本失控，市值几近归零。其案例被普遍视为“陆基鲑爬产陷阱”的极端样本，警示行业生物安全与达产节奏远比融资规模重要。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>ASA跌98%是本期的“风险教科书”：它用归零的市值证明，陆基鲑的胜负手不是融了多少钱，而是生物安全与达产。对商达，这是对外叙事中最有说服力的“反面证据”。</strong>三点判断：① <strong>“死鱼=归零”是陆基鲑的第一风险</strong>——ASA因<span class="highlight">多次大规模死鱼、达产滞后</span>而崩塌。对商达：生物安全体系必须作为方案的最高优先级，而非成本可砍项。② 融资规模≠成功概率——ASA曾是最大规模明星项目却归零，说明资本故事不能替代运营能力。建议商达以“运营实绩”而非“融资额”做对外论证。③ 用ASA做客户风险教育——在与政府/资本客户沟通时，主动引用ASA案例，说明为何商达坚持“运营+数据”而非纯工程，反而增强专业可信度。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">加拿大东部三文鱼进口额十年翻倍至7.65亿加元、出口值反降8%：行业协会要求2030年前将新场址审批时间砍半</div>
+    <div class="news-meta"><span class="news-grade grade-B">L1</span> 2026-09-22 &middot; eFeedLink / 大西洋加拿大鱼类养殖者协会（ACFFA）</div>
+    <div class="news-body">
+      大西洋加拿大鱼类养殖者协会（ACFFA）发布行业路线图，呼吁加快三文鱼养殖监管审批。报告显示，<span class="highlight">2025年加拿大进口大西洋鲑金额超过7.65亿加元（约5.51亿美元），是2016年的两倍</span>，而同期<span class="highlight">加拿大三文鱼出口值下降8%</span>。报告测算该行业可在2035年前为大西洋加拿大地区贡献1%的GDP增量，核心建议是在2030年前将新场址审批与扩建周期压缩50%。目前该地区部分审批长达七年，而挪威同类简单申请的目标时限为26周；新场址获批后还需三到五年才能首次收获。产量对照：2025年加拿大出口约6.5万吨三文鱼，挪威超140万吨、智利82.5万吨。ACFFA估算大西洋区该产业支撑超过9,400个就业岗位、约32亿加元经济产出。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>这份路线图的真正信息量在于：一个老牌养殖国正在亲手证明“审批周期就是产业竞争力的第一变量”。</strong>三点判断：① <span class="highlight">进口翻倍而出口值下降8%</span>——加拿大用十年把市场让给了挪威和智利，不是因为技术落后，而是因为新建场址最长七年、获批后还要三到五年才首渔。② 报告把“审批天数”与“GDP贡献”放进同一份文件量化，这是一种把行政效率直接金融化的表达方式。③ <strong>这条对商达的意义是反向的：</strong>国内陆基RAS项目当前最大的外部变量恰好也是“审批与要素保障”——土地、取排水、环评。本期政策板块海南18条把“陆域海水养殖取排水与尾水配套”写进省级文件、并把审批权限下放市县，本质是同一件事的另一面。建议：把“要素获取周期”作为商达项目方案的独立章节，向客户明示“从签约到开工的行政审批路径与预计天数”，把确定性变成可售卖的交付物。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块11：展会活动 -->
+<div class="section" id="sec11">
+  <div class="section-header">
+    <span class="icon">📅</span>
+    <h2>展会活动</h2>
+    <span class="badge">L1 展会·论坛·峰会</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">2026西北水产设施化养殖交流会9/22-24银川召开：内陆干旱区设施渔业成区域焦点</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 会议主办方 / 行业媒体</div>
+    <div class="news-body">
+      9月22日至24日，<span class="highlight">2026西北水产设施化养殖交流会在宁夏银川召开</span>。会议聚焦<span class="highlight">西北内陆干旱区的设施渔业路径</span>，议题涵盖盐碱地渔农综合利用、陆基循环水、人工海水配制、冷水鱼养殖等。银川作为西北设施渔业枢纽，其选址呼应本期新疆呼图壁海鱼陆养开工，标志西北正成为内陆设施渔业的新兴聚集区。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>银川交流会+呼图壁开工，两条新闻在同一周把“西北内陆设施渔业”推到台前。对商达，这是一片刚升温、竞品尚少的蓝海。</strong>三点判断：① <strong>西北是“内陆海鱼陆养”的最佳试验场</strong>——<span class="highlight">干旱内陆+高消费+人工海水</span>组合，与商达近端模型契合。建议把宁夏、新疆、甘肃列为内陆近端优先区。② 会议是低成本获客节点——9/22-24银川，商达可借“产业活动节点”（150期建议）做产地开放日式触达。③ 盐碱地议题对应政策补贴——会议含盐碱地渔农综合利用，与本期多地循环水补贴同频。建议以补贴对照表切入西北客户。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">AquaNext 2026于9/22-23在挪威斯塔万格举行：全球RAS与水产科技风向标</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-22 &middot; AquaNext 主办方</div>
+    <div class="news-body">
+      9月22日至23日，<span class="highlight">AquaNext 2026在挪威斯塔万格举行</span>。该展会是<span class="highlight">全球RAS与水产科技的重要风向标</span>，聚集循环水设备、传感器、饲料、生物安全与数字化供应商，议题聚焦陆基养殖的能耗优化与规模经济。其展示的部件级创新（微滤、生物滤料、溶氧），是商达供应链跟踪的重点。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>AquaNext作为全球RAS风向标，其展商品类结构就是商达供应链策略的“未来地图”。</strong>三点判断：① <strong>部件级创新是长期趋势</strong>——展会聚焦<span class="highlight">微滤、生物滤料、溶氧等部件</span>。建议商达优先与关键部件供应商建独家/优先合作。② 能耗优化是主线——议题聚焦能耗优化，呼应本期ASA能耗警示。建议商达把能耗指标列为方案硬参数。③ 挪威仍是技术策源地——斯塔万格聚集全球RAS创新。建议商达保持对挪威技术动态跟踪，必要时技术引进。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">IceFish 2026冰岛展会9/22-24举行：北极圈水产科技与冷水养殖装备集中亮相</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> 2026-09-22 &middot; IceFish 主办方</div>
+    <div class="news-body">
+      9月22日至24日，<span class="highlight">IceFish 2026在冰岛举行</span>。展会以<span class="highlight">北极圈水产科技与冷水养殖装备</span>为特色，覆盖冷水鱼育苗、低温环境控制、可持续捕捞与养殖。冰岛作为优质冷水与近岸养殖代表区，其装备与工艺对高纬度、低温地区陆基鲑项目有直接参照价值。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>IceFish聚焦冷水装备，对商达的鲑鳟与冷水鱼产品线是关键的技术情报源。</strong>三点判断：① <strong>冷水装备直接对标鲑鳟</strong>——展会覆盖<span class="highlight">冷水鱼育苗、低温环境控制</span>，与商达鲑鳟工艺相关。建议跟踪其低温控制方案。② 冰岛模式值得研究——优质冷水+近岸养殖对应Salmon Evolution的HFS逻辑。建议把“自然冷源利用”写入选址规范。③ 北极圈科技外溢可期——冰岛创新多面向可持续，与MDPI综述的可持续呼吁同频。建议商达把可持续指标纳入方案。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">烟台三场水产专业会集中在10/26-27同周举办：水产品加工技术研讨会、水产及制品检测技术交流会、食品安全风险交流论坛</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 食品伙伴网会议中心（官方会期公告）</div>
+    <div class="news-body">
+      食品伙伴网会议中心公布秋季会期安排，三场水产及食品相关专业会议集中在烟台同一周举办：<span class="highlight">2026第七届水产品加工技术研讨会（10月26-27日）、2026水产及其制品检测技术交流会（10月26-27日）、2026食品安全风险交流论坛（10月26-27日）</span>。同期同城另有<span class="highlight">2026饲料及宠物食品检测技术交流会（11月12-13日，济南）</span>。三场会议主题分别落在加工工艺、检测技术与风险沟通三个环节，构成“加工—检测—风险”的完整链条，且均以线下形式在烟台举办。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>三场会排在同一周同一城不是巧合，是行业需求结构变化的信号：加工端、检测端、风险沟通端已经必须坐在一起谈。</strong>三点判断：① <span class="highlight">“加工技术+检测技术+风险交流”三会并置</span>，说明水产行业的竞争焦点正从“能不能养出来”转向“能不能被检验合格地交付出去”。② <strong>对商达最直接的价值在检测会</strong>——RAS产品的差异化资产（无抗、可追溯、批次一致性）最终都要靠检测报告说话。参加检测会的收益不是听报告，而是摸清客户采购端认可的检测项目清单与判定口径，再反向写成商达的出厂标准。③ 时间窗口明确：10月26-27日，距今约五周。建议本周内确认参会名单（技术负责人+品控负责人），并会前整理一份“商达检测项目对照表”，带着问题去谈。建议顺序：检测会（10/26）→ 加工技术会（10/27），风险论坛按需参加。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 板块12：饲料原料 -->
+<div class="section" id="sec12">
+  <div class="section-header">
+    <span class="icon">🌾</span>
+    <h2>饲料原料</h2>
+    <span class="badge">L1 4大原料+添加剂·利润快算</span>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">鱼粉22,400-22,500元/吨维持平稳：秘鲁新季配额预期主导，高值品种饲料成本短期无下行空间</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 饲料行业监测</div>
+    <div class="news-body">
+      9月22日监测，<span class="highlight">国产与进口鱼粉价格维持在22,400-22,500元/吨区间平稳</span>。市场关注<span class="highlight">秘鲁新季捕捞配额与IMARPE资源评估结论</span>，若配额偏紧，鱼粉短期难有下行。鱼粉作为鲑鳟、对虾、鳗鱼等高值品种的核心蛋白源，其高位直接锁定了这类品种的饲料成本下限。部分企业已提高植物蛋白替代比例以对冲。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>鱼粉持稳在22,400-22,500元/吨，是鲑鳟与对虾成本的“硬地板”。对商达，这再次确认：植物蛋白替代能力是高值品种RAS的必备技术。</strong>三点判断：① <strong>鱼粉是鲑鳟成本的硬约束</strong>——<span class="highlight">高位持稳且无下行</span>，鲑鳟料成本缺乏弹性。建议商达在鲑鳟财务模型中把鱼粉列为独立风险项。② 秘鲁配额是外部变量——IMARPE评估决定鱼粉走向，建议跟踪10月前后结论作为成本情景输入。③ 植物替代是必经之路——行业已提高植物蛋白替代比例，与150期“约85%鱼类饲料来自植物蛋白”印证。建议商达储备替代配方技术资料。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">9/22饲料原料日度：豆粕均价3,441元/吨跌32、菜粕2,435跌20、玉米2,216跌5，鱼粉22,400-22,500元/吨持稳</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; Mysteel饲料价格指数 / 主要油厂报价（日度）</div>
+    <div class="news-body">
+      9月22日国内饲料原料市场整体偏弱。<span class="highlight">玉米市场均价2,216元/吨（跌5元）、豆粕3,441元/吨（跌32元）、菜粕2,435元/吨（跌20元）、DDGS 2,265元/吨</span>。鱼粉端持稳，<span class="highlight">广州港秘鲁超级蒸汽鱼粉（蛋白68%）现货22,500元/吨</span>，市场报价区间22,400-22,500元/吨。主要油厂报价：日照邦基豆粕3,320元/吨（-40）、天津邦基3,390（-40）、东莞中储粮3,290（-40）、江苏省43%蛋白豆粕汇总均价3,300元/吨，华东与华南同步下调，跌幅集中在30-40元/吨。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>豆粕单日跌32-40元/吨、菜粕跌20元/吨、鱼粉持稳——这三个数放在一起，指向的是“植物蛋白端成本下行、动物蛋白端不动”。</strong>三点判断：① <span class="highlight">豆粕从9月20日的普涨50元转为连续两日下行</span>，说明此前由中美经贸消息驱动的恐慌性补库已经退潮。② 鱼粉22,500元/吨连续多日持稳是更值得记录的信号——进口鱼粉的价格黏性远高于豆粕，因为它对应鲑鳟类饲料的刚性配方需求。<strong>对商达的含义：</strong>鲑鳟饲料的降本空间不在鱼粉，而在植物蛋白替代比例与品种效率——本期技术与育种板块Nofima的选育研究恰好给出另一条路径：不换配方，换品种。③ 建议把“饲料成本敏感度”按品种拆开测算：鲑鳟类对鱼粉敏感、鲢鳙类对豆粕菜粕敏感，两条成本曲线正在分化，不能用同一个饲料成本假设做所有项目的模型。
+      </div>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-title">9/22玉米产区新粮集中上市：通辽装车2,200-2,220元/吨、双鸭山2,070-2,080，锦州港平仓2,270-2,280；大连玉米主连2,173元/吨跌0.14%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> 2026-09-22 &middot; 内蒙古自治区粮食和物资储备局（官方日度行情）</div>
+    <div class="news-body">
+      内蒙古自治区粮食和物资储备局9月22日发布国内玉米行情：<span class="highlight">东北新季玉米陆续收割、潮粮集中上市，产区贸易商观望，深加工企业随用随采、收购价小幅下调</span>；销区饲料企业库存尚可、采购不积极，整体交投清淡。产区报价：<span class="highlight">内蒙古通辽二等黄玉米装车2,200-2,220元/吨、黑龙江双鸭山2,070-2,080元/吨、吉林长春2,150-2,160元/吨、辽宁锦州港平仓2,270-2,280元/吨、山东潍坊到厂2,250-2,260元/吨</span>。期货端，大连玉米主连9月22日盘中2,173元/吨，较前一交易日跌3元、跌幅0.14%，日内区间2,167-2,178元/吨，持仓保持高位。
+      <div class="analysis-box">
+        <div class="label">对商达意味着什么</div>
+        <strong>产区装车价2,070-2,220、期货2,173——这是一组“现货比期货还便宜”的组合，说明新粮上市压力已经压在盘面前面。</strong>三点判断：① <span class="highlight">双鸭山、佳木斯2,070-2,080元/吨是当前产区地板价</span>，而锦州港平仓2,270-2,280元/吨，价差约200元/吨即物流与烘干成本——谁离产区近谁的饲料成本就低。② 深加工“随用随采”、销区饲料企业“采购不积极”，两边同时观望，说明市场在等一个更低的现货锚。③ <strong>对商达的含义在选址逻辑上：</strong>RAS项目若落在东北产区周边，玉米与副产物原料采购成本可低于全国均价100-150元/吨，但同时要承担更高的冬季加温能源成本。这两项在财务模型里经常被分开测算，实际上应在同一张敏感性表里对冲。建议：Q4内做一版“产区贴近度 vs 能耗成本”双变量敏感性分析，作为客户选址建议的标准附件。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="summary-section">
+  <h2>📝 今日总结与商达建议（第151期）</h2>
+
+  <h3>🔍 今日三件大事</h3>
+  <ul>
+    <li><strong>本期三条主线可以连成一句话：全球RAS的资本正在从“赌规模”转向“选品种、选资质、选确定性”。</strong></li>
+  </ul>
+
+  <h3>🎯 对商达意味着什么</h3>
+  <p><span class="highlight">主线一（品种与品类）</span>：Oceanloop用3,850万欧元押注巨型石斑、日本ARK用模块化RAS拓向阿联酋印尼、Kingfish请工程巨头Ramboll做设计与环评——三家拿钱的路径各不相同，但都避开了“再做一个鲑鳟大盘项目”。同期国内呼和浩特1亿元石斑鱼项目签约，方向一致。</p>
+  <p><span class="highlight">主线二（成本路径换轨）</span>：Nofima／Mowi Genetics的研究证明，体脂从21%降到18%可让挪威产业年省约1.05亿欧元，而实现方式是选育而非换配方。这彻底改写了“饲料成本是刚性约束”的行业共识——降本的下一个入口在品种端。</p>
+  <p><span class="highlight">主线三（定价权回到“格”上）</span>：板块6首次按“市场＋规格＋当天”读价。同为花鲢，盐城16.00、安吉19.00、南通22.00元/公斤，相差37.5%；鲑鳟类冰鲜刺身级（GB 10136）200-400元/公斤对冷冻普通级（GB 2733）100-200元/公斤，同物种近两倍价差。价格的高低不取决于“是不是三文鱼”，取决于“有没有资质、规格对不对、到哪个市场”。</p>
+  <p><strong>一句话收口：本期所有信号都在指向同一件事——设施渔业的竞争已经从“能不能养”进入“用什么品种养、拿到什么资质、卖给哪个格”。商达Q4的资源应当从“扩大产能叙事”转向“品种＋资质＋渠道格”的三件事上。</strong></p>
+
+  <h3>📋 三条行动建议</h3>
+  <ul class="action-list">
+    <li><strong>🏃 本周（9/22-9/26）：三件有硬截止的事。</strong>① <span class="highlight">建立“按市场读价”的鲢鳙价格台账</span>——把盐城、南通、安吉、岳各庄、顺鑫石门等监测点纳入每日采集，用当日市场报价替换所有客户模型里的“全国均价”参数。② <span class="highlight">确认烟台三会（10/26-27）参会名单</span>，技术负责人＋品控负责人各一名，会前整理《商达检测项目对照表》。③ 向本期识别出的寒区项目（呼和浩特、兴安盟）建立联系清单，首个技术问题就问“能源方案与单位加温成本”。</li>
+    <li><strong>📅 本月（10月）：把“资质”变成可售卖的产品。</strong>① 完成<span class="highlight">GB 10136可生食资质路径评估</span>：寄生虫灭活工艺、微生物限量、全程温控记录三项分别缺什么、由谁做、成本多少。② 输出<span class="highlight">《生食级鲑鳟采购核验清单》</span>与《陆基循环水养殖操作规范》两份对外文本——前者对客户、后者对投标。③ 完成“产区贴近度 vs 冬季加温成本”双变量敏感性分析，作为北方客户选址建议的标准附件。</li>
+    <li><strong>🎯 本季度（Q4）：做一次“品种效率”全链对标。</strong>以<span class="highlight">Nofima的体脂21%→18%、FCR 1.05、年省1.05亿欧元为基准口径</span>，对照商达现有客户实际体脂率与FCR，测算“换品系”与“改配方”两条降本路径的3年净收益差。<strong>同时落地一个明确的年度目标：推动国产虹鳟进入一个会员店渠道的可生食零售段（单SKU跑通），打破目前“国产虹鳟全部落在冷冻熟制段”的定位格局。</strong></li>
+  </ul>
+
+  <h3>⚠️ 30天风险看板</h3>
+  <ul>
+    <li><strong>短期风险（两周内）：寒区项目的能耗成本被系统性低估。</strong>本期监测：<span class="highlight">呼和浩特“循环365”项目公开材料未披露能源方案，而寒区RAS冬季加温是最大成本变量</span>。若客户在未测算加温成本的情况下签约，后续极易因运营亏损产生付款纠纷。<strong>应对：本周内备好“寒区RAS加温能耗速算表”，把它作为报价的前置资料主动提供。</strong></li>
+    <li><strong>中期风险（1-3个月）：鱼价与成本同向下行，客户利润改善预期落空。</strong>本期监测：<span class="highlight">9/22豆粕跌32元/吨、菜粕跌20元/吨，而同期全国白鲢均价10.13元/公斤、单日跌0.6%</span>。成本与售价同步下行意味着剪刀差未打开，客户可能在下一次对账时质疑项目测算的收益假设。<strong>应对：把客户收益模型的收入端参数由“全国均价”改为“目标销地批发市场当日价”，并同步披露价格离散区间。</strong></li>
+    <li><strong>被忽视的灰犀牛：标准执行的收紧风险。</strong>本期监测：<span class="highlight">市场上大量标注“刺身”字样的鲑鳟产品实际执行GB 2733、本不可生食</span>；同期<span class="highlight">中国香港食安中心因美国进口即食生蚝大肠杆菌790 MPN/100g指令停售下架回收</span>。两件事共同指向生食水产的监管与舆论风险正在上升。<strong>应对：不要把“标准信息差”当作可长期利用的销售空隙——主动协助客户完成合规化，把风险变成资质壁垒。</strong></li>
+    <li><strong>结构性风险（本季度内）：设施渔业仍未获得资本市场单独估值。</strong>本期监测：<span class="highlight">獐子岛2026中报水产贸易占41.30%、水产加工占40.48%、养殖仅13.86%；好当家海参占51.17%、冷冻调理食品占38.41%</span>——<span class="highlight">两家传统养殖龙头都未把“设施渔业／循环水”单列为可辨识业务单元</span>。这意味着短期内难以靠行业估值上行传导融资便利。<strong>应对：商达对接资本时，叙事重点放在“可被单独计量的设施渔业业务单元”，而不是“传统水产的升级版”。</strong></li>
+  </ul>
+</div>
+
+<div class="footer">本报告由商达产品部出品 | 仅供内部参考</div>
+</div>
+</body>
+</html>
