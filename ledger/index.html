@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商达 · RAS核心品种价格台账</title>
+<style>
+:root{--deep-blue:#0a1f3f;--gold:#c9a84c;--text:#2c3444;--text2:#5a6472;--border:#e6e9ef;--card:#fff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:#f4f6f9;color:var(--text);line-height:1.75;font-size:15px;padding:0 0 60px;}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px;}
+.hero{background:linear-gradient(135deg,#0a1f3f 0%,#14304f 100%);color:#fff;padding:30px 0 26px;margin-bottom:22px;
+  border-bottom:3px solid var(--gold);}
+.hero h1{font-size:23px;letter-spacing:.5px;margin-bottom:8px;}
+.hero h1 em{font-style:normal;color:var(--gold);}
+.hero .sub{font-size:13px;color:#9fb0c8;line-height:1.9;}
+.hero .sub b{color:#e8d9a8;font-weight:600;}
+.back{display:inline-block;margin-bottom:14px;font-size:12.5px;color:#9fb0c8;text-decoration:none;
+  border:1px solid rgba(201,168,76,.45);border-radius:14px;padding:3px 12px;}
+.back:hover{background:rgba(201,168,76,.14);color:#fff;}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px;}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;
+  box-shadow:0 1px 3px rgba(0,0,0,.03);}
+.kpi-k{font-size:11.5px;color:var(--text2);letter-spacing:.3px;margin-bottom:4px;}
+.kpi-v{font-size:26px;font-weight:700;line-height:1.25;letter-spacing:-.5px;}
+.kpi-u{font-size:12px;font-weight:400;color:var(--text2);margin-left:4px;letter-spacing:0;}
+.kpi-s{font-size:11.5px;color:var(--text2);margin-top:4px;line-height:1.6;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 20px 16px;
+  margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.card h2{font-size:16px;color:var(--deep-blue);margin-bottom:6px;display:inline-block;
+  padding-bottom:6px;border-bottom:2px solid var(--gold);}
+.card .cap{font-size:12px;color:var(--text2);margin:8px 0 14px;line-height:1.7;}
+.note{background:#fffbef;border:1px solid rgba(201,168,76,.35);border-radius:10px;padding:12px 16px;
+  font-size:12.5px;color:#6b5a22;line-height:1.85;margin-bottom:20px;}
+.note b{color:#8a6d20;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{background:#f7f8fa;color:var(--deep-blue);font-weight:600;text-align:left;padding:7px 8px;
+  border-bottom:1px solid var(--border);white-space:nowrap;font-size:11.5px;}
+td{padding:6px 8px;border-bottom:1px solid #f0f2f6;vertical-align:top;line-height:1.55;}
+tr:hover td{background:#fafbfd;}
+.c-d{white-space:nowrap;color:var(--text2);}
+.c-m{color:#3a4453;}
+.c-t{white-space:nowrap;color:var(--text2);}
+.c-p{white-space:nowrap;font-weight:600;color:var(--deep-blue);}
+.c-s{white-space:nowrap;color:var(--text2);}
+.c-src{color:#8d96a3;font-size:11px;}
+.tag{display:inline-block;padding:1px 6px;border-radius:3px;font-size:10.5px;font-weight:600;white-space:nowrap;}
+.tag.bl{background:rgba(10,31,63,.07);color:var(--deep-blue);}
+.tag.sl{background:rgba(201,168,76,.16);color:#8a6d20;}
+.tag.idx{background:rgba(59,126,161,.12);color:#2b6a8c;}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+footer{text-align:center;font-size:11.5px;color:#8d96a3;margin-top:26px;line-height:2;}
+footer b{color:var(--deep-blue);}
+@media (max-width:520px){
+  .kpis{grid-template-columns:1fr;}
+  .kpi-v{font-size:23px;}
+  .card{padding:16px 14px 12px;}
+  table{font-size:11.5px;}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <a class="back" href="../">← 返回最新一期高参</a>
+    <h1>商达 · <em>RAS核心品种价格台账</em></h1>
+    <div class="sub">
+      口径：<b>鲑鳟类</b>（虹鳟／金鳟／三文鱼）＋ <b>鲢鳙类</b>（花鲢／白鲢）&nbsp;·&nbsp;
+      批发价一律落到「市场全名＋当天日期＋规格」，零售价落到「监测机构＋规格」<br>
+      覆盖 <b>5</b> 个交易日（2026-09-19 ～ 2026-09-24）&nbsp;·&nbsp;累计 <b>49</b> 条记录 &nbsp;·&nbsp;
+      数据来自农业农村部信息中心／市场与信息化司、南通市发改委、盐城市发改委、昆明市农业农村局
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="kpis">
+<div class="kpi"><div class="kpi-k">岳各庄 · 花鲢活鱼</div><div class="kpi-v" style="color:#0a1f3f">20.00<span class="kpi-u">元/公斤</span></div><div class="kpi-s">较 09-23 的 20.00 +0.00</div></div>
+<div class="kpi"><div class="kpi-k">岳各庄 · 白鲢活鱼</div><div class="kpi-v" style="color:#5a6472">8.40<span class="kpi-u">元/公斤</span></div><div class="kpi-s">区间内持平（09-21、09-23、09-24）</div></div>
+<div class="kpi"><div class="kpi-k">全国白鲢批发均价</div><div class="kpi-v" style="color:#3b7ea1">9.98<span class="kpi-u">元/公斤</span></div><div class="kpi-s">3 日累计 -1.5%（10.13→9.98）</div></div>
+<div class="kpi"><div class="kpi-k">花鲢跨市场极差</div><div class="kpi-v" style="color:#c0392b">2.45 倍<span class="kpi-u"></span></div><div class="kpi-s">湖北洪湖农贸 10.82 ↔ 重庆双福国际 26.50</div></div>
+  </div>
+
+  <div class="note">
+    <b>读取纪律（三条）</b><br>
+    ① <b>按市场读，不按城市读</b>——同一天北京岳各庄与顺鑫石门价差 5.00 元/公斤（33%），同城均价会把这个价差抹平；<br>
+    ② <b>分层比平均有用</b>——花鲢同日跨市场极差 2.45 倍（中位 16.50 元/公斤），用「全国均价」做收益模型必然失准；<br>
+    ③ <b>看三件事：规格、市场、时点</b>——大规格（2000 克以上）与节前窗口，是鲢鳙类唯一稳定的溢价来源。
+  </div>
+
+  <div class="card">
+    <h2>一、岳各庄鲢鳙价格轨迹</h2>
+    <div class="cap">北京京丰岳各庄农副产品批发市场 · 农业农村部信息中心当日 13:00 发布 · 元/公斤</div>
+    <svg viewBox="0 0 680 230" width="100%" role="img" style="font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif">
+<line x1="52" y1="184.0" x2="658" y2="184.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="188.0" font-size="11" fill="#5a6472" text-anchor="end">5.2</text>
+<line x1="52" y1="145.5" x2="658" y2="145.5" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="149.5" font-size="11" fill="#5a6472" text-anchor="end">9.5</text>
+<line x1="52" y1="107.0" x2="658" y2="107.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="111.0" font-size="11" fill="#5a6472" text-anchor="end">13.9</text>
+<line x1="52" y1="68.5" x2="658" y2="68.5" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="72.5" font-size="11" fill="#5a6472" text-anchor="end">18.2</text>
+<line x1="52" y1="30.0" x2="658" y2="30.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="34.0" font-size="11" fill="#5a6472" text-anchor="end">22.6</text>
+<text x="14" y="107" font-size="11" fill="#5a6472" transform="rotate(-90 14 107)" text-anchor="middle">元/公斤</text>
+<text x="52.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-21</text>
+<text x="254.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-23</text>
+<text x="456.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-23</text>
+<text x="658.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-24</text>
+<line x1="52" y1="184.0" x2="658" y2="184.0" stroke="#c8ced8" stroke-width="1.2"/>
+<path d="M52.0,61.4 L254.0,52.6 L456.0,52.6 L658.0,52.6" fill="none" stroke="#0a1f3f" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52.0" cy="61.4" r="4" fill="#fff" stroke="#0a1f3f" stroke-width="2.2"/>
+<text x="52.0" y="50.4" font-size="11.5" fill="#0a1f3f" text-anchor="middle" font-weight="600">19.00</text>
+<circle cx="254.0" cy="52.6" r="4" fill="#fff" stroke="#0a1f3f" stroke-width="2.2"/>
+<text x="254.0" y="41.6" font-size="11.5" fill="#0a1f3f" text-anchor="middle" font-weight="600">20.00</text>
+<circle cx="456.0" cy="52.6" r="4" fill="#fff" stroke="#0a1f3f" stroke-width="2.2"/>
+<text x="456.0" y="41.6" font-size="11.5" fill="#0a1f3f" text-anchor="middle" font-weight="600">20.00</text>
+<circle cx="658.0" cy="52.6" r="4" fill="#fff" stroke="#0a1f3f" stroke-width="2.2"/>
+<text x="658.0" y="41.6" font-size="11.5" fill="#0a1f3f" text-anchor="middle" font-weight="600">20.00</text>
+<path d="M52.0,155.3 L254.0,155.3 L456.0,155.3" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52.0" cy="155.3" r="4" fill="#fff" stroke="#c9a84c" stroke-width="2.2"/>
+<text x="52.0" y="144.3" font-size="11.5" fill="#c9a84c" text-anchor="middle" font-weight="600">8.40</text>
+<circle cx="254.0" cy="155.3" r="4" fill="#fff" stroke="#c9a84c" stroke-width="2.2"/>
+<text x="254.0" y="144.3" font-size="11.5" fill="#c9a84c" text-anchor="middle" font-weight="600">8.40</text>
+<circle cx="456.0" cy="155.3" r="4" fill="#fff" stroke="#c9a84c" stroke-width="2.2"/>
+<text x="456.0" y="144.3" font-size="11.5" fill="#c9a84c" text-anchor="middle" font-weight="600">8.40</text>
+<rect x="52" y="10" width="16" height="3" rx="1.5" fill="#0a1f3f"/>
+<text x="74" y="15" font-size="11.5" fill="花鲢活鱼">#5a6472</text>
+<rect x="140" y="10" width="16" height="3" rx="1.5" fill="#c9a84c"/>
+<text x="162" y="15" font-size="11.5" fill="白鲢活鱼">#5a6472</text>
+</svg>
+  </div>
+
+  <div class="card">
+    <h2>二、全国白鲢批发均价</h2>
+    <div class="cap">农业农村部监测的全国白鲢鱼批发均价 · 元/公斤 · 反映大宗淡水品的总量压力</div>
+    <svg viewBox="0 0 680 230" width="100%" role="img" style="font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif">
+<line x1="52" y1="184.0" x2="658" y2="184.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="188.0" font-size="11" fill="#5a6472" text-anchor="end">9.9</text>
+<line x1="52" y1="145.5" x2="658" y2="145.5" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="149.5" font-size="11" fill="#5a6472" text-anchor="end">10.0</text>
+<line x1="52" y1="107.0" x2="658" y2="107.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="111.0" font-size="11" fill="#5a6472" text-anchor="end">10.1</text>
+<line x1="52" y1="68.5" x2="658" y2="68.5" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="72.5" font-size="11" fill="#5a6472" text-anchor="end">10.1</text>
+<line x1="52" y1="30.0" x2="658" y2="30.0" stroke="#e6e9ef" stroke-width="1"/>
+<text x="44" y="34.0" font-size="11" fill="#5a6472" text-anchor="end">10.2</text>
+<text x="14" y="107" font-size="11" fill="#5a6472" transform="rotate(-90 14 107)" text-anchor="middle">元/公斤</text>
+<text x="52.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-21</text>
+<text x="355.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-22</text>
+<text x="658.0" y="204" font-size="11" fill="#5a6472" text-anchor="middle">09-23</text>
+<line x1="52" y1="184.0" x2="658" y2="184.0" stroke="#c8ced8" stroke-width="1.2"/>
+<path d="M52.0,52.6 L355.0,134.7 L658.0,155.3" fill="none" stroke="#3b7ea1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52.0" cy="52.6" r="4" fill="#fff" stroke="#3b7ea1" stroke-width="2.2"/>
+<text x="52.0" y="41.6" font-size="11.5" fill="#3b7ea1" text-anchor="middle" font-weight="600">10.13</text>
+<circle cx="355.0" cy="134.7" r="4" fill="#fff" stroke="#3b7ea1" stroke-width="2.2"/>
+<text x="355.0" y="123.7" font-size="11.5" fill="#3b7ea1" text-anchor="middle" font-weight="600">10.01</text>
+<circle cx="658.0" cy="155.3" r="4" fill="#fff" stroke="#3b7ea1" stroke-width="2.2"/>
+<text x="658.0" y="144.3" font-size="11.5" fill="#3b7ea1" text-anchor="middle" font-weight="600">9.98</text>
+<rect x="52" y="10" width="16" height="3" rx="1.5" fill="#3b7ea1"/>
+<text x="74" y="15" font-size="11.5" fill="全国白鲢批发均价">#5a6472</text>
+</svg>
+  </div>
+
+  <div class="card">
+    <h2>三、花鲢跨市场横截面（16 个市场）</h2>
+    <div class="cap">2026-09-23 当天、同一品种、同一规格口径——极差 <b>2.45 倍</b>。「卖到哪」比「养得多省」更决定毛利。</div>
+    <svg viewBox="0 0 680 476" width="100%" role="img" style="font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif">
+<rect x="190" y="34" width="166.5" height="15" rx="3" fill="#3b7ea1" opacity="1"/>
+<text x="180" y="46" font-size="11.5" fill="#3a4453" text-anchor="end">湖北洪湖农贸市场</text>
+<text x="364.5" y="46" font-size="11.5" fill="#3b7ea1" font-weight="600">10.82</text>
+<rect x="190" y="60" width="178.5" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="72" font-size="11.5" fill="#3a4453" text-anchor="end">武汉白沙洲农副产品大市场</text>
+<text x="376.5" y="72" font-size="11.5" fill="#0a1f3f" font-weight="600">11.60</text>
+<rect x="190" y="86" width="224.7" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="98" font-size="11.5" fill="#3a4453" text-anchor="end">广西新柳邕农产品批发市场</text>
+<text x="422.7" y="98" font-size="11.5" fill="#0a1f3f" font-weight="600">14.60</text>
+<rect x="190" y="112" width="224.7" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="124" font-size="11.5" fill="#3a4453" text-anchor="end">江西九江琵琶湖农产品批发市场</text>
+<text x="422.7" y="124" font-size="11.5" fill="#0a1f3f" font-weight="600">14.60</text>
+<rect x="190" y="138" width="230.9" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="150" font-size="11.5" fill="#3a4453" text-anchor="end">北京顺鑫石门国际农产品批发市场</text>
+<text x="428.9" y="150" font-size="11.5" fill="#0a1f3f" font-weight="600">15.00</text>
+<rect x="190" y="164" width="230.9" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="176" font-size="11.5" fill="#3a4453" text-anchor="end">南宁农产品批发市场</text>
+<text x="428.9" y="176" font-size="11.5" fill="#0a1f3f" font-weight="600">15.00</text>
+<rect x="190" y="190" width="246.2" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="202" font-size="11.5" fill="#3a4453" text-anchor="end">云南华潮水产批发市场</text>
+<text x="444.2" y="202" font-size="11.5" fill="#0a1f3f" font-weight="600">16.00</text>
+<rect x="190" y="216" width="246.2" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="228" font-size="11.5" fill="#3a4453" text-anchor="end">江苏凌家塘农副产品批发市场</text>
+<text x="444.2" y="228" font-size="11.5" fill="#0a1f3f" font-weight="600">16.00</text>
+<rect x="190" y="242" width="253.9" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="254" font-size="11.5" fill="#3a4453" text-anchor="end">河南万邦国际农产品物流城</text>
+<text x="451.9" y="254" font-size="11.5" fill="#0a1f3f" font-weight="600">16.50</text>
+<rect x="190" y="268" width="292.4" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="280" font-size="11.5" fill="#3a4453" text-anchor="end">山东威海农产品批发市场</text>
+<text x="490.4" y="280" font-size="11.5" fill="#0a1f3f" font-weight="600">19.00</text>
+<rect x="190" y="294" width="292.4" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="306" font-size="11.5" fill="#3a4453" text-anchor="end">青岛抚顺路蔬菜副食品批发市场</text>
+<text x="490.4" y="306" font-size="11.5" fill="#0a1f3f" font-weight="600">19.00</text>
+<rect x="190" y="320" width="307.8" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="332" font-size="11.5" fill="#3a4453" text-anchor="end">北京京丰岳各庄农副产品批发市场</text>
+<text x="505.8" y="332" font-size="11.5" fill="#0a1f3f" font-weight="600">20.00</text>
+<rect x="190" y="346" width="324.7" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="358" font-size="11.5" fill="#3a4453" text-anchor="end">湖北浠水农产品批发市场</text>
+<text x="522.7" y="358" font-size="11.5" fill="#0a1f3f" font-weight="600">21.10</text>
+<rect x="190" y="372" width="377.1" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="384" font-size="11.5" fill="#3a4453" text-anchor="end">西藏领峰农副产品批发市场</text>
+<text x="575.1" y="384" font-size="11.5" fill="#0a1f3f" font-weight="600">24.50</text>
+<rect x="190" y="398" width="384.8" height="15" rx="3" fill="#0a1f3f" opacity="0.72"/>
+<text x="180" y="410" font-size="11.5" fill="#3a4453" text-anchor="end">新疆兵团三和农产品批发市场</text>
+<text x="582.8" y="410" font-size="11.5" fill="#0a1f3f" font-weight="600">25.00</text>
+<rect x="190" y="424" width="407.8" height="15" rx="3" fill="#c0392b" opacity="1"/>
+<text x="180" y="436" font-size="11.5" fill="#3a4453" text-anchor="end">重庆双福国际农贸城</text>
+<text x="605.8" y="436" font-size="11.5" fill="#c0392b" font-weight="600">26.50</text>
+<line x1="443.9" y1="24" x2="443.9" y2="456" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="443.9" y="20" font-size="10.5" fill="#8a6d20" text-anchor="middle">中位 16.50</text>
+<text x="0" y="16" font-size="11.5" fill="#5a6472">2026-09-23 农业农村部信息中心 · 全国主要批发市场花鲢活鱼当日报价（升序）</text>
+</svg>
+  </div>
+
+  <div class="card">
+    <h2>四、鲑鳟类价格带</h2>
+    <div class="cap">从产地批发到渠道三层——三文鱼 130-190 元/公斤的带宽，就是设施化养殖端可伸手够到的那一段。</div>
+    <svg viewBox="0 0 680 296" width="100%" role="img" style="font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif">
+<text x="0" y="16" font-size="11.5" fill="#5a6472">横轴：元/公斤（区间条＝价格带，圆点＝单点报价）</text>
+<circle cx="295.9" cy="42" r="6" fill="#3b7ea1"/>
+<text x="190" y="46" font-size="11.5" fill="#3a4453" text-anchor="end">虹鳟 · 活鱼批发（乌鲁木齐）</text>
+<text x="307.9" y="46" font-size="11.5" fill="#3b7ea1" font-weight="600" text-anchor="start">46</text>
+<text x="200" y="57" font-size="10.5" fill="#8d96a3">全国仅此一家报价</text>
+<circle cx="325.1" cy="72" r="6" fill="#3b7ea1"/>
+<text x="190" y="76" font-size="11.5" fill="#3a4453" text-anchor="end">虹鳟 · 活鱼批发（昆明）</text>
+<text x="337.1" y="76" font-size="11.5" fill="#3b7ea1" font-weight="600" text-anchor="start">60</text>
+<text x="200" y="87" font-size="10.5" fill="#8d96a3">当日交易量0.28吨</text>
+<circle cx="346.0" cy="102" r="6" fill="#c9a84c"/>
+<text x="190" y="106" font-size="11.5" fill="#3a4453" text-anchor="end">金鳟 · 活鱼批发（昆明）</text>
+<text x="358.0" y="106" font-size="11.5" fill="#c9a84c" font-weight="600" text-anchor="start">70</text>
+<text x="200" y="117" font-size="10.5" fill="#8d96a3">较虹鳟溢价16.7% 当日0.16吨</text>
+<circle cx="429.4" cy="132" r="6" fill="#c0392b"/>
+<text x="190" y="136" font-size="11.5" fill="#3a4453" text-anchor="end">三文鱼 · 冷冻 智利（渠道）</text>
+<text x="441.4" y="136" font-size="11.5" fill="#c0392b" font-weight="600" text-anchor="start">110</text>
+<text x="200" y="147" font-size="10.5" fill="#8d96a3">月内渠道跟踪快照·口径下限</text>
+<rect x="471.1" y="156" width="41.7" height="11" rx="5.5" fill="#c0392b" opacity=".85"/>
+<text x="190" y="166" font-size="11.5" fill="#3a4453" text-anchor="end">三文鱼 · 线上B2B平台（渠道）</text>
+<text x="522.8" y="166" font-size="11.5" fill="#c0392b" font-weight="600" text-anchor="start">130-150</text>
+<text x="200" y="177" font-size="10.5" fill="#8d96a3">月内渠道跟踪快照</text>
+<rect x="492.0" y="186" width="41.7" height="11" rx="5.5" fill="#c0392b" opacity=".85"/>
+<text x="190" y="196" font-size="11.5" fill="#3a4453" text-anchor="end">三文鱼 · 进口商直采（渠道）</text>
+<text x="543.7" y="196" font-size="11.5" fill="#c0392b" font-weight="600" text-anchor="start">140-160</text>
+<text x="200" y="207" font-size="10.5" fill="#8d96a3">月内渠道跟踪快照·起订量不低于50kg</text>
+<rect x="502.4" y="216" width="52.1" height="11" rx="5.5" fill="#c0392b" opacity=".85"/>
+<text x="190" y="226" font-size="11.5" fill="#3a4453" text-anchor="end">三文鱼 · 一级批发市场（渠道）</text>
+<text x="564.5" y="226" font-size="11.5" fill="#c0392b" font-weight="600" text-anchor="start">145-170</text>
+<text x="200" y="237" font-size="10.5" fill="#8d96a3">月内渠道跟踪快照</text>
+<circle cx="596.2" cy="252" r="6" fill="#c0392b"/>
+<text x="190" y="256" font-size="11.5" fill="#3a4453" text-anchor="end">三文鱼 · 冰鲜（重庆西三街）</text>
+<text x="608.2" y="256" font-size="11.5" fill="#c0392b" font-weight="600" text-anchor="start">190</text>
+<text x="200" y="267" font-size="10.5" fill="#8d96a3">与前一日持平</text>
+</svg>
+  </div>
+
+  <div class="card">
+    <h2>五、宏观指数轨迹</h2>
+    <div class="cap">农产品批发价格 200 指数 / 菜篮子指数 · 同时覆盖原料与产品两端</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>日期</th><th>类别</th><th>指标</th><th>口径</th><th>数值</th><th>发布方</th></tr></thead>
+      <tbody>
+<tr><td class="c-d">2026-09-23</td><td><span class="tag idx">指数</span></td><td>农产品批发价格200指数</td><td class="c-m">全国</td><td class="c-p">116.33</td><td class="c-src">农业农村部市场与信息化司</td></tr>
+<tr><td class="c-d">2026-09-21</td><td><span class="tag idx">指数</span></td><td>白鲢鱼</td><td class="c-m">全国</td><td class="c-p">10.13</td><td class="c-src">农业农村部市场与信息化司</td></tr>
+<tr><td class="c-d">2026-09-22</td><td><span class="tag idx">指数</span></td><td>白鲢鱼</td><td class="c-m">全国</td><td class="c-p">10.01</td><td class="c-src">农业农村部市场与信息化司</td></tr>
+<tr><td class="c-d">2026-09-23</td><td><span class="tag idx">指数</span></td><td>白鲢鱼</td><td class="c-m">全国</td><td class="c-p">9.98</td><td class="c-src">农业农村部市场与信息化司</td></tr>
+<tr><td class="c-d">2026-09-23</td><td><span class="tag idx">指数</span></td><td>菜篮子产品批发价格指数</td><td class="c-m">全国</td><td class="c-p">116.90</td><td class="c-src">农业农村部市场与信息化司</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>六、明细记录</h2>
+    <div class="cap">全部 49 条原始记录（含批发／零售／渠道／均价口径）</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>日期</th><th>类别</th><th>品种</th><th>市场／口径</th><th>层级</th><th>价格</th><th>单位</th><th>发布方</th></tr></thead>
+      <tbody>
+<tr><td class="c-d">09-19</td><td><span class="tag sl">鲑鳟类</span></td><td>虹鳟</td><td class="c-m">乌鲁木齐北园春果业经营管理有限责任公司</td><td class="c-s">批发</td><td class="c-t">46.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag sl">鲑鳟类</span></td><td>虹鳟</td><td class="c-m">云南华潮水产批发市场</td><td class="c-s">批发</td><td class="c-t">60.00</td><td class="c-p">元/公斤</td><td class="c-src">昆明市农业农村局</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag sl">鲑鳟类</span></td><td>金鳟</td><td class="c-m">云南华潮水产批发市场</td><td class="c-s">批发</td><td class="c-t">70.00</td><td class="c-p">元/公斤</td><td class="c-src">昆明市农业农村局</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">云南华潮水产批发市场</td><td class="c-s">批发</td><td class="c-t">16.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼</td><td class="c-m">云南华潮水产批发市场</td><td class="c-s">批发</td><td class="c-t">8.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">19.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">8.40</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京顺鑫石门国际农产品批发市场</td><td class="c-s">批发</td><td class="c-t">16.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼（活1500克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">22.00</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼（活1000克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">10.90</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">武汉白沙洲农副产品大市场</td><td class="c-s">批发</td><td class="c-t">11.80</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-21</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼</td><td class="c-m">武汉白沙洲农副产品大市场</td><td class="c-s">批发</td><td class="c-t">5.53</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-22</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼（活1500克左右）</td><td class="c-m">华东盐城农产品交易中心</td><td class="c-s">批发</td><td class="c-t">16.00</td><td class="c-p">元/公斤</td><td class="c-src">盐城市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-22</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼（活1500克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">22.00</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-22</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼（活1000克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">10.80</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-22</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼（约1000克）</td><td class="c-m">安吉农副产品综合批发市场</td><td class="c-s">批发</td><td class="c-t">19.00</td><td class="c-p">元/公斤</td><td class="c-src">安吉县相关部门</td></tr>
+<tr><td class="c-d">09-22</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼（约1000克）</td><td class="c-m">安吉农副产品综合批发市场</td><td class="c-s">批发</td><td class="c-t">9.00</td><td class="c-p">元/公斤</td><td class="c-src">安吉县相关部门</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag sl">鲑鳟类</span></td><td>三文鱼（冰鲜）</td><td class="c-m">重庆龙门西三街农副产品市场</td><td class="c-s">批发</td><td class="c-t">190.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">云南华潮水产批发市场</td><td class="c-s">批发</td><td class="c-t">16.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">20.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">8.40</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">20.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京顺鑫石门国际农产品批发市场</td><td class="c-s">批发</td><td class="c-t">15.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">南宁农产品批发市场</td><td class="c-s">批发</td><td class="c-t">15.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼（活1500克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">21.86</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼（活1000克左右）</td><td class="c-m">南通市区部分市场</td><td class="c-s">零售</td><td class="c-t">10.80</td><td class="c-p">元/公斤</td><td class="c-src">南通市发展和改革委员会</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">山东威海农产品批发市场</td><td class="c-s">批发</td><td class="c-t">19.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">广西新柳邕农产品批发市场</td><td class="c-s">批发</td><td class="c-t">14.60</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">新疆兵团三和农产品批发市场</td><td class="c-s">批发</td><td class="c-t">25.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">武汉白沙洲农副产品大市场</td><td class="c-s">批发</td><td class="c-t">11.60</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">江苏凌家塘农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">16.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">江西九江琵琶湖农产品批发市场</td><td class="c-s">批发</td><td class="c-t">14.60</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">河南万邦国际农产品物流城</td><td class="c-s">批发</td><td class="c-t">16.50</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">湖北洪湖农贸市场</td><td class="c-s">批发</td><td class="c-t">10.82</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">湖北浠水农产品批发市场</td><td class="c-s">批发</td><td class="c-t">21.10</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">西藏领峰农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">24.50</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">重庆双福国际农贸城</td><td class="c-s">批发</td><td class="c-t">26.50</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-23</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">青岛抚顺路蔬菜副食品批发市场</td><td class="c-s">批发</td><td class="c-t">19.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag sl">鲑鳟类</span></td><td>三文鱼（冰鲜·进口商直采）</td><td class="c-m">渠道采购口径</td><td class="c-s">渠道</td><td class="c-t">140.00-160.00</td><td class="c-p">元/公斤</td><td class="c-src">行业采购指南</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag sl">鲑鳟类</span></td><td>三文鱼（冰鲜·一级批发市场）</td><td class="c-m">渠道采购口径</td><td class="c-s">渠道</td><td class="c-t">145.00-170.00</td><td class="c-p">元/公斤</td><td class="c-src">行业采购指南</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag sl">鲑鳟类</span></td><td>三文鱼（冰鲜·线上B2B平台）</td><td class="c-m">渠道采购口径</td><td class="c-s">渠道</td><td class="c-t">130.00-150.00</td><td class="c-p">元/公斤</td><td class="c-src">行业采购指南</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag sl">鲑鳟类</span></td><td>三文鱼（冷冻·智利）</td><td class="c-m">渠道采购口径</td><td class="c-s">渠道</td><td class="c-t">110.00</td><td class="c-p">元/公斤</td><td class="c-src">行业采购指南</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag bl">鲢鳙类</span></td><td>花鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">20.00</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+<tr><td class="c-d">09-24</td><td><span class="tag bl">鲢鳙类</span></td><td>白鲢活鱼</td><td class="c-m">北京京丰岳各庄农副产品批发市场</td><td class="c-s">批发</td><td class="c-t">8.40</td><td class="c-p">元/公斤</td><td class="c-src">农业农村部信息中心</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <footer>
+    <b>商达公用 · RAS行业高参附册</b><br>
+    数据截至 2026-09-24 · 仅收录可核对口径（市场全名＋日期＋规格齐全）<br>
+    行业惯例：涨用红、跌用绿；跨市场横截面不适用涨跌色，用深浅区分高低
+  </footer>
+</div>
+</body>
+</html>
