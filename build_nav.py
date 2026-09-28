@@ -12,6 +12,9 @@ NAV-V2 改革：统一 gh-pages-repo 全归档导航
   2. 日期行：该页所属月份的全部日期，current 高亮，周一分隔
   3. CSS 自包含（字面色值，不用 var()）→ 老页面无 :root 也能正确渲染
   4. 幂等：nav-v2 <style> 与 nav 块按标记定位替换，可反复运行
+  5. 行尾铁律：写盘一律 newline="\n"——文本模式在 Windows 会把 LF 转成 CRLF，
+     让远端与本地内容一致却让文件大小永远对不上（2026-09-24 踩过）
+  6. 幂等归一：nav 块前后空行固定，重跑不累积空行
 """
 import io, os, re, sys, glob, shutil, datetime
 
@@ -231,6 +234,9 @@ def main():
             fail += 1
             print('  ❌ 无 <body> 开标签:', path)
             continue
+        # 幂等归一：nav 块前后空行固定，避免每次重跑累积空行
+        s = re.sub(r'(<body>)\n+', r'\1\n', s, count=1)
+        s = re.sub(re.escape(END) + r'\n{2,}', END + '\n\n', s, count=1)
         # 断言
         errs = []
         # 先记录"本文件固有"的结构失衡（改革前就存在的老毛病），单独统计
@@ -259,7 +265,7 @@ def main():
             print('  ❌ %s : %s' % (os.path.basename(path), '; '.join(errs)))
             continue
         if not dry:
-            with io.open(path, 'w', encoding='utf-8') as f:
+            with io.open(path, 'w', encoding='utf-8', newline='\n') as f:
                 f.write(s); f.flush(); os.fsync(f.fileno())
             # 回读
             assert io.open(path, encoding='utf-8').read() == s, '回读不一致 ' + path
