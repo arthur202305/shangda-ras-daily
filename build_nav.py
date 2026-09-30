@@ -16,7 +16,7 @@ NAV-V2 改革：统一 gh-pages-repo 全归档导航
      让远端与本地内容一致却让文件大小永远对不上（2026-09-24 踩过）
   6. 幂等归一：nav 块前后空行固定，重跑不累积空行
 """
-import io, os, re, sys, glob, shutil, datetime
+import io, os, re, sys, glob, shutil, datetime, csv
 
 BASE = os.environ.get('NAV_ROOT') or os.path.dirname(os.path.abspath(__file__))
 # 脚本既可放在工作区根（Claw/），也可放在仓库根（gh-pages-repo/），自动识别
@@ -24,6 +24,20 @@ GH = BASE if os.path.basename(BASE) == 'gh-pages-repo' else os.path.join(BASE, '
 ARCH = GH + '/archive'
 ABS = '/shangda-ras-daily'
 LEDGER_HREF = ABS + '/ledger/'
+LEDGER_CSV = os.path.join(os.path.dirname(GH), 'price_ledger', 'ledger.csv')
+
+
+def ledger_latest():
+    """台账数据的最新日期 -> 'M/D'；读不到返回空串（导航自动降级为不带日期）"""
+    try:
+        with io.open(LEDGER_CSV, encoding='utf-8-sig', newline='') as f:
+            ds = [r['date'] for r in csv.DictReader(f) if r.get('date')]
+        if not ds:
+            return ''
+        d = max(ds)
+        return '%d/%d' % (int(d[5:7]), int(d[8:10]))
+    except Exception:
+        return ''
 
 # ---------------------------------------------------------------- NAV-V2 CSS
 NAV_CSS = '''<style id="nav-v2">
@@ -127,7 +141,9 @@ def build_nav(cur_date, months, is_index=False):
         cls = ' class="active"' if k == cur_m else ''
         parts.append('    <a href="%s/archive/%s.html"%s>%d月 <span class="mn-cnt">%d</span></a>'
                      % (ABS, last, cls, mi, len(months[k])))
-    parts.append('    <a class="nav-ledger" href="%s">📈 价格台账</a>' % LEDGER_HREF)
+    _ld = ledger_latest()
+    parts.append('    <a class="nav-ledger" href="%s">📈 价格台账%s</a>'
+                 % (LEDGER_HREF, (' · ' + _ld) if _ld else ''))
     parts.append('  </span>')
     # ---- 日期行 ----
     mi = int(cur_m[5:7])
