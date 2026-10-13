@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>商达.RAS行业高参 | 第160期 | 2026年10月12日</title>
+<style>
+:root {
+  --deep-blue: #0a1f3f;
+  --gold: #c9a84c;
+  --bg: #f5f4ef;
+  --card-bg: #ffffff;
+  --text: #2c3e50;
+  --text-secondary: #5a6c7d;
+  --border: #e8e4d8;
+  --red: #e74c3c;
+  --green: #27ae60;
+  --purple: #6c5ce7;
+  --channel-green: #27ae60;
+  --tag-bg: #f0efe9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 14px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  padding: 32px 32px 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 31, 63, 0.18);
+}
+header::after {
+  content: '';
+  position: absolute;
+  top: -50%; right: -10%;
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.header-brand {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.header-date {
+  font-size: 13px;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.header-issue {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+/* CHAIN NAV */
+.chain-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.chain-nav span {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.chain-nav span.active {
+  color: var(--deep-blue);
+  font-weight: 700;
+  position: relative;
+}
+.chain-nav span.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: -16px;
+  transform: translateX(-50%);
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+}
+.chain-nav .arrow {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* DATE NAV BAR */
+.date-nav-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 22px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.date-nav-bar .month-label {
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-right: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.date-nav-bar .month-sep {
+  display: inline-block;
+  width: 1px; height: 14px;
+  background: var(--border);
+  margin: 0 10px;
+}
+.date-nav-bar a {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.date-nav-bar a:hover {
+  background: var(--tag-bg);
+  color: var(--deep-blue);
+}
+.date-nav-bar a.current {
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+
+/* TOP SIGNALS */
+.top-signals {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.top-signal {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+.top-signal.red { color: var(--red); border-color: rgba(231, 76, 60, 0.3); }
+.top-signal.gold { color: #8a6d20; border-color: rgba(201, 168, 76, 0.5); background: #fff8e1; }
+.top-signal.blue { color: var(--deep-blue); border-color: rgba(10, 31, 63, 0.2); }
+
+/* BIG THREE */
+.big-three {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.big-three h2 {
+  font-size: 18px;
+  color: var(--deep-blue);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+.big-three-item {
+  margin-bottom: 14px;
+  padding-left: 32px;
+  position: relative;
+}
+.big-three-item:last-child { margin-bottom: 0; }
+.big-three-item .num {
+  position: absolute;
+  left: 0; top: 2px;
+  width: 24px; height: 24px;
+  background: var(--gold);
+  color: var(--deep-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.big-three-item .txt {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.big-three-item .highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+
+/* TOC */
+.toc {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.toc h3 {
+  font-size: 16px;
+  color: var(--deep-blue);
+  margin-bottom: 12px;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 16px;
+}
+.toc-grid a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+.toc-grid a:hover { color: var(--gold); }
+
+/* SECTION */
+.section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.section-header h2 {
+  font-size: 19px;
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+.section-header .badge {
+  margin-left: auto;
+  background: var(--tag-bg);
+  color: var(--text-secondary);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* NEWS ITEM */
+.news-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.news-item:last-child { border-bottom: none; padding-bottom: 0; }
+.news-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.news-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.news-grade {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  letter-spacing: 0.3px;
+}
+.grade-A { background: rgba(231, 76, 60, 0.12); color: var(--red); }
+.grade-B { background: rgba(108, 92, 231, 0.12); color: var(--purple); }
+.grade-C { background: rgba(90, 108, 125, 0.12); color: var(--text-secondary); }
+.news-body {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+.analysis-box {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border-left: 3px solid var(--gold);
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.75;
+}
+.analysis-box .label {
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* SUMMARY */
+.summary-section {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(10, 31, 63, 0.18);
+}
+.summary-section h2 {
+  color: var(--gold);
+  font-size: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+.summary-section h3 {
+  color: var(--gold);
+  font-size: 15px;
+  margin: 16px 0 10px;
+  font-weight: 700;
+}
+.summary-section p, .summary-section li {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 8px;
+}
+.summary-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.summary-section ul li {
+  padding-left: 20px;
+  position: relative;
+}
+.summary-section ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0; color: var(--gold);
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 24px 0 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 16px; }
+}
+
+/* ===== v9.2 简洁商务风：降低强调重量 ===== */
+strong, b { font-weight: 600; color: var(--deep-blue); }
+.highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; padding: 0 1px; border-radius: 2px; }
+.big-three-item .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.analysis-box .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.summary-section .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.news-body { font-size: 14px; line-height: 1.9; }
+.news-title { font-weight: 600; }
+.news-grade { font-weight: 600; }
+.analysis-box { background: #fbfaf6; border-left: 3px solid rgba(201, 168, 76, 0.5); }
+.analysis-box .label { font-weight: 600; color: #a8893a; }
+.summary-section h3 { font-weight: 600; }
+.top-signal { font-weight: 500; }
+.big-three-item .txt { line-height: 1.9; }
+</style>
+<style>
+/* ==== 157期新增: Big Three 综合收口块 ==== */
+.big-three-synthesis {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(10,31,63,0.06) 100%);
+  border: 1.5px solid rgba(201,168,76,0.55);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-top: 14px;
+}
+.big-three-synthesis .num {
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--gold, #c9a84c);
+  color: var(--deep-blue, #0a1f3f);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-three-synthesis .txt {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text, #2c3e50);
+}
+@media (max-width: 640px) {
+  .big-three-synthesis { padding: 12px; gap: 10px; }
+}
+</style>
+
+<style id="nav-v2">
+/* ==== NAV-V2 自包含样式（字面色值 · 覆盖全部归档页） ==== */
+.date-nav-bar{
+  display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+  background:#ffffff; border:1px solid #e6e9ef; border-radius:10px;
+  padding:12px 18px; margin-bottom:24px;
+  font-size:12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+.date-nav-bar .nav-months{
+  display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+  width:100%; padding-bottom:10px; margin-bottom:8px;
+  border-bottom:1px dashed #e6e9ef;
+}
+.date-nav-bar .nav-months a{
+  display:inline-block; padding:3px 11px; border-radius:12px;
+  border:1px solid #e6e9ef; background:#f7f8fa;
+  color:#5a6472; text-decoration:none;
+  font-weight:600; font-size:12px; line-height:1.5;
+  transition:all .15s ease;
+}
+.date-nav-bar .nav-months a:hover{
+  border-color:#c9a84c; background:#fff8e1; color:#0a1f3f;
+}
+.date-nav-bar .nav-months a.active{
+  background:#0a1f3f; border-color:#0a1f3f; color:#ffffff;
+}
+.date-nav-bar .nav-months a.nav-ledger{
+  margin-left:auto; border-color:rgba(201,168,76,.55);
+  background:#fff8e1; color:#8a6d20;
+}
+.date-nav-bar .nav-months a.nav-ledger:hover{
+  background:#c9a84c; border-color:#c9a84c; color:#0a1f3f;
+}
+.date-nav-bar .month-label{
+  font-weight:700; color:#0a1f3f; margin-right:4px;
+  font-size:12px; letter-spacing:.5px;
+}
+.date-nav-bar .month-sep{
+  display:inline-block; width:1px; height:14px;
+  background:#e6e9ef; margin:0 8px;
+}
+.date-nav-bar a{
+  display:inline-block; padding:3px 9px; border-radius:4px;
+  color:#5a6472; text-decoration:none; font-weight:500;
+  transition:all .15s ease;
+}
+.date-nav-bar a:hover{ background:#eef1f6; color:#0a1f3f; }
+.date-nav-bar a.current{
+  background:#c9a84c; color:#0a1f3f; font-weight:700;
+}
+@media (max-width:480px){
+  .date-nav-bar{ padding:10px 12px; gap:5px; }
+  .date-nav-bar a{ padding:3px 7px; }
+  .date-nav-bar .nav-months a.nav-ledger{ margin-left:0; }
+}
+/* ==== NAV-V2 END ==== */
+</style>
+</head>
+<body>
+<!-- NAV-V2 BEGIN -->
+<div class="date-nav-bar">
+  <span class="nav-months">
+    <a href="/shangda-ras-daily/archive/2026-06-30.html">6月 <span class="mn-cnt">19</span></a>
+    <a href="/shangda-ras-daily/archive/2026-07-31.html">7月 <span class="mn-cnt">23</span></a>
+    <a href="/shangda-ras-daily/archive/2026-08-31.html">8月 <span class="mn-cnt">20</span></a>
+    <a href="/shangda-ras-daily/archive/2026-09-30.html">9月 <span class="mn-cnt">22</span></a>
+    <a href="/shangda-ras-daily/archive/2026-10-13.html" class="active">10月 <span class="mn-cnt">5</span></a>
+    <a class="nav-ledger" href="/shangda-ras-daily/ledger/">📈 价格台账 · 10/13</a>
+  </span>
+  <span class="month-label">10月</span>
+  <a href="/shangda-ras-daily/archive/2026-10-08.html">08</a>
+  <a href="/shangda-ras-daily/archive/2026-10-09.html">09</a>
+  <a href="/shangda-ras-daily/archive/2026-10-10.html">10</a>
+  <span class="month-sep"></span>
+  <a href="/shangda-ras-daily/archive/2026-10-12.html">12</a>
+  <a href="/shangda-ras-daily/archive/2026-10-13.html" class="current">13</a>
+</div>
+<!-- NAV-V2 END -->
+
+<div class="container">
+<div class="top-signals">
+  <div class="top-signal">🧊 婴幼儿食用银鳕鱼血汞异常：盒马「儿童装」已下架，涉事链条横跨委托方与制造商</div>
+  <div class="top-signal">💰 滕州近10亿元循环渔业与鲜食玉米全产业链EPC挂网公示：建筑总面积约15.66万㎡</div>
+  <div class="top-signal">🏗️ 银川金凤区1.25亿元RAS项目提速：6座车间1.625万m³，10月底至11月中旬投用</div>
+  <div class="top-signal">📈 百洋股份10月13日三连板涨停8.86元，大连圣亚盘中涨停、中水渔业临时停牌</div>
+  <div class="top-signal">🐟 进口鱼粉再涨500元/吨至23,800-23,900元/吨，秘鲁通知今年中北部无第二捕捞季</div>
+  <div class="top-signal">🌍 库页岛鲑鱼捕捞同比降48%：约80%孵化场因鱼卵不足面临关闭或暂停</div>
+</div>
+
+<header>
+  <div class="header-brand">SHANDA &middot; RAS INDUSTRY DAILY</div>
+  <h1>商达.RAS行业高参</h1>
+  <div class="header-date">2026年10月13日 星期二 &middot; L1窗口: 10/12-10/13</div>
+  <div class="header-issue">第161期</div>
+</header>
+
+<div class="chain-nav">
+  <span class="active">💰 投资</span>
+  <span class="arrow">→</span>
+  <span class="active">🧬 技术</span>
+  <span class="arrow">→</span>
+  <span class="active">🏗️ 建设</span>
+  <span class="arrow">→</span>
+  <span class="active">⚙️ 运营</span>
+  <span class="arrow">→</span>
+  <span class="active">📦 产品</span>
+  <span class="arrow">→</span>
+  <span class="active">💹 销售</span>
+</div>
+
+<div class="top-signals">
+  <span class="top-signal red">【舆情·风险】婴幼儿食用银鳕鱼血汞异常持续发酵：上海新华医院接诊多例1-3岁患儿、门诊初步诊断为「食用银鳕鱼致汞中毒」，涉事产品包括盒马销售的「儿童装」银鳕鱼及「我爱渔」「SAPMER」等品牌；10月10日盒马门店该类产品已下架、线上部分产品将「宝宝装」改为「迷你装」。国家食品安全风险评估中心提示：应避免长期、高频次食用鲨鱼、剑鱼、金枪鱼、银鳕鱼等处于食物链顶端的大型肉食性鱼类，建议通过适量食用三文鱼、鲭鱼等低汞鱼种获得营养收益</span>
+  <span class="top-signal gold">【投资·EPC】滕州市现代循环渔业与鲜食玉米全产业链项目施工总承包（EPC）一标段10月13日提前公示：估算投资近10亿元、两处基地建筑总面积约15.66万平方米——滨湖镇山岗头村南侧为水产养殖基地（养殖车间8.775万平方米、单设1,080平方米养殖盐水调配车间、约4,000平方米「六池四坝」尾水池），大坞镇战河村南侧为农副产品加工基地（虾滑与虾肠加工车间1.4804万平方米）</span>
+  <span class="top-signal blue">【建设·产能】银川金凤区循环水渔业养殖示范项目提速：一期总投资1.25亿元、规划建设6座RAS循环水育苗及标准化养殖车间、养殖水体1.625万立方米，整体预计10月底至11月中旬正式投用，投产后主要养殖虹鳟鱼、三文鱼、大西洋鲑等冷水鱼，尾水处理回用率超90%；同期渔库（贺兰）智慧渔业低碳循环经济产业园区总投资约1.3亿元，集成AI智能养殖管理平台、无人机投喂巡查与光伏发电供暖供氧</span>
+  <span class="top-signal red">【成本·原料】进口鱼粉10月13日再涨500元/吨：北方港口23800-23900元/吨、南方港口23600-23800元/吨，秘鲁超级蒸汽鱼粉预售CNF维持3,450美元/吨；据秘鲁当地消息，生产部已通过非官方渠道通知业界今年中北部海域没有条件开放第二捕捞季。截至10月6日港口库存12.25万吨、较前一期减少0.65万吨，贸易商惜售挺价情绪升温</span>
+  <span class="top-signal gold">【资本·板块】10月13日水产板块分化：百洋股份触及涨停报8.86元（涨幅10.06%、总市值30.63亿元），为连续第三个交易日涨停，公司同日发布股票交易异常波动公告；大连圣亚盘中涨停报49.83元（涨幅10.00%、封单83886手折合4.18亿元）；中水渔业当日临时停牌（前收盘10.03元）；海大集团11时08分报43.89元、跌0.72%，三季度报告预约10月27日披露</span>
+  <span class="top-signal blue">【模式·运营】忻州豆罗「鱼藕共生」工厂化循环水基地：6个直径7米、深3.6米的陆基圆桶，今年投放鲈鱼苗5万尾、养殖10至11个月上市，单桶可容纳成鱼八千尾、预计总产量可达4万斤并主供北京；养殖富营养水体经沉淀净化后输往荷塘，经水生植物自然过滤的清水再回流养殖系统，全程尾水不外排——「一水两用、一田双收」把尾水从成本项变成了收益项</span>
+</div>
+
+<div class="big-three">
+  <h2>Big Three 深度分析串联</h2>
+  <div class="big-three-item"><span class="num">1</span>
+    <span class="txt">合规风险第一次从「企业的罚款」变成「孩子的血汞」，这是本期最需要立刻反应的一条线。上海新华医院接诊多例1-3岁患儿、门诊初步诊断为「食用银鳕鱼致汞中毒」，涉事产品包括盒马「儿童装」银鳕鱼与「我爱渔」「SAPMER」等品牌；10月10日盒马门店该类产品已下架，线上把「宝宝装」改为「迷你装」，而涉事链条是「委托方—制造商—销售平台」三方分散的结构。同时国家食品安全风险评估中心明确：处于食物链顶端的大型肉食性鱼类甲基汞含量通常较高，建议通过适量食用三文鱼、鲭鱼等低汞鱼种获得营养。对商达的含义有两层：一是「汞」是鱼种属性而非养殖水平，这恰恰说明品种选择本身就是风险管理——把「低汞鱼种」写进客户选品建议，是从业者第一次可以用公开权威口径影响客户决策；二是链条分散意味着责任不可推卸，养殖端唯一能自证的武器是「批次检测＋全程可追溯」，这与合规三件套是同一套能力。</span></div>
+  <div class="big-three-item"><span class="num">2</span>
+    <span class="txt">原料端的两道题方向完全相反，而这次是鱼粉一侧在加速。进口鱼粉10月13日再涨500元/吨至北方港口23800-23900元/吨，秘鲁超级预售CNF维持3,450美元/吨；更关键的是供给端的物理约束：秘鲁生产部已通过非官方渠道通知业界，今年中北部海域没有条件开放第二捕捞季——这不是价格博弈，而是配额执行的现实落空。同期粕类偏松：10月13日豆粕天津港3,380元/吨、江苏与广东均3,330元/吨（日环比各降10元），菜粕福建2,430元/吨，美豆离岸12.72美元/蒲式耳、巴西大豆离岸12.41美元/蒲式耳。对商达的含义：鲑鳟配方里鱼粉的「功能位」最难替代，但「用量」可谈——把「同等生长表现下鱼粉占比每降1个百分点」的实测数据做出来，就等于在高价周期里给客户发了一张可报价的底牌。</span></div>
+  <div class="big-three-item"><span class="num">3</span>
+    <span class="txt">建设端在跑，而且跑向同一个方向：把尾水从「排污口」改造成「生产资源」。银川金凤区1.25亿元项目把6座RAS车间的尾水统一送进「三池两坝」净化系统，大部分回流养殖、剩余达标水灌溉农田；忻州豆罗则用荷塘做天然过滤器，富营养水养藕、清水回流养鱼，全程不外排；滕州近10亿元项目在养殖基地内专门规划约4,000平方米「六池四坝」尾水池。三个层级、三种规模，同一套逻辑。政策侧的印证是钦州钦南区10月12日发布《设施渔业养殖管理暂行规定（征求意见稿）》，把拱棚小池塘、陆基圆（方）池、封闭式工厂化循环水一并纳入准入管理，超过100亩要进镇级招商引资流程。对商达的含义：尾水处理不再是「附加项」，而是项目的「入场券」——把净化系统按「三池两坝／六池四坝」的验收口径做成标准模块并前置到方案里，比在设备报价上让利更有说服力。</span></div>
+  <div class="big-three-synthesis"><span class="num">◆</span>
+    <span class="txt">三条线索收口到同一个判断：这一轮行业的准入标准，正在从「能不能养出来」变成「能不能说清楚」。舆情端要的是「这条鱼从哪里来、汞有多少」的可核查事实，成本端要的是「鱼粉降了几个点、成本省了几毛」的可复现测算，尾水端要的是「排了多少、回用了多少」的可验收数据。三样都不是工程问题，而是记录问题、口径问题、说明书问题。对商达的定位判断：这属于技术赋能平台最擅长的那一段——把经验变成参数，把参数变成文件，把文件变成客户递得出手的材料。30天内最值得做的一件事：把「低汞鱼种选品指引＋鱼粉替代实测数据表＋尾水「三池两坝」验收口径说明书」打包成一份《品种·成本·尾水三张表》，主动送到客户手上，用一次不需要报价的专业输出建立信任。</span></div>
+</div>
+
+<div class="toc">
+  <h3>📑 目录 · 12板块全产业链</h3>
+  <div class="toc-grid">
+    <a href="#sec1">① 投资动态</a>
+    <a href="#sec2">② 技术前沿</a>
+    <a href="#sec3">③ 建设与产能</a>
+    <a href="#sec4">④ 运营动态</a>
+    <a href="#sec5">⑤ 友商动态</a>
+    <a href="#sec6">⑥ 产品市场</a>
+    <a href="#sec7">⑦ 渠道动态</a>
+    <a href="#sec8">⑧ 资本市场</a>
+    <a href="#sec9">⑨ 政策法规</a>
+    <a href="#sec10">⑩ 国际动态</a>
+    <a href="#sec11">⑪ 展会活动</a>
+    <a href="#sec12">⑫ 饲料原料</a>
+  </div>
+</div>
+
+<div class="section" id="sec1">
+  <div class="section-header">
+    <span class="icon">💰</span>
+    <h2>投资动态</h2>
+    <span class="badge">L1/L2 重大项目与资本落地</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">滕州现代循环渔业与鲜食玉米全产业链EPC一标段提前公示：估算近10亿元、建筑总面积约15.66万平方米</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 滕州市公共资源交易网</div>
+    <div class="news-body"><p>滕州市现代循环渔业与鲜食玉米全产业链项目施工总承包（EPC）一标段招标文件10月13日挂网提前公示，<span class="highlight">估算投资近10亿元</span>。项目分设两大基地：滨湖镇山岗头村南侧为水产养殖基地，规划总建筑面积约94360平方米，其中<span class="highlight">养殖车间87750平方米</span>、单设1080平方米养殖盐水调配车间，并配套约4000平方米「六池四坝」尾水池；大坞镇战河村南侧为农副产品加工基地，含14804平方米虾滑与虾肠加工车间及1200平方米速冻车间。两处基地建筑面积合计约15.66万平方米。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>把循环渔业和鲜食玉米打包进同一个EPC，说明业主真正要买的是「一份可运营的资产包」，而不是几台设备。</strong>三点判断：① 养殖基地在微山湖畔，尾水处理按「六池四坝」专门规划了4000平方米，等于把环保达标写进了设计任务书，工艺方在方案阶段的介入价值远高于设备招标阶段；② 虾滑与虾肠加工车间1.48万平方米，意味着这个项目从设计之初就锁定了「原料到成品」的闭环，对原料规格的稳定性要求会传导回养殖端；③ 行动建议：跟进该项目的中标联合体构成与设备包划分，重点判断是否缺少工艺与运营方；若存在缺口，应立即以技术合作方式进入，争取在方案深化阶段就把参数口径写进去。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">淳安卡露伽全球鱼子酱总部产业综合体：总投资约2.75亿元，鲟鱼循环水养殖池＋加工线＋品牌中心</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 杭州日报</div>
+    <div class="news-body"><p>杭州淳安卡露伽全球鱼子酱总部产业综合体项目由杭州千岛湖鲟龙科技股份有限公司投资，<span class="highlight">计划总投资约2.75亿元</span>，一产建设鲟鱼循环水养殖池、二产布设鲟鱼加工生产线、三产打造集鲟鱼文化传承、展销与研学旅游于一体的国际化品牌中心。项目建成后预计可达<span class="highlight">年产850吨鲟鱼成鱼、50吨鱼子酱</span>的生产规模，目前已开展招投标工作，预计10月底前开工。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>2.75亿元投在一个县的水产综合体上，卖的不是鱼，是「千岛湖」与「鱼子酱」两张IP的叠加溢价。</strong>三点判断：① 项目把一产循环水养殖、二产加工、三产品牌体验写进同一份投资计划，说明高价值品种的盈利重心已从养殖端移到品牌端，养殖只是品质的背书环节；② 鲟鱼是长周期品种，50吨鱼子酱对应的存栏与水体规模决定了它对循环水系统稳定性、特别是温控与水质的长期一致性要求极高；③ 行动建议：把该项目列为「品牌驱动型客户」样本，沟通语言从单位产量成本转向「如何用系统稳定性保障鱼子酱等级稳定」，同时梳理研学与展销环节的参观动线需求，作为差异化服务包的设计依据。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">柳州柳南区现代渔业科技示范园「渔光菜融合」：一期5,200万元、10个陆基圆桶、水循环利用率超90%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 中国县域经济报／柳南区人民政府</div>
+    <div class="news-body"><p>《中国县域经济报》10月12日刊发报道聚焦广西柳州柳南区现代渔业科技示范园：养殖车间内排布<span class="highlight">10个直径8米、深1.7米的巨型陆基圆桶</span>，集成增氧、固液分离、臭氧杀菌、液氧补给与智能电控，养殖尾水经「三池两坝」净化、发酵处理后制成生物水溶肥，<span class="highlight">水循环利用率超过90%</span>。项目一期总投资5200万元、2025年5月投产，截至2025年底已产出生态鲈鱼近100吨，用水量仅为传统养殖模式的十分之一。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「渔光菜融合」把尾水做成了生物水溶肥，这一步跨出去，设施渔业就从「卖鱼」变成了「卖水权」。</strong>三点判断：① 柳州在国家地表水考核断面排名中2020至2025年稳居榜首，好水本身构成了产品溢价来源，说明水源地标签正在成为设施渔业定价的一部分；② 用水量只有传统模式的十分之一、单位亩产却是土塘10倍以上，这组对比在土地与水资源双紧的东部与中部地区最有谈判力；③ 行动建议：把「尾水制肥」纳入标准方案库，与已有种植板块的客户重点对接——他们有消纳能力，能把处理成本直接转成种植收益；同时把生物水溶肥的检测指标做成一份可提交的材料，用于申请循环经济类奖补。</div>
+  </div>
+</div>
+
+<div class="section" id="sec2">
+  <div class="section-header">
+    <span class="icon">🧬</span>
+    <h2>技术前沿</h2>
+    <span class="badge">L1/L2 种业与育种前沿</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">广东海鮸鱼全雄育种实现100%雄鱼：中山大学团队＋饶平万佳水产，预计带动产业产值提升30%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 广东发布／新浪财经</div>
+    <div class="news-body"><p>广东潮州饶平的海鮸鱼产业完成一次种源跨越：省级花鲈良种场48口育苗池已能培育出海鮸鱼苗、<span class="highlight">年产苗约3000万尾</span>。万佳水产董事长郑镇雄与中山大学生命科学学院张勇教授团队合作，创新设计全雄育种技术路径，<span class="highlight">培育出的后代可实现100%为雄鱼</span>。因雄鱼鱼鳔营养价值与经济价值更高，育种方预计研究成功后<span class="highlight">可带动海鮸鱼产业产值提升30%</span>；育苗端还锁定鱼池布设、营养饲料组成与鱼池管理三大关键控制点，建立起可复制的工厂化育苗方法。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>把雌雄比例从「靠天定」改成「可设计」，种业的价值第一次这么直接地体现在单尾鱼的钱包上。</strong>三点判断：① 全雄化不是为了产量，而是为了让「鱼鳔—鱼胶」这条高值副线实现标准化，育种目标从长得多转向赚得多，这是种业逻辑的实质变化；② 三大关键控制点被明确为鱼池布设、营养饲料与鱼池管理，其中两项与设施环境直接相关，说明工厂化育苗的溢价来自可控环境而非配方秘密；③ 行动建议：把「单性别育种＋可控环境」作为鲑鳟种业的参照路径，梳理全雌化与三倍体技术在国内鲑鳟环节的落地进度；对研发型客户，重点推荐「环境稳定性决定育种效果能否变现」这一论据。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">江苏大丰澳洲淡水蓝龙虾规模化上市：出肉率约50%、虾青素为小龙虾9倍、35克以上才上市</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 大丰融媒／网易</div>
+    <div class="news-body"><p>江苏盐城大丰的澳洲淡水蓝龙虾养殖基地迎来丰收并大量上市：与含肉率仅约15%的常规小龙虾相比，澳洲淡水蓝龙虾<span class="highlight">出肉率高达50%左右</span>、虾青素含量为小龙虾的9倍。基地在<span class="highlight">35克以上才够格上市</span>，养殖周期4至5个月；养殖密度严格控制，400平方米空间投放约3000尾，虾塘使用前须消毒补菌培藻并种轮叶黑藻净化水质。2020年底对接盐城农业科学院淡水渔业研究中心后建成育种养殖示范中心，2025年首次养殖成功上市，是盐城地区唯一。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>一个品种的竞争力被压缩成两个数字——出肉率50%对15%、虾青素9倍，这不是营销话术，是产品定义。</strong>三点判断：① 含肉率从15%提到50%，等于同样一吨出货量对应的可食部分翻了三倍多，加工端与餐饮端的采购成本结构会被重算；② 35克才上市的硬门槛和400平方米3000尾的低密度，说明这个品种的高值来自可控环境下的规格管理，设施化程度直接决定议价能力；③ 行动建议：把「出肉率—规格门槛—养殖密度」做成一张品种评价三联表，用于向客户解释「为什么要为环境控制付费」；同时对本地品种筛选时优先关注这类「规格即溢价」的高值品种。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">日照三文鱼种源攻坚：首个进境水生动物指定隔离场建成，5万例三倍体虹鳟鱼卵完成自主孵化</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 直播日照</div>
+    <div class="news-body"><p>日照在国产三文鱼种源上连下三步：先建成<span class="highlight">全市首个进境水生动物指定隔离场</span>，把海外优质种源安全引进来；再联合中科院海洋所攻关大西洋鲑人工繁育，并联合甘肃省水产研究所引进优质虹鳟；<span class="highlight">今年7月23日5万例三倍体虹鳟鱼卵完成自主孵化</span>。苗种培育环节须把盐度精确控制在10至15之间才能保证入网箱后的成活率，成鱼阶段经陆海接力转运至130海里外的黄海冷水团育肥。目前日照已发布国内首个深海三文鱼专属标准体系，全市布局50家体验店。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「5万例鱼卵自主孵化」的意义不在数量，而在于把「一旦断供整条链停摆」的风险从产业层面拆掉了。</strong>三点判断：① 进境隔离场＋自主研发＋跨省引种三线并行，说明种源自主不是一次公关动作，而是被拆成了可持续的工程节点；② 盐度精确控制在10至15这个细节，揭示陆海接力的核心难点在「过渡期环境匹配」，而非深海网箱本身，这对陆基环节的技术要求是实打实的提高；③ 行动建议：把「种源—过渡—深海」三段拆开做能力对照，识别商达在中间过渡段（陆基育苗与驯化）可输出的参数价值；同时跟踪其专属标准体系中欧米伽3、虾青素与维生素D的具体限值，作为国产鲑鳟品质话语权的参考基线。</div>
+  </div>
+</div>
+
+<div class="section" id="sec3">
+  <div class="section-header">
+    <span class="icon">🏗️</span>
+    <h2>建设与产能</h2>
+    <span class="badge">L1/L2 项目开工·投产·招标</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">银川金凤区循环水渔业示范项目提速：一期1.25亿元、6座RAS车间1.625万立方米，10月底至11月中旬投用</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 银川新闻网／新浪</div>
+    <div class="news-body"><p>银川金凤区循环水渔业养殖示范项目进入收尾阶段：一期<span class="highlight">总投资1.25亿元</span>、规划建设<span class="highlight">6座RAS循环水育苗及标准化养殖车间</span>、养殖水体达1.625万立方米。目前1、4、5号厂房外立面基本搭建完成，2号厂房地坪浇筑完毕，3号与6号厂房推进外立面施工，项目整体预计10月底至11月中旬正式投用。投产后主要养殖虹鳟鱼、三文鱼、大西洋鲑等冷水鱼，采用智能化循环水模式，配套自动投喂与智能温控，<span class="highlight">养殖尾水处理回用率超90%</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>西北内陆一次上6座RAS车间养冷水鱼，这个组合本身就是对温控与能耗方案的一次公开测试。</strong>三点判断：① 虹鳟、三文鱼与大西洋鲑同场养殖，意味着同一套系统要覆盖不同品种的适宜水温区间，系统调节余量比单一品种项目要求更高；② 尾水统一进入「三池两坝」净化系统、回用超90%、剩余达标水灌溉农田，这套「养殖—净化—灌溉」梯次利用的路径，是北方缺水地区最容易过审的技术叙事；③ 行动建议：把该项目列入「西北冷水鱼」对标样本，跟踪其冬季能耗与水温波动实测数据；同时把「三池两坝＋回用率」做成一张可提交的达标证明模板，用于同类干旱区项目的方案前置说明。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">渔库（贺兰）智慧渔业低碳循环经济产业园：总投资约1.3亿元，AI养殖平台＋无人机投喂＋光伏供暖供氧</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 银川新闻网</div>
+    <div class="news-body"><p>银川渔库（贺兰）智慧渔业低碳循环经济产业园区项目多个单体工程同步施工，养殖车间、繁育车间与生化池抢抓工期推进主体建设。项目<span class="highlight">总投资约1.3亿元</span>，按现代智能绿色园区标准打造，集成<span class="highlight">AI智能养殖管理平台、无人机投喂巡查与光伏发电供暖供氧</span>等绿色技术，构建低能耗循环养殖模式。园区已与宁波大学水产学院达成合作，共建沿黄螃蟹苗种研发繁育中心；计划明年2月完成全部成鱼车间建设，全部建成后螃蟹年产量可达15万斤、活鱼年产量100万斤，苗种繁育与冷链加工全链条产值约1亿元。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「光伏供暖供氧」被写进园区设计，意味着能耗不再只是运营成本，而变成了可以自建的产能。</strong>三点判断：① 供暖与供氧是设施渔业最刚性的两项能耗，用光伏直接覆盖这两项，等于把最大的成本波动源变成固定投资，这类方案在峰谷电价差大的西北地区回本更快；② 无人机投喂巡查＋AI管理平台的组合，指向的是「降低对熟练工的依赖」，这对西部招工难的现实条件是对症的；③ 行动建议：把「光伏—供暖—供氧」的能源闭环作为独立方案包整理，测算不同电价区间的投资回收期；同时把宁波大学参与的沿黄螃蟹苗种研发列为种业合作线索，跟进其苗种供应能力。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">十堰设施渔业规模达267万立方米：今年已开工20.9万立方米，17个项目建成投苗17.7万立方米</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 湖北省农业事业发展中心</div>
+    <div class="news-body"><p>十堰市10月13日通报设施渔业进展：<span class="highlight">全市设施渔业规模达267万立方米</span>，全市适宜设施渔业发展的土地2327亩、可新增设施渔业规模116万立方米、可用于增殖渔业水库22.2万亩。今年<span class="highlight">已开工项目20.9万立方米</span>，其中「丹江渔乡」现代渔业产业园、「丹江鲌乡」标准化设施渔业基地等<span class="highlight">17个项目已建成投苗、规模17.7万立方米</span>。市财政出台设施渔业保险市级财政奖补试点方案，竹山、竹溪、房县已落地渔业保险，今年累计理赔185.74万元；另有5家主体与金融机构现场签约、意向融资2亿余元。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>267万立方米存量＋116万立方米可新增空间，加上保险与融资通道打通，十堰已经进入「存量升级」阶段。</strong>三点判断：① 已开工20.9万立方米、建成投苗17.7万立方米，开工与投产的差值说明大部分项目已由建设期转入运营期，运维与水质管理需求会在未来一个季度集中释放；② 保险累计理赔185.74万元，等于地方政府用真金白银为养殖风险兜底，这会显著降低业主对高密度设施的风险感知，采购决策链条会缩短；③ 行动建议：把十堰作为「南水北调水源区」样板区域对待，重点推出「水质在线监测＋尾水达标＋保险理赔数据留痕」的组合服务，用水源地保护的合规刚性作为切入点，而非单纯设备推销。</div>
+  </div>
+</div>
+
+<div class="section" id="sec4">
+  <div class="section-header">
+    <span class="icon">⚙️</span>
+    <h2>运营动态</h2>
+    <span class="badge">L1/L2 成本·标准·运营效率</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">忻州豆罗「鱼藕共生」工厂化循环水：6个陆基圆桶、5万尾鲈鱼苗、预计总产4万斤并主供北京</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 黄河新闻网忻州</div>
+    <div class="news-body"><p>山西忻州忻府区豆罗镇艾玲养鱼专业合作社在七十余亩基地内建成智能化工厂化循环水系统：<span class="highlight">6个直径7米、深3.6米的陆基圆桶</span>，今年投放<span class="highlight">鲈鱼苗5万尾</span>，养殖10至11个月上市，单桶可容纳成鱼八千尾、单尾成鱼重约1.2斤，<span class="highlight">预计总产量可达4万斤</span>，目前主供北京市场、由长期合作收购商定点上门采购。棚外5个大型鱼塘与连片荷塘相连：养殖富营养水体经沉淀净化后输往荷塘为莲藕提供养分，经水生植物自然过滤的清水再回流养殖系统，全程尾水不外排。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「一池水被安排得明明白白」——这套模式的竞争力不在技术先进，而在几乎没有环保风险敞口。</strong>三点判断：① 尾水不外排、由荷塘完成自然过滤，等于把最容易触发监管处罚的环节从系统里拿掉了，在尾水管控趋严的地区这类模式的政策友好度最高；② 规格稳定在1.2斤上下并长期被北京收购商定点采购，说明内陆单点产能一旦稳定就能拿到跨省稳定订单，销路不是瓶颈；③ 行动建议：把「圆桶＋荷塘」作为低投入改造方案标准化，面向已有坑塘与闲置土地的中小主体推广；同时帮客户算清越冬能耗，避免他们在第一个冬季低估运行成本。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">新疆天蕴智慧养殖闭环：水质每2小时上报，日加工冰鲜三文鱼80吨、液氮隧道40分钟降至-40℃</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 农视网</div>
+    <div class="news-body"><p>新疆天蕴的智慧养殖体系被列为典型案例：水面布设24小时视频监控，水下搭载监测设备实时动态监测鱼类生长状态与水体污染物变化；<span class="highlight">水质在线监测装置每2小时将水库上下游总磷、总氮、溶解氧等关键指标上报环保部门</span>。加工端配套3座智能化无菌初加工厂，<span class="highlight">日加工冰鲜三文鱼能力达80吨</span>；核心区生食深加工厂设3条智能柔性生产线，<span class="highlight">-196℃液氮极冻隧道可在40分钟内将鱼肉从4℃降至-40℃</span>、把最大冰晶带控制在10分钟以内，车间按十万级无菌标准建造，配套日处理200吨RO纯水系统。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>把「总磷总氮每2小时上报环保部门」做成常态，等于把合规数据变成了生产数据的一部分。</strong>三点判断：① 监测数据直连环保部门，意味着任何一次水质异常都会被记录在案，这反过来倒逼系统稳定性必须留足冗余，设备选型逻辑会从便宜优先转为稳态优先；② 液氮极冻把最大冰晶带压缩在10分钟内，这是保证长途运输后仍达刺身级口感的关键工艺参数，说明高值水产品的竞争已经从养殖端延伸到冻结曲线；③ 行动建议：向客户推广「合规数据即生产数据」的思路，把在线监测的指标直接接入日常运营看板；同时把「冰晶带控制」这类加工参数纳入产品说明书，作为对接高端渠道的技术话术。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">甘肃永登鲑鳟鱼：38家养殖主体、年产量50万公斤、年总产值3,000余万元，渔村项目已建成146家渔家乐</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 中国甘肃网</div>
+    <div class="news-body"><p>甘肃永登县自1982年开始养殖冷水鱼，现有养殖主体<span class="highlight">38家、年产量达50万公斤、年总产值达3,000余万元</span>；2024年<span class="highlight">「永登虹鳟鱼」获农业农村部「全国名特优新」农产品称号</span>。为延伸产业链，当地打造「鲑鳟鱼养殖＋」融合模式：一方面引入加工技术发展本地深加工，生产鱼饺、鱼丸等产品；另一方面投资2.3亿元的满城渔村项目已建成精品农家乐、渔家乐146家，节假日单店日营业额近8000元。现有养殖鱼种涵盖虹鳟、金鳟、七彩鲑、长白山细鳞鲑与哲罗鲑等。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>38家主体、50万公斤产量，规模不大但品种最全——永登代表的是「多品种小集群」的另一种鲑鳟产业形态。</strong>三点判断：① 年产50万公斤分散在38家主体手上，单主体平均不到1.4万公斤，说明这个产区几乎全部是小水体流水养殖，设施化改造的空间与需求同样巨大；② 虹鳟、金鳟、七彩鲑、细鳞鲑、哲罗鲑五个品种并存，苗种与规格管理复杂度高，对标准化技术服务的需求比单一品种产区更刚性；③ 行动建议：把永登列入「小主体集群」观察名单，梳理其养殖水体规模与改造成本结构，评估「低成本循环水改造包」的可复制性；同时借助「名特优新」称号与渔家乐渠道，探索养殖端与文旅端的联合品牌路径。</div>
+  </div>
+</div>
+
+<div class="section" id="sec5">
+  <div class="section-header">
+    <span class="icon">🔍</span>
+    <h2>友商动态</h2>
+    <span class="badge">L1 头部友商对标</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">百洋股份10月13日触及涨停报8.86元：连续第三个交易日涨停，公司同日发布股票交易异常波动公告</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 交易所公开行情／新浪财经</div>
+    <div class="news-body"><p>百洋股份10月13日触及涨停，<span class="highlight">涨停价8.86元、涨幅10.06%、总市值30.63亿元</span>、流通市值29.62亿元，截至发稿总成交额2.55亿元，为<span class="highlight">连续第三个交易日涨停</span>。公司同日发布股票交易异常波动公告。市场归因集中在三条：核心饲料板块当期营收同比增长超21%、饲料原料毛利率达26.81%；国有企业股东背景带来资金与行业资源支持，期末在手货币资金超5.3亿元并新增1.8亿元低成本关联融资；10月12日登上龙虎榜、总买入额超6,100万元。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>三个涨停里，真正能站住的只有一条——饲料原料毛利率26.81%，其余都是资金与标签。</strong>三点判断：① 饲料业务收入增长超34%、毛利率26.81%，恰好对上本轮鱼粉与粕类的价格波动窗口，说明「原料贸易＋饲料加工」的组合在涨价周期里天然占优；② 1.8亿元关联融资利率不高于当期LPR，属于典型的国资背书红利，这类资金优势不可复制，对同业不构成可持续的竞争威胁；③ 行动建议：向客户解释「涨价的利润归属」规律——越靠近饲料与加工端越能守住毛利，纯养殖端只能靠品种与规格提高议价能力；这恰好是商达为客户做品种与规格规划的商业理由，而不是空谈行情。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">大连圣亚10月13日盘中涨停报49.83元：封单83,886手折合4.18亿元，换手率8.65%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 东方财富网</div>
+    <div class="news-body"><p>大连圣亚10月13日10时56分盘中涨停，<span class="highlight">报49.83元、涨幅10.00%</span>，<span class="highlight">封单83886手、折合4.18亿元</span>，成交额5.28亿元、换手率8.65%、成交量11.14万手，主力净流入约3651.79万元。这家以海洋主题文旅为主业的公司当日领涨水产相关个股，与传统养殖加工标的形成明显的资金分化。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>资金买的是「海洋体验」而不是「海洋产能」，这条分化线值得记下来。</strong>三点判断：① 换手率8.65%、封单折合4.18亿元，属于典型的题材驱动型涨停，量价结构与基本面无关，不宜作为行业景气的判断依据；② 海洋文旅类标的与养殖加工类标的同日反向，说明市场在用「消费体验」与「农产品周期」两条完全不同的估值逻辑给同一批公司定价；③ 行动建议：向客户与合作方解释估值分化的成因，避免他们把股价当成行业温度计；判断水产行业真实景气的三个指标仍是新开工项目数、投苗量与批发价结构，而不是板块指数的单日涨跌。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">中水渔业10月13日临时停牌；海大集团报43.89元跌0.72%，三季度报告预约10月27日披露</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 交易所公开行情</div>
+    <div class="news-body"><p>中水渔业10月13日临时停牌，<span class="highlight">停牌前收盘10.03元、总市值36.70亿元</span>，当日开盘9.85元、最高10.12元、最低9.61元，振幅5.08%、换手率3.59%、成交额1.30亿元。同日海大集团<span class="highlight">11时08分报43.89元、跌0.72%</span>，今开43.66元、最高44.66元、最低43.66元，成交额1.386亿元、换手率0.19%、总市值727.3亿元；<span class="highlight">公司三季度报告预约于10月27日披露</span>，截至10月9日质押总比例3.25%。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>一边是远洋标的临时停牌，一边是饲料龙头静待季报——这段时间的板块定价权，握在财报里而不是行情里。</strong>三点判断：① 临时停牌通常对应重大信息待披露，在业绩预告密集期出现会加大板块波动，客户与渠道方的情绪容易被牵动；② 海大集团换手率仅0.19%、成交1.386亿元而市值超727亿元，说明机构筹码高度稳定，龙头走势更多反映基本面预期而非交易情绪；③ 行动建议：把10月27日前后标记为「信息密集窗口」，提前梳理主要友商的三季报披露日历，用财报数据而不是传言来更新客户对行业利润结构的认知，这比追涨跌更有专业含量。</div>
+  </div>
+</div>
+
+<div class="section" id="sec6">
+  <div class="section-header">
+    <span class="icon">📦</span>
+    <h2>产品市场</h2>
+    <span class="badge">L1/L2 鲑鳟·鲢鳙 批发＋零售双轨</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">鲢鳙类10月13日三地报价：盐城鳙鱼（花鲢）16.00元/公斤、楚雄白鲢鱼12.00元/公斤、奉贤花鲢24.00元/公斤</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 盐城市／楚雄州／奉贤区发展和改革委员会</div>
+    <div class="news-body"><p>10月13日地方日更价格表三地对照：<span class="highlight">华东（盐城）农产品交易中心鳙鱼（花鲢，活1500克左右）8.00元/500克、折合16.00元/公斤</span>，采价时点10月13日5时；<span class="highlight">云南楚雄白鲢鱼（活1000克左右）12.00元/公斤</span>；上海奉贤多个监测点花鲢报价区间约10.50至14.00元/500克，多数点位报12.00元/500克、折合24.00元/公斤。<span class="highlight">产地集散16.00元对销区终端24.00元，价差达1.5倍</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>产地16元、销区24元，一半的价差由运输与成活损耗之外的东西构成——这是渠道成本而不是鱼的价值。</strong>三点判断：① 盐城采价时点在凌晨5时，反映的是当日开市前的批发成交水平，与奉贤的终端监测口径不在同一环节，直接相减会高估价差，必须先对齐环节再比较；② 楚雄白鲢12.00元与盐城花鲢16.00元形成品种间的合理梯度，说明西南与华东两个市场的价格结构并未脱节，跨区调运的套利空间有限；③ 行动建议：给客户建立「产地批发—销区终端」同日报价对照表，只有净价差（扣运费、成活损耗与账期成本）超过阈值时才建议跨区调运，否则优先做本地规格优化与稳定订单。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">鲢鳙类10月12日全国白鲢活鱼批发对照：哈尔滨哈达20.00元对湖北洪湖4.40元，极差4.55倍</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 农业农村部信息中心（全国主要批发市场当日报价）</div>
+    <div class="news-body"><p>农业农村部信息中心10月12日全国主要批发市场白鲢活鱼报价（部分）：<span class="highlight">哈尔滨哈达农副产品有限公司20.00元/公斤为最高点，湖北省洪湖农贸市场4.40元/公斤为最低点，两者相差4.55倍</span>；中间梯队包括甘肃陇国源18.00、陕西朱雀14.50、重庆双福13.00、山东威海14.00、河南黄淮12.00、北京朝阳大洋路11.50、湖北浠水10.20、江苏南京6.80、江西九江琵琶湖5.40元/公斤。同日<span class="highlight">农产品批发价格200指数为114.06、比上周六下降0.13个点</span>，白鲢鱼全国批发价10.21元/公斤、上升1.0%，为当日46个重点品种中涨幅前五。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>4.40元与20.00元同时存在于一天之内，说明「白鲢」在不同市场根本不是同一种商品。</strong>三点判断：① 长江中游主产区（洪湖、九江）价格集中在4至6元区间，而东北、西北销区拉到18至20元，价差主要来自运距与季节性供给断层，不是品质差异；② 全国批发价10.21元/公斤上升1.0%并进入当日涨幅前五，说明整体价格在低位企稳回升，但回升由少数销区拉动，产区仍在成本线附近；③ 行动建议：向客户明确「按市场读价」的报价纪律，把洪湖、浠水、黄淮、陇国源、哈达五个市场列为固定监测点；只有当销区与产区的净价差覆盖运费与成活损耗后，跨区调运才成立。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">鲑鳟类10月13日零售双轨：京东国产虹鳟去骨鱼排1kg 79.9元、天猫冰鲜三文鱼中段＋鱼腩400g约89元</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 京东／天猫生鲜渠道</div>
+    <div class="news-body"><p>10月13日鲑鳟类零售端两条主力价格带：<span class="highlight">京东「东上御品」国产虹鳟去骨鱼排1kg装券后79.9元，折合79.9元/公斤</span>；<span class="highlight">天猫「掬芥」挪威冰鲜三文鱼上佳中段200g＋鱼腩200g到手约89元，折合约222.5元/公斤</span>；同渠道另有冰鲜三文鱼刺身小包装与山姆会员店冰鲜三文鱼切片、永辉刺身专柜在售。<span class="highlight">国产虹鳟鱼排与进口冰鲜三文鱼切片的克单价相差约2.8倍</span>，价差主要来自「国产冷冻／进口冰鲜」与「鱼排／切片」两种形态差异。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>79.9元对222.5元，差的不只是产地，而是「冷冻鱼排」与「冰鲜切片」两种消费场景。</strong>三点判断：① 国产虹鳟鱼排锚定的是囤货与家庭烹饪场景，定价紧贴原料成本，向上空间有限；进口冰鲜切片卖的是即食便利与品质信任，愿意为鲜度付溢价，两条轨道短期内不会合并；② 400g组合规格对齐家庭单次消费量，规格本身就是定价工具，说明渠道在用「份量设计」替代直接降价；③ 行动建议：把「冷冻鱼排—冰鲜切片」的价差倍数作为常态化监测指标（当前约2.8倍），用于向客户测算加工端增值空间；同时明确国产鲑鳟的切入点是「冰鲜＋可追溯」，在冷冻鱼排这条价格带上与进口正面竞争没有胜算。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">鲑鳟类批发端：温泉县三倍体虹鳟秋季集中捕捞预计500吨，产地冷鲜鱼与鱼柳直供全国</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> L2 2026-10-10 &middot; 中新网新疆／温泉县融媒体中心</div>
+    <div class="news-body"><p>10月10日，新疆温泉县扎勒木特乡的冷水鱼良种繁育中心迎来秋季集中捕捞期：公司负责人介绍，本次收获的是初次尝试养殖的三倍体虹鳟，经3年养殖进入收获期，<span class="highlight">预计可收获500吨</span>，目前首批已收获30余吨、单条均超5公斤，已接到来自全国各地的订单。捕捞后经清洗、分割、修整、包装制成<span class="highlight">冷鲜鱼、鱼柳等产品</span>运往全国。养殖采用陆基圆池技术、流水养殖，水面两侧双向进水、池底中间排污，<span class="highlight">尾水经处理后进入农业灌溉实现「一水两用」</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>500吨单一规格（单条超5公斤）的三倍体虹鳟，是国产鲑鳟批发端第一次出现「大规格批次」供给。</strong>三点判断：① 单条均超5公斤意味着出肉率与切片规格可直接对标进口冰鲜鱼，加工端不必再为小规格原料调整产线，这是国产原料进入高值加工环节的门槛条件；② 首批30余吨即接到全国订单，说明市场对国产大规格虹鳟的接受度已经建立，缺的是稳定批次的持续供给；③ 行动建议：把「单条5公斤以上」设为国产鲑鳟加工级原料的规格基准，向客户推荐按加工端规格需求反向设计养成计划；同步跟踪该类批次的产地成交价，作为国产虹鳟批发定价的锚点。</div>
+  </div>
+</div>
+
+<div class="section" id="sec7">
+  <div class="section-header">
+    <span class="icon">🏪</span>
+    <h2>渠道动态</h2>
+    <span class="badge">L1/L2 生鲜平台·电商·零售</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">三文鱼价格塌陷：北京批发由约135元/公斤跌至110元，进口均价跌破10美元/公斤</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 新浪财经／搜狐（渠道价格调研）</div>
+    <div class="news-body"><p>渠道端价格信号出现明显松动：2025年1至11月中国冰鲜三文鱼进口平均价格已跌至<span class="highlight">约9.6美元/公斤、跌破10美元关口</span>；进入2026年价格塌陷延续，<span class="highlight">北京批发市场三文鱼由每公斤约135元跌至110元</span>，成都市场零售价最低已到每公斤140元。曾经在高档日料店几片就上百元的高端刺身，如今在超市冰柜里以十几元一份促销，高端定位明显松动，门店客单价被迫下移。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>批发价从135元掉到110元，跌幅约18%——这个幅度足以让「国产高价路线」的假设失效。</strong>三点判断：① 进口均价跌破10美元/公斤意味着到岸成本已压到低位，任何以「进口贵、国产便宜」为卖点的沟通话术都需要重写；② 北京批发110元/公斤这个水平，恰好压在国产冰鲜产品的成本线附近，国产要突围只能走「鲜度＋可追溯」的差异化，靠价格没有空间；③ 行动建议：把「进口批发价—国产成本线」的对照做成一张常态监测图，每期更新；同时提醒客户，价格塌陷期最忌讳扩产赌行情，应把重心放在规格稳定性与渠道锁定上。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">三文鱼消费场景从餐厅转向零售：疫情前约85%消费在餐厅，商超电商与预制菜接棒</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 新浪财经／搜狐／蓝鲸财经</div>
+    <div class="news-body"><p>三文鱼的消费场景正在被重新定义：据挪威海产局数据，疫情前中国约<span class="highlight">85%的三文鱼消费发生在餐厅</span>，日料店占据绝大部分；而过去两年日料市场本身并未明显扩张，三文鱼却通过商超、电商与预制菜走进家庭餐桌，零售渠道接棒成为放量主力。与此同时，<span class="highlight">19.9元管饱的自助与超市促销</span>把三文鱼从宴席大菜变成家庭日常。供应链端头部品牌选择深度绑定：寿司郎与广东顺德鳗鱼工厂合作，从鱼苗挑选、养殖到加工全程把控，<span class="highlight">顺德产鳗鱼价格仅为日本产的一半</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>渠道从餐厅换成超市，意味着采购决策的人格从「主厨」换成了「采购经理」——评判标准从手艺变成了指标。</strong>三点判断：① 家庭场景对切片规格、包装份量与保质期的要求高度标准化，这恰恰是国产可控养殖的强项，而进口整条鱼在这条赛道上并不占优；② 连锁品牌走向「从鱼苗到加工全程把控」的产地直采，说明渠道愿意为「可追溯的稳定供货」付溢价，而不是继续比价；③ 行动建议：把「餐厅场景—家庭场景」的采购标准拆成两张清单，针对家庭场景重点推荐规格一致、批次可追溯的产品形态；同时主动对接连锁餐饮的直采需求，用稳定批次换取长期协议。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">银鳕鱼事件引发渠道自查：盒马「儿童装」已下架，线上部分产品将「宝宝装」改为「迷你装」</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 人民网上海／大河健康报／澎湃新闻</div>
+    <div class="news-body"><p>受婴幼儿食用银鳕鱼后血汞异常事件影响，渠道端已开始自查与调整：10月10日记者在盒马商超看到，冷冻区仍陈列多款银鳕鱼产品，但<span class="highlight">印有「儿童装」字样的银鳕鱼产品已经下架</span>，商超小程序中也已搜索不到该产品；走访部分盒马鲜生门店及生鲜应用发现，<span class="highlight">所售鳕鱼产品已基本不再标示「儿童食品」「儿童装」等字样</span>。不过在一些网店中，部分银鳕鱼产品将「宝宝装」更换为「迷你装」，并宣称新老包装随机发货。涉事品涉及盒马销售的「儿童装」银鳕鱼及「我爱渔」「SAPMER」等品牌。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>改包装名称而不改产品，恰恰说明渠道缺的不是合规意识，而是一套能自证的检测标准。</strong>三点判断：① 涉事链条是「委托方—制造商—销售平台」三方分散结构，责任无法归到单一主体，这类结构在冷冻进口水产中极为普遍，风险具有系统性；② 从「儿童装」改成「迷你装」，是典型的标签规避而非风险管理，一旦被媒体二次追问，渠道会面临更大的信任损失；③ 行动建议：把「标签合规＋批次检测报告＋重金属指标说明」做成三类鳕鱼类产品的准入材料包推给渠道客户；同时建议客户在同类产品上主动公示汞含量检测结果，用透明度换取信任，这是低价竞争之外唯一有效的防御。</div>
+  </div>
+</div>
+
+<div class="section" id="sec8">
+  <div class="section-header">
+    <span class="icon">📈</span>
+    <h2>资本市场</h2>
+    <span class="badge">L1 板块行情与海外对标</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">10月13日A股水产板块分化：百洋股份三连板8.86元，大连圣亚涨停49.83元，中水渔业临时停牌</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 交易所公开行情／东方财富网</div>
+    <div class="news-body"><p>10月13日水产相关个股走势明显分化：<span class="highlight">百洋股份触及涨停报8.86元、涨幅10.06%，为连续第三个交易日涨停</span>，总市值30.63亿元；<span class="highlight">大连圣亚10时56分盘中涨停报49.83元、涨幅10.00%，封单83886手</span>；<span class="highlight">中水渔业当日临时停牌，前收盘10.03元、总市值36.70亿元</span>；海大集团11时08分报43.89元、跌0.72%，总市值727.3亿元。同期大盘承压：上证指数3797.24点跌0.43%、深证成指12384.87点跌2.03%、创业板指2963.82点跌2.61%。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>在大盘走弱的日子里，水产板块内部却出现了三个方向相反的价格——这说明「水产」已经不是一个统一题材。</strong>三点判断：① 百洋属于饲料与加工一体化的涨价传导逻辑、大连圣亚属于文旅消费逻辑、中水渔业属于远洋资产逻辑，三条逻辑各自独立，用板块指数判断景气度会持续失真；② 海大集团作为市值最大的标的逆势抗跌，反映的是机构筹码稳定而非行业转暖，不宜据此判断需求改善；③ 行动建议：把「水产板块」拆成饲料加工、养殖、远洋、文旅四条子线分别跟踪，向客户解释各自的定价驱动因素，避免把股价的短期波动误读为项目投资时机。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">*ST佳沃披露重组问询函回复：Australis 2022年大西洋鲑销量79,836.87吨、毛利率14.98%</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 深圳证券交易所／新浪财经</div>
+    <div class="news-body"><p>*ST佳沃披露华安证券关于深交所重组问询函回复的核查意见，其中披露境外子公司Australis的经营数据与规划：2022年<span class="highlight">大西洋鲑销量79,836.87吨WFE、单价6.91美元/公斤WFE、单位成本5.71美元/公斤</span>，<span class="highlight">毛利率14.98%</span>、营业利润968.06万美元、净利润2,218.35万美元。公司表示未来将继续执行阶段性成本高企与资金紧张下的经营计划，<span class="highlight">2025年、2026年产销量仍将处于低位，从2027年起产能逐渐恢复</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>14.98%的毛利率是一家海外鲑鱼养殖企业的完整答案：这个行业的天花板并不高，差距全在单位成本上。</strong>三点判断：① 6.91美元的单价对应5.71美元的单位成本，成本每上升10%毛利就被吃掉近四成，说明鲑鱼养殖对饲料、能耗与病害的敏感度远高于一般农产品；② 「2025至2026年维持低位、2027年恢复」的节奏，意味着海外供给增量在中短期内有限，这为国内产能留下的窗口期比市场预期更长；③ 行动建议：把「单位成本占单价的比例」设为客户投资测算的核心指标，用该案例说明成本控制能力比产能规模更能决定盈亏；同时在为客户做方案时，把能耗与饲料转化率作为成本端的第一优先级。</div>
+  </div>
+</div>
+
+<div class="section" id="sec9">
+  <div class="section-header">
+    <span class="icon">📋</span>
+    <h2>政策法规</h2>
+    <span class="badge">L1/L2 政策·标准·水产舆情</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">钦州钦南区《设施渔业养殖管理暂行规定（征求意见稿）》公开征求意见：10月12日至11月11日</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 钦南区人民政府／钦南区农业农村局</div>
+    <div class="news-body"><p>广西钦州钦南区农业农村局10月12日发布公告，就《钦州市钦南区设施渔业养殖管理暂行规定（征求意见稿）》向社会公开征求意见，<span class="highlight">时间为10月12日至11月11日</span>。规定适用于拱棚小池塘、陆基圆（方）池、封闭式工厂化循环水等养殖模式，明确：<span class="highlight">规模超过100亩的设施渔业项目统一纳入镇级招商引资项目管理</span>，须经资格审查与招商评审会评审并签订招商引资协议；100亩以下项目不纳入镇级招商评审，但选址仍需征求村委会及生态环保、农业农村、自然资源、供电、水利、林业等部门意见；用地协议须明确使用年限、租金标准与归还复垦约定。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>把「拱棚小池塘、陆基圆池、封闭式工厂化循环水」三类模式一并纳入准入管理，说明地方监管已经从「管水」转向「管空间」。</strong>三点判断：① 100亩这条线把项目分成了两套流程，大项目必须走招商评审，等于把审批前移到了选址阶段，前期沟通成本显著上升；② 选址须征求自然资源、水利、林业等多部门意见，意味着土地与水域的合规性成为项目立项的第一道门槛，任何手续缺口都会导致工期延误；③ 行动建议：把这份征求意见稿作为「南方设施渔业准入模板」研究，为华南客户的选址评估提前准备一份多部门意见清单；同时可利用征求意见期梳理行业诉求，形成专业输出以建立信任。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">【水产舆情】婴幼儿食用银鳕鱼血汞异常：新华医院接诊多例，权威机构提示低汞鱼种替代</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 大河健康报／中华网／常熟</div>
+    <div class="news-body"><p>婴幼儿食用银鳕鱼后血汞异常事件持续受到关注：上海交大医学院附属新华医院「环境污染物中毒」门诊接诊多名1至3岁患儿，<span class="highlight">门诊初步诊断为「食用银鳕鱼致汞中毒」</span>，患儿主要来自江浙沪区域，目前大多无症状但已按医生建议进行排汞治疗。国家食品安全风险评估中心营养一室主任方海琴研究员表示，受食物链蓄积效应影响，<span class="highlight">处于食物链顶端的大型肉食性鱼类（鲨鱼、剑鱼、金枪鱼、银鳕鱼等）甲基汞含量通常较高</span>，建议通过适量食用三文鱼、鲭鱼等低汞鱼类获得营养收益，<span class="highlight">尤其孕哺期妇女及婴幼儿应尽量避免食用汞含量高的鱼种</span>。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>权威机构把「三文鱼」点名为低汞鱼种的推荐选项，这是国产鲑鳟产业难得的一次公开背书。</strong>三点判断：① 汞是鱼种与食物链位置决定的属性，不是养殖水平问题，这意味着品种选择本身就是风险管理，行业第一次可以用权威口径引导客户选品；② 事件的核心争议在「儿童食品」这一标签缺乏法定定义，导致渠道以改名方式规避而不做实质检测，规范空白会长期存在；③ 行动建议：把「低汞鱼种替代」整理成一页客户沟通材料，引用权威机构口径说明鲑鳟类的安全性优势；同时在加工与零售客户沟通中主动提供重金属检测报告，把「可自证」变成新的准入门槛。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">地方抽检通报：黄石铁山区水产店牛蛙检出恩诺沙星326微克/公斤、超标逾两倍</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 黄石市市场监督管理局／山西省市场监督管理局</div>
+    <div class="news-body"><p>湖北省黄石市市场监督管理局10月12日发布2026年第7期食品安全监督抽检信息公告：<span class="highlight">铁山区妖中水产品店「鲜活牛蛙」检出恩诺沙星326微克/公斤（标准≤100微克/公斤）</span>，铁山区董建文水产店「鲜活生态青蛙」检出恩诺沙星254微克/公斤，均超出GB 31650至2019规定的兽药最大残留限量。同批公告还检出小苔芒吡唑醚菌酯超标与干姜噻虫胺超标。同期山西省市场监督管理局第10期通告显示：抽检28大类<span class="highlight">638批次，合格620批次、不合格18批次</span>，不合格样品中包含水产制品。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>326微克/公斤对100微克/公斤的线，超了三倍多——抽检的检测精度已经足以锁定每一家门店。</strong>三点判断：① 两家涉事主体都在同一个农贸市场鱼区（亚东市场鱼区2号），说明同一市场内的货源渠道可能重叠，单点问题的扩散速度比想象中快；② 恩诺沙星是水产养殖常用药，其残留水平直接反映休药期执行情况，而休药期管理恰恰是封闭系统最容易做到、土塘最做不到的环节；③ 行动建议：把「休药期记录＋出塘检测报告」作为客户交付清单里的固定项，用本次超标倍数说明「一次抽检不合格的传播成本远超检测费用」；对渠道客户则主动提供批批检测承诺，把合规转化为准入优势。</div>
+  </div>
+</div>
+
+<div class="section" id="sec10">
+  <div class="section-header">
+    <span class="icon">🌍</span>
+    <h2>国际动态</h2>
+    <span class="badge">L1/L2 全球RAS与巨头动向</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">库页岛鲑鱼捕捞同比降48%：约80%孵化场因鱼卵不足面临关闭或暂停，1.2万渔业工人承压</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; Tridge／rufishnet</div>
+    <div class="news-body"><p>俄罗斯库页岛2026年鲑鱼捕捞季被宣布为失败：受自然灾害影响，<span class="highlight">总捕获量同比下降48%，较远东海区的科学预测低56%</span>。由于鱼卵不足，该地区<span class="highlight">约80%的鲑鱼孵化场面临关闭或暂停</span>，人工繁殖工作受到严重影响。危机波及从业者生计，<span class="highlight">约12000名渔业工人与5万名相关行业雇员面临失业风险</span>。业内人士指出，大型企业可通过业务多元化渡过难关，而完全依赖太平洋鲑鱼捕捞的小型企业很可能关停，行业正在呼吁政府支持以维持孵化场与捕捞作业直至生态条件改善。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>野生鲑鱼供给的波动率正在突破历史区间，这对依赖野生原料的加工与餐饮渠道是硬约束。</strong>三点判断：① 捕捞量降48%、孵化场八成停摆，意味着未来两到三年投放量也会同步下降，野生鲑供给收缩不是单季现象而是跨年度问题；② 供给收缩会推动野生鲑价格上涨，扩大其与养殖鲑的价差，养殖端在成本竞争中反而获得相对空间；③ 行动建议：把「野生鲑捕捞量」列入供给端月度跟踪指标，用于判断加工客户的原料替代节奏；对以往大量使用野生原料的客户，主动提供养殖原料的稳定性对比测算，把供给风险转化为方案机会。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">阿拉斯加鳕鱼兼捕鲑鱼成政治议题：拖网船过去10年年均兼捕约1.8万条帝王鲑</div>
+    <div class="news-meta"><span class="news-grade grade-B">L2</span> L2 2026-10-11 &middot; 国际棱镜／美联社</div>
+    <div class="news-body"><p>美国阿拉斯加白令海的鳕鱼拖网渔业因兼捕鲑鱼引发持续争议：按行业数据，<span class="highlight">兼捕约占鳕鱼渔业总捕捞量的2%</span>，但在每年数十亿磅的规模下，这相当于数十万条鲑鱼；<span class="highlight">过去10年白令海鳕鱼拖网船平均每年捕到约1.8万条帝王鲑与28.8万条其他鲑鱼</span>，其中几乎全是狗鲑。争议背景是阿拉斯加西部鲑鱼资源已经崩塌，当地数十个原住民社区世代靠鲑鱼为生；2024年阿拉斯加与加拿大对育空河的帝王鲑下达为期7年的禁捕令，库斯科奎姆河也多次封捕。科学家指出鲑鱼衰退主因是海水变暖与海洋环境变化，2025年一项研究还发现水温升高会改变鲑鱼与鳕鱼重叠海域、推高兼捕风险。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>当野生资源衰退到需要靠「禁止兼捕」来救的时候，养殖供给的稳定性就变成了食品安全层面的问题。</strong>三点判断：① 兼捕仅占2%却成为政治议题，说明野生渔业的管理空间已经很小，任何边际损失都会被放大，行业对养殖替代的容忍度会显著提高；② 科学家把主因归于海水变暖而非兼捕，意味着这是不可逆的环境趋势，野生鲑的长期供给预期需要下调；③ 行动建议：把「野生资源衰退—养殖替代」作为国际客户沟通的宏观背景，用封闭系统「不受海区资源波动影响」的特性支撑生物安全定价；同时关注各国渔业管理政策对进口原料结构的传导。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">挪威冰鲜养殖鳟鱼出口量降、价升：前9个月44,627吨，均价82.21挪威克朗/公斤</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; Tridge／rufishnet</div>
+    <div class="news-body"><p>挪威冰鲜养殖鳟鱼出口前9个月量降价升：出口量为<span class="highlight">44,627吨，低于2025年同期的52,189吨</span>；<span class="highlight">平均出口价由75.09挪威克朗/公斤升至82.21挪威克朗/公斤</span>，涨幅约9.5%。分市场看，欧盟等主力市场出口量小幅上升，对乌克兰与立陶宛的出口明显减少，<span class="highlight">美国与波兰在量与值上均实现增长</span>，显示需求分布正在重构。同期挪威冷冻鲭鱼与烟熏大西洋鲑出口亦有报告，远东野生红鲑捕捞量维持低位。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>同一份数据里，量与价给出了相反的方向——这是供给收缩型涨价，而不是需求拉动型涨价。</strong>三点判断：① 出口量下滑14.5%而价格上升9.5%，说明挪威鳟鱼供给端出现实质性收缩，国际鳟鱼市场将进入紧平衡；② 需求向美国与波兰迁移、退出乌克兰与立陶宛，意味着高支付能力市场的份额提升，价格中枢易上难下；③ 行动建议：把挪威鳟鱼「出口量—均价」曲线纳入月度监测，作为国产虹鳟与鳟鱼定价的先行参考；当出口量继续下行时可主动向加工客户提供国产原料替代方案，用稳定批次对接国际价格上行带来的成本压力。</div>
+  </div>
+</div>
+
+<div class="section" id="sec11">
+  <div class="section-header">
+    <span class="icon">📅</span>
+    <h2>展会活动</h2>
+    <span class="badge">L1/L2 会期临近·参会窗口</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">第19届国际油脂油料大会暨农畜产业（衍生品）大会10月13日至14日在大连启幕</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 大连商品交易所／市场资讯</div>
+    <div class="news-body"><p>由大连商品交易所联合马来西亚交易所主办的第19届国际油脂油料大会暨农畜产业（衍生品）大会于<span class="highlight">10月13日至14日在大连启幕</span>。大会以产融结合、生态共育、高质量发展为核心主题，在延续宏观主论坛、油脂油料论坛、饲料养殖论坛的基础上，<span class="highlight">创新增设衍生品与黑色产业论坛、衍生品与化工产业论坛</span>，将研讨范围拓展至油脂油料、饲料养殖、黑色系与化工四大核心产业链。议题聚焦高波动市场环境下产业链的风险管理与稳链强链路径，其中饲料成本占生猪养殖成本的六成至七成，原料价格波动对养殖端利润的传导是讨论重点。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>饲料养殖论坛是这场会里与水产最相关的一段——它讨论的是「谁为原料波动买单」。</strong>三点判断：① 大会把黑色与化工产业并入同一平台，说明产业客户对衍生品工具的需求已从农产品扩展到全产业链，饲料成本对冲正在成为共识；② 议题明确指向「产量、价格、成本三者匹配难度增加」，这与水产养殖当前面临的高鱼粉、弱粕类结构完全同构，方法论可直接迁移；③ 行动建议：安排人员跟进饲料养殖论坛的公开议程与观点输出，重点记录企业对鱼粉、豆粕的采购与套保策略；把可用的对冲思路整理成一份《原料波动应对工具清单》，用于Q4客户沟通。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">2026广西国际农业博览会10月23日至25日在南宁举行：展览面积约3.6万平方米、超200家采购商</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-12 &middot; 南宁日报／新浪财经</div>
+    <div class="news-body"><p>2026广西国际农业博览会将于<span class="highlight">10月23日至25日在南宁国际会展中心举行</span>，主题为融合发展、循环便利、新质赋能、乡村振兴，<span class="highlight">展览面积约3.6万平方米，设置十大主题展馆</span>并邀请超200家国内外优质采购商参会。本届展会重心向采购商倾斜，从产品展销转向专业化产销对接平台：前期面向大型商超、连锁零售、生鲜批发市场、电商平台与食品加工龙头征集采购清单，再依需求反向精准招展，并组织采购商深入果蔬基地与茶叶产业园开展产地溯源考察，形成「前置需求摸排＋场内精准洽谈＋场外产地考察」的组合机制。展会重点打造中国（广西）—东盟水果集散中心与世界新茶饮工厂两大板块，嗦粉馆与萌宠馆为首次设立。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「依采购清单反向招展」这一改变，把展会从摆摊变成了撮合——这对有稳定批次能力的供货方是利好。</strong>三点判断：① 前期征集采购清单再精准招展，意味着参展方的对接对象是筛选过的真实需求方，获客效率远高于传统展会，适合有明确品类优势的供应商；② 产地溯源考察要求采购商实地品鉴并核验产能，说明渠道方对「可验证的产能」需求上升，与设施渔业的可核查优势天然契合；③ 行动建议：评估以设施渔业品类参展的性价比，重点对接生鲜批发市场与连锁零售的采购清单；若参展，应提前准备产能核验材料（实际产量、批次稳定性、检测报告），把溯源考察环节转化为成交场景。</div>
+  </div>
+</div>
+
+<div class="section" id="sec12">
+  <div class="section-header">
+    <span class="icon">🌾</span>
+    <h2>饲料原料</h2>
+    <span class="badge">L1 日度价格·利润快算</span>
+  </div>
+  <div class="news-item">
+    <div class="news-title">10月13日进口鱼粉再涨500元/吨：北方港口23,800-23,900元/吨，秘鲁通知今年中北部无第二捕捞季</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 卓创资讯（鱼粉市场早间提示）</div>
+    <div class="news-body"><p>10月13日鱼粉市场早间提示：<span class="highlight">进口鱼粉北方港口23800至23900元/吨、南方港口23600至23800元/吨，较前一工作日上调500元/吨</span>，部分其他等级鱼粉上调300至500元/吨不等；<span class="highlight">秘鲁超级蒸汽鱼粉预售CNF报价维持3450美元/吨</span>。国产方面，北方地区60%至65%蛋白报价17500至17700元/吨、67%至68%蛋白国产鱼粉新货报价18500至19000元/吨，运行暂稳。供给端关键变化：<span class="highlight">据秘鲁当地消息，生产部已通过非官方渠道通知业界，今年秘鲁中北部海域没有条件开放第二捕捞季</span>；截至10月6日，港口库存为12.25万吨，较前一期减少0.65万吨。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>「没有条件开放第二捕捞季」这句话，把鱼粉的定价权从预期交还给了资源——这是一次结构性供给缺口的确认。</strong>三点判断：① 北方港与南方港同步上调500元/吨、库存同期减少0.65万吨，量价共振说明这不是消息面炒作，而是现货紧张的直接反映；② 预售CNF维持3450美元/吨，外盘未跟进上调，意味着到港成本涨幅可能滞后于国内现货，价差结构值得重点跟踪；③ 行动建议：立刻为鲑鳟类客户重算鱼粉成本敏感度，明确每吨饲料中鱼粉占比每降1个百分点对应的成本节约金额；同时提示客户在Q4合同中设置鱼粉价格浮动条款，把不可控成本转移出去。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">10月13日豆粕与油脂：天津港3,380元/吨、江苏与广东3,330元/吨，菜粕福建2,430元/吨</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 内蒙古自治区粮食和物资储备局（现货行情）</div>
+    <div class="news-body"><p>10月13日国内粕类与油脂现货：<span class="highlight">豆粕（43%蛋白）天津港3380元/吨、江苏3330元/吨、广东3330元/吨</span>，饲料企业以刚需采购为主；<span class="highlight">菜粕（粗蛋白不低于36%）福建现货2430元/吨</span>。油脂端：一级豆油山东日照8940元/吨、天津8970元/吨、江苏张家港8930元/吨；24度棕榈油天津港8730元/吨、广东黄埔港8700元/吨；一级菜籽油湖北10180元/吨。<span class="highlight">国际现货：美国2号黄大豆离岸12.72美元/蒲式耳、巴西大豆离岸12.41美元/蒲式耳</span>，美豆收割推进、上市量增加，国际大豆现货价格回落。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>豆粕三千三、鱼粉两万三，七倍的价差把「配方替代」从技术话题变成了财务话题。</strong>三点判断：① 美豆收割推进、国际价格回落，国内豆粕维持刚需采购节奏，说明粕类短期供给偏松，与鱼粉的紧张形成对冲，是配方调整的窗口；② 菜粕福建2,430元/吨处于低位，作为水产配方中重要的植物蛋白来源，与豆粕的价差结构值得在替代方案中一并计算；③ 行动建议：为客户做一份「鱼粉—豆粕—菜粕」三方替代测算，量化在维持同等生长表现前提下每吨配合饲料的成本变化；同时把该测算做成可更新模板，随原料日报价滚动调整，让成本管控成为持续性服务而非一次性建议。</div>
+  </div>
+  <div class="news-item">
+    <div class="news-title">利润快算（10月13日）：鱼粉每降1个百分点约省成本、鲢鳙跨市场出货价差仍有约1.5倍空间</div>
+    <div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-10-13 &middot; 综合测算（原料报价与批发价口径）</div>
+    <div class="news-body"><p>以10月13日数据做两组测算：<span class="highlight">原料端，进口鱼粉北方港23800至23900元/吨，较国产65%以上蛋白鱼粉18500至19000元/吨高出约4900至5400元/吨</span>，在鱼粉占比20%的鲑鳟配方中，<span class="highlight">鱼粉占比每下降1个百分点，每吨饲料可节约约10至12元</span>，若下降5个百分点则每吨饲料节约50至60元，按万吨级年用饲料量计算是一笔六位数级支出。价格端，<span class="highlight">盐城产地集散花鲢16.00元/公斤对奉贤销区终端24.00元/公斤，价差约1.5倍</span>；白鲢全国批发价10.21元/公斤与洪湖产区4.40元/公斤之间价差超过两倍。</p></div>
+    <div class="analysis-box"><div class="label">对商达意味着什么</div><strong>把两个数字放在一起看：省下的一吨饲料钱，可能不如选对一个出货市场。</strong>三点判断：① 鱼粉占比降1个百分点约省10至12元/吨饲料，属于细水长流的成本工程，需要配方与实测数据支撑，慢但确定性高；② 鲢鳙类的跨市场价差仍在1.5至2倍以上，但净收益取决于运费、成活损耗与账期成本，纸面价差不能直接等同于利润；③ 行动建议：给客户同时提供两条路径——「配方端降本」用实测数据换长期毛利，「销售端择市」用同日报价表换阶段性溢价；建议先做销售端择市，因见效快、投入低，再逐步推进配方端的结构性优化。</div>
+  </div>
+</div>
+
+<div class="summary-section">
+  <h2>📝 今日总结与商达建议（第161期）</h2>
+
+  <h3>🔍 今日三件大事</h3>
+  <ul>
+    <li>今天三条主线交叉在同一个词上：可核查。舆情端，婴幼儿食用银鳕鱼后血汞异常持续发酵，上海新华医院接诊多例1至3岁患儿，盒马「儿童装」银鳕鱼已下架、线上把「宝宝装」改为「迷你装」，国家食品安全风险评估中心明确点名鲨鱼、剑鱼、金枪鱼、银鳕鱼等大型肉食性鱼类甲基汞含量通常较高，并建议通过适量食用三文鱼、鲭鱼等低汞鱼种获得营养；成本端，进口鱼粉再涨500元/吨至北方港23800至23900元/吨，秘鲁经非官方渠道通知业界今年中北部海域没有条件开放第二捕捞季，而豆粕天津港3380元/吨、江苏与广东3330元/吨，鱼粉与粕类走出完全相反的方向；建设端，滕州近10亿元循环渔业与鲜食玉米全产业链EPC一标段10月13日挂网、建筑面积约15.66万平方米，银川金凤区1.25亿元6座RAS车间预计10月底至11月中旬投用，忻州豆罗用荷塘过滤实现尾水不外排、柳州柳南把尾水做成生物水溶肥。同一天，百洋股份三连板涨停8.86元、大连圣亚盘中涨停49.83元、中水渔业临时停牌——市场在用三套完全不同的逻辑给同一批公司定价。合规要证据、成本要算账、尾水要达标，三件事都在问同一个问题：你能不能把做过的事说清楚。</li>
+  </ul>
+
+
+  <h3>🎯 对商达意味着什么</h3>
+  <p><span class="highlight">主线一（风险从罚款变成健康事件）</span>：银鳕鱼汞超标事件的关键不在个别品牌，而在于「汞是鱼种属性而非养殖水平」。国家食品安全风险评估中心明确：处于食物链顶端的大型肉食性鱼类甲基汞含量通常较高，建议通过适量食用三文鱼、鲭鱼等低汞鱼种获得营养收益，并特别提示孕哺期妇女与婴幼儿避开高汞鱼种。同一天黄石抽检通报两家水产店牛蛙恩诺沙星326微克/公斤与254微克/公斤，均超100微克/公斤限值三倍左右。商达应把「低汞鱼种选品指引＋休药期记录＋出塘检测报告」做成一份客户可直接使用的合规模板包，把权威口径变成销售工具。</p>
+  <p><span class="highlight">主线二（鱼粉与粕类走出相反方向）</span>：进口鱼粉10月13日再涨500元/吨至北方港23800至23900元/吨、南方港23600至23800元/吨，秘鲁超级预售CNF维持3450美元/吨，秘鲁生产部已通过非官方渠道通知业界今年中北部无第二捕捞季，港口库存降至12.25万吨；同期豆粕天津港3380元、江苏3330元、广东3330元，美豆离岸12.72美元/蒲、巴西12.41美元/蒲。商达应立刻为客户测算鱼粉占比每降1个百分点对应的成本节约（约10至12元/吨饲料），并把植物蛋白替代的实测数据整理成可报价的能力。</p>
+  <p><span class="highlight">主线三（尾水从成本项变成准入项）</span>：银川金凤区6座RAS车间尾水经「三池两坝」净化后回用超90%、剩余灌溉农田；忻州豆罗用5个鱼塘与荷塘构成过滤闭环、全程不外排；柳州柳南把尾水发酵制成生物水溶肥、水循环利用率超90%；滕州在近10亿元项目里专门划出约4000平方米「六池四坝」尾水池。政策侧，钦州钦南区10月12日发布《设施渔业养殖管理暂行规定（征求意见稿）》，把拱棚小池塘、陆基圆（方）池与封闭式工厂化循环水一并纳入准入管理，超100亩须进镇级招商引资流程。商达应把尾水处理按可验收口径做成标准模块，前置到方案设计阶段。</p>
+  <p>一句话收口：第161期行业信号说——风险在向健康端传导、成本在向配方端挤压、尾水在向准入端收紧。商达要做的不是讲更大的产能故事，而是把「可核查」做成产品：能提交的检测、能复现的测算、能验收的尾水数据，这三样一旦标准化，就会成为客户绕不开的接口。</p>
+
+  <h3>📋 三条行动建议</h3>
+  <ul class="action-list">
+    <li>🏃 本周（10/13-10/17）：一份合规模板＋一份成本测算。① 24小时内把「低汞鱼种选品指引＋休药期记录表＋出塘检测报告清单」整理成一页合规模板，定向发送给所有渠道类与加工类客户，借银鳕鱼事件的关注窗口建立专业形象；② 48小时内完成鱼粉成本敏感度测算表（鱼粉占比每降1个百分点对应的成本与毛利变化），配合当日豆粕3300元档的报价形成一份《Q4饲料成本应对建议》；③ 跟进滕州近10亿元循环渔业EPC一标段的投标与设备包构成，判断是否存在工艺与运营缺口，若有机会立即以技术合作方式介入。</li>
+    <li>📅 本月（10月中下旬）：展会获料＋准入口径前置。① 10月13日至14日大连第19届国际油脂油料大会暨农畜产业（衍生品）大会期间，重点跟进饲料养殖论坛关于原料对冲的策略输出，整理成一份《原料波动应对工具清单》；② 10月23日至25日南宁广西国际农业博览会对接生鲜批发市场与连锁零售的采购清单，评估以设施渔业品类参展的性价比；③ 结合钦州钦南区设施渔业管理暂行规定的征求意见期，梳理一份多部门选址意见清单，为华南客户提前准备审批材料。</li>
+    <li>🎯 本季度（Q4）：把「可核查」产品化。① 把「低汞鱼种选品指引＋鱼粉替代实测数据表＋尾水『三池两坝』验收口径说明书」打包成《品种·成本·尾水三张表》，上门做一次诊断，用行业焦虑换取服务入口；② 围绕银川、十堰、柳州、忻州四类已披露项目，整理一份分区域的技术路线与奖补要点对照表，形成面向地方政府与合作客户的方案能力；③ 建立「鲑鳟类批发＋零售双轨」与「鲢鳙类跨市场价差」的常态化监测台账，每期更新并推送存量客户，把价格数据做成可持续的服务产品。</li>
+  </ul>
+
+
+  <h3>⚠️ 30天风险看板</h3>
+  <ul>
+    <li>短期风险（两周内）：鱼粉的结构性缺口无法通过配方在短期内完全对冲。本期监测：进口鱼粉10月13日再涨500元/吨至北方港23800至23900元/吨，秘鲁生产部已通知业界今年中北部无第二捕捞季，港口库存降至12.25万吨；虽然豆粕维持3300元档、菜粕福建2430元/吨、美豆收割推进使粕类偏松，但鱼粉在鲑鳟配方中的功能位难以被完全替代。应对：提示客户对鱼粉设置合同浮动条款，并在配方中保留植物蛋白替代弹性，把「同等生长表现下鱼粉用量下降」作为可量化的技术攻关目标。</li>
+    <li>中期风险（1至3个月）：「儿童食品」标签缺乏法定定义，渠道改名式规避将反复触发舆情。本期监测：银鳕鱼事件中，涉事链条为「委托方—制造商—销售平台」三方分散结构，盒马「儿童装」已下架、线上部分产品将「宝宝装」改为「迷你装」并称新老包装随机发货，属于标签规避而非实质性风险管理；国家食品安全风险评估中心指出国内现行食品法律法规中没有关于儿童食品的专门定义。应对：把「标签合规＋批次检测报告＋重金属指标说明」做成鳕鱼类产品的准入材料包推给渠道客户；建议客户主动公示汞含量检测结果，用透明度换取信任。</li>
+    <li>被忽视的灰犀牛：进口三文鱼价格塌陷正在压缩国产鲑鳟的成本缓冲带。本期监测：2025年1至11月中国冰鲜三文鱼进口均价已跌至约9.6美元/公斤，北京批发市场三文鱼由约135元/公斤跌至110元/公斤、成都零售最低140元/公斤；同期挪威冰鲜养殖鳟鱼出口前9个月量降14.5%而价升9.5%至82.21挪威克朗/公斤，库页岛鲑鱼捕捞同比降48%、约80%孵化场面临关闭。应对：把「进口批发价—国产成本线」做成常态监测，明确国产产品不走价格战路线；重点投向冰鲜小包装与规格稳定性，并在原料端用替代方案对冲价格波动。</li>
+  </ul>
+</div>
+
+<div class="footer">本报告由商达产品部出品 | 仅供内部参考 | 第161期 · 2026-10-13</div>
+
+</div>
+</body>
+</html>
