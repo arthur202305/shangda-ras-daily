@@ -123,6 +123,10 @@ body { font-family: 'Helvetica Neue', 'Microsoft YaHei', sans-serif; background:
 .divider { display: flex; align-items: center; margin: 20px 0; }
 .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--navy), transparent); }
 .divider span { color: var(--navy); font-size: 12px; font-weight: 700; padding: 0 15px; letter-spacing: 2px; }
+/* CENTER-HEADER-FOOTER v1 */
+header, .header, footer, .footer { text-align: center; }
+header > *, .header > * { margin-left: auto; margin-right: auto; }
+header h1, .header h1 { text-align: center; }
 </style>
 <style id="nav-v2">
 /* ==== NAV-V2 自包含样式（字面色值 · 覆盖全部归档页） ==== */
