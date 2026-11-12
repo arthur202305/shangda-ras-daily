@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卖到哪 · RAS 单品测算器 | 2026-11-12</title>
+<style>
+  :root{
+    --navy:#0a1f3f; --navy2:#0f2942; --panel:#122f4c; --line:rgba(201,168,76,.22);
+    --gold:#c9a84c; --gold2:#e2c877; --ink:#eaf1f8; --dim:#93a9c0;
+    --neg:#e0605a; --pos:#5fbf8a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 15% -10%, #16375a 0%, #0a1f3f 45%, #071729 100%);
+    color:var(--ink); font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,sans-serif;
+    line-height:1.65; min-height:100vh; padding:32px 20px 56px;
+  }
+  .wrap{max-width:1120px;margin:0 auto}
+  .brand{font-size:11px;letter-spacing:.28em;color:var(--gold);opacity:.85}
+  h1{font-size:34px;font-weight:800;letter-spacing:.02em;margin:6px 0 4px}
+  h1 span{color:var(--gold)}
+  .sub{color:var(--dim);font-size:13px}
+  .sub b{color:var(--ink);font-weight:600}
+
+  .grid{display:grid;grid-template-columns:360px 1fr;gap:20px;margin-top:24px;align-items:start}
+  .card{background:linear-gradient(180deg,rgba(18,47,76,.92),rgba(12,34,56,.92));
+        border:1px solid var(--line);border-radius:14px;padding:18px 18px 20px;
+        box-shadow:0 12px 34px rgba(0,0,0,.28)}
+  .card h2{font-size:13px;letter-spacing:.12em;color:var(--gold);font-weight:700;margin-bottom:14px}
+
+  .seg{display:flex;gap:8px;margin-bottom:16px}
+  .seg button{flex:1;padding:9px 6px;border-radius:9px;border:1px solid var(--line);
+    background:rgba(255,255,255,.03);color:var(--dim);font-size:13px;cursor:pointer;transition:.18s}
+  .seg button.on{background:linear-gradient(180deg,rgba(201,168,76,.28),rgba(201,168,76,.12));
+    border-color:var(--gold);color:#fff;font-weight:700}
+  .seg small{display:block;font-size:10px;opacity:.7;font-weight:400}
+
+  label{display:block;font-size:12px;color:var(--dim);margin:12px 0 5px}
+  select,input{width:100%;padding:9px 10px;border-radius:9px;border:1px solid rgba(255,255,255,.14);
+    background:#0b2237;color:var(--ink);font-size:14px;font-family:inherit}
+  select:focus,input:focus{outline:none;border-color:var(--gold)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hint{font-size:11px;color:#7d93aa;margin-top:6px}
+
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .chips button{font-size:11.5px;padding:6px 10px;border-radius:20px;cursor:pointer;
+    border:1px dashed rgba(201,168,76,.45);background:transparent;color:var(--gold2)}
+  .chips button:hover{background:rgba(201,168,76,.12)}
+
+  .hero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .kpi{padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.035);
+       border:1px solid rgba(255,255,255,.07)}
+  .kpi .k{font-size:11.5px;color:var(--dim)}
+  .kpi .v{font-size:26px;font-weight:800;letter-spacing:.01em;margin-top:2px}
+  .kpi .u{font-size:12px;color:var(--dim);font-weight:500;margin-left:3px}
+  .kpi.big{grid-column:span 3;background:linear-gradient(100deg,rgba(201,168,76,.16),rgba(201,168,76,.03));
+    border-color:rgba(201,168,76,.4)}
+  .kpi.big .v{font-size:40px}
+  .neg{color:var(--neg)} .pos{color:var(--gold2)}
+
+  .verdict{margin-top:14px;padding:13px 15px;border-radius:11px;font-size:13.5px;
+    border-left:4px solid var(--gold);background:rgba(201,168,76,.09)}
+  .verdict.bad{border-left-color:var(--neg);background:rgba(224,96,90,.1)}
+  .verdict.mid{border-left-color:#d9a441;background:rgba(217,164,65,.1)}
+  .verdict b{color:#fff}
+
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  th,td{padding:8px 6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.07)}
+  th:first-child,td:first-child{text-align:left}
+  th{font-size:11.5px;color:var(--dim);font-weight:600}
+  tbody tr.sum td{border-top:1px solid var(--line);color:var(--gold2);font-weight:700}
+
+  .bars{margin-top:8px;max-height:296px;overflow:auto;padding-right:6px}
+  .bar{display:grid;grid-template-columns:1fr 46px 64px;gap:8px;align-items:center;
+       padding:5px 6px;border-radius:7px;cursor:pointer;font-size:12.5px}
+  .bar:hover{background:rgba(255,255,255,.05)}
+  .bar.on{background:rgba(201,168,76,.16);box-shadow:inset 0 0 0 1px rgba(201,168,76,.4)}
+  .bar .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#c8d7e6}
+  .bar.on .nm{color:#fff;font-weight:700}
+  .bar .pv{text-align:right;font-variant-numeric:tabular-nums;color:var(--gold2);font-weight:700}
+  .bar .tk{height:7px;border-radius:4px;background:rgba(255,255,255,.1);overflow:hidden}
+  .bar .tk i{display:block;height:100%;border-radius:4px;
+    background:linear-gradient(90deg,rgba(201,168,76,.45),var(--gold))}
+  .bar.low .tk i{background:linear-gradient(90deg,rgba(147,169,192,.4),#7d93aa)}
+
+  .foot{margin-top:26px;font-size:11.5px;color:#7d93aa;line-height:1.9}
+  .foot b{color:#a9bccf}
+  .copy{margin-top:12px;padding:8px 14px;border-radius:9px;cursor:pointer;font-size:12.5px;
+    border:1px solid var(--line);background:rgba(201,168,76,.12);color:var(--gold2)}
+  @media (max-width:900px){
+    .grid{grid-template-columns:1fr}
+    h1{font-size:26px}
+    .hero{grid-template-columns:1fr 1fr}
+    .kpi.big{grid-column:span 2}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">SHANDA · RAS PRICING DESK　·　<a href="../index.html" style="color:var(--gold);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,.6)">← 返回商达.RAS行业高参</a></div>
+  <h1>卖到哪 · <span>RAS 单品测算器</span></h1>
+  <div class="sub">价格口径 <b id="dateTag">2026-11-12</b> · 农业农村部逐市场当日报价 · 共 <b>45</b> 个市场 · 选销区 → 出净利 → 出安全边际</div>
+
+  <div class="grid">
+    <!-- 左：参数 -->
+    <div class="card">
+      <h2>① 设定测算参数</h2>
+      <div class="seg" id="seg"></div>
+
+      <label>目标销区（当日批发价）</label>
+      <select id="market"></select>
+
+      <div class="two">
+        <div>
+          <label>完全成本 元/公斤</label>
+          <input id="cost" type="number" step="0.1" value="12.5">
+        </div>
+        <div>
+          <label>流通成本 元/公斤</label>
+          <input id="freight" type="number" step="0.1" value="3.5">
+        </div>
+      </div>
+      <div class="hint">完全成本＝折旧＋能耗＋饲料＋人工＋苗种＋资金占用；流通＝运输＋暂养损耗＋档口</div>
+
+      <div class="two">
+        <div>
+          <label>售价 元/公斤（可改）</label>
+          <input id="price" type="number" step="0.1">
+        </div>
+        <div>
+          <label>年产量 吨</label>
+          <input id="tons" type="number" step="10" value="1000">
+        </div>
+      </div>
+
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <!-- 右：结果 -->
+    <div class="card">
+      <h2>② 结果 · 同一个车间，两种命运</h2>
+      <div class="hero">
+        <div class="kpi big">
+          <div class="k">每公斤净利（扣完全成本与流通）</div>
+          <div class="v" id="vNet">—<span class="u">元/公斤</span></div>
+        </div>
+        <div class="kpi">
+          <div class="k">年净利（按年产量）</div>
+          <div class="v" id="vYear">—<span class="u">万元</span></div>
+        </div>
+        <div class="kpi">
+          <div class="k">保本价 / 安全边际</div>
+          <div class="v" id="vBe">—<span class="u">元/公斤</span></div>
+        </div>
+        <div class="kpi">
+          <div class="k">毛利率（不含流通）</div>
+          <div class="v" id="vGm">—<span class="u">%</span></div>
+        </div>
+      </div>
+
+      <div class="verdict" id="verdict">—</div>
+
+      <table>
+        <thead><tr><th>情景</th><th>售价</th><th>净利/公斤</th><th>年净利</th></tr></thead>
+        <tbody id="stress"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:20px">
+    <div class="card" style="grid-column:1/-1">
+      <h2>③ 同日全国排序 · 价差结构</h2>
+      <div class="sub" id="statLine" style="margin-bottom:10px"></div>
+      <div class="bars" id="bars"></div>
+      <div class="hint" style="margin-top:10px">点击任意市场即切换测算；金色＝高于中位（销区型），灰色＝低于中位（产区型）。</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>口径与边界</b>：价格取自农业农村部信息中心逐市场当日报价（2026-11-12，13:03—13:13 发布），为<b>白条/活鱼批发价</b>，不含零售与餐饮加价；完全成本与流通成本为行业经验区间（鲢鳙 11—14 元/公斤，陆基大西洋鲑 60—75 元/公斤），请按项目实际替换。<br>
+    <b>价差性质</b>：跨区域价差由「运费＋损耗」或「本地稀缺」撑起，前者有稳定下限、后者会随本地产能投产而消失——测算时请把「销区价回落至全国中位」作为必做情景。<br>
+    本表由商达产品部生成，仅供内部测算与客户沟通使用 · 数据日 2026-11-12
+    <br><button class="copy" id="btnCopy">复制本次测算结论</button>
+  </div>
+</div>
+
+<script>
+const DATA = {"date": "2026-11-12", "花鲢": [{"m": "重庆双福国际农贸城", "p": 26.5}, {"m": "新疆兵团第五师三和农副产品综合批发市场", "p": 25.0}, {"m": "达州市复兴市场管理有限责任公司", "p": 21.0}, {"m": "湖北浠水农产品批发市场", "p": 20.2}, {"m": "常德首衡实业有限公司", "p": 20.0}, {"m": "北海果业砀山惠丰市场有限公司", "p": 20.0}, {"m": "陕西朱雀实业集团有限公司", "p": 19.0}, {"m": "山东威海水产品批发市场", "p": 19.0}, {"m": "四川广安市邻水县农产品交易中心", "p": 19.0}, {"m": "甘肃陇国源市场管理有限公司", "p": 18.4}, {"m": "黄淮农产品股份有限公司", "p": 18.0}, {"m": "青岛抚顺路蔬菜副食品批发市场股份有限公司", "p": 18.0}, {"m": "江苏苏浙皖边界市场发展有限公司", "p": 18.0}, {"m": "新疆九鼎盛和果品经营管理有限公司", "p": 18.0}, {"m": "四川成都农产品中心批发市场", "p": 18.0}, {"m": "南京农副产品物流配送中心有限公司", "p": 18.0}, {"m": "云南华潮实业有限公司", "p": 18.0}, {"m": "广西新柳邕农产品批发市场有限公司", "p": 17.3}, {"m": "湖北襄樊市蔬菜批发市场", "p": 17.0}, {"m": "北京京丰岳各庄农副产品批发市场", "p": 17.0}, {"m": "长沙马王堆农产品股份有限公司", "p": 16.5}, {"m": "河南万邦国际农产品物流股份有限公司", "p": 16.5}, {"m": "马鞍山市安民农副产品贸易有限公司", "p": 16.0}, {"m": "江苏宜兴市瑞德蔬菜果品批发市场有限公司", "p": 15.5}, {"m": "南宁农产品中心有限责任公司", "p": 15.2}, {"m": "安徽省淮北市中瑞农产品批发市场", "p": 15.0}, {"m": "河北三河市建兴农副产品批发市场", "p": 14.6}, {"m": "江西九江琵琶湖农产品物流有限公司", "p": 14.6}, {"m": "江苏凌家塘市场发展有限公司", "p": 14.0}, {"m": "江苏丰县农业农村局", "p": 14.0}, {"m": "宁夏海吉星国际农产品物流有限公司", "p": 14.0}, {"m": "北京顺鑫石门国际农产品批发市场集团有限公司", "p": 13.0}, {"m": "新疆绿珠九鼎农产品经营管理有限公司", "p": 11.7}, {"m": "武汉白沙洲农副产品大市场有限公司", "p": 11.11}, {"m": "湖北省洪湖农贸市场", "p": 10.44}], "白鲢": [{"m": "哈尔滨哈达农副产品有限公司", "p": 20.0}, {"m": "甘肃陇国源市场管理有限公司", "p": 18.0}, {"m": "新疆兵团第五师三和农副产品综合批发市场", "p": 15.0}, {"m": "陕西朱雀实业集团有限公司", "p": 14.5}, {"m": "山东威海水产品批发市场", "p": 14.0}, {"m": "重庆双福国际农贸城", "p": 13.5}, {"m": "南宁农产品中心有限责任公司", "p": 13.2}, {"m": "乌鲁木齐北园春果业经营管理有限责任公司", "p": 13.0}, {"m": "河北三河市建兴农副产品批发市场", "p": 12.5}, {"m": "常德首衡实业有限公司", "p": 12.0}, {"m": "云南昆明呈贡龙城农产品经营股份有限公司", "p": 12.0}, {"m": "云南华潮实业有限公司", "p": 12.0}, {"m": "达州市复兴市场管理有限责任公司", "p": 11.0}, {"m": "北京朝阳区大洋路综合市场", "p": 10.56}, {"m": "湖北浠水农产品批发市场", "p": 10.2}, {"m": "四川广安市邻水县农产品交易中心", "p": 10.2}, {"m": "湖北襄樊市蔬菜批发市场", "p": 10.0}, {"m": "新疆九鼎盛和果品经营管理有限公司", "p": 10.0}, {"m": "宁夏四季鲜农产品综合批发市场", "p": 10.0}, {"m": "吴忠市鑫鲜农副产品市场有限公司", "p": 10.0}, {"m": "北海果业砀山惠丰市场有限公司", "p": 10.0}, {"m": "北京新发地农副产品批发市场信息中心", "p": 10.0}, {"m": "黄淮农产品股份有限公司", "p": 9.5}, {"m": "广西新柳邕农产品批发市场有限公司", "p": 9.5}, {"m": "江苏苏浙皖边界市场发展有限公司", "p": 9.0}, {"m": "江苏宜兴市瑞德蔬菜果品批发市场有限公司", "p": 9.0}, {"m": "四川成都农产品中心批发市场", "p": 9.0}, {"m": "新疆绿珠九鼎农产品经营管理有限公司", "p": 8.8}, {"m": "安徽省淮北市中瑞农产品批发市场", "p": 8.8}, {"m": "河南万邦国际农产品物流股份有限公司", "p": 8.5}, {"m": "江苏丰县农业农村局", "p": 8.0}, {"m": "马鞍山市安民农副产品贸易有限公司", "p": 7.5}, {"m": "南京农副产品物流配送中心有限公司", "p": 7.5}, {"m": "阜阳农产品中心批发市场", "p": 7.4}, {"m": "北京京丰岳各庄农副产品批发市场", "p": 7.4}, {"m": "江苏凌家塘市场发展有限公司", "p": 6.3}, {"m": "安徽合肥周谷堆农产品批发市场", "p": 6.1}, {"m": "宁夏海吉星国际农产品物流有限公司", "p": 6.0}, {"m": "江西九江琵琶湖农产品物流有限公司", "p": 5.8}, {"m": "武汉白沙洲农副产品大市场有限公司", "p": 5.63}, {"m": "湖北省洪湖农贸市场", "p": 4.68}], "大西洋鲑": [{"m": "龙门实业（集团）有限公司西三街农副水产品市场", "p": 190.0}]};
+const STAT = {"花鲢": {"n": 35, "min": 10.44, "max": 26.5, "med": 17.3, "avg": 17.07, "lt10": 0}, "白鲢": {"n": 41, "min": 4.68, "max": 20.0, "med": 10.0, "avg": 10.15, "lt10": 19}, "大西洋鲑": {"n": 1, "min": 190.0, "max": 190.0, "med": 190.0, "avg": 190.0, "lt10": 0}};
+const SPECIES = ['花鲢','白鲢','大西洋鲑'];
+const DEFAULTS = {'花鲢':{c:12.5,f:3.5},'白鲢':{c:12.5,f:3.5},'大西洋鲑':{c:67,f:6}};
+const PRESETS = [
+  {label:'花鲢 · 洪湖（产区）', s:'花鲢', m:'湖北省洪湖农贸市场'},
+  {label:'花鲢 · 重庆双福（销区）', s:'花鲢', m:'重庆双福国际农贸城'},
+  {label:'白鲢 · 哈尔滨哈达（销区）', s:'白鲢', m:'哈尔滨哈达农副产品有限公司'},
+  {label:'白鲢 · 洪湖（产区）', s:'白鲢', m:'湖北省洪湖农贸市场'},
+  {label:'大西洋鲑 · 西三街', s:'大西洋鲑', m:'龙门实业（集团）有限公司西三街农副水产品市场'}
+];
+let cur = {s:'花鲢', i:0};
+
+const $ = id => document.getElementById(id);
+const fmt = (v,d=2) => (v>=0?'':'') + v.toFixed(d);
+
+function list(){ return DATA[cur.s]; }
+
+function buildSeg(){
+  $('seg').innerHTML = SPECIES.map(s=>{
+    const n = DATA[s].length;
+    return `<button data-s="${s}" class="${s===cur.s?'on':''}">${s}<small>${n} 个市场</small></button>`;
+  }).join('');
+  $('seg').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    cur.s=b.dataset.s; cur.i=0;
+    $('cost').value=DEFAULTS[cur.s].c; $('freight').value=DEFAULTS[cur.s].f;
+    buildSeg(); buildMarkets(); render();
+  });
+}
+
+function buildMarkets(){
+  const L = list();
+  $('market').innerHTML = L.map((r,i)=>`<option value="${i}">${r.m} · ${r.p.toFixed(2)} 元</option>`).join('');
+  $('market').onchange = e => { cur.i = +e.target.value; $('price').value = list()[cur.i].p; render(); };
+  $('market').value = cur.i;
+  $('price').value = L[cur.i].p;
+}
+
+function buildChips(){
+  $('chips').innerHTML = PRESETS.map((p,i)=>`<button data-i="${i}">${p.label}</button>`).join('');
+  $('chips').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    const p = PRESETS[+b.dataset.i];
+    cur.s = p.s;
+    const idx = DATA[p.s].findIndex(r=>r.m.indexOf(p.m.slice(0,8))>=0 || p.m.indexOf(r.m.slice(0,8))>=0);
+    cur.i = idx>=0?idx:0;
+    $('cost').value=DEFAULTS[p.s].c; $('freight').value=DEFAULTS[p.s].f;
+    buildSeg(); buildMarkets(); render();
+  });
+}
+
+function render(){
+  const L = list(), st = STAT[cur.s];
+  const P = parseFloat($('price').value) || 0;
+  const C = parseFloat($('cost').value) || 0;
+  const F = parseFloat($('freight').value) || 0;
+  const T = parseFloat($('tons').value) || 0;
+
+  const net = P - C - F;
+  const be  = C + F;
+  const margin = P>0 ? (P-be)/P*100 : 0;
+  const gm = P>0 ? (P-C)/P*100 : 0;
+  const year = net * T * 1000 / 10000;
+  const ratio = st.min>0 ? P/st.min : 0;
+  const vsMed = st.med>0 ? (P-st.med)/st.med*100 : 0;
+
+  $('vNet').innerHTML = `<span class="${net>=0?'pos':'neg'}">${fmt(net)}</span><span class="u">元/公斤</span>`;
+  $('vYear').innerHTML = `<span class="${year>=0?'pos':'neg'}">${fmt(year,0)}</span><span class="u">万元</span>`;
+  $('vBe').innerHTML = `${fmt(be)}<span class="u">／${margin>=0?'+':''}${margin.toFixed(1)}%</span>`;
+  $('vGm').innerHTML = `<span class="${gm>=0?'pos':'neg'}">${gm.toFixed(1)}</span><span class="u">%</span>`;
+
+  const rows = [
+    ['现价', P],
+    ['跌 5%', P*0.95],
+    ['跌 10%', P*0.90],
+    ['跌 20%', P*0.80]
+  ];
+  $('stress').innerHTML = rows.map(([k,v])=>{
+    const n = v-C-F, y = n*T*1000/10000;
+    return `<tr><td>${k}</td><td>${v.toFixed(2)}</td>
+      <td class="${n>=0?'pos':'neg'}">${fmt(n)}</td>
+      <td class="${y>=0?'pos':'neg'}">${fmt(y,0)} 万元</td></tr>`;
+  }).join('') + `<tr class="sum"><td>保本线</td><td>${be.toFixed(2)}</td><td>0.00</td><td>0 万元</td></tr>`;
+
+  // 结论
+  let cls='', txt='';
+  if(net < 0){
+    cls='bad';
+    txt = `<b>不建议进入。</b>该销区当日价 ${P.toFixed(2)} 元，扣完全成本 ${C} 元与流通 ${F} 元后<b>每公斤亏 ${Math.abs(net).toFixed(2)} 元</b>，年产量 ${T} 吨意味着年亏 ${Math.abs(year).toFixed(0)} 万元。要么换销区，要么换品种。`;
+  }else if(net < 2){
+    cls='mid';
+    txt = `<b>边缘可行。</b>每公斤净利 ${net.toFixed(2)} 元、净利率 ${(net/P*100).toFixed(1)}%，只能勉强覆盖折旧，<b>一次跌价 5%（${(P*0.05).toFixed(2)} 元）即吃掉 ${(P*0.05/Math.max(net,0.01)*100).toFixed(0)}% 的利润</b>。必须锁合同价或往加工段走。`;
+  }else if(net < 7){
+    cls='';
+    txt = `<b>可行。</b>每公斤净利 ${net.toFixed(2)} 元、年净利 ${year.toFixed(0)} 万元，能覆盖重资产折旧。安全边际 ${margin.toFixed(1)}%（销区价跌到 ${be.toFixed(2)} 元才归零）。<b>此价位 ${P.toFixed(2)} 元为全国最低价的 ${ratio.toFixed(2)} 倍、较中位 ${vsMed>=0?'高':'低'} ${Math.abs(vsMed).toFixed(1)}%</b>。`;
+  }else{
+    cls='';
+    txt = `<b>优质价位，但有时间窗。</b>每公斤净利 ${net.toFixed(2)} 元、年净利 ${year.toFixed(0)} 万元。该市场是当日全国最低价的 <b>${ratio.toFixed(2)} 倍</b>——这种溢价要么由运费撑、要么由本地稀缺撑，<b>后者会随本地产能投产而消失，窗口期约 3—5 年</b>，务必同时准备「回落至全国中位 ${st.med.toFixed(2)} 元」的情景表。`;
+  }
+  if(cur.s==='大西洋鲑'){
+    txt += ` <b>注意：该报价为冰鲜整条、餐饮级批发挂牌，已连续多日不动，属「孤岛价」，不能作为大宗贸易价锚。</b>国产陆基鲑更应对标进口批发带（88—98 元）而非 190 元。`;
+  }
+  $('verdict').className = 'verdict ' + cls;
+  $('verdict').innerHTML = txt;
+
+  // 排序条
+  const max = L[0].p, min = L[L.length-1].p;
+  $('statLine').innerHTML = `${cur.s} 当日 <b>${st.n}</b> 个市场：最低 <b>${st.min.toFixed(2)}</b>（${L[L.length-1].m}）· 最高 <b>${st.max.toFixed(2)}</b>（${L[0].m}）· 中位 <b>${st.med.toFixed(2)}</b> · 均值 <b>${st.avg.toFixed(2)}</b> · 极差 <b>${(max/min).toFixed(2)} 倍</b>`;
+  $('bars').innerHTML = L.map((r,i)=>{
+    const w = Math.max(6, (r.p/max)*100);
+    return `<div class="bar ${i===cur.i?'on':''} ${r.p<st.med?'low':''}" data-i="${i}">
+      <span class="nm">${r.m}</span>
+      <span class="pv">${r.p.toFixed(2)}</span>
+      <span class="tk"><i style="width:${w}%"></i></span>
+    </div>`;
+  }).join('');
+  $('bars').querySelectorAll('.bar').forEach(el=>el.onclick=()=>{
+    cur.i = +el.dataset.i; $('market').value = cur.i; $('price').value = list()[cur.i].p; render();
+  });
+}
+
+['price','cost','freight','tons'].forEach(id=>$(id).addEventListener('input', render));
+$('dateTag').textContent = DATA.date;
+
+$('btnCopy').onclick = ()=>{
+  const L=list(), st=STAT[cur.s];
+  const P=parseFloat($('price').value)||0, C=parseFloat($('cost').value)||0,
+        F=parseFloat($('freight').value)||0, T=parseFloat($('tons').value)||0;
+  const net=P-C-F, be=C+F;
+  const txt = `【卖到哪测算】${cur.s} · ${L[cur.i].m}（${DATA.date}）\n`+
+    `销区价 ${P.toFixed(2)} 元/公斤｜完全成本 ${C}｜流通 ${F}\n`+
+    `净利 ${net.toFixed(2)} 元/公斤｜年产量 ${T} 吨 → 年净利 ${(net*T*1000/10000).toFixed(0)} 万元\n`+
+    `保本价 ${be.toFixed(2)} 元｜安全边际 ${((P-be)/P*100).toFixed(1)}%｜全国最低价 ${st.min.toFixed(2)} 元（${(P/st.min).toFixed(2)} 倍）、中位 ${st.med.toFixed(2)} 元\n`+
+    `数据口径：农业农村部逐市场当日报价（${DATA.date}）`;
+  navigator.clipboard.writeText(txt).then(()=>{
+    $('btnCopy').textContent='已复制 ✓'; setTimeout(()=>$('btnCopy').textContent='复制本次测算结论',1600);
+  }).catch(()=>{ $('btnCopy').textContent='复制失败，请手动选择'; });
+};
+
+buildSeg(); buildMarkets(); buildChips(); render();
+</script>
+</body>
+</html>
