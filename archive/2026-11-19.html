@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>商达.RAS行业高参 | 第188期 | 2026年11月19日 星期三</title>
+<style>
+:root {
+  --deep-blue: #0a1f3f;
+  --gold: #c9a84c;
+  --bg: #f5f4ef;
+  --card-bg: #ffffff;
+  --text: #2c3e50;
+  --text-secondary: #5a6c7d;
+  --border: #e8e4d8;
+  --red: #e74c3c;
+  --green: #27ae60;
+  --purple: #6c5ce7;
+  --channel-green: #27ae60;
+  --tag-bg: #f0efe9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 14px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  padding: 32px 32px 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(10, 31, 63, 0.18);
+}
+header::after {
+  content: '';
+  position: absolute;
+  top: -50%; right: -10%;
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.header-brand {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.header-date {
+  font-size: 13px;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.header-issue {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+/* CHAIN NAV */
+.chain-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.chain-nav span {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.chain-nav span.active {
+  color: var(--deep-blue);
+  font-weight: 700;
+  position: relative;
+}
+.chain-nav span.active::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: -16px;
+  transform: translateX(-50%);
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+}
+.chain-nav .arrow {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* DATE NAV BAR */
+.date-nav-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 22px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.date-nav-bar .month-label {
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-right: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.date-nav-bar .month-sep {
+  display: inline-block;
+  width: 1px; height: 14px;
+  background: var(--border);
+  margin: 0 10px;
+}
+.date-nav-bar a {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.date-nav-bar a:hover {
+  background: var(--tag-bg);
+  color: var(--deep-blue);
+}
+.date-nav-bar a.current {
+  background: var(--gold);
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+
+/* TOP SIGNALS */
+.top-signals {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.top-signal {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+.top-signal.red { color: var(--red); border-color: rgba(231, 76, 60, 0.3); }
+.top-signal.gold { color: #8a6d20; border-color: rgba(201, 168, 76, 0.5); background: #fff8e1; }
+.top-signal.blue { color: var(--deep-blue); border-color: rgba(10, 31, 63, 0.2); }
+
+/* BIG THREE */
+.big-three {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.big-three h2 {
+  font-size: 18px;
+  color: var(--deep-blue);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+.big-three-item {
+  margin-bottom: 14px;
+  padding-left: 32px;
+  position: relative;
+}
+.big-three-item:last-child { margin-bottom: 0; }
+.big-three-item .num {
+  position: absolute;
+  left: 0; top: 2px;
+  width: 24px; height: 24px;
+  background: var(--gold);
+  color: var(--deep-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.big-three-item .txt {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.big-three-item .highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+
+/* TOC */
+.toc {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.toc h3 {
+  font-size: 16px;
+  color: var(--deep-blue);
+  margin-bottom: 12px;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 16px;
+}
+.toc-grid a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+.toc-grid a:hover { color: var(--gold); }
+
+/* SECTION */
+.section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.section-header h2 {
+  font-size: 19px;
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+.section-header .badge {
+  margin-left: auto;
+  background: var(--tag-bg);
+  color: var(--text-secondary);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* NEWS ITEM */
+.news-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.news-item:last-child { border-bottom: none; padding-bottom: 0; }
+.news-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.news-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.news-grade {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  letter-spacing: 0.3px;
+}
+.grade-A { background: rgba(231, 76, 60, 0.12); color: var(--red); }
+.grade-B { background: rgba(108, 92, 231, 0.12); color: var(--purple); }
+.grade-C { background: rgba(90, 108, 125, 0.12); color: var(--text-secondary); }
+.news-body {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.highlight {
+  background: linear-gradient(transparent 60%, rgba(201, 168, 76, 0.32) 60%);
+  font-weight: 600;
+}
+.analysis-box {
+  background: linear-gradient(135deg, #fdfbf3 0%, #fff7e1 100%);
+  border-left: 3px solid var(--gold);
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.75;
+}
+.analysis-box .label {
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* SUMMARY */
+.summary-section {
+  background: linear-gradient(135deg, #0a1f3f 0%, #1a3a6b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(10, 31, 63, 0.18);
+}
+.summary-section h2 {
+  color: var(--gold);
+  font-size: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+.summary-section h3 {
+  color: var(--gold);
+  font-size: 15px;
+  margin: 16px 0 10px;
+  font-weight: 700;
+}
+.summary-section p, .summary-section li {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 8px;
+}
+.summary-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.summary-section ul li {
+  padding-left: 20px;
+  position: relative;
+}
+.summary-section ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0; color: var(--gold);
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 24px 0 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 16px; }
+}
+
+/* ===== v9.2 简洁商务风：降低强调重量 ===== */
+strong, b { font-weight: 600; color: var(--deep-blue); }
+.highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; padding: 0 1px; border-radius: 2px; }
+.big-three-item .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.analysis-box .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.summary-section .highlight { background: rgba(201, 168, 76, 0.13); font-weight: inherit; }
+.news-body { font-size: 14px; line-height: 1.9; }
+.news-title { font-weight: 600; }
+.news-grade { font-weight: 600; }
+.analysis-box { background: #fbfaf6; border-left: 3px solid rgba(201, 168, 76, 0.5); }
+.analysis-box .label { font-weight: 600; color: #a8893a; }
+.summary-section h3 { font-weight: 600; }
+.top-signal { font-weight: 500; }
+.big-three-item .txt { line-height: 1.9; }
+/* CENTER-HEADER-FOOTER v1 */
+header, .header, footer, .footer { text-align: center; }
+header > *, .header > * { margin-left: auto; margin-right: auto; }
+header h1, .header h1 { text-align: center; }
+/* GRADE-LX FALLBACK v1 */
+.grade-L1 { background: rgba(231, 76, 60, 0.12); color: var(--red); }
+.grade-L2 { background: rgba(108, 92, 231, 0.12); color: var(--purple); }
+</style>
+<style>
+/* ==== 157期新增: Big Three 综合收口块 ==== */
+.big-three-synthesis {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(10,31,63,0.06) 100%);
+  border: 1.5px solid rgba(201,168,76,0.55);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-top: 14px;
+}
+.big-three-synthesis .num {
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--gold, #c9a84c);
+  color: var(--deep-blue, #0a1f3f);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-three-synthesis .txt {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text, #2c3e50);
+}
+@media (max-width: 640px) {
+  .big-three-synthesis { padding: 12px; gap: 10px; }
+}
+</style>
+
+<style id="nav-v2">
+/* ==== NAV-V2 自包含样式（字面色值 · 覆盖全部归档页） ==== */
+.date-nav-bar{
+  display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+  background:#ffffff; border:1px solid #e6e9ef; border-radius:10px;
+  padding:12px 18px; margin-bottom:24px;
+  font-size:12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+.date-nav-bar .nav-months{
+  display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+  width:100%; padding-bottom:10px; margin-bottom:8px;
+  border-bottom:1px dashed #e6e9ef;
+}
+.date-nav-bar .nav-months a{
+  display:inline-block; padding:3px 11px; border-radius:12px;
+  border:1px solid #e6e9ef; background:#f7f8fa;
+  color:#5a6472; text-decoration:none;
+  font-weight:600; font-size:12px; line-height:1.5;
+  transition:all .15s ease;
+}
+.date-nav-bar .nav-months a:hover{
+  border-color:#c9a84c; background:#fff8e1; color:#0a1f3f;
+}
+.date-nav-bar .nav-months a.active{
+  background:#0a1f3f; border-color:#0a1f3f; color:#ffffff;
+}
+.date-nav-bar .nav-months a.nav-ledger{
+  margin-left:auto; border-color:rgba(201,168,76,.55);
+  background:#fff8e1; color:#8a6d20;
+}
+.date-nav-bar .nav-months a.nav-ledger:hover{
+  background:#c9a84c; border-color:#c9a84c; color:#0a1f3f;
+}
+.date-nav-bar .month-label{
+  font-weight:700; color:#0a1f3f; margin-right:4px;
+  font-size:12px; letter-spacing:.5px;
+}
+.date-nav-bar .month-sep{
+  display:inline-block; width:1px; height:14px;
+  background:#e6e9ef; margin:0 8px;
+}
+.date-nav-bar a{
+  display:inline-block; padding:3px 9px; border-radius:4px;
+  color:#5a6472; text-decoration:none; font-weight:500;
+  transition:all .15s ease;
+}
+.date-nav-bar a:hover{ background:#eef1f6; color:#0a1f3f; }
+.date-nav-bar a.current{
+  background:#c9a84c; color:#0a1f3f; font-weight:700;
+}
+@media (max-width:480px){
+  .date-nav-bar{ padding:10px 12px; gap:5px; }
+  .date-nav-bar a{ padding:3px 7px; }
+  .date-nav-bar .nav-months a.nav-ledger{ margin-left:0; }
+}
+/* ==== NAV-V2 END ==== */
+</style>
+</head>
+<body>
+<!-- NAV-V2 BEGIN -->
+<div class="date-nav-bar">
+  <span class="nav-months">
+    <a href="/shangda-ras-daily/archive/2026-06-30.html">6月 <span class="mn-cnt">19</span></a>
+    <a href="/shangda-ras-daily/archive/2026-07-31.html">7月 <span class="mn-cnt">23</span></a>
+    <a href="/shangda-ras-daily/archive/2026-08-31.html">8月 <span class="mn-cnt">20</span></a>
+    <a href="/shangda-ras-daily/archive/2026-09-30.html">9月 <span class="mn-cnt">22</span></a>
+    <a href="/shangda-ras-daily/archive/2026-10-30.html">10月 <span class="mn-cnt">18</span></a>
+    <a href="/shangda-ras-daily/archive/2026-11-19.html" class="active">11月 <span class="mn-cnt">14</span></a>
+    <a class="nav-ledger" href="/shangda-ras-daily/ledger/">📈 价格台账 · 11/19</a>
+  </span>
+  <span class="month-label">11月</span>
+  <a href="/shangda-ras-daily/archive/2026-11-02.html">02</a>
+  <a href="/shangda-ras-daily/archive/2026-11-03.html">03</a>
+  <a href="/shangda-ras-daily/archive/2026-11-04.html">04</a>
+  <a href="/shangda-ras-daily/archive/2026-11-05.html">05</a>
+  <a href="/shangda-ras-daily/archive/2026-11-06.html">06</a>
+  <span class="month-sep"></span>
+  <a href="/shangda-ras-daily/archive/2026-11-09.html">09</a>
+  <a href="/shangda-ras-daily/archive/2026-11-10.html">10</a>
+  <a href="/shangda-ras-daily/archive/2026-11-11.html">11</a>
+  <a href="/shangda-ras-daily/archive/2026-11-12.html">12</a>
+  <a href="/shangda-ras-daily/archive/2026-11-13.html">13</a>
+  <span class="month-sep"></span>
+  <a href="/shangda-ras-daily/archive/2026-11-16.html">16</a>
+  <a href="/shangda-ras-daily/archive/2026-11-17.html">17</a>
+  <a href="/shangda-ras-daily/archive/2026-11-18.html">18</a>
+  <a href="/shangda-ras-daily/archive/2026-11-19.html" class="current">19</a>
+</div>
+<!-- NAV-V2 END -->
+
+<header>
+  <div class="header-brand">SHANDA &middot; RAS INDUSTRY DAILY</div>
+  <h1>商达.RAS行业高参</h1>
+  <div class="header-date">2026年11月19日 · 周四 &middot; L1窗口: 11/18-11/19</div>
+  <div class="header-issue">第188期 · 午间出刊</div>
+</header>
+<div class="chain-nav">
+  <span class="active">💰 投资</span>
+  <span class="arrow">→</span>
+  <span class="active">🧬 技术</span>
+  <span class="arrow">→</span>
+  <span class="active">🏗️ 建设</span>
+  <span class="arrow">→</span>
+  <span class="active">⚙️ 运营</span>
+  <span class="arrow">→</span>
+  <span class="active">📦 产品</span>
+  <span class="arrow">→</span>
+  <span class="active">💹 销售</span>
+</div>
+<div class="top-signals">
+<div class="top-signal">【成本·极端分化】鱼粉库存跌破10万吨、26,400-26,500元冻结 vs 豆粕/菜粕/棕榈油全线回落——<span class="highlight">成本分道走到「鱼粉对其他所有原料」</span>。</div>
+<div class="top-signal red">【捕季·警报】ENFEN提示强厄尔尼诺或持续至2027年一季度、或连砸2026A/B与2027A三个捕季——<span class="highlight">鲑鳟料成本基线上移</span>。</div>
+<div class="top-signal">【政策·市级】青岛市政府常务会议专题学渔业法、点名工厂化循环水养殖与工船养殖——<span class="highlight">计划单列市产业背书落地</span>。</div>
+<div class="top-signal">【准入·国门】海关总署159号公告：挪威野生水产品输华检验检疫要求落地——<span class="highlight">可核验记录成为国家准入语言</span>。</div>
+<div class="top-signal red">【零售·新锚】朴朴生活首店明日开业、现切三文鱼199.8元/公斤——<span class="highlight">门店现制层级进入鲑鳟零售结构</span>。</div>
+<div class="top-signal red">【资本·出清】百洋两日-17.16%换手翻倍、好当家龙虎榜一日翻转（净买入转净卖出）——<span class="highlight">题材资金出清进入加速段</span>。</div>
+<div class="top-signal">【价格·冻结】青岛城阳11-19花鲢20.00/白鲢12.00连续第二日同价——<span class="highlight">黏性市盯解冻时点</span>。</div>
+<div class="top-signal">【出口·企稳】挪威第46周量减5.7%、价稳73.41克朗（同比-8.4%）——<span class="highlight">供应过剩最陡阶段已过</span>。</div>
+<div class="top-signal">【建设·放量】首农天津EPC昨日开标、陇润3000吨鳜鱼项目今日开标——<span class="highlight">年底招采集中期确认</span>。</div>
+<div class="top-signal">【窗口·倒计时】罗田设施渔业补助申报11-27截止（先建后补30%、单主体300万元）——<span class="highlight">县域申报材料本周备齐</span>。</div>
+</div>
+<div class="toc">
+  <h3>📑 目录 · 12板块全产业链</h3>
+  <div class="toc-grid">
+    <a href="#sec1">① 投资动态</a>
+    <a href="#sec2">② 技术与育种</a>
+    <a href="#sec3">③ 建设与产能</a>
+    <a href="#sec4">④ 运营与成本</a>
+    <a href="#sec5">⑤ 友商深度追踪</a>
+    <a href="#sec6">⑥ 产品与价格</a>
+    <a href="#sec7">⑦ 渠道与零售</a>
+    <a href="#sec8">⑧ 资本市场</a>
+    <a href="#sec9">⑨ 政策与标准</a>
+    <a href="#sec10">⑩ 国际视野</a>
+    <a href="#sec11">⑪ 展会与活动</a>
+    <a href="#sec12">⑫ 利润快算</a>
+  </div>
+</div>
+<div class="big-three">
+  <h3>🔗 三大主线串联</h3>
+<div class="big-three-item"><span class="top-signal red">成本端出现「鱼粉对全部」的极端分化。豆粕现货普跌30元、菜粕续跌、棕榈油-1.97%创年内新低，唯独鱼粉港口库存跌破10万吨、26,400-26,500元冻结，ENFEN更提示强厄尔尼诺或连砸2026A/B与2027A三个捕季。<span class="highlight">鲢鳙线成本继续下修、鲑鳟线应把26,500元从峰值改写成基线并给28,000元做压力测试——两本账从此不能混着报</span>。</span></div>
+<div class="big-three-item"><span class="top-signal red">资本端信用重估加速。百洋两日-17.16%且换手翻倍（机构持仓仅0.03%）、好当家龙虎榜从净买入一日翻转为净卖出1,749万、通威获联合资信关注但评级维持且为板块唯一红盘。<span class="highlight">动的是筹码与信用，不是鱼价——判断景气看产业资本动作，判断波动看龙虎榜</span>；情绪段不谈融资、不抄底概念股。</span></div>
+<div class="big-three-item"><span class="top-signal red">政策与渠道把「可验证」同时写进两级语言。青岛市政府常务会议学渔业法点名工厂化循环水养殖、海关159号给挪威野生水产品立准入规矩（多次不合格即暂停）、朴朴生活把现切三文鱼16道工序与吊水专缸开进门店。<span class="highlight">政府、海关、渠道三个层面在同一周使用同一套语言：可核验记录</span>——商达的批次检测与吊水净化数据要立刻做成标准交付物。</span></div>
+</div>
+<div class="section" id="sec1">
+  <div class="section-header">
+    <span class="icon">💰</span>
+    <h2>投资动态</h2>
+    <span class="badge">L1/L2 重大项目与资本落地 · 本期2条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">罗田县中央渔业发展补助资金现代设施渔业项目公开遴选：先建后补30%、单主体上限300万元</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 申报窗口倒计时（罗田县农业农村局2026-11-11公告，申报截止11-27）</div>
+<div class="news-body"><p>湖北罗田县启动2026年中央渔业发展补助资金现代设施渔业项目遴选，面向新改扩建的池塘工程化循环水（跑道）、「零排放」圈养桶、工厂化循环水、陆基圆池循环水养殖基地，<span class="highlight">采取先建后补、补助不超过总造价30%、单个主体不超过300万元</span>；要求配备尾水处理设施实现循环利用或达标排放，持有土地流转合同与规范生产记录，<span class="highlight">申报窗口2026-11-11至11-27、逾期不受理</span>。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①「先建后补+30%」是当前设施渔业资金的主流兑付形态，窗口只剩8天——县内符合条件的主体本周必须交材料，错过即等下一年度。②申报硬门槛（对公流水、土地合同、尾水设施）说明补助正从「建了就补」转向「合规才补」，方案模板的合规章节权重必须上调。③对商达：湖北县域是循环水设备与运维输出带，罗田模式可复制到周边县市——把申报材料包做成标准服务，是轻资产的第二收入线。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">首农高效设施水产养殖示范项目EPC昨日开标：国资示范盘落地京津走廊</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 开标（首农现代农业发展（天津）有限公司 · 全国招标采购投标服务平台）</div>
+<div class="news-body"><p>首农现代农业发展（天津）有限公司高效设施水产养殖示范项目EPC总承包<span class="highlight">11-18上午9:30在北京开标</span>，允许联合体投标（同一专业单位按资质等级较低者确定资质等级）。这是继大安、翼城、梁山之后，本周第4个进入开标环节的设施渔业大标。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①首农系国资做「示范项目」，与大安/翼城/梁山同周共振——年底招采集中期确认，且京津走廊出现新坐标。②联合体资质「就低不就高」的排序规则直接影响组队策略，技术方与施工方的能力边界要在投标文件里写清。③开标结果未出，建议按本周中标价建立天津区域报价基准，供后续京津冀项目对标。</div>
+</div>
+
+</div>
+<div class="section" id="sec2">
+  <div class="section-header">
+    <span class="icon">🧬</span>
+    <h2>技术与育种</h2>
+    <span class="badge">育种育苗/循环水智能装备 · 本期1条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">高邮「揭榜挂帅」把循环水育苗水质在线监测写进企业榜单：中国农大现场接单</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 新浪财经/扬州网</div>
+<div class="news-body"><p>高邮市产创融合「揭榜挂帅」专场对接活动11-18在北京举行：江苏海泽慧种业发榜「虾苗繁育车间水质监测调节自动化」，直言靠人工测、手动调「常常慢半拍」；<span class="highlight">中国农业大学王洋教授以「罗氏沼虾繁育车间循环水水质在线监测与自动调控方案」现场揭榜</span>，双方当场进入点位与成本对接。本场活动10项技术需求发榜、成功对接5家企业。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①循环水育苗的痛点被企业自己说破：人工经验管理「慢半拍」，在线监测+自动调控是育苗车间从经验走向参数管理的分水岭——<span class="highlight">这套逻辑对鲑鳟/鲢鳙苗种车间同样成立</span>。②「揭榜挂帅」给技术方提供了不经招投标的变现通道，商达的数字化养殖实测数据可按此机制对接县域产业需求。③今日核心鱼品育种端无重大新增，本条以循环水育苗通用技术补位并如实标注。</div>
+</div>
+
+</div>
+<div class="section" id="sec3">
+  <div class="section-header">
+    <span class="icon">🏗️</span>
+    <h2>建设与产能</h2>
+    <span class="badge">招标/开标/投产 · 本期1条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">河南陇润年产3000吨鳜鱼养殖项目EPC一期今日开标：中原市场直接上规模</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 开标（阳光易招平台，郑州）</div>
+<div class="news-body"><p>河南陇润渔业科技有限公司年产3000吨鳜鱼养殖项目EPC总承包（一期）<span class="highlight">今日10:30在郑州开标</span>，接受联合体投标，选址驻马店西平。3000吨的单项目体量，在河南淡水设施养殖盘子里属于头部规格。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①「3000吨」这个数字值得圈出来：行业经验上单体循环水项目需约5,000吨/年才能摊薄固定成本，中原市场已开始直接上规模而非小步试点——<span class="highlight">内陆设施养殖从「样板间」进入「量产盘」的信号</span>。②鳜鱼是饲料驯化率快速提升的高价淡水鱼，其设施化扩张与鲢鳙设施化共享同一套设备与运维供应链，对商达是增量客户池。③开标结果与中标价按本周基准入库。</div>
+</div>
+
+</div>
+<div class="section" id="sec4">
+  <div class="section-header">
+    <span class="icon">🌾</span>
+    <h2>运营与成本</h2>
+    <span class="badge">饲料原料日度行情 · 本期3条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">饲料原料日报：豆粕现货普跌30元、菜粕续跌，蛋白线连续第二日全线回落</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 内蒙古粮和物资储备局/饲料行业信息网</div>
+<div class="news-body"><p>11-19豆粕基准价3158元/吨（较11-18微调6元），但现货全线下调：山东主流油厂报价集中-30元至3080-3210元区间；菜粕2398元/吨（-0.33%）；玉米2193元/吨持平微跌；DDGS 2160元持平。豆粕库存仍处120万吨以上历史同期高位，<span class="highlight">饲料企业物理库存仅一周左右、随用随采</span>，12月上半月前难见集中备货。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①蛋白线连续回落而鱼粉冻结，比价结构对普水料持续友好——鲢鳙线成本模型继续按下修口径走。②「随用随采」说明饲料厂对12月上半月无备货意愿，成本回落传导到养殖端会有时滞，报价谈判别把即期价当长协价。③对商达：把现货-30元的窗口用作12月原料锁价的谈判锚。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">鱼粉库存首破10万吨、ENFEN三捕季警报</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 博亚和讯/Mysteel</div>
+<div class="news-body"><p>国内进口鱼粉市场11-18：<span class="highlight">秘鲁超级蒸汽鱼粉26,400-26,500元/吨持稳、外盘CNF 3,450美元/吨，港口库存降至10万吨以下</span>（此前一周10.65万吨）；秘鲁白鳀鱼渔获量仅7,095吨、当地基本无可售库存。Mysteel援引秘鲁ENFEN最新报告：海洋变暖持续蔓延，<span class="highlight">强厄尔尼诺预计维持显著水平直至2027年一季度，或连续影响2026年A季、B季与2027年A季三个捕季</span>；秘鲁11-9部长决议授权沙丁鱼资源探捕15天。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①库存跌破10万吨是硬信号：可售库存集中度进一步上升，挺价有实物基础而非纯情绪。②「三个捕季」若兑现，鱼粉高位不是月度问题而是年度问题——<span class="highlight">鲑鳟线成本模型应把26,500元从「峰值假设」改成「基线假设」，并给28,000元做压力测试</span>。③沙丁鱼探捕是替代供应的微弱线索，量级无法补缺口，不改方向判断。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">棕榈油单日-1.97%创年内新低、豆油补跌：油脂端成为成本端最弱一环</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 内蒙古粮和物资储备局/卓创</div>
+<div class="news-body"><p>11-19国内24度棕榈油港口现货均价8,449元/吨（-170元、<span class="highlight">-1.97%，本周最大跌幅6.7%、已至年内最低水平</span>）；一级豆油8,650元/吨回落；四级菜籽油10,544元/吨。上周国内棕榈油库存119万吨高位，去库迹象不明，基本面支撑难以抵消外部利空。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①油脂与蛋白同向走弱、唯独鱼粉独挺——「成本分道」从鲢鳙vs鲑鳙两线进一步细化为「鱼粉对其他所有原料」，配方替代空间随之扩大，普水料企业有条件做替代配方压成本。②对商达：鲢鳙料成本按当前口径继续下修，鲑鳟料维持26,500元冻结口径，两本账不能混。</div>
+</div>
+
+</div>
+<div class="section" id="sec5">
+  <div class="section-header">
+    <span class="icon">🔍</span>
+    <h2>友商深度追踪</h2>
+    <span class="badge">7家头部全链日更 · 本期3条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">百洋股份盘中再挫7.96%：五连杀两日-17.16%，换手放大到16.36%</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 盘中行情（11:32口径）</div>
+<div class="news-body"><p>百洋股份11-19盘中报7.05元（-7.96%），<span class="highlight">两日累计-17.16%</span>，成交3.91亿元、换手16.36%较昨日近乎翻倍；11-18收盘7.66元（-9.99%跌停）。机构口径显示其基金持仓比例仅0.03%、11月零机构评级——<span class="highlight">筹码几乎全在交易性资金手里</span>。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①换手翻倍+机构缺位=纯筹码博弈市，跌停后的放量长阴通常是多杀多加速段，短期不存在基本面支撑位可言。②对商达：百洋是「鱼粉替代」叙事的定价样本，它的出清路径说明市场对饲料概念股已切换到现金流定价——商达对外叙事继续坚持现金流口径，不在情绪段对标估值。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">好当家龙虎榜一日翻转：涨停日净买入、回踩日净卖出1749万元</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 证券时报数据宝/上交所公开信息</div>
+<div class="news-body"><p>好当家11-18收2.77元（+0.73%）、<span class="highlight">换手26.16%成交10.57亿元上榜</span>：营业部净卖出1,749万元，主力净流出7,838万元（特大单-4,446万）——与11-17涨停日净买入773万元形成一日翻转；11-19早盘再挫4.33%至2.65元。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①游资接力失败：涨停日第一大买入席位（国泰海通总部）在回踩日转身卖出，高位26%换手意味着筹码从先手向散户扩散——按龙虎榜行为学这是行情衰竭形态。②对商达：海参标的的脉冲行情与其三季报净利同比+20%的产业基本面并不同步，判断景气仍以产业资本动作为准，股价脉冲不构成产能扩张依据。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">鲟龙科技11月机构观点增至9家全买入：目标价89.07港元对现价47.42悬空约88%</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 港股行情/机构观点统计</div>
+<div class="news-body"><p>鲟龙科技11-19盘中47.42港元（-0.67%）连续第三日回落，11-18成交额仅111万港元；机构观点统计显示<span class="highlight">11月发布观点的机构增至9家（8月6家起逐月递增）、全部为买入评级</span>，目标均价89.07港元，较现价悬空约88%。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①卖方一致买入+成交萎缩的组合说明：机构观点未换来增量资金，<span class="highlight">港股流动性是鲟龙估值兑现的真实约束</span>。②对商达：鲟龙是「循环水养殖+高端品牌」估值的唯一上市标的，其目标价与现价的缺口是商达融资叙事的参照系上限——叙事可以引用，兑现节奏必须按现金流另算。</div>
+</div>
+
+</div>
+<div class="section" id="sec6">
+  <div class="section-header">
+    <span class="icon">📦</span>
+    <h2>产品与价格</h2>
+    <span class="badge">鲢鳙/鲑鳟 白名单双轨 · 本期3条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">青岛城阳11-19连续第二日冻结：花鲢20.00（18-22）/白鲢12.00（10-14）</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 青岛城阳蔬菜水产品批发市场官网</div>
+<div class="news-body"><p>青岛城阳蔬菜水产品批发市场11-19报价：花鲢最高22.00/最低18.00/中位<span class="highlight">20.00元/公斤</span>，白鲢最高14.00/最低10.00/中位<span class="highlight">12.00元/公斤</span>——与11-18完全同价，连续第二日冻结。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①北方销区锚连续两日纹丝不动，与昨日部级42市场92.3%报价黏性一致——当前是黏性市而非趋势市，日频盯价的重点应放在「解冻时点」。②城阳白鲢对全国口径（11-17为10.24元）溢价约17%，销区溢价继续给北方循环水项目留出空间。③2026-11-19部级逐市场横截面13:00后发布，由13:20补采轮接管入库，本期不再复述旧表。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">第46周广州挪威HOG每公斤上调3元：进口商结束连续两周亏损</div>
+<div class="news-meta"><span class="news-grade grade-B">L2</span> L2 2026-11-17 · 玉湖百应第46周评估（周度披露）</div>
+<div class="news-body"><p>第46周（2026-11-09至11-15）中国主要城市进口大西洋鲑批发价小幅回升：<span class="highlight">广州挪威产6-7公斤HOG每公斤上调3元人民币</span>并带动其他产地跟涨；进口商从连续两周亏损转为平均每公斤盈利2元；某挪威供应商6-7公斤报价11.25美元/公斤、5-6公斤9.75美元/公斤持平；进口商称到货量在下降、市场「正在远离供应过剩」。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①批发端回暖与挪威SSB出口价企稳（见板块10）互证：鲑鳟进口链在修复盈利，但每公斤2元仍是薄利，<span class="highlight">价格弹性来自到货量而非需求爆发</span>。②对商达：国产陆基鲑的成本曲线若压到进口平价以下，这轮「进口商微利修复」就是国产替代定价的现实标尺。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">鲑鳟零售轨换锚：朴朴生活试营业现切三文鱼99.9元/500克（折199.8元/公斤）</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 福州日报试营业探访</div>
+<div class="news-body"><p>朴朴全国首家线下店「朴朴生活」试营业现场：现切挪威三文鱼<span class="highlight">99.9元/500克（折199.8元/公斤）</span>、标注可生食标准，门店整鱼加工线16道工序全程可视；鲜度时间表（果切4小时打折）同步用于水产档口，鲜活区设海鱼、吊水鱼专缸。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①199.8元/公斤的门店现场制锚位落在电商冷冻块（约120元/公斤）与品牌冰鲜刺身（387.5元/公斤）之间——零售结构多出「门店现制」层级，<span class="highlight">溢价来自过程可见</span>。②吊水鱼专缸进店，与叮咚「真安心鱼」同一逻辑：可见性即信任。③对商达：门店现制档口是循环水活鱼直达C端的新通路，值得进朴朴式门店的招商清单。</div>
+</div>
+
+</div>
+<div class="section" id="sec7">
+  <div class="section-header">
+    <span class="icon">🏪</span>
+    <h2>渠道与零售</h2>
+    <span class="badge">生鲜平台×线下渠道 · 本期2条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">朴朴生活全国首店明日开业：预约破20万、6500平方米、30个现制档口</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 福州新闻网/福州日报（开业倒计时）</div>
+<div class="news-body"><p>朴朴超市全国首家线下店「朴朴生活」定于2026-11-20在福州远洋德呈乐堤港开业：总营业面积<span class="highlight">6,500平方米（生活超市4,500+海鲜火锅2,000）</span>，30多个现制档口、170余个堂食餐位，预约人数突破20万；朴朴布局超400个前置仓、2024年营收约300亿元并首度全年盈利，福州市场渗透率超70%。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①前置仓盈利模型跑通后开线下大店，说明即时零售竞争正从履约效率转向场景体验——「海鲜火锅2,000平方米」直接把水产做成门店主场景之一。②对商达：朴朴式门店的现制档口（现切三文鱼、海鲜火锅、吊水专缸）就是循环水活鱼的天然展销位，福州首店跑通后的复制节奏值得按月跟踪。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">上海东海秋鲜集中上市：盒马、叮咚、美团超市水产专区同频热销</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 看看新闻</div>
+<div class="news-body"><p>上海水产市场进入东海秋鲜黄金期：大规格梭子蟹从开渔初120元/斤上方回落至95元/斤，带鱼、小黄鱼、鲳鱼集中放量；<span class="highlight">叮咚买菜、盒马、美团超市等线上平台水产专区品类齐全</span>，全程冷链即时配送成为年轻客群主流购鲜方式。江杨水产品市场预判：临近年底与春节，水产品价格有望企稳小幅走高。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①「先高后低再企稳」的节前价格曲线已经画出来：12月起供给节奏切换，与腌腊备货的B端节奏形成同向共振。②对商达：年底定价谈判可用「江杨预判」做依据之一，鲑鳟礼盒与鲢鳙腌腊两条产品线赶在12月第一周铺渠道，抢的是平台流量分配的先手位。</div>
+</div>
+
+</div>
+<div class="section" id="sec8">
+  <div class="section-header">
+    <span class="icon">📈</span>
+    <h2>资本市场</h2>
+    <span class="badge">A股/港股 水产标的 · 本期2条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">水产股11-19午间台账：百洋领跌、大湖/獐子岛续落、通威昨逆势收红</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 盘中行情（11:32口径）</div>
+<div class="news-body"><p>11-19午间：通威股份11.18元（-0.53%）、大湖股份4.48元（-2.40%）、獐子岛3.15元（-2.48%）、鲟龙科技47.42港元（-0.67%）、好当家早盘2.65元（-4.33%）、百洋7.05元（-7.96%）领跌；国联水产11-18收2.77元（-2.12%）。11-18收盘：<span class="highlight">通威+0.99%为板块唯一逆势红盘</span>。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①资金在板块内部做「确定性排序」：通威的红盘靠光伏「反内卷」政策预期而非水产基本面——纯水产标的当前没有独立行情。②獐子岛连续两日回落且无公告配合，海洋牧场标的静默期股价随板块走，判断个股仍以公告与龙虎榜为准。③对商达：板块估值中枢下移期，涉股条款与融资叙事一律用现金流口径。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">国联水产11-30临时股东会审议资产出售：6618万元交易进入表决节点</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 股东会节点提示（议案2026-11-14披露，2026-11-30审议）</div>
+<div class="news-body"><p>国联水产将于2026-11-30召开2026年第六次临时股东会，审议全资子公司<span class="highlight">以6,618万元向渔嘉科技出售土地、建筑物及设备等资产</span>的议案；11-18融资余额1.38亿元、收盘2.77元（-2.12%）。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①卖资产聚焦主业的路径与「预制菜+消费端」结构调整一致，表决通过后资产端瘦身、现金流改善的兑现要到12月。②对商达：加工资产被渔嘉科技接盘，意味着B端加工环节出现独立运营方——6,618万元的交易价可作为区域性加工产能的估值参照，商达若有加工段合作诉求可据此定价。</div>
+</div>
+
+</div>
+<div class="section" id="sec9">
+  <div class="section-header">
+    <span class="icon">📋</span>
+    <h2>政策与标准</h2>
+    <span class="badge">政策/政府动态/水产舆情 · 本期3条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">青岛市政府常务会议专题学《渔业法》：点名工厂化循环水养殖与工船养殖</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 青岛市政府官网（2026-11-19挂网）</div>
+<div class="news-body"><p>青岛市委副书记、市长任刚11-18主持召开市政府常务会议，专题学习《中华人民共和国渔业法》，明确要求<span class="highlight">「大力发展工厂化循环水养殖、工船养殖等设施渔业，促进海洋种业等领域成果转化，加快向高端高值方向发展」</span>，并部署做强水产品精深加工、推进海洋生物医药与功能食品开发，同步审议美丽青岛「十五五」规划。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①计划单列市把渔业法学习会开成产业部署会、且把「工厂化循环水」写进会议纪要原话——<span class="highlight">这在市级政务文本里的权重高于一般产业政策表述</span>。②青岛是北方设施渔业项目最密的城市带，市级表态后用地、用海、补贴的配套细则可期；商达在胶东半岛的项目储备可借这轮窗口提速对接。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">安徽省农业农村厅厅长汪学军调研富煌三珍：水产种业、设施装备、预制菜三点连问</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 安徽省农业农村厅</div>
+<div class="news-body"><p>11-19，省农业农村厅党组书记、厅长汪学军赴巢湖调研禁捕退捕与渔业高质量发展，在安徽富煌三珍食品集团详细了解鮰鱼苗种繁育、生态养殖、精深加工、预制菜与新零售情况，要求<span class="highlight">「做精做好水产种业，提升设施装备水平，推进水产预制菜产业发展，打造全产业链」</span>。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①厅长把「苗种—设施—预制菜」三点连成一句话，正是省级渔业主管部门当前的政策优先序——商达「技术赋能+全链」定位与该优先序完全同框。②富煌三珍是10月末已记录的3万吨级投产主体，省级主官随后到访，<span class="highlight">「投产—被看见—被支持」的政策动线已经跑通</span>；商达的投产节点要主动做政策可见性设计。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">海关总署2026年第159号公告：挪威野生水产品输华检验检疫要求落地</div>
+<div class="news-meta"><span class="news-grade grade-B">L2</span> L2 2026-11-17 · 海关总署官网（2026-11-18挂网）</div>
+<div class="news-body"><p>海关总署11-17发布2026年第159号公告，即日起允许符合要求的挪威野生水产品进口：<span class="highlight">生产企业须经挪方推荐、中方注册，每批附中英文卫生证书</span>；不合格产品实施销毁或退运，多次不合格企业可被加强检疫乃至暂停进口。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①挪威野生捕捞产品获准进入，野生料与养殖鲑鳟在中国市场形成「低价野生vs高价养殖」双轨——国产陆基鲑的价格对标对象又多一层。②「多次不合格即暂停」的机制与叮咚「真安心鱼」百日0检出同构：<span class="highlight">可核验记录正从渠道标准上升为国家准入语言</span>。</div>
+</div>
+
+</div>
+<div class="section" id="sec10">
+  <div class="section-header">
+    <span class="icon">🌍</span>
+    <h2>国际视野</h2>
+    <span class="badge">全球鲑鳟与贸易 · 本期2条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">挪威第46周出口：量减5.7%价企稳73.41克朗，同比价差-8.4%</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-18 · 挪威统计局SSB/SalmonBusiness（周三发布）</div>
+<div class="news-body"><p>挪威统计局第46周（截至11-15）数据：冰鲜整条鲑出口26,669吨，环比-5.7%但仍同比+13.5%；均价<span class="highlight">73.41挪威克朗/公斤（约6.94欧元），环比+0.1%、同比-8.4%</span>（去年同期80.10克朗）；冷冻鲑出口703吨（-19%），均价78.17克朗（+4.1%）。此前一周（45周）出口均价74.65克朗微跌0.6%。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①「量减价稳」与广州批发端回暖互证：供应过剩最陡的阶段已过，但同比-8.4%的价差说明2025年高基数仍压着利润预期。②对商达：<span class="highlight">第46周73.41克朗是国产陆基鲑与进口冰鲜比价的新基准</span>——按汇率折算后与国产成本曲线的交点决定替代窗口，建议更新卖到哪测算器的进口价参数。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">国航开通冰岛—北京新航线：冰鲜三文鱼48小时抵京、前9月自冰岛进口+169%</div>
+<div class="news-meta"><span class="news-grade grade-B">L2</span> L2 2026-11-17 · 玉湖百应第46周物流评估（周度披露）</div>
+<div class="news-body"><p>国航新开经哥本哈根的冰岛—北京航线，<span class="highlight">冰岛冰鲜三文鱼交付时间压缩至48小时</span>；今年前9个月中国自冰岛进口三文鱼超5,600吨、同比增169%——小产地对华快速放量。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①48小时直达把「产地飞北京」的时间成本打平，冰岛鲑的到岸新鲜度开始接近国产陆基鲑的时效卖点——<span class="highlight">国产「24小时覆盖」的时效溢价窗口被压缩</span>，必须靠成本与可验证性补位。②冰岛+169%的斜率说明中国市场缺口仍在扩、进口来源多元化在稀释单一挪威依赖——对进口商是好事，对国产鲑是提质量而非提价格的信号。</div>
+</div>
+
+</div>
+<div class="section" id="sec11">
+  <div class="section-header">
+    <span class="icon">📅</span>
+    <h2>展会与活动</h2>
+    <span class="badge">日程与预告 · 本期2条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">世界海洋生物多样性大会布鲁塞尔举行中：欧盟年末议程连排藻类与市场议题</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 欧盟水产养殖官网日程（本刊采集）</div>
+<div class="news-body"><p>World Conference on Marine Biodiversity 2026于2026-11-17至20在比利时布鲁塞尔举行；欧盟水产养殖事件日历显示，Fisheries and Aquaculture Czechia定档11-26、<span class="highlight">Algaeurope 2026定档12-08至11（马耳他）开放注册中</span>。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①欧盟把海洋生物多样性、藻类产业连排进年末议程，藻类饲料（替代鱼粉）是12月马耳他场的显性主题——<span class="highlight">替代蛋白路线在欧洲政策端的推进速度值得按月跟踪</span>。②对商达：Algaeurope议程清单可作为鱼粉替代技术雷达，若四季度做配方调整预研，这是一次低成本情报采集窗口。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">菲律宾NSTW科技周11-25至29举办：DOST智能循环水物联网监控系统参展</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 菲律宾科技部DOST预告（Manila Times 2026-11-10，会期11-25至29）</div>
+<div class="news-body"><p>菲律宾国家科技创新周（NSTW）定于2026-11-25至29在桑托斯将军城举办，DOST-MIRDC研发的<span class="highlight">Smart RAS循环水物联网监控系统参展</span>：实时监测氨氮、pH、水温、盐度、溶氧并自动调控，应用于罗非鱼、对虾与软壳蟹养殖。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①菲律宾把RAS监控装备作为国家级科技周展品，说明循环水数字化在东南亚已被上升到国家展示层——东南亚市场的国产循环水装备出海有对等的展示语境。②对商达：该系统的参数集（氨氮/pH/溶氧/盐度）与商达数字化平台口径可比，出海方案可直接对标。</div>
+</div>
+
+</div>
+<div class="section" id="sec12">
+  <div class="section-header">
+    <span class="icon">🧮</span>
+    <h2>利润快算</h2>
+    <span class="badge">花鲢/白鲢/鲑鳟 即时盈亏 · 本期3条</span>
+  </div>
+<div class="news-item">
+<div class="news-title">花鲢双锚账（11-19）：城阳20.00冻结锚延续，销区分层结构未变</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 本刊测算（城阳2026-11-19）</div>
+<div class="news-body"><p>以11-19城阳20.00元/公斤为最高锚（连续第二日）、11-17安吉17.00与宁夏海吉星14.00为低位锚——三锚结构延续。白鲢城阳12.00元对全国口径（11-17为10.24元）溢价约17%。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①花鲢销区溢价区间连续一周稳定在1.2-1.4倍——<span class="highlight">循环水花鲢的定价空间在「销区就地出鱼」</span>，项目测算直接取销区中位价而非全国口径。②城阳冻结两日说明北方销区冬季供给节奏稳，解冻时点看13:20补采轮的当日横截面。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">白鲢场景账（11-19）：超市轨25.64元对批发轨15.72元——同城价差63%</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 北京市发改委价格监测（2026-11-18数据）</div>
+<div class="news-body"><p>北京白鲢（750克/条）11-18三轨：批发7.86元/500克（<span class="highlight">折15.72元/公斤，连续4日冻结</span>）、农贸零售7.94元/500克、超市12.82元/500克（<span class="highlight">折25.64元/公斤</span>）——超市对批发溢价63%。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①白鲢的利润不在养殖差价在流通分层：批发到超市的63%溢价说明「标准化+品牌化」能把最便宜的鱼卖出溢价，这正是循环水+吊水净化可承接的分层。②对商达：白鲢线按「批发15.72/超市25.64」双轨做测算——超市轨对应标准化SKU与吊水增值，不是活鱼批发。</div>
+</div>
+
+<div class="news-item">
+<div class="news-title">鲑鳟三段账（11-19）：进口端微利修复、门店现制锚199.8元/公斤</div>
+<div class="news-meta"><span class="news-grade grade-A">L1</span> L1 2026-11-19 · 本刊测算（第46周评估/门店探访）</div>
+<div class="news-body"><p>三段结构：进口/批发段——广州挪威HOG修复至<span class="highlight">每公斤盈利2元</span>（第46周）；零售冷冻段——电商冷冻块约120元/公斤（前期锚）；门店现制段——朴朴生活现切<span class="highlight">99.9元/500克折199.8元/公斤</span>、可生食标准。</p></div>
+<div class="analysis-box"><div class="label">对商达意味着什么</div>①199.8元门店现制锚比冷冻段高66%——「过程可见」的溢价已在零售端兑现，国产陆基鲑按成本优势应主攻现制段而非电商标准品段。②进口端每公斤2元的微利意味着进口商没有降价冲量空间——国产替代的价格天花板短期由现制段零售锚决定，而非批发端。</div>
+</div>
+
+</div>
+<div class="summary-section">
+  <h3>🔍 今日三件大事</h3>
+  <ul>
+    <li>成本分道走到极端形态。蛋白与油脂全线回落（豆粕现货-30元、菜粕-0.33%、棕榈油创年内新低），唯独鱼粉港口库存跌破10万吨、26,400-26,500元冻结，ENFEN提示强厄尔尼诺或持续至2027年一季度、可能连续影响三个捕季——<span class="highlight">鲑鳟线的成本假设要从「峰值」改「基线」，鲢鳙线按豆粕3,100元口径继续下修</span>。</li>
+    <li>资本信用重估与政策可见性同周发生。百洋五连杀、好当家龙虎榜翻转说明题材资金出清进入加速段；同周青岛市级会议点名循环水养殖、安徽厅长调研富煌三珍、罗田县级补助开闸——<span class="highlight">「投产—被看见—被支持」的政策动线已被验证，出清期的产业主体反而该加大政策可见性投入</span>。</li>
+    <li>零售结构长出新层级。朴朴生活首店把现切三文鱼（199.8元/公斤）、吊水专缸、海鲜火锅开进6,500平方米门店，与叮咚「真安心鱼」、海关159号同构——<span class="highlight">从政府准入到渠道准入再到门店体验，「可验证+过程可见」是同一条主线</span>，循环水的天然优势第一次有了三层承接位。</li>
+  </ul>
+  <h3>🎯 对商达意味着什么</h3>
+  <p>站在信哥的决策位置看今天，四个判断：第一，成本模型强制双口径——鲑鳟线按鱼粉26,500元基线、28,000元压力测试重写，鲢鳙线按豆粕3,100元口径下修，任何「成本降了」的整体叙事都是错的；第二，政策可见性进入兑现窗口——青岛市级表态与安徽省级调研说明「被看见」的回报是确定的，商达每个投产节点都要设计主动报送与邀请机制；第三，零售现制段（门店现切199.8元/公斤）是新增定价层，比冷冻段高66%，商达活鱼直达门店档口的通路值得本季度谈成一家试点；第四，出清期纪律——百洋/好当家的样本说明情绪段既不融资也不对标概念股估值，现金流口径是对外叙事的唯一语言。</p>
+  <h3>📋 三条行动建议</h3>
+  <ul>
+    <li>🏃 本周：①罗田式「先建后补」申报窗口11-27截止，若服务县域内有在建循环水项目，本周内备齐申报材料包（对公流水/土地合同/尾水设施证明）；②把13:20补采轮的11-19部级横截面与城阳冻结锚做当日比对，更新花鲢销区溢价表；③测算书中鱼粉「峰值假设」改「26,500基线+28,000压力测试」双版本。</li>
+    <li>📅 本月：①12月第一周前完成鲢鳙线成本下修与鲑鳟线压力测试双版本测算书；②对接1家朴朴式门店或叮咚式渠道的现制档口试点，送检首批吊水鱼样品；③盯11-30国联临时股东会与12-01通威临时股东会结果，更新友商资产与资本动作台账。</li>
+    <li>🎯 本季度：①借青岛市级渔业法表态窗口，对接胶东半岛项目储备的用地与补贴配套细则；②把「可验证」写进商达方案模板——批次检测记录+吊水净化数据作为标准交付物，出厂即带渠道准入语言；③把挪威SSB第46周73.41克朗写入卖到哪测算器进口价参数，完成国产替代价差测算。</li>
+  </ul>
+  <h3>⚠️ 30天风险看板</h3>
+  <ul>
+    <li>【最紧迫】鱼粉三个捕季风险：若12月秘鲁B季配额确认再落空，26,500元基线可能快速上探28,000元，鲑鳟料成本在1月前没有下行选项——鲑鳟项目测算立即锁定当前口径，警惕「横盘即见顶」的误判。</li>
+    <li>【中期】百洋式出清若扩散至饲料与设备概念股的两融与质押敞口，产业链金融条款（涉股质押、对赌、回购）需做压力测试，避免以股价为信用锚的合同暴露。</li>
+    <li>【灰犀牛】渠道准入（现制档口、真安心鱼式标签）正在把批次证据链变成供应商资格线——无批次记录能力的流通环节将在3个月内被结构性淘汰，商达的合作流通方要提前补齐证据链，否则渠道通路会先于产能成为瓶颈。</li>
+  </ul>
+</div>
+<footer>本报告由商达产品部出品 | 仅供内部参考 | 第188期 · 2026-11-19</footer>
+</body>
+</html>
